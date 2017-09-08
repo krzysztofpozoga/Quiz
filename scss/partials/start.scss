@@ -1,23 +1,86 @@
-#start {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
   width: 100vw;
   height: 100vh;
-  background-image: -webkit-linear-gradient(90deg, red, white);
-  font-family: 'Chewy', Arial, sans-serif;
-  letter-spacing: 0.5em;
-  font-size: 2em;
-  text-align: center;
-  .button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  header {
+    width: 100%;
+    height: 20vh;
+    background-color: #545E6E;
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: darkred;
-    border-radius: 15px;
-    height: 10vh;
-    width: 20vw;
+    .container {
+      height: 100%;
+      width: 80%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      .icon {
+        height: 80px;
+        width: 80px;
+        margin-left: 20px;
+        background-color: red;
+        border: 1px solid black;
+        border-radius: 50%;
+      }
+      .teacher {
+        background-image: url(../images/teacher.png);
+        background-size: 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .phone {
+        background-image: url(../images/phone.jpg);
+        background-size: 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .half {
+        background-image: url(../images/half.png);
+        background-size: 80%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+
+  }
+  footer {
+    width: 100%;
+    height: 20vh;
+    background-color: #545E6E;
   }
 
+  #start {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: #C0C0C0;
+    font-family: 'Chewy', Arial, sans-serif;
+    .title {
+      color: white;
+      text-shadow: 3px 3px 0 rgba(black, .5);
+      letter-spacing: 0.5em;
+      font-size: 3em;
+      text-align: center;
+    }
+    .button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2em;
+      color: white;
+      background-color: #545E6E;
+      border-radius: 15px;
+      height: 10vh;
+      width: 20vw;
+      box-shadow: -10px 10px 5px #888888;
+    }
+  }
 }
