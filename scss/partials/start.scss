@@ -59,29 +59,63 @@ body {
   #start {
     height: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background: #C0C0C0;
     font-family: 'Chewy', Arial, sans-serif;
-    .title {
-      color: white;
-      text-shadow: 3px 3px 0 rgba(black, .5);
-      letter-spacing: 0.5em;
-      font-size: 3em;
-      text-align: center;
+    .left {
+      height: 100%;
+      width: 20%;
+      .question {
+        background-color: #545E6E;
+        color: white;
+        text-align: center;
+        border: 3px solid white;
+        box-shadow: -5px 5px 1px #888888;
+        width: 15%;
+        border-radius: 25px;
+        position: absolute;
+        top: 160px;
+        left: 50px;
+      }
+      .questionMark {
+        height: 100%;
+        width: 100%;
+        background-image: url(../images/questionmark.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
     }
-    .button {
+    .middle {
       display: flex;
+      flex-direction: column;
       align-items: center;
-      justify-content: center;
-      font-size: 2em;
-      color: white;
-      background-color: #545E6E;
-      border-radius: 15px;
-      height: 10vh;
-      width: 20vw;
-      box-shadow: -10px 10px 5px #888888;
+      justify-content: space-around;
+      .title {
+        color: white;
+        text-shadow: 3px 3px 0 rgba(black, .5);
+        letter-spacing: 0.5em;
+        font-size: 3em;
+        text-align: center;
+      }
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2em;
+        color: white;
+        background-color: #545E6E;
+        border-radius: 15px;
+        height: 10vh;
+        width: 20vw;
+        box-shadow: -10px 10px 5px #888888;
+      }
+    }
+    .right {
+      height: 100%;
+      width: 20%;
+      border: 1px solid black;
     }
   }
 }
