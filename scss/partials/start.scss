@@ -24,7 +24,7 @@ body {
         height: 80px;
         width: 80px;
         margin-left: 20px;
-        background-color: red;
+        background-color: #8D8276;
         border: 1px solid black;
         border-radius: 50%;
       }
@@ -35,16 +35,17 @@ body {
         background-repeat: no-repeat;
       }
       .phone {
-        background-image: url(../images/phone.jpg);
+        background-image: url(../images/phone.png);
         background-size: 80%;
         background-position: center;
         background-repeat: no-repeat;
       }
       .half {
-        background-image: url(../images/half.png);
-        background-size: 80%;
-        background-position: center;
-        background-repeat: no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+        font-weight: 900;
       }
     }
 
