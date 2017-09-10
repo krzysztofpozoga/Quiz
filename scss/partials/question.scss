@@ -71,7 +71,7 @@
     .teacherHint {
       width: 80%;
       height: 80%;
-      display: flex;
+      display: none;
       flex-direction: column;
       align-items: center;
       .hint {
@@ -89,10 +89,41 @@
         display: flex;
         align-items: center;
       }
-      .teacherImg {
+      .img {
         width: 80%;
         height: 70%;
         background-image: url(../images/teacherHint.png);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .friendAnswer {
+      width: 80%;
+      height: 80%;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      .hint {
+        width: 80%;
+        height: 30%;
+        background-color: white;
+        border-radius: 15px;
+        border: 5px solid #545E6E;
+        border-radius: 15px;
+        box-shadow: -5px 5px 5px #888888;
+        color: #8D8276;
+        font-size: 1.5em;
+        font-weight: bold;
+        text-align: center;
+        display: flex;
+        align-items: center;
+      }
+      .img {
+        width: 80%;
+        height: 70%;
+        background-image: url(../images/friend.png);
+        background-size: 70%;
         background-position: center;
         background-repeat: no-repeat;
       }
