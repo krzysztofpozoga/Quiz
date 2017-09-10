@@ -1,3 +1,12 @@
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -21,8 +30,8 @@ body {
       justify-content: flex-end;
       align-items: center;
       .icon {
-        height: 80px;
-        width: 80px;
+        height: 75px;
+        width: 75px;
         margin-left: 20px;
         background-color: #8D8276;
         border: 1px solid black;
@@ -30,6 +39,9 @@ body {
         background-size: 60%;
         background-position: center;
         background-repeat: no-repeat;
+        &:hover {
+          transform: scale(1.2);
+        }
       }
       .teacher {
         background-image: url(../images/teacher.png);
@@ -55,7 +67,7 @@ body {
 
   #start {
     height: 100%;
-    display: none;
+    display: flex;
     justify-content: space-between;
     background: #C0C0C0;
     font-family: 'Chewy', Arial, sans-serif;
@@ -95,6 +107,8 @@ body {
         letter-spacing: 0.5em;
         font-size: 3em;
         text-align: center;
+        animation-name: opacity;
+        animation-duration: 2s;
       }
       .button {
         display: flex;
@@ -107,6 +121,9 @@ body {
         height: 10vh;
         width: 20vw;
         box-shadow: -10px 10px 5px #888888;
+        &:hover {
+          font-size: 3em;
+        }
       }
     }
     .right {
