@@ -75,7 +75,13 @@
 
 $(function () {
 
-  console.log('Działa!');
+  var gameStartButton = $('.button');
+  var pageStart = $('#start');
+  var pageQuestion = $('#question');
+  gameStartButton.on('click', function () {
+    pageStart.css('display', 'none');
+    pageQuestion.css('display', 'flex');
+  });
 });
 
 /***/ }),

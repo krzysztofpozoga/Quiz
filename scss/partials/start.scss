@@ -39,6 +39,7 @@ body {
         background-size: 60%;
         background-position: center;
         background-repeat: no-repeat;
+        cursor: pointer;
         &:hover {
           transform: scale(1.2);
         }
@@ -121,6 +122,7 @@ body {
         height: 10vh;
         width: 20vw;
         box-shadow: -10px 10px 5px #888888;
+        cursor: pointer;
         &:hover {
           font-size: 3em;
         }
