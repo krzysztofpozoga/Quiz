@@ -78,9 +78,11 @@ $(function () {
   var gameStartButton = $('.button');
   var pageStart = $('#start');
   var pageQuestion = $('#question');
+  var container = $('.container');
   gameStartButton.on('click', function () {
     pageStart.css('display', 'none');
     pageQuestion.css('display', 'flex');
+    container.css('display', 'flex');
   });
 
   var teacher = $('.teacher');
