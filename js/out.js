@@ -82,6 +82,19 @@ $(function () {
     pageStart.css('display', 'none');
     pageQuestion.css('display', 'flex');
   });
+
+  var teacher = $('.teacher');
+  var phone = $('.phone');
+  var teacherHint = $('.teacherHint');
+  var friendAnswer = $('.friendAnswer');
+  teacher.on('click', function () {
+    friendAnswer.css('display', 'none');
+    teacherHint.css('display', 'flex');
+  });
+  phone.on('click', function () {
+    teacherHint.css('display', 'none');
+    friendAnswer.css('display', 'flex');
+  });
 });
 
 /***/ }),
