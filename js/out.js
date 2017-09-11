@@ -97,6 +97,15 @@ $(function () {
     teacherHint.css('display', 'none');
     friendAnswer.css('display', 'flex');
   });
+
+  var url = "http://localhost:3000";
+  $.ajax({
+    method: "GET",
+    url: url + "/questions",
+    dataType: "json"
+  }).done(function (response) {
+    console.log(response);
+  });
 });
 
 /***/ }),

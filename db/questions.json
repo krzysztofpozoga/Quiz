@@ -1,0 +1,14 @@
+{
+	"questions":	[
+		{
+			"id":	1	,
+			"question":	"Jak miał na imię pierwszy historyczny władca Polski?",
+			"answer":	["Siemowit", "Mieszko", "Piast", "Siemomysł"]
+		},
+    {
+			"id":	2	,
+			"question":	"Jak miał na imię ojciec Mieszka?",
+			"answer":	["Piast", "Leszek", "Siemomysł", "Siemowit"]
+		}
+	]
+}
