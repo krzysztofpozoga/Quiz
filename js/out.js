@@ -73,6 +73,12 @@
 "use strict";
 
 
+var _randomQuestion = __webpack_require__(2);
+
+var _randomQuestion2 = _interopRequireDefault(_randomQuestion);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 $(function () {
 
   var gameStartButton = $('.button');
@@ -98,14 +104,7 @@ $(function () {
     friendAnswer.css('display', 'flex');
   });
 
-  var url = "http://localhost:3000";
-  $.ajax({
-    method: "GET",
-    url: url + "/questions",
-    dataType: "json"
-  }).done(function (response) {
-    console.log(response);
-  });
+  (0, _randomQuestion2.default)();
 });
 
 /***/ }),
@@ -114,6 +113,29 @@ $(function () {
 
 module.exports = __webpack_require__(0);
 
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+function getQuestion() {
+  var url = "http://localhost:3000/questions";
+  $.ajax({
+    method: "GET",
+    url: url,
+    dataType: "json"
+  }).done(function (response) {
+    console.log(response);
+  });
+}
+
+exports.default = getQuestion;
 
 /***/ })
 /******/ ]);
