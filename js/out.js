@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -73,7 +73,7 @@
 "use strict";
 
 
-var _randomQuestion = __webpack_require__(2);
+var _randomQuestion = __webpack_require__(1);
 
 var _randomQuestion2 = _interopRequireDefault(_randomQuestion);
 
@@ -111,13 +111,6 @@ $(function () {
 /* 1 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(0);
-
-
-/***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
 "use strict";
 
 
@@ -126,16 +119,27 @@ Object.defineProperty(exports, "__esModule", {
 });
 function getQuestion() {
   var url = "http://localhost:3000/questions";
+  var question = $('.quizQuestion').find('.text');
+  var array = [];
   $.ajax({
     method: "GET",
     url: url,
     dataType: "json"
   }).done(function (response) {
-    console.log(response);
+    var randomNumberQuestion = Math.round(Math.random() * (response.length - 1));
+    var randomQuestion = response[randomNumberQuestion].question;
+    question.text(randomQuestion);
   });
 }
 
 exports.default = getQuestion;
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(0);
+
 
 /***/ })
 /******/ ]);

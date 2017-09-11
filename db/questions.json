@@ -9,6 +9,16 @@
 			"id":	2	,
 			"question":	"Jak miał na imię ojciec Mieszka?",
 			"answer":	["Piast", "Leszek", "Siemomysł", "Siemowit"]
+		},
+		{
+			"id":	3	,
+			"question":	"Jak miała na imię pierwsza chrześcijańska żona Mieszka?",
+			"answer":	["Oda", "Rzepicha", "Rycheza", "Dobrawa"]
+		},
+		{
+			"id":	4	,
+			"question":	"Z jakiego kraju przybyła do Polski Dobrawa?",
+			"answer":	["z Niemiec", "z Czech", "z Węgier", "z Rusi"]
 		}
 	]
 }
