@@ -93,8 +93,10 @@ $(function () {
 
   var teacher = $('.teacher');
   var phone = $('.phone');
+  var half = $('.half');
   var teacherHint = $('.teacherHint');
   var friendAnswer = $('.friendAnswer');
+  var answers = $('.answer');
   teacher.on('click', function () {
     friendAnswer.css('display', 'none');
     teacherHint.css('display', 'flex');
@@ -102,6 +104,13 @@ $(function () {
   phone.on('click', function () {
     teacherHint.css('display', 'none');
     friendAnswer.css('display', 'flex');
+  });
+  half.on('click', function () {
+    for (var i = 0; i < answers.length; i++) {
+      if ($(answers[i]).data('50x50') === 'half') {
+        $(answers[i]).css('visibility', 'hidden');
+      }
+    };
   });
 
   (0, _randomQuestion2.default)();
@@ -141,6 +150,7 @@ function getQuestion() {
         } else if (i === j && i !== goodAnswerNumber) {
           $(answers[i]).text(badAnswers[j]);
           $(answers[i]).attr('data-good', 'false');
+          $(answers[i]).attr('data-50x50', 'half');
         } else if (i > j) {
           $(answers[i]).text(badAnswers[goodAnswerNumber]);
           $(answers[i]).attr('data-good', 'false');

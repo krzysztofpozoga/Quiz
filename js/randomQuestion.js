@@ -21,7 +21,8 @@ function getQuestion(){
             $(answers[i]).attr('data-good', 'true')
           } else if (i === j && i !== goodAnswerNumber) {
             $(answers[i]).text(badAnswers[j]);
-            $(answers[i]).attr('data-good', 'false')
+            $(answers[i]).attr('data-good', 'false');
+            $(answers[i]).attr('data-50x50', 'half');
           } else if (i > j) {
             $(answers[i]).text(badAnswers[goodAnswerNumber]);
             $(answers[i]).attr('data-good', 'false')
