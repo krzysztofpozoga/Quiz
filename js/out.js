@@ -121,6 +121,7 @@ function getQuestion() {
   var url = "http://localhost:3000/questions";
   var question = $('.quizQuestion').find('.text');
   var array = [];
+  var answers = $('.answer');
   $.ajax({
     method: "GET",
     url: url,
@@ -128,7 +129,14 @@ function getQuestion() {
   }).done(function (response) {
     var randomNumberQuestion = Math.round(Math.random() * (response.length - 1));
     var randomQuestion = response[randomNumberQuestion].question;
+    var goodAnswer = response[randomNumberQuestion].goodAnswer;
     question.text(randomQuestion);
+    var goodAnswerNumber = Math.round(Math.random() * 3 + 1);
+    answers.each(function (i, elem) {
+      if ($(elem).data('number') === goodAnswerNumber) {
+        $(elem).text(goodAnswer);
+      }
+    });
   });
 }
 
