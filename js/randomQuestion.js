@@ -11,13 +11,20 @@ function getQuestion(){
       let randomNumberQuestion = Math.round(Math.random() * (response.length-1));
       let randomQuestion = response[randomNumberQuestion].question;
       let goodAnswer = response[randomNumberQuestion].goodAnswer;
+      let badAnswers = response[randomNumberQuestion].badAnswers;
       question.text(randomQuestion);
-      let goodAnswerNumber = Math.round((Math.random() * 3) + 1);
-      answers.each((i, elem)=> {
-        if ($(elem).data('number') === goodAnswerNumber) {
-          $(elem).text(goodAnswer)
-        } 
-      })
+      let goodAnswerNumber = Math.round((Math.random() * 3));
+      for( let i = 0; i<answers.length; i++) {
+        for( let j = 0; j<badAnswers.length; j++) {
+          if (i === goodAnswerNumber) {
+            $(answers[i]).text(goodAnswer)
+          } else if (i === j && i !== goodAnswerNumber) {
+            $(answers[i]).text(badAnswers[j])
+          } else if (i > j) {
+            $(answers[i]).text(badAnswers[goodAnswerNumber])
+          }
+        }
+      }
   });
 }
 

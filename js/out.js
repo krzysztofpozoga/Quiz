@@ -130,13 +130,20 @@ function getQuestion() {
     var randomNumberQuestion = Math.round(Math.random() * (response.length - 1));
     var randomQuestion = response[randomNumberQuestion].question;
     var goodAnswer = response[randomNumberQuestion].goodAnswer;
+    var badAnswers = response[randomNumberQuestion].badAnswers;
     question.text(randomQuestion);
-    var goodAnswerNumber = Math.round(Math.random() * 3 + 1);
-    answers.each(function (i, elem) {
-      if ($(elem).data('number') === goodAnswerNumber) {
-        $(elem).text(goodAnswer);
+    var goodAnswerNumber = Math.round(Math.random() * 3);
+    for (var i = 0; i < answers.length; i++) {
+      for (var j = 0; j < badAnswers.length; j++) {
+        if (i === goodAnswerNumber) {
+          $(answers[i]).text(goodAnswer);
+        } else if (i === j && i !== goodAnswerNumber) {
+          $(answers[i]).text(badAnswers[j]);
+        } else if (i > j) {
+          $(answers[i]).text(badAnswers[goodAnswerNumber]);
+        }
       }
-    });
+    }
   });
 }
 
