@@ -17,14 +17,26 @@ function getQuestion(){
       for( let i = 0; i<answers.length; i++) {
         for( let j = 0; j<badAnswers.length; j++) {
           if (i === goodAnswerNumber) {
-            $(answers[i]).text(goodAnswer)
+            $(answers[i]).text(goodAnswer);
+            $(answers[i]).attr('data-good', 'true')
           } else if (i === j && i !== goodAnswerNumber) {
-            $(answers[i]).text(badAnswers[j])
+            $(answers[i]).text(badAnswers[j]);
+            $(answers[i]).attr('data-good', 'false')
           } else if (i > j) {
-            $(answers[i]).text(badAnswers[goodAnswerNumber])
+            $(answers[i]).text(badAnswers[goodAnswerNumber]);
+            $(answers[i]).attr('data-good', 'false')
           }
         }
-      }
+      };
+
+      let teacherHint = $('.teacherHint').find('.hint');
+      let teacherHintNumber = Math.round((Math.random() * 2));
+      teacherHint.text(`Na pewno nie jest to odpowiedź "${badAnswers[teacherHintNumber]}"!`);
+
+      let friendAnswer = $('.friendAnswer').find('.hint');
+      friendAnswer.text(`Jestem pewien, że jest to odpowiedź "${goodAnswer}"!`);
+
+
   });
 }
 

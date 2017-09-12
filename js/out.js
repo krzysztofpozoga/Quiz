@@ -137,13 +137,23 @@ function getQuestion() {
       for (var j = 0; j < badAnswers.length; j++) {
         if (i === goodAnswerNumber) {
           $(answers[i]).text(goodAnswer);
+          $(answers[i]).attr('data-good', 'true');
         } else if (i === j && i !== goodAnswerNumber) {
           $(answers[i]).text(badAnswers[j]);
+          $(answers[i]).attr('data-good', 'false');
         } else if (i > j) {
           $(answers[i]).text(badAnswers[goodAnswerNumber]);
+          $(answers[i]).attr('data-good', 'false');
         }
       }
-    }
+    };
+
+    var teacherHint = $('.teacherHint').find('.hint');
+    var teacherHintNumber = Math.round(Math.random() * 2);
+    teacherHint.text('Na pewno nie jest to odpowied\u017A "' + badAnswers[teacherHintNumber] + '"!');
+
+    var friendAnswer = $('.friendAnswer').find('.hint');
+    friendAnswer.text('Jestem pewien, \u017Ce jest to odpowied\u017A "' + goodAnswer + '"!');
   });
 }
 
