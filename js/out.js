@@ -85,10 +85,14 @@ $(function () {
   var pageStart = $('#start');
   var pageQuestion = $('#question');
   var container = $('.container');
+  var questionNumber = $('#question').find('.middle').find('h2');
+  var counter = 1;
   gameStartButton.on('click', function () {
     pageStart.css('display', 'none');
     pageQuestion.css('display', 'flex');
     container.css('display', 'flex');
+    questionNumber.text('Pytanie ' + counter);
+    (0, _randomQuestion2.default)();
   });
 
   var teacher = $('.teacher');
@@ -107,7 +111,6 @@ $(function () {
   });
   half.on('click', function () {
     var randomHalf = Math.round(Math.random() * 1 + 1);
-    console.log(randomHalf);
     for (var i = 0; i < answers.length; i++) {
       if ($(answers[3]).data('good') === true) {
         $(answers[0]).css('visibility', 'hidden');
@@ -118,7 +121,11 @@ $(function () {
     };
   });
 
-  (0, _randomQuestion2.default)();
+  answers.on('click', function () {
+    (0, _randomQuestion2.default)();
+    counter++;
+    questionNumber.text('Pytanie ' + counter);
+  });
 });
 
 /***/ }),

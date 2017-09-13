@@ -5,10 +5,14 @@ $(()=>{
   let pageStart = $('#start');
   let pageQuestion = $('#question');
   let container = $('.container');
+  let questionNumber = $('#question').find('.middle').find('h2');
+  let counter = 1;
   gameStartButton.on('click', ()=>{
     pageStart.css('display', 'none');
     pageQuestion.css('display', 'flex');
     container.css('display', 'flex');
+    questionNumber.text('Pytanie ' + counter);
+    getQuestion();
   });
 
   let teacher = $('.teacher');
@@ -27,7 +31,6 @@ $(()=>{
   });
   half.on('click', ()=>{
     let randomHalf = Math.round((Math.random() * 1)+1);
-    console.log(randomHalf);
     for(let i = 0; i < answers.length; i++) {
       if ($(answers[3]).data('good') === true) {
         $(answers[0]).css('visibility', 'hidden');
@@ -36,9 +39,14 @@ $(()=>{
         $(answers[i]).css('visibility', 'hidden');
       }
     };
-
   })
 
-getQuestion();
+  answers.on('click', ()=> {
+    getQuestion();
+    counter++;
+    questionNumber.text('Pytanie ' + counter);
+  })
+
+
 
 });
