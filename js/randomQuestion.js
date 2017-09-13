@@ -25,7 +25,7 @@ function getQuestion(){
             $(answers[i]).attr('data-50x50', 'half');
           } else if (i > j) {
             $(answers[i]).text(badAnswers[goodAnswerNumber]);
-            $(answers[i]).attr('data-good', 'false')
+            $(answers[i]).attr('data-good', 'false');
           }
         }
       };
