@@ -9,6 +9,7 @@ function getQuestion(){
     dataType:	"json"
   }).done((response)=>{
       let randomNumberQuestion = Math.round(Math.random() * (response.length-1));
+      array.push(randomNumberQuestion);
       let randomQuestion = response[randomNumberQuestion].question;
       let goodAnswer = response[randomNumberQuestion].goodAnswer;
       let badAnswers = response[randomNumberQuestion].badAnswers;
