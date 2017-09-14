@@ -3,22 +3,45 @@
   display: flex;
   justify-content: space-between;
   background: #C0C0C0;
-  font-family: 'Alegreya', Arial, sans-serif;
+  font-family: 'Chewy', Arial, sans-serif;
   .left {
     height: 100%;
-    width: 20%;
+    width: 30%;
     display: flex;
-
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/mieszko.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    .mieszkoSays {
+      background-color: white;
+      padding: 5px;
+      color: #545E6E;
+      font-size: 1.3em;
+      text-align: center;
+      border: 3px solid #545E6E;
+      width: 70%;
+      border-radius: 25px;
+      margin-top: 50px;
+    }
+    .arrow {
+      width: 0;
+      height: 0;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 25px solid #545E6E;
+    }
   }
   .middle {
     height: 100%;
-    width: 60%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     .categoryButton {
-      margin-bottom: 5%;
+      margin: 2% 0;
       box-sizing: border-box;
       display: flex;
       align-items: center;
@@ -39,7 +62,7 @@
   }
   .right {
     height: 100%;
-    width: 20%;
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
