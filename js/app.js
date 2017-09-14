@@ -2,18 +2,31 @@ import getQuestion from './randomQuestion.js';
 $(()=>{
 
   let gameStartButton = $('.button');
+  let categoryButton = $('.categoryButton');
   let pageStart = $('#start');
   let pageQuestion = $('#question');
+  let categorySelect = $('#category');
   let container = $('.container');
   let questionNumber = $('#question').find('.middle').find('h2');
   let counter = 1;
   gameStartButton.on('click', ()=>{
     pageStart.css('display', 'none');
+    categorySelect.css('display', 'flex');
+    // pageQuestion.css('display', 'flex');
+    // container.css('display', 'flex');
+    // questionNumber.text('Pytanie ' + counter);
+    // getQuestion();
+  });
+
+  categoryButton.on('click', ()=>{
+    categorySelect.css('display', 'none');
     pageQuestion.css('display', 'flex');
     container.css('display', 'flex');
     questionNumber.text('Pytanie ' + counter);
     getQuestion();
   });
+
+
 
   let teacher = $('.teacher');
   let phone = $('.phone');

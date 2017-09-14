@@ -82,13 +82,24 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 $(function () {
 
   var gameStartButton = $('.button');
+  var categoryButton = $('.categoryButton');
   var pageStart = $('#start');
   var pageQuestion = $('#question');
+  var categorySelect = $('#category');
   var container = $('.container');
   var questionNumber = $('#question').find('.middle').find('h2');
   var counter = 1;
   gameStartButton.on('click', function () {
     pageStart.css('display', 'none');
+    categorySelect.css('display', 'flex');
+    // pageQuestion.css('display', 'flex');
+    // container.css('display', 'flex');
+    // questionNumber.text('Pytanie ' + counter);
+    // getQuestion();
+  });
+
+  categoryButton.on('click', function () {
+    categorySelect.css('display', 'none');
     pageQuestion.css('display', 'flex');
     container.css('display', 'flex');
     questionNumber.text('Pytanie ' + counter);
