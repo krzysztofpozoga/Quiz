@@ -149,7 +149,6 @@ function getQuestion() {
     dataType: "json"
   }).done(function (response) {
     var randomNumberQuestion = Math.round(Math.random() * (response.length - 1));
-    array.push(randomNumberQuestion);
     var randomQuestion = response[randomNumberQuestion].question;
     var goodAnswer = response[randomNumberQuestion].goodAnswer;
     var badAnswers = response[randomNumberQuestion].badAnswers;
