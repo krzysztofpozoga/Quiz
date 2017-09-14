@@ -115,12 +115,15 @@ $(function () {
   teacher.on('click', function () {
     friendAnswer.css('display', 'none');
     teacherHint.css('display', 'flex');
+    teacher.off("click");
   });
   phone.on('click', function () {
     teacherHint.css('display', 'none');
     friendAnswer.css('display', 'flex');
+    phone.off("click");
   });
   half.on('click', function () {
+    half.off("click");
     var randomHalf = Math.round(Math.random() * 1 + 1);
     for (var i = 0; i < answers.length; i++) {
       if ($(answers[3]).data('good') === true) {
@@ -133,6 +136,11 @@ $(function () {
   });
 
   answers.on('click', function () {
+    friendAnswer.css('display', 'none');
+    teacherHint.css('display', 'none');
+    for (var i = 0; i < answers.length; i++) {
+      $(answers[i]).css('visibility', 'visible');
+    }
     (0, _randomQuestion2.default)();
     counter++;
     questionNumber.text('Pytanie ' + counter);

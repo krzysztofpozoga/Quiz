@@ -37,12 +37,15 @@ $(()=>{
   teacher.on('click', ()=>{
     friendAnswer.css('display', 'none');
     teacherHint.css('display', 'flex');
+    teacher.off("click");
   });
   phone.on('click', ()=>{
     teacherHint.css('display', 'none');
     friendAnswer.css('display', 'flex');
+    phone.off("click");
   });
   half.on('click', ()=>{
+    half.off("click");
     let randomHalf = Math.round((Math.random() * 1)+1);
     for(let i = 0; i < answers.length; i++) {
       if ($(answers[3]).data('good') === true) {
@@ -55,6 +58,11 @@ $(()=>{
   })
 
   answers.on('click', ()=> {
+    friendAnswer.css('display', 'none');
+    teacherHint.css('display', 'none');
+    for(let i = 0; i < answers.length; i++) {
+      $(answers[i]).css('visibility', 'visible');
+    }
     getQuestion();
     counter++;
     questionNumber.text('Pytanie ' + counter);
