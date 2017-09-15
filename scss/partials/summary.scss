@@ -19,11 +19,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    .answers {
-      display: flex;
-      justify-content: space-around;
+    .rightAnswers{
+      .answers {
+        display: flex;
+        justify-content: space-around;
+      }
     }
-
   }
   .right {
     height: 100%;
