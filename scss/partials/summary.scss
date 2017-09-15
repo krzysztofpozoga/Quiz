@@ -1,0 +1,36 @@
+#summary {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #C0C0C0;
+  font-family: 'Chewy', Arial, sans-serif;
+  .left {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .middle {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    .answers {
+      display: flex;
+      justify-content: space-around;
+    }
+
+  }
+  .right {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+}
