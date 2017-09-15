@@ -29,8 +29,11 @@ $(()=>{
 
 
   let teacher = $('.teacher');
+  let redLineTeacher = teacher.find('.redLine');
   let phone = $('.phone');
+  let redLinePhone = phone.find('.redLine');
   let half = $('.half');
+  let redLineHalf = half.find('.redLine');
   let teacherHint = $('.teacherHint');
   let friendAnswer = $('.friendAnswer');
   let answers = $('.answer');
@@ -38,14 +41,17 @@ $(()=>{
     friendAnswer.css('display', 'none');
     teacherHint.css('display', 'flex');
     teacher.off("click");
+    redLineTeacher.css('display', 'block');
   });
   phone.on('click', ()=>{
     teacherHint.css('display', 'none');
     friendAnswer.css('display', 'flex');
     phone.off("click");
+    redLinePhone.css('display', 'block');
   });
   half.on('click', ()=>{
     half.off("click");
+    redLineHalf.css('display', 'block');
     let randomHalf = Math.round((Math.random() * 1)+1);
     for(let i = 0; i < answers.length; i++) {
       if ($(answers[3]).data('good') === true) {

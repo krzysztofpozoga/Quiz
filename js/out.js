@@ -107,8 +107,11 @@ $(function () {
   });
 
   var teacher = $('.teacher');
+  var redLineTeacher = teacher.find('.redLine');
   var phone = $('.phone');
+  var redLinePhone = phone.find('.redLine');
   var half = $('.half');
+  var redLineHalf = half.find('.redLine');
   var teacherHint = $('.teacherHint');
   var friendAnswer = $('.friendAnswer');
   var answers = $('.answer');
@@ -116,14 +119,17 @@ $(function () {
     friendAnswer.css('display', 'none');
     teacherHint.css('display', 'flex');
     teacher.off("click");
+    redLineTeacher.css('display', 'block');
   });
   phone.on('click', function () {
     teacherHint.css('display', 'none');
     friendAnswer.css('display', 'flex');
     phone.off("click");
+    redLinePhone.css('display', 'block');
   });
   half.on('click', function () {
     half.off("click");
+    redLineHalf.css('display', 'block');
     var randomHalf = Math.round(Math.random() * 1 + 1);
     for (var i = 0; i < answers.length; i++) {
       if ($(answers[3]).data('good') === true) {
