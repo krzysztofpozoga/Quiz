@@ -86,6 +86,7 @@ $(function () {
   var pageStart = $('#start');
   var pageQuestion = $('#question');
   var categorySelect = $('#category');
+  var summaryPage = $('#summary');
   var container = $('.container');
   var questionNumber = $('#question').find('.middle').find('h2');
   var counter = 1;
@@ -147,9 +148,14 @@ $(function () {
     for (var i = 0; i < answers.length; i++) {
       $(answers[i]).css('visibility', 'visible');
     }
-    (0, _randomQuestion2.default)();
-    counter++;
-    questionNumber.text('Pytanie ' + counter);
+    if (counter < 5) {
+      (0, _randomQuestion2.default)();
+      counter++;
+      questionNumber.text('Pytanie ' + counter);
+    } else {
+      pageQuestion.css('display', 'none');
+      summaryPage.css('display', 'flex');
+    }
   });
 });
 

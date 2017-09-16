@@ -12,14 +12,14 @@ body {
   margin: 0;
   box-sizing: border-box;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 
   header {
     width: 100%;
-    height: 20vh;
+    height: 15vh;
     background-color: #545E6E;
     display: flex;
     justify-content: center;
@@ -72,13 +72,13 @@ body {
   }
   footer {
     width: 100%;
-    height: 20vh;
+    height: 15vh;
     background-color: #545E6E;
   }
 
   #start {
-    height: 100%;
-    display: none;
+    height: 70vh;
+    display: flex;
     justify-content: space-between;
     background: #C0C0C0;
     font-family: 'Chewy', Arial, sans-serif;

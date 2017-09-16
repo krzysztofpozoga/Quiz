@@ -6,6 +6,7 @@ $(()=>{
   let pageStart = $('#start');
   let pageQuestion = $('#question');
   let categorySelect = $('#category');
+  let summaryPage = $('#summary');
   let container = $('.container');
   let questionNumber = $('#question').find('.middle').find('h2');
   let counter = 1;
@@ -69,9 +70,16 @@ $(()=>{
     for(let i = 0; i < answers.length; i++) {
       $(answers[i]).css('visibility', 'visible');
     }
-    getQuestion();
-    counter++;
-    questionNumber.text('Pytanie ' + counter);
+    if (counter < 5) {
+      getQuestion();
+      counter++;
+      questionNumber.text('Pytanie ' + counter);
+    } else {
+      pageQuestion.css('display', 'none');
+      summaryPage.css('display', 'flex');
+
+    }
+
   })
 
 
