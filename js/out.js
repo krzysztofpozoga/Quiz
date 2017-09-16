@@ -90,6 +90,7 @@ $(function () {
   var container = $('.container');
   var questionNumber = $('#question').find('.middle').find('h2');
   var counter = 1;
+  var scoreCounter = 0;
   gameStartButton.on('click', function () {
     pageStart.css('display', 'none');
     categorySelect.css('display', 'flex');
@@ -142,12 +143,16 @@ $(function () {
     };
   });
 
-  answers.on('click', function () {
+  var score = $('.score');
+  score.text(scoreCounter);
+  answers.on('click', function (event) {
+    if ($(event.target).data('good') === true) {
+      scoreCounter++;
+      score.text(scoreCounter);
+    }
     friendAnswer.css('display', 'none');
     teacherHint.css('display', 'none');
-    for (var i = 0; i < answers.length; i++) {
-      $(answers[i]).css('visibility', 'visible');
-    }
+
     if (counter < 5) {
       (0, _randomQuestion2.default)();
       counter++;
@@ -155,6 +160,9 @@ $(function () {
     } else {
       pageQuestion.css('display', 'none');
       summaryPage.css('display', 'flex');
+      phone.css('display', 'none');
+      teacher.css('display', 'none');
+      half.css('display', 'none');
     }
   });
 });
@@ -174,6 +182,7 @@ function getQuestion() {
   var question = $('.quizQuestion').find('.text');
   var array = [];
   var answers = $('.answer');
+  var summaryQuestion = $('#summary').find('.middle').find('.rightAnswers').find('.question');
   $.ajax({
     method: "GET",
     url: url,
@@ -184,8 +193,10 @@ function getQuestion() {
     var goodAnswer = response[randomNumberQuestion].goodAnswer;
     var badAnswers = response[randomNumberQuestion].badAnswers;
     question.text(randomQuestion);
+    summaryQuestion.text(randomQuestion);
     var goodAnswerNumber = Math.round(Math.random() * 3);
     for (var i = 0; i < answers.length; i++) {
+      $(answers[i]).css('visibility', 'visible');
       for (var j = 0; j < badAnswers.length; j++) {
         if (i === goodAnswerNumber) {
           $(answers[i]).text(goodAnswer);

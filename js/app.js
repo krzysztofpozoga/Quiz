@@ -10,6 +10,7 @@ $(()=>{
   let container = $('.container');
   let questionNumber = $('#question').find('.middle').find('h2');
   let counter = 1;
+  let scoreCounter = 0;
   gameStartButton.on('click', ()=>{
     pageStart.css('display', 'none');
     categorySelect.css('display', 'flex');
@@ -64,12 +65,16 @@ $(()=>{
     };
   })
 
-  answers.on('click', ()=> {
+  let score = $('.score');
+  score.text(scoreCounter);
+  answers.on('click', (event)=> {
+    if ($(event.target).data('good') === true) {
+      scoreCounter++;
+      score.text(scoreCounter);
+    }
     friendAnswer.css('display', 'none');
     teacherHint.css('display', 'none');
-    for(let i = 0; i < answers.length; i++) {
-      $(answers[i]).css('visibility', 'visible');
-    }
+
     if (counter < 5) {
       getQuestion();
       counter++;
@@ -77,7 +82,9 @@ $(()=>{
     } else {
       pageQuestion.css('display', 'none');
       summaryPage.css('display', 'flex');
-
+      phone.css('display', 'none');
+      teacher.css('display', 'none');
+      half.css('display', 'none');
     }
 
   })

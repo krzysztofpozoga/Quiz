@@ -7,10 +7,11 @@
   font-size: 1.5em;
   .left {
     height: 100%;
-    width: 10%;
+    width: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid black;
 
   }
   .middle {
@@ -18,8 +19,9 @@
     width: 60%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
+    border: 1px solid black;
     .rightAnswers{
       .answers {
         display: flex;
@@ -34,8 +36,9 @@
     }
   }
   .right {
+    border: 1px solid black;
     height: 100%;
-    width: 30%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;

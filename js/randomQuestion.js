@@ -3,6 +3,7 @@ function getQuestion(){
   let question = $('.quizQuestion').find('.text');
   let array = [];
   let answers = $('.answer');
+  let summaryQuestion = $('#summary').find('.middle').find('.rightAnswers').find('.question');
   $.ajax({
     method:	"GET",
     url:	url,
@@ -13,8 +14,10 @@ function getQuestion(){
       let goodAnswer = response[randomNumberQuestion].goodAnswer;
       let badAnswers = response[randomNumberQuestion].badAnswers;
       question.text(randomQuestion);
+      summaryQuestion.text(randomQuestion);
       let goodAnswerNumber = Math.round((Math.random() * 3));
       for( let i = 0; i<answers.length; i++) {
+        $(answers[i]).css('visibility', 'visible');
         for( let j = 0; j<badAnswers.length; j++) {
           if (i === goodAnswerNumber) {
             $(answers[i]).text(goodAnswer);
