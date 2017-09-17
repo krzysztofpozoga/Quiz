@@ -2,7 +2,7 @@ function getQuestion(){
   let url = "http://localhost:3000/questions";
   let question = $('.quizQuestion').find('.text');
   let answers = $('.answer');
-  let summaryQuestion = $('#summary').find('.middle').find('.rightAnswers').find('.question');
+  let summaryPage = $('#summary').find('.middle').find('.rightAnswers');
   $.ajax({
     method:	"GET",
     url:	url,
@@ -14,6 +14,16 @@ function getQuestion(){
       let badAnswers = response[randomNumberQuestion].badAnswers;
       question.text(randomQuestion);
       let goodAnswerNumber = Math.round((Math.random() * 3));
+
+      let score = $('.score');
+
+      let summaryQuestion = $('<div class="question"></div>');
+      let summaryAnswer = $(`<div class="answers"><div>${goodAnswer}</div><div>${badAnswers[0]}</div><div>${badAnswers[1]}</div><div>${badAnswers[2]}</div></div>`);
+
+      summaryQuestion.text(randomQuestion);
+      summaryPage.append(summaryQuestion);
+      summaryPage.append(summaryAnswer);
+
       for( let i = 0; i<answers.length; i++) {
         $(answers[i]).css('visibility', 'visible');
         for( let j = 0; j<badAnswers.length; j++) {
@@ -31,14 +41,12 @@ function getQuestion(){
           }
         }
       };
-
       let teacherHint = $('.teacherHint').find('.hint');
       let teacherHintNumber = Math.round((Math.random() * 2));
       teacherHint.text(`Na pewno nie jest to odpowiedź "${badAnswers[teacherHintNumber]}"!`);
 
       let friendAnswer = $('.friendAnswer').find('.hint');
       friendAnswer.text(`Jestem pewien, że jest to odpowiedź "${goodAnswer}"!`);
-
 
   });
 }

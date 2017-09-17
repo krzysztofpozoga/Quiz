@@ -66,10 +66,10 @@ $(()=>{
   score.text(scoreCounter);
 
   answers.on('click', (event)=> {
-    if ($(event.target).data('good') === true) {
-      scoreCounter = scoreCounter + 1;
-      score.text(scoreCounter);
-    }
+    // if ($(event.target).data('good') === true) {
+    //   scoreCounter = scoreCounter + 1;
+    //   score.text(scoreCounter);
+    // }
     friendAnswer.css('display', 'none');
     teacherHint.css('display', 'none');
 

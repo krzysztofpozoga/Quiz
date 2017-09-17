@@ -146,10 +146,10 @@ $(function () {
   score.text(scoreCounter);
 
   answers.on('click', function (event) {
-    if ($(event.target).data('good') === true) {
-      scoreCounter = scoreCounter + 1;
-      score.text(scoreCounter);
-    }
+    // if ($(event.target).data('good') === true) {
+    //   scoreCounter = scoreCounter + 1;
+    //   score.text(scoreCounter);
+    // }
     friendAnswer.css('display', 'none');
     teacherHint.css('display', 'none');
 
@@ -181,7 +181,7 @@ function getQuestion() {
   var url = "http://localhost:3000/questions";
   var question = $('.quizQuestion').find('.text');
   var answers = $('.answer');
-  var summaryQuestion = $('#summary').find('.middle').find('.rightAnswers').find('.question');
+  var summaryPage = $('#summary').find('.middle').find('.rightAnswers');
   $.ajax({
     method: "GET",
     url: url,
@@ -193,6 +193,16 @@ function getQuestion() {
     var badAnswers = response[randomNumberQuestion].badAnswers;
     question.text(randomQuestion);
     var goodAnswerNumber = Math.round(Math.random() * 3);
+
+    var score = $('.score');
+
+    var summaryQuestion = $('<div class="question"></div>');
+    var summaryAnswer = $('<div class="answers"><div>' + goodAnswer + '</div><div>' + badAnswers[0] + '</div><div>' + badAnswers[1] + '</div><div>' + badAnswers[2] + '</div></div>');
+
+    summaryQuestion.text(randomQuestion);
+    summaryPage.append(summaryQuestion);
+    summaryPage.append(summaryAnswer);
+
     for (var i = 0; i < answers.length; i++) {
       $(answers[i]).css('visibility', 'visible');
       for (var j = 0; j < badAnswers.length; j++) {
@@ -210,7 +220,6 @@ function getQuestion() {
         }
       }
     };
-
     var teacherHint = $('.teacherHint').find('.hint');
     var teacherHintNumber = Math.round(Math.random() * 2);
     teacherHint.text('Na pewno nie jest to odpowied\u017A "' + badAnswers[teacherHintNumber] + '"!');
