@@ -2,23 +2,18 @@ import getQuestion from './randomQuestion.js';
 $(()=>{
 
   let gameStartButton = $('.button');
-  let categoryButton = $('.categoryButton');
   let pageStart = $('#start');
-  let pageQuestion = $('#question');
   let categorySelect = $('#category');
-  let summaryPage = $('#summary');
-  let container = $('.container');
-  let questionNumber = $('#question').find('.middle').find('h2');
-  let counter = 1;
-  let scoreCounter = 0;
+
   gameStartButton.on('click', ()=>{
     pageStart.css('display', 'none');
     categorySelect.css('display', 'flex');
-    // pageQuestion.css('display', 'flex');
-    // container.css('display', 'flex');
-    // questionNumber.text('Pytanie ' + counter);
-    // getQuestion();
   });
+
+  let categoryButton = $('.categoryButton');
+  let pageQuestion = $('#question');
+  let container = $('.container');
+  let questionNumber = $('#question').find('.middle').find('h2');
 
   categoryButton.on('click', ()=>{
     categorySelect.css('display', 'none');
@@ -27,8 +22,6 @@ $(()=>{
     questionNumber.text('Pytanie ' + counter);
     getQuestion();
   });
-
-
 
   let teacher = $('.teacher');
   let redLineTeacher = teacher.find('.redLine');
@@ -39,6 +32,7 @@ $(()=>{
   let teacherHint = $('.teacherHint');
   let friendAnswer = $('.friendAnswer');
   let answers = $('.answer');
+
   teacher.on('click', ()=>{
     friendAnswer.css('display', 'none');
     teacherHint.css('display', 'flex');
@@ -66,10 +60,14 @@ $(()=>{
   })
 
   let score = $('.score');
+  let summaryPage = $('#summary');
+  let counter = 1;
+  let scoreCounter = 0;
   score.text(scoreCounter);
+
   answers.on('click', (event)=> {
     if ($(event.target).data('good') === true) {
-      scoreCounter++;
+      scoreCounter = scoreCounter + 1;
       score.text(scoreCounter);
     }
     friendAnswer.css('display', 'none');
@@ -77,7 +75,7 @@ $(()=>{
 
     if (counter < 5) {
       getQuestion();
-      counter++;
+      counter = counter + 1;
       questionNumber.text('Pytanie ' + counter);
     } else {
       pageQuestion.css('display', 'none');
@@ -86,9 +84,6 @@ $(()=>{
       teacher.css('display', 'none');
       half.css('display', 'none');
     }
-
   })
-
-
 
 });

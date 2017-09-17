@@ -82,23 +82,18 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 $(function () {
 
   var gameStartButton = $('.button');
-  var categoryButton = $('.categoryButton');
   var pageStart = $('#start');
-  var pageQuestion = $('#question');
   var categorySelect = $('#category');
-  var summaryPage = $('#summary');
-  var container = $('.container');
-  var questionNumber = $('#question').find('.middle').find('h2');
-  var counter = 1;
-  var scoreCounter = 0;
+
   gameStartButton.on('click', function () {
     pageStart.css('display', 'none');
     categorySelect.css('display', 'flex');
-    // pageQuestion.css('display', 'flex');
-    // container.css('display', 'flex');
-    // questionNumber.text('Pytanie ' + counter);
-    // getQuestion();
   });
+
+  var categoryButton = $('.categoryButton');
+  var pageQuestion = $('#question');
+  var container = $('.container');
+  var questionNumber = $('#question').find('.middle').find('h2');
 
   categoryButton.on('click', function () {
     categorySelect.css('display', 'none');
@@ -117,6 +112,7 @@ $(function () {
   var teacherHint = $('.teacherHint');
   var friendAnswer = $('.friendAnswer');
   var answers = $('.answer');
+
   teacher.on('click', function () {
     friendAnswer.css('display', 'none');
     teacherHint.css('display', 'flex');
@@ -144,10 +140,14 @@ $(function () {
   });
 
   var score = $('.score');
+  var summaryPage = $('#summary');
+  var counter = 1;
+  var scoreCounter = 0;
   score.text(scoreCounter);
+
   answers.on('click', function (event) {
     if ($(event.target).data('good') === true) {
-      scoreCounter++;
+      scoreCounter = scoreCounter + 1;
       score.text(scoreCounter);
     }
     friendAnswer.css('display', 'none');
@@ -155,7 +155,7 @@ $(function () {
 
     if (counter < 5) {
       (0, _randomQuestion2.default)();
-      counter++;
+      counter = counter + 1;
       questionNumber.text('Pytanie ' + counter);
     } else {
       pageQuestion.css('display', 'none');
@@ -180,7 +180,6 @@ Object.defineProperty(exports, "__esModule", {
 function getQuestion() {
   var url = "http://localhost:3000/questions";
   var question = $('.quizQuestion').find('.text');
-  var array = [];
   var answers = $('.answer');
   var summaryQuestion = $('#summary').find('.middle').find('.rightAnswers').find('.question');
   $.ajax({
@@ -193,7 +192,6 @@ function getQuestion() {
     var goodAnswer = response[randomNumberQuestion].goodAnswer;
     var badAnswers = response[randomNumberQuestion].badAnswers;
     question.text(randomQuestion);
-    summaryQuestion.text(randomQuestion);
     var goodAnswerNumber = Math.round(Math.random() * 3);
     for (var i = 0; i < answers.length; i++) {
       $(answers[i]).css('visibility', 'visible');
@@ -201,6 +199,7 @@ function getQuestion() {
         if (i === goodAnswerNumber) {
           $(answers[i]).text(goodAnswer);
           $(answers[i]).attr('data-good', 'true');
+          $(answers[i]).attr('data-50x50', 'none');
         } else if (i === j && i !== goodAnswerNumber) {
           $(answers[i]).text(badAnswers[j]);
           $(answers[i]).attr('data-good', 'false');

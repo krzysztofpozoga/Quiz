@@ -1,7 +1,6 @@
 function getQuestion(){
   let url = "http://localhost:3000/questions";
   let question = $('.quizQuestion').find('.text');
-  let array = [];
   let answers = $('.answer');
   let summaryQuestion = $('#summary').find('.middle').find('.rightAnswers').find('.question');
   $.ajax({
@@ -14,7 +13,6 @@ function getQuestion(){
       let goodAnswer = response[randomNumberQuestion].goodAnswer;
       let badAnswers = response[randomNumberQuestion].badAnswers;
       question.text(randomQuestion);
-      summaryQuestion.text(randomQuestion);
       let goodAnswerNumber = Math.round((Math.random() * 3));
       for( let i = 0; i<answers.length; i++) {
         $(answers[i]).css('visibility', 'visible');
@@ -22,6 +20,7 @@ function getQuestion(){
           if (i === goodAnswerNumber) {
             $(answers[i]).text(goodAnswer);
             $(answers[i]).attr('data-good', 'true')
+            $(answers[i]).attr('data-50x50', 'none')
           } else if (i === j && i !== goodAnswerNumber) {
             $(answers[i]).text(badAnswers[j]);
             $(answers[i]).attr('data-good', 'false');
