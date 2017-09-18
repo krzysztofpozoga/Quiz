@@ -1,4 +1,5 @@
 import getQuestion from './randomQuestion.js';
+import clean from './clean.js';
 $(()=>{
 
   let gameStartButton = $('.button');
@@ -20,6 +21,7 @@ $(()=>{
     pageQuestion.css('display', 'flex');
     container.css('display', 'flex');
     questionNumber.text('Pytanie ' + counter);
+    clean();
     getQuestion();
   });
 
@@ -63,17 +65,44 @@ $(()=>{
   let summaryPage = $('#summary');
   let counter = 1;
   let scoreCounter = 0;
-  score.text(scoreCounter);
 
+  let next = $('.next');
+
+
+  let answerArray = [];
+  let index = 0;
   answers.on('click', (event)=> {
-    // if ($(event.target).data('good') === true) {
-    //   scoreCounter = scoreCounter + 1;
-    //   score.text(scoreCounter);
-    // }
+    for(let i = 0; i < answers.length; i++) {
+      $(answers[i]).css('backgroundColor', '#545E6E')
+    };
+    $(event.target).css('backgroundColor', '#8D8276');
+    answerArray[index] = event.target.outerHTML;
+    next.css('display', 'flex');
+  })
+
+  let summaryPageRight = $('#summary').find('.middle').find('.rightAnswers');
+
+  function summary(){
+    let answersSummary = $('#summary').find('.middle').find('.rightAnswers').find('.answers');
+    for(let i = 0; i < answersSummary.length; i++) {
+      for(let j = 0; j < answerArray.length; j++) {
+        if (i === j) {
+          $(answersSummary[i]).html(answerArray[j]);
+        }
+      }
+    }
+  }
+  next.on('click', (event)=>{
+    index++;
+    for(let i = 0; i < answers.length; i++) {
+      $(answers[i]).css('backgroundColor', '#545E6E');
+    }
+    $(event.target).css('display', 'none');
     friendAnswer.css('display', 'none');
     teacherHint.css('display', 'none');
 
-    if (counter < 5) {
+    if (counter < 3) {
+      clean();
       getQuestion();
       counter = counter + 1;
       questionNumber.text('Pytanie ' + counter);
@@ -83,6 +112,7 @@ $(()=>{
       phone.css('display', 'none');
       teacher.css('display', 'none');
       half.css('display', 'none');
+      summary();
     }
   })
 
