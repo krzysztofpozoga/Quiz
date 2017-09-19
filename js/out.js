@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -73,11 +73,11 @@
 "use strict";
 
 
-var _randomQuestion = __webpack_require__(1);
+var _randomQuestion = __webpack_require__(2);
 
 var _randomQuestion2 = _interopRequireDefault(_randomQuestion);
 
-var _clean = __webpack_require__(3);
+var _clean = __webpack_require__(1);
 
 var _clean2 = _interopRequireDefault(_clean);
 
@@ -209,6 +209,29 @@ $(function () {
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+function clean() {
+  var question = $('.quizQuestion').find('.text');
+  question.text('');
+  var answers = $('.answer');
+  for (var i = 0; i < answers.length; i++) {
+    $(answers[i]).removeAttr('data-good');
+    $(answers[i]).removeAttr('data-50x50');
+    $(answers[i]).text('');
+  }
+}
+
+exports.default = clean;
+
+/***/ }),
+/* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 function getQuestion() {
   var url = "http://localhost:3000/questions";
   var question = $('.quizQuestion').find('.text');
@@ -265,34 +288,11 @@ function getQuestion() {
 exports.default = getQuestion;
 
 /***/ }),
-/* 2 */
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(0);
 
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-function clean() {
-  var question = $('.quizQuestion').find('.text');
-  question.text('');
-  var answers = $('.answer');
-  for (var i = 0; i < answers.length; i++) {
-    $(answers[i]).removeAttr('data-good');
-    $(answers[i]).removeAttr('data-50x50');
-    $(answers[i]).text('');
-  }
-}
-
-exports.default = clean;
 
 /***/ })
 /******/ ]);
