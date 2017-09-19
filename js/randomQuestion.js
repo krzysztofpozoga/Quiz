@@ -15,9 +15,6 @@ function getQuestion(){
       let badAnswers = response[randomNumberQuestion].badAnswers;
       question.text(randomQuestion);
       let goodAnswerNumber = Math.round((Math.random() * 3));
-
-      let score = $('.score');
-
       let summaryQuestion = $('<div class="question"></div>');
       let summaryAnswer = $('<div class="answers"></div>');
 

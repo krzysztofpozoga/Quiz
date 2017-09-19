@@ -11,7 +11,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
 
   }
   .middle {
@@ -21,22 +20,22 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    border: 1px solid black;
     .rightAnswers{
       .answers {
         display: flex;
         justify-content: space-around;
-        .red {
+        .wrong {
+          font-weight: bolder;
           color: red;
         }
-        .green {
+        .right {
+          font-weight: bolder;
           color: green;
         }
       }
     }
   }
   .right {
-    border: 1px solid black;
     height: 100%;
     width: 20%;
     display: flex;

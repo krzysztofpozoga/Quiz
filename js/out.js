@@ -147,7 +147,6 @@ $(function () {
   var score = $('.score');
   var summaryPage = $('#summary');
   var counter = 1;
-  var scoreCounter = 0;
 
   var next = $('.next');
 
@@ -174,6 +173,24 @@ $(function () {
       }
     }
   }
+  function addClassAndScore() {
+    var rightOrWrong = $('#summary').find('.middle').find('.rightAnswers').find('.answers').find('.answer');
+    var scoreCounter = 0;
+    var score = $('.score');
+    for (var i = 0; i < rightOrWrong.length; i++) {
+      if ($(rightOrWrong[i]).data('good') === 'right') {
+        scoreCounter++;
+        $(rightOrWrong[i]).removeClass('answer');
+        $(rightOrWrong[i]).css('backgroundColor', 'inherit');
+        $(rightOrWrong[i]).addClass('right');
+      } else {
+        $(rightOrWrong[i]).removeClass('answer');
+        $(rightOrWrong[i]).css('backgroundColor', 'inherit');
+        $(rightOrWrong[i]).addClass('wrong');
+      }
+    }
+    score.text(scoreCounter);
+  }
   next.on('click', function (event) {
     index++;
     for (var i = 0; i < answers.length; i++) {
@@ -195,6 +212,7 @@ $(function () {
       teacher.css('display', 'none');
       half.css('display', 'none');
       summary();
+      addClassAndScore();
     }
   });
 });
@@ -249,9 +267,6 @@ function getQuestion() {
     var badAnswers = response[randomNumberQuestion].badAnswers;
     question.text(randomQuestion);
     var goodAnswerNumber = Math.round(Math.random() * 3);
-
-    var score = $('.score');
-
     var summaryQuestion = $('<div class="question"></div>');
     var summaryAnswer = $('<div class="answers"></div>');
 

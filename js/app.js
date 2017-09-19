@@ -64,7 +64,7 @@ $(()=>{
   let score = $('.score');
   let summaryPage = $('#summary');
   let counter = 1;
-  let scoreCounter = 0;
+
 
   let next = $('.next');
 
@@ -92,6 +92,24 @@ $(()=>{
       }
     }
   }
+  function addClassAndScore() {
+    let rightOrWrong = $('#summary').find('.middle').find('.rightAnswers').find('.answers').find('.answer');
+    let scoreCounter = 0;
+    let score = $('.score');
+    for(let i = 0; i < rightOrWrong.length; i++) {
+      if ($(rightOrWrong[i]).data('good') === 'right') {
+        scoreCounter++;
+        $(rightOrWrong[i]).removeClass('answer');
+        $(rightOrWrong[i]).css('backgroundColor', 'inherit');
+        $(rightOrWrong[i]).addClass('right');
+      } else {
+        $(rightOrWrong[i]).removeClass('answer');
+        $(rightOrWrong[i]).css('backgroundColor', 'inherit');
+        $(rightOrWrong[i]).addClass('wrong');
+      }
+    }
+    score.text(scoreCounter);
+  }
   next.on('click', (event)=>{
     index++;
     for(let i = 0; i < answers.length; i++) {
@@ -113,6 +131,7 @@ $(()=>{
       teacher.css('display', 'none');
       half.css('display', 'none');
       summary();
+      addClassAndScore();
     }
   })
 
