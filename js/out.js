@@ -73,10 +73,6 @@
 "use strict";
 
 
-var _randomQuestion = __webpack_require__(2);
-
-var _randomQuestion2 = _interopRequireDefault(_randomQuestion);
-
 var _clean = __webpack_require__(1);
 
 var _clean2 = _interopRequireDefault(_clean);
@@ -84,6 +80,64 @@ var _clean2 = _interopRequireDefault(_clean);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 $(function () {
+
+  var questionArray = [];
+
+  function getQuestion() {
+    var url = "http://localhost:3000/questions";
+    var question = $('.quizQuestion').find('.text');
+
+    var summaryPage = $('#summary').find('.middle').find('.rightAnswers');
+    $.ajax({
+      method: "GET",
+      url: url,
+      dataType: "json"
+    }).done(function (response) {
+      var answers = $('.answer');
+      var randomNumberQuestion = Math.round(Math.random() * (response.length - 1));
+      var idQuestion = response[randomNumberQuestion].id;
+      if (questionArray.indexOf(idQuestion) === -1) {
+        questionArray.push(idQuestion);
+        var randomQuestion = response[randomNumberQuestion].question;
+        var goodAnswer = response[randomNumberQuestion].goodAnswer;
+        var badAnswers = response[randomNumberQuestion].badAnswers;
+        question.text(randomQuestion);
+        var goodAnswerNumber = Math.round(Math.random() * 3);
+        var summaryQuestion = $('<div class="question"></div>');
+        var summaryAnswer = $('<div class="answers"></div>');
+
+        summaryQuestion.text(randomQuestion);
+        summaryPage.append(summaryQuestion);
+        summaryPage.append(summaryAnswer);
+
+        for (var i = 0; i < answers.length; i++) {
+          $(answers[i]).css('visibility', 'visible');
+          for (var j = 0; j < badAnswers.length; j++) {
+            if (i === goodAnswerNumber) {
+              $(answers[i]).text(goodAnswer);
+              $(answers[i]).attr('data-good', 'right');
+              $(answers[i]).attr('data-50x50', 'none');
+            } else if (i === j && i !== goodAnswerNumber) {
+              $(answers[i]).text(badAnswers[j]);
+              $(answers[i]).attr('data-good', 'wrong');
+              $(answers[i]).attr('data-50x50', 'half');
+            } else if (i > j) {
+              $(answers[i]).text(badAnswers[goodAnswerNumber]);
+              $(answers[i]).attr('data-good', 'wrong');
+            }
+          }
+        };
+        var _teacherHint = $('.teacherHint').find('.hint');
+        var teacherHintNumber = Math.round(Math.random() * 2);
+        _teacherHint.text('Na pewno nie jest to odpowied\u017A "' + badAnswers[teacherHintNumber] + '"!');
+
+        var _friendAnswer = $('.friendAnswer').find('.hint');
+        _friendAnswer.text('Jestem pewien, \u017Ce jest to odpowied\u017A "' + goodAnswer + '"!');
+      } else {
+        getQuestion();
+      }
+    });
+  }
 
   var gameStartButton = $('.button');
   var pageStart = $('#start');
@@ -105,7 +159,7 @@ $(function () {
     container.css('display', 'flex');
     questionNumber.text('Pytanie ' + counter);
     (0, _clean2.default)();
-    (0, _randomQuestion2.default)();
+    getQuestion();
   });
 
   var teacher = $('.teacher');
@@ -198,9 +252,9 @@ $(function () {
     friendAnswer.css('display', 'none');
     teacherHint.css('display', 'none');
 
-    if (counter < 5) {
+    if (counter < 20) {
       (0, _clean2.default)();
-      (0, _randomQuestion2.default)();
+      getQuestion();
       counter = counter + 1;
       questionNumber.text('Pytanie ' + counter);
     } else {
@@ -213,7 +267,7 @@ $(function () {
       addClassAndScore();
     }
   });
-});
+}); // import getQuestion from './randomQuestion.js';
 
 /***/ }),
 /* 1 */
@@ -239,68 +293,7 @@ function clean() {
 exports.default = clean;
 
 /***/ }),
-/* 2 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-function getQuestion() {
-  var url = "http://localhost:3000/questions";
-  var question = $('.quizQuestion').find('.text');
-
-  var summaryPage = $('#summary').find('.middle').find('.rightAnswers');
-  $.ajax({
-    method: "GET",
-    url: url,
-    dataType: "json"
-  }).done(function (response) {
-    var answers = $('.answer');
-    var randomNumberQuestion = Math.round(Math.random() * (response.length - 1));
-    var randomQuestion = response[randomNumberQuestion].question;
-    var goodAnswer = response[randomNumberQuestion].goodAnswer;
-    var badAnswers = response[randomNumberQuestion].badAnswers;
-    question.text(randomQuestion);
-    var goodAnswerNumber = Math.round(Math.random() * 3);
-    var summaryQuestion = $('<div class="question"></div>');
-    var summaryAnswer = $('<div class="answers"></div>');
-
-    summaryQuestion.text(randomQuestion);
-    summaryPage.append(summaryQuestion);
-    summaryPage.append(summaryAnswer);
-
-    for (var i = 0; i < answers.length; i++) {
-      $(answers[i]).css('visibility', 'visible');
-      for (var j = 0; j < badAnswers.length; j++) {
-        if (i === goodAnswerNumber) {
-          $(answers[i]).text(goodAnswer);
-          $(answers[i]).attr('data-good', 'right');
-          $(answers[i]).attr('data-50x50', 'none');
-        } else if (i === j && i !== goodAnswerNumber) {
-          $(answers[i]).text(badAnswers[j]);
-          $(answers[i]).attr('data-good', 'wrong');
-          $(answers[i]).attr('data-50x50', 'half');
-        } else if (i > j) {
-          $(answers[i]).text(badAnswers[goodAnswerNumber]);
-          $(answers[i]).attr('data-good', 'wrong');
-        }
-      }
-    };
-    var teacherHint = $('.teacherHint').find('.hint');
-    var teacherHintNumber = Math.round(Math.random() * 2);
-    teacherHint.text('Na pewno nie jest to odpowied\u017A "' + badAnswers[teacherHintNumber] + '"!');
-
-    var friendAnswer = $('.friendAnswer').find('.hint');
-    friendAnswer.text('Jestem pewien, \u017Ce jest to odpowied\u017A "' + goodAnswer + '"!');
-  });
-}
-
-exports.default = getQuestion;
-
-/***/ }),
+/* 2 */,
 /* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
