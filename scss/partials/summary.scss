@@ -15,15 +15,19 @@
   }
   .middle {
     height: 100%;
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     .rightAnswers{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
       .answers {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         .wrong {
           font-weight: bolder;
           color: red;
@@ -34,13 +38,5 @@
         }
       }
     }
-  }
-  .right {
-    height: 100%;
-    width: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
   }
 }

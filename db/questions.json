@@ -23,6 +23,42 @@
 			"question":	"Z jakiego kraju przybyła do Polski Dobrawa?",
 			"badAnswers":	["z Niemiec", "z Węgier", "z Rusi"],
 			"goodAnswer": "z Czech"
+		},
+		{
+			"id":	5	,
+			"question":	"W którym roku Mieszko przyjął chrzest?",
+			"badAnswers":	["w 969 roku", "w 996 roku", "w 999 roku" ],
+			"goodAnswer": "w 966 roku"
+		},
+		{
+			"id":	6	,
+			"question":	"Jak miał na imię żydowski podróżnik, który odwiedził i opisał państwo Mieszka?",
+			"badAnswers":	["Widukind", "Al", "Thietmar" ],
+			"goodAnswer": "Ibrahim"
+		},
+		{
+			"id":	7	,
+			"question":	"Czym było palatium?",
+			"badAnswers":	["ozdobnym naczyniem", "zamkiem", "grodem" ],
+			"goodAnswer": "wczesnopiastowskim pałacem"
+		},
+		{
+			"id":	8	,
+			"question":	"Kto był założycielem dynastii Piastów?",
+			"badAnswers":	["Lech", "Popiel", "Krak" ],
+			"goodAnswer": "Piast"
+		},
+		{
+			"id":	9	,
+			"question":	"Jak miała na imię żona Piasta?",
+			"badAnswers":	["Dobromiła", "Dobrawa", "Ludomiła" ],
+			"goodAnswer": "Rzepicha"
+		},
+		{
+			"id":	10	,
+			"question":	"Jak nazywano słowiański obrzęd obcinania chłopcu włosów?",
+			"badAnswers":	["ścinanie", "ostrzyżynki", "odcinanie" ],
+			"goodAnswer": "postrzyżyny"
 		}
 	]
 }

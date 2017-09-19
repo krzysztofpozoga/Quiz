@@ -61,14 +61,9 @@ $(()=>{
     };
   })
 
-  let score = $('.score');
   let summaryPage = $('#summary');
   let counter = 1;
-
-
   let next = $('.next');
-
-
   let answerArray = [];
   let index = 0;
   answers.on('click', (event)=> {
@@ -80,11 +75,12 @@ $(()=>{
     next.css('display', 'flex');
   })
 
-  let summaryPageRight = $('#summary').find('.middle').find('.rightAnswers');
-
   function summary(){
     let answersSummary = $('#summary').find('.middle').find('.rightAnswers').find('.answers');
     for(let i = 0; i < answersSummary.length; i++) {
+      let questionId = $('<span></span>');
+      questionId.text(i+1+'. ');
+      $(answersSummary[i]).prev().prepend(questionId);
       for(let j = 0; j < answerArray.length; j++) {
         if (i === j) {
           $(answersSummary[i]).html(answerArray[j]);
@@ -119,7 +115,7 @@ $(()=>{
     friendAnswer.css('display', 'none');
     teacherHint.css('display', 'none');
 
-    if (counter < 3) {
+    if (counter < 5) {
       clean();
       getQuestion();
       counter = counter + 1;

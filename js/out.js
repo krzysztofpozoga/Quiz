@@ -144,12 +144,9 @@ $(function () {
     };
   });
 
-  var score = $('.score');
   var summaryPage = $('#summary');
   var counter = 1;
-
   var next = $('.next');
-
   var answerArray = [];
   var index = 0;
   answers.on('click', function (event) {
@@ -161,11 +158,12 @@ $(function () {
     next.css('display', 'flex');
   });
 
-  var summaryPageRight = $('#summary').find('.middle').find('.rightAnswers');
-
   function summary() {
     var answersSummary = $('#summary').find('.middle').find('.rightAnswers').find('.answers');
     for (var i = 0; i < answersSummary.length; i++) {
+      var questionId = $('<span></span>');
+      questionId.text(i + 1 + '. ');
+      $(answersSummary[i]).prev().prepend(questionId);
       for (var j = 0; j < answerArray.length; j++) {
         if (i === j) {
           $(answersSummary[i]).html(answerArray[j]);
@@ -200,7 +198,7 @@ $(function () {
     friendAnswer.css('display', 'none');
     teacherHint.css('display', 'none');
 
-    if (counter < 3) {
+    if (counter < 5) {
       (0, _clean2.default)();
       (0, _randomQuestion2.default)();
       counter = counter + 1;
