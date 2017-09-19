@@ -63,7 +63,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -243,6 +243,9 @@ $(function () {
     }
     score.text(scoreCounter);
   }
+
+  var footer = $('footer');
+  var playAgain = $('.playAgain');
   next.on('click', function (event) {
     index++;
     for (var i = 0; i < answers.length; i++) {
@@ -260,6 +263,8 @@ $(function () {
     } else {
       pageQuestion.css('display', 'none');
       summaryPage.css('display', 'flex');
+      footer.css('justifyContent', 'center');
+      playAgain.css('display', 'flex');
       phone.css('display', 'none');
       teacher.css('display', 'none');
       half.css('display', 'none');
@@ -293,8 +298,7 @@ function clean() {
 exports.default = clean;
 
 /***/ }),
-/* 2 */,
-/* 3 */
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(0);

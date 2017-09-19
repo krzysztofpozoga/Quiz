@@ -32,7 +32,7 @@
 		},
 		{
 			"id":	6	,
-			"question":	"Jak miał na imię żydowski podróżnik, który odwiedził i opisał państwo Mieszka?",
+			"question":	"Jak miał na imię żydowski podróżnik, który opisał państwo Mieszka?",
 			"badAnswers":	["Widukind", "Al", "Thietmar" ],
 			"goodAnswer": "Ibrahim"
 		},

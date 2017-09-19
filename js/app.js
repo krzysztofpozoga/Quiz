@@ -167,6 +167,9 @@ $(()=>{
     }
     score.text(scoreCounter);
   }
+
+  let footer = $('footer');
+  let playAgain = $('.playAgain');
   next.on('click', (event)=>{
     index++;
     for(let i = 0; i < answers.length; i++) {
@@ -184,6 +187,8 @@ $(()=>{
     } else {
       pageQuestion.css('display', 'none');
       summaryPage.css('display', 'flex');
+      footer.css('justifyContent', 'center');
+      playAgain.css('display', 'flex');
       phone.css('display', 'none');
       teacher.css('display', 'none');
       half.css('display', 'none');
