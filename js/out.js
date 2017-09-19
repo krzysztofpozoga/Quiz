@@ -189,7 +189,7 @@ $(function () {
     redLineHalf.css('display', 'block');
     var randomHalf = Math.round(Math.random() * 1 + 1);
     for (var i = 0; i < answers.length; i++) {
-      if ($(answers[3]).data('good') === true) {
+      if ($(answers[3]).data('good') === 'right') {
         $(answers[0]).css('visibility', 'hidden');
         $(answers[randomHalf]).css('visibility', 'hidden');
       } else if ($(answers[i]).data('50x50') === 'half') {
@@ -252,7 +252,7 @@ $(function () {
     friendAnswer.css('display', 'none');
     teacherHint.css('display', 'none');
 
-    if (counter < 20) {
+    if (counter < 10) {
       (0, _clean2.default)();
       getQuestion();
       counter = counter + 1;

@@ -56,7 +56,7 @@ $(()=>{
           friendAnswer.text(`Jestem pewien, że jest to odpowiedź "${goodAnswer}"!`);
         } else {
           getQuestion();
-        }    
+        }
     });
 
   }
@@ -113,7 +113,7 @@ $(()=>{
     redLineHalf.css('display', 'block');
     let randomHalf = Math.round((Math.random() * 1)+1);
     for(let i = 0; i < answers.length; i++) {
-      if ($(answers[3]).data('good') === true) {
+      if ($(answers[3]).data('good') === 'right') {
         $(answers[0]).css('visibility', 'hidden');
         $(answers[randomHalf]).css('visibility', 'hidden');
       } else if ($(answers[i]).data('50x50') === 'half'){
@@ -176,7 +176,7 @@ $(()=>{
     friendAnswer.css('display', 'none');
     teacherHint.css('display', 'none');
 
-    if (counter < 20) {
+    if (counter < 10) {
       clean();
       getQuestion();
       counter = counter + 1;
