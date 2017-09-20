@@ -1,4 +1,3 @@
-// import getQuestion from './randomQuestion.js';
 import clean from './clean.js';
 $(()=>{
 
@@ -37,11 +36,11 @@ $(()=>{
               if (i === goodAnswerNumber) {
                 $(answers[i]).text(goodAnswer);
                 $(answers[i]).attr('data-good', 'right')
-                $(answers[i]).attr('data-50x50', 'none')
+
               } else if (i === j && i !== goodAnswerNumber) {
                 $(answers[i]).text(badAnswers[j]);
                 $(answers[i]).attr('data-good', 'wrong');
-                $(answers[i]).attr('data-50x50', 'half');
+
               } else if (i > j) {
                 $(answers[i]).text(badAnswers[goodAnswerNumber]);
                 $(answers[i]).attr('data-good', 'wrong');
@@ -109,15 +108,25 @@ $(()=>{
     redLinePhone.css('display', 'block');
   });
   half.on('click', ()=>{
+    let questionAnswers = $('.answer');
     half.off("click");
     redLineHalf.css('display', 'block');
-    let randomHalf = Math.round((Math.random() * 1)+1);
-    for(let i = 0; i < answers.length; i++) {
-      if ($(answers[3]).data('good') === 'right') {
-        $(answers[0]).css('visibility', 'hidden');
-        $(answers[randomHalf]).css('visibility', 'hidden');
-      } else if ($(answers[i]).data('50x50') === 'half'){
-        $(answers[i]).css('visibility', 'hidden');
+    for(let i = 0; i < questionAnswers.length; i++) {
+      console.log(questionAnswers[i]);
+      if ($(questionAnswers[3]).data('good') === 'right') {
+        $(questionAnswers[1]).css('visibility', 'hidden');
+        $(questionAnswers[2]).css('visibility', 'hidden');
+      } else if ($(questionAnswers[2]).data('good') === 'right'){
+        $(questionAnswers[0]).css('visibility', 'hidden');
+        $(questionAnswers[3]).css('visibility', 'hidden');
+      }
+      else if ($(questionAnswers[1]).data('good') === 'right'){
+        $(questionAnswers[0]).css('visibility', 'hidden');
+        $(questionAnswers[2]).css('visibility', 'hidden');
+      }
+      else if ($(questionAnswers[0]).data('good') === 'right'){
+        $(questionAnswers[1]).css('visibility', 'hidden');
+        $(questionAnswers[3]).css('visibility', 'hidden');
       }
     };
   })
@@ -149,9 +158,9 @@ $(()=>{
       }
     }
   }
+  let scoreCounter = 0;
   function addClassAndScore() {
     let rightOrWrong = $('#summary').find('.middle').find('.rightAnswers').find('.answers').find('.answer');
-    let scoreCounter = 0;
     let score = $('.score');
     for(let i = 0; i < rightOrWrong.length; i++) {
       if ($(rightOrWrong[i]).data('good') === 'right') {
@@ -179,7 +188,7 @@ $(()=>{
     friendAnswer.css('display', 'none');
     teacherHint.css('display', 'none');
 
-    if (counter < 1) {
+    if (counter < 3) {
       clean();
       getQuestion();
       counter = counter + 1;
@@ -189,16 +198,74 @@ $(()=>{
       summaryPage.css('display', 'flex');
       footer.css('justifyContent', 'center');
       playAgain.css('display', 'flex');
-      phone.css('display', 'none');
-      teacher.css('display', 'none');
-      half.css('display', 'none');
+      container.css('display', 'none');
       summary();
       addClassAndScore();
     }
   })
 
-  playAgain.on('click', ()=>{
-    console.log('Działa!');
+  playAgain.on('click', (event)=>{
+    let middle = $('#question').find('.middle').find('.row');
+    for(let i = 1; i< middle.length; i++){
+      $(middle[i]).html("<div class='answer'></div><div class='answer'></div>")
+    }
+    questionArray = [];
+    answerArray = [];
+    index = 0;
+    scoreCounter = 0;
+    counter = 1;
+    $(event.target).css('display', 'none');
+    footer.css('justifyContent', 'flex-end');
+    summaryPage.css('display', 'none');
+    categorySelect.css('display', 'flex');
+    answers = $('.answer');
+    answers.on('click', (event)=> {
+      for(let i = 0; i < answers.length; i++) {
+        $(answers[i]).css('backgroundColor', '#545E6E')
+      };
+      $(event.target).css('backgroundColor', '#8D8276');
+      answerArray[index] = event.target.outerHTML;
+      next.css('display', 'flex');
+    })
+    teacher.on('click', ()=>{
+      friendAnswer.css('display', 'none');
+      teacherHint.css('display', 'flex');
+      teacher.off("click");
+      redLineTeacher.css('display', 'block');
+    });
+    phone.on('click', ()=>{
+      teacherHint.css('display', 'none');
+      friendAnswer.css('display', 'flex');
+      phone.off("click");
+      redLinePhone.css('display', 'block');
+    });
+    half.on('click', ()=>{
+      let questionAnswers = $('.answer');
+      half.off("click");
+      redLineHalf.css('display', 'block');
+      for(let i = 0; i < questionAnswers.length; i++) {
+        if ($(questionAnswers[3]).data('good') === 'right') {
+          $(questionAnswers[1]).css('visibility', 'hidden');
+          $(questionAnswers[2]).css('visibility', 'hidden');
+        } else if ($(questionAnswers[2]).data('good') === 'right'){
+          $(questionAnswers[0]).css('visibility', 'hidden');
+          $(questionAnswers[3]).css('visibility', 'hidden');
+        }
+        else if ($(questionAnswers[1]).data('good') === 'right'){
+          $(questionAnswers[0]).css('visibility', 'hidden');
+          $(questionAnswers[2]).css('visibility', 'hidden');
+        }
+        else if ($(questionAnswers[0]).data('good') === 'right'){
+          $(questionAnswers[1]).css('visibility', 'hidden');
+          $(questionAnswers[3]).css('visibility', 'hidden');
+        }
+      };
+    })
+    redLineHalf.css('display', 'none');
+    redLineTeacher.css('display', 'none');
+    redLinePhone.css('display', 'none');
+    let rightAnswers = $('#summary').find('.middle').find('.rightAnswers');
+    rightAnswers.html('');
   })
 
 });

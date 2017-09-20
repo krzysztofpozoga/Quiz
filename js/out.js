@@ -116,11 +116,9 @@ $(function () {
             if (i === goodAnswerNumber) {
               $(answers[i]).text(goodAnswer);
               $(answers[i]).attr('data-good', 'right');
-              $(answers[i]).attr('data-50x50', 'none');
             } else if (i === j && i !== goodAnswerNumber) {
               $(answers[i]).text(badAnswers[j]);
               $(answers[i]).attr('data-good', 'wrong');
-              $(answers[i]).attr('data-50x50', 'half');
             } else if (i > j) {
               $(answers[i]).text(badAnswers[goodAnswerNumber]);
               $(answers[i]).attr('data-good', 'wrong');
@@ -185,15 +183,23 @@ $(function () {
     redLinePhone.css('display', 'block');
   });
   half.on('click', function () {
+    var questionAnswers = $('.answer');
     half.off("click");
     redLineHalf.css('display', 'block');
-    var randomHalf = Math.round(Math.random() * 1 + 1);
-    for (var i = 0; i < answers.length; i++) {
-      if ($(answers[3]).data('good') === 'right') {
-        $(answers[0]).css('visibility', 'hidden');
-        $(answers[randomHalf]).css('visibility', 'hidden');
-      } else if ($(answers[i]).data('50x50') === 'half') {
-        $(answers[i]).css('visibility', 'hidden');
+    for (var i = 0; i < questionAnswers.length; i++) {
+      console.log(questionAnswers[i]);
+      if ($(questionAnswers[3]).data('good') === 'right') {
+        $(questionAnswers[1]).css('visibility', 'hidden');
+        $(questionAnswers[2]).css('visibility', 'hidden');
+      } else if ($(questionAnswers[2]).data('good') === 'right') {
+        $(questionAnswers[0]).css('visibility', 'hidden');
+        $(questionAnswers[3]).css('visibility', 'hidden');
+      } else if ($(questionAnswers[1]).data('good') === 'right') {
+        $(questionAnswers[0]).css('visibility', 'hidden');
+        $(questionAnswers[2]).css('visibility', 'hidden');
+      } else if ($(questionAnswers[0]).data('good') === 'right') {
+        $(questionAnswers[1]).css('visibility', 'hidden');
+        $(questionAnswers[3]).css('visibility', 'hidden');
       }
     };
   });
@@ -225,9 +231,9 @@ $(function () {
       }
     }
   }
+  var scoreCounter = 0;
   function addClassAndScore() {
     var rightOrWrong = $('#summary').find('.middle').find('.rightAnswers').find('.answers').find('.answer');
-    var scoreCounter = 0;
     var score = $('.score');
     for (var i = 0; i < rightOrWrong.length; i++) {
       if ($(rightOrWrong[i]).data('good') === 'right') {
@@ -255,7 +261,7 @@ $(function () {
     friendAnswer.css('display', 'none');
     teacherHint.css('display', 'none');
 
-    if (counter < 1) {
+    if (counter < 3) {
       (0, _clean2.default)();
       getQuestion();
       counter = counter + 1;
@@ -265,18 +271,74 @@ $(function () {
       summaryPage.css('display', 'flex');
       footer.css('justifyContent', 'center');
       playAgain.css('display', 'flex');
-      phone.css('display', 'none');
-      teacher.css('display', 'none');
-      half.css('display', 'none');
+      container.css('display', 'none');
       summary();
       addClassAndScore();
     }
   });
 
-  playAgain.on('click', function () {
-    console.log('Działa!');
+  playAgain.on('click', function (event) {
+    var middle = $('#question').find('.middle').find('.row');
+    for (var i = 1; i < middle.length; i++) {
+      $(middle[i]).html("<div class='answer'></div><div class='answer'></div>");
+    }
+    questionArray = [];
+    answerArray = [];
+    index = 0;
+    scoreCounter = 0;
+    counter = 1;
+    $(event.target).css('display', 'none');
+    footer.css('justifyContent', 'flex-end');
+    summaryPage.css('display', 'none');
+    categorySelect.css('display', 'flex');
+    answers = $('.answer');
+    answers.on('click', function (event) {
+      for (var _i = 0; _i < answers.length; _i++) {
+        $(answers[_i]).css('backgroundColor', '#545E6E');
+      };
+      $(event.target).css('backgroundColor', '#8D8276');
+      answerArray[index] = event.target.outerHTML;
+      next.css('display', 'flex');
+    });
+    teacher.on('click', function () {
+      friendAnswer.css('display', 'none');
+      teacherHint.css('display', 'flex');
+      teacher.off("click");
+      redLineTeacher.css('display', 'block');
+    });
+    phone.on('click', function () {
+      teacherHint.css('display', 'none');
+      friendAnswer.css('display', 'flex');
+      phone.off("click");
+      redLinePhone.css('display', 'block');
+    });
+    half.on('click', function () {
+      var questionAnswers = $('.answer');
+      half.off("click");
+      redLineHalf.css('display', 'block');
+      for (var _i2 = 0; _i2 < questionAnswers.length; _i2++) {
+        if ($(questionAnswers[3]).data('good') === 'right') {
+          $(questionAnswers[1]).css('visibility', 'hidden');
+          $(questionAnswers[2]).css('visibility', 'hidden');
+        } else if ($(questionAnswers[2]).data('good') === 'right') {
+          $(questionAnswers[0]).css('visibility', 'hidden');
+          $(questionAnswers[3]).css('visibility', 'hidden');
+        } else if ($(questionAnswers[1]).data('good') === 'right') {
+          $(questionAnswers[0]).css('visibility', 'hidden');
+          $(questionAnswers[2]).css('visibility', 'hidden');
+        } else if ($(questionAnswers[0]).data('good') === 'right') {
+          $(questionAnswers[1]).css('visibility', 'hidden');
+          $(questionAnswers[3]).css('visibility', 'hidden');
+        }
+      };
+    });
+    redLineHalf.css('display', 'none');
+    redLineTeacher.css('display', 'none');
+    redLinePhone.css('display', 'none');
+    var rightAnswers = $('#summary').find('.middle').find('.rightAnswers');
+    rightAnswers.html('');
   });
-}); // import getQuestion from './randomQuestion.js';
+});
 
 /***/ }),
 /* 1 */
@@ -294,7 +356,7 @@ function clean() {
   var answers = $('.answer');
   for (var i = 0; i < answers.length; i++) {
     $(answers[i]).removeAttr('data-good');
-    $(answers[i]).removeAttr('data-50x50');
+
     $(answers[i]).text('');
   }
 }
