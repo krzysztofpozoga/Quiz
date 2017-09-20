@@ -162,10 +162,13 @@ $(function () {
 
   var teacher = $('.teacher');
   var redLineTeacher = teacher.find('.redLine');
+  var tooltipTeacher = teacher.find('.tooltip');
   var phone = $('.phone');
   var redLinePhone = phone.find('.redLine');
+  var tooltipPhone = phone.find('.tooltip');
   var half = $('.half');
   var redLineHalf = half.find('.redLine');
+  var tooltipHalf = half.find('.tooltip');
   var teacherHint = $('.teacherHint');
   var friendAnswer = $('.friendAnswer');
   var answers = $('.answer');
@@ -174,17 +177,20 @@ $(function () {
     friendAnswer.css('display', 'none');
     teacherHint.css('display', 'flex');
     teacher.off("click");
+    tooltipTeacher.css('textDecoration', 'line-through');
     redLineTeacher.css('display', 'block');
   });
   phone.on('click', function () {
     teacherHint.css('display', 'none');
     friendAnswer.css('display', 'flex');
     phone.off("click");
+    tooltipPhone.css('textDecoration', 'line-through');
     redLinePhone.css('display', 'block');
   });
   half.on('click', function () {
     var questionAnswers = $('.answer');
     half.off("click");
+    tooltipHalf.css('textDecoration', 'line-through');
     redLineHalf.css('display', 'block');
     for (var i = 0; i < questionAnswers.length; i++) {
       console.log(questionAnswers[i]);

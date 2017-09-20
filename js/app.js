@@ -87,10 +87,13 @@ $(()=>{
 
   let teacher = $('.teacher');
   let redLineTeacher = teacher.find('.redLine');
+  let tooltipTeacher = teacher.find('.tooltip');
   let phone = $('.phone');
   let redLinePhone = phone.find('.redLine');
+  let tooltipPhone = phone.find('.tooltip');
   let half = $('.half');
   let redLineHalf = half.find('.redLine');
+  let tooltipHalf = half.find('.tooltip');
   let teacherHint = $('.teacherHint');
   let friendAnswer = $('.friendAnswer');
   let answers = $('.answer');
@@ -99,17 +102,20 @@ $(()=>{
     friendAnswer.css('display', 'none');
     teacherHint.css('display', 'flex');
     teacher.off("click");
+    tooltipTeacher.css('textDecoration', 'line-through');
     redLineTeacher.css('display', 'block');
   });
   phone.on('click', ()=>{
     teacherHint.css('display', 'none');
     friendAnswer.css('display', 'flex');
     phone.off("click");
+    tooltipPhone.css('textDecoration', 'line-through');
     redLinePhone.css('display', 'block');
   });
   half.on('click', ()=>{
     let questionAnswers = $('.answer');
     half.off("click");
+    tooltipHalf.css('textDecoration', 'line-through');
     redLineHalf.css('display', 'block');
     for(let i = 0; i < questionAnswers.length; i++) {
       console.log(questionAnswers[i]);
