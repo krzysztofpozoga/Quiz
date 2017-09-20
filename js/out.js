@@ -255,7 +255,7 @@ $(function () {
     friendAnswer.css('display', 'none');
     teacherHint.css('display', 'none');
 
-    if (counter < 10) {
+    if (counter < 1) {
       (0, _clean2.default)();
       getQuestion();
       counter = counter + 1;
@@ -271,6 +271,10 @@ $(function () {
       summary();
       addClassAndScore();
     }
+  });
+
+  playAgain.on('click', function () {
+    console.log('Działa!');
   });
 }); // import getQuestion from './randomQuestion.js';
 

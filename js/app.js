@@ -179,7 +179,7 @@ $(()=>{
     friendAnswer.css('display', 'none');
     teacherHint.css('display', 'none');
 
-    if (counter < 10) {
+    if (counter < 1) {
       clean();
       getQuestion();
       counter = counter + 1;
@@ -195,6 +195,10 @@ $(()=>{
       summary();
       addClassAndScore();
     }
+  })
+
+  playAgain.on('click', ()=>{
+    console.log('Działa!');
   })
 
 });
