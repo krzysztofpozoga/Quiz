@@ -29,6 +29,7 @@ body {
       display: none;
       justify-content: flex-end;
       align-items: center;
+
       .icon {
         height: 75px;
         width: 75px;
@@ -51,23 +52,90 @@ body {
         }
         &:hover {
           transform: scale(1.2);
+          .tooltip, .arrow {
+            display: flex;
+          }
         }
       }
       .teacher {
         background-image: url(../images/teacher.png);
-        text-decoration: line-through;
+        position: relative;
+        .arrow {
+          display: none;
+          top: 80px;
+          right: 28px;
+          position: absolute;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 20px solid #8D8276;
+        }
+        .tooltip {
+          top: 95px;
+          right: -145px;
+          position: absolute;
+          border-radius: 15px;
+          height: 5vh;
+          width: 15vw;
+          border: 3px solid #8D8276;
+          color: #545E6E;
+          background-color: white;
+          display: none;
+          align-items: center;
+          justify-content: center;
+        }
       }
       .phone {
         background-image: url(../images/phone.png);
+        .arrow {
+          display: none;
+          top: 80px;
+          right: 28px;
+          position: absolute;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 20px solid #8D8276;
+        }
+        .tooltip {
+          top: 95px;
+          right: -70px;
+          position: absolute;
+          border-radius: 15px;
+          height: 5vh;
+          width: 15vw;
+          border: 3px solid #8D8276;
+          color: #545E6E;
+          background-color: white;
+          display: none;
+          align-items: center;
+          justify-content: center;
+        }
       }
       .half {
         background-image: url(../images/50-50.png);
         background-size: contain;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 2em;
-        font-weight: 900;
+        .arrow {
+          display: none;
+          top: 80px;
+          right: 28px;
+          position: absolute;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          border-bottom: 20px solid #8D8276;
+        }
+        .tooltip {
+          top: 95px;
+          right: 0px;
+          position: absolute;
+          border-radius: 15px;
+          height: 5vh;
+          width: 10vw;
+          border: 3px solid #8D8276;
+          color: #545E6E;
+          background-color: white;
+          display: none;
+          align-items: center;
+          justify-content: center;
+        }
       }
     }
 

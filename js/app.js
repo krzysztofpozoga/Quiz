@@ -188,7 +188,7 @@ $(()=>{
     friendAnswer.css('display', 'none');
     teacherHint.css('display', 'none');
 
-    if (counter < 3) {
+    if (counter < 20) {
       clean();
       getQuestion();
       counter = counter + 1;
