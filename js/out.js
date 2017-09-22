@@ -14693,7 +14693,6 @@ $(function () {
   var gameStartButton = $('.button');
   var pageStart = $('#start');
   var categorySelect = $('#category');
-
   gameStartButton.on('click', function () {
     pageStart.css('display', 'none');
     categorySelect.css('display', 'flex');
@@ -14707,10 +14706,8 @@ $(function () {
     storageBucket: "",
     messagingSenderId: "843638065814"
   };
-
   var fb = Firebase.initializeApp(config);
   var db = fb.database().ref();
-
   db.on('value', function (snap) {
     var categoryButton = $('.categoryButton');
     var choseCategory = '';
@@ -14731,11 +14728,9 @@ $(function () {
         var goodAnswerNumber = Math.round(Math.random() * 3);
         var summaryQuestion = $('<div class="question"></div>');
         var summaryAnswer = $('<div class="answers"></div>');
-
         summaryQuestion.text(randomQuestion);
         summaryPage.append(summaryQuestion);
         summaryPage.append(summaryAnswer);
-
         for (var i = 0; i < answers.length; i++) {
           $(answers[i]).css('visibility', 'visible');
           for (var j = 0; j < badAnswers.length; j++) {
@@ -14760,12 +14755,11 @@ $(function () {
       } else {
         getQuestion();
       }
-    }
+    };
 
     var pageQuestion = $('#question');
     var container = $('.container');
     var questionNumber = $('#question').find('.middle').find('h2');
-
     categoryButton.on('click', function (event) {
       choseCategory = $(event.target).data('category');
       categorySelect.css('display', 'none');
@@ -14788,7 +14782,6 @@ $(function () {
     var teacherHint = $('.teacherHint');
     var friendAnswer = $('.friendAnswer');
     var answers = $('.answer');
-
     teacher.on('click', function () {
       friendAnswer.css('display', 'none');
       teacherHint.css('display', 'flex');
@@ -14822,7 +14815,7 @@ $(function () {
           $(questionAnswers[1]).css('visibility', 'hidden');
           $(questionAnswers[3]).css('visibility', 'hidden');
         }
-      };
+      }
     });
 
     var summaryPage = $('#summary');
@@ -14851,7 +14844,8 @@ $(function () {
           }
         }
       }
-    }
+    };
+
     var scoreCounter = 0;
     function addClassAndScore() {
       var rightOrWrong = $('#summary').find('.middle').find('.rightAnswers').find('.answers').find('.answer');
@@ -14869,7 +14863,7 @@ $(function () {
         }
       }
       score.text(scoreCounter);
-    }
+    };
 
     var footer = $('footer');
     var playAgain = $('.playAgain');
@@ -14881,7 +14875,6 @@ $(function () {
       $(event.target).css('display', 'none');
       friendAnswer.css('display', 'none');
       teacherHint.css('display', 'none');
-
       if (counter < 20) {
         (0, _clean2.default)();
         getQuestion();
@@ -14902,7 +14895,7 @@ $(function () {
       var middle = $('#question').find('.middle').find('.row');
       for (var i = 1; i < middle.length; i++) {
         $(middle[i]).html("<div class='answer'></div><div class='answer'></div>");
-      }
+      };
       questionArray = [];
       answerArray = [];
       index = 0;
@@ -14951,7 +14944,7 @@ $(function () {
             $(questionAnswers[1]).css('visibility', 'hidden');
             $(questionAnswers[3]).css('visibility', 'hidden');
           }
-        };
+        }
       });
       redLineHalf.css('display', 'none');
       redLineTeacher.css('display', 'none');

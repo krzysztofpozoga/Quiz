@@ -5,7 +5,6 @@ $(()=>{
   let gameStartButton = $('.button');
   let pageStart = $('#start');
   let categorySelect = $('#category');
-
   gameStartButton.on('click', ()=>{
     pageStart.css('display', 'none');
     categorySelect.css('display', 'flex');
@@ -19,10 +18,8 @@ $(()=>{
       storageBucket: "",
       messagingSenderId: "843638065814"
     };
-
   let fb = Firebase.initializeApp(config);
   let db = fb.database().ref();
-
   db.on('value', snap => {
     let categoryButton = $('.categoryButton');
     let choseCategory = '';
@@ -31,58 +28,50 @@ $(()=>{
       let question = $('.quizQuestion').find('.text');
       let summaryPage = $('#summary').find('.middle').find('.rightAnswers');
       let response = snap.val().category;
-          let answers = $('.answer');
-          let randomNumberQuestion = Math.round(Math.random() * (response[choseCategory].length-1));
-          let idQuestion = response[choseCategory][randomNumberQuestion].id;
-          if (questionArray.indexOf(idQuestion) === -1) {
-            questionArray.push(idQuestion);
-            let randomQuestion = response[choseCategory][randomNumberQuestion].question;
-            let goodAnswer = response[choseCategory][randomNumberQuestion].goodAnswer;
-            let badAnswers = response[choseCategory][randomNumberQuestion].badAnswers;
-            question.text(randomQuestion);
-            let goodAnswerNumber = Math.round((Math.random() * 3));
-            let summaryQuestion = $('<div class="question"></div>');
-            let summaryAnswer = $('<div class="answers"></div>');
-
-            summaryQuestion.text(randomQuestion);
-            summaryPage.append(summaryQuestion);
-            summaryPage.append(summaryAnswer);
-
-            for( let i = 0; i<answers.length; i++) {
-              $(answers[i]).css('visibility', 'visible');
-              for( let j = 0; j<badAnswers.length; j++) {
-                if (i === goodAnswerNumber) {
-                  $(answers[i]).text(goodAnswer);
-                  $(answers[i]).attr('data-good', 'right')
-
-                } else if (i === j && i !== goodAnswerNumber) {
-                  $(answers[i]).text(badAnswers[j]);
-                  $(answers[i]).attr('data-good', 'wrong');
-
-                } else if (i > j) {
-                  $(answers[i]).text(badAnswers[goodAnswerNumber]);
-                  $(answers[i]).attr('data-good', 'wrong');
-                }
-              }
-            };
-            let teacherHint = $('.teacherHint').find('.hint');
-            let teacherHintNumber = Math.round((Math.random() * 2));
-            teacherHint.text(`Na pewno nie jest to odpowiedź "${badAnswers[teacherHintNumber]}"!`);
-
-            let friendAnswer = $('.friendAnswer').find('.hint');
-            friendAnswer.text(`Jestem pewien, że jest to odpowiedź "${goodAnswer}"!`);
-          } else {
-            getQuestion();
+      let answers = $('.answer');
+      let randomNumberQuestion = Math.round(Math.random() * (response[choseCategory].length-1));
+      let idQuestion = response[choseCategory][randomNumberQuestion].id;
+      if (questionArray.indexOf(idQuestion) === -1) {
+        questionArray.push(idQuestion);
+        let randomQuestion = response[choseCategory][randomNumberQuestion].question;
+        let goodAnswer = response[choseCategory][randomNumberQuestion].goodAnswer;
+        let badAnswers = response[choseCategory][randomNumberQuestion].badAnswers;
+        question.text(randomQuestion);
+        let goodAnswerNumber = Math.round((Math.random() * 3));
+        let summaryQuestion = $('<div class="question"></div>');
+        let summaryAnswer = $('<div class="answers"></div>');
+        summaryQuestion.text(randomQuestion);
+        summaryPage.append(summaryQuestion);
+        summaryPage.append(summaryAnswer);
+        for( let i = 0; i<answers.length; i++) {
+          $(answers[i]).css('visibility', 'visible');
+          for( let j = 0; j<badAnswers.length; j++) {
+            if (i === goodAnswerNumber) {
+              $(answers[i]).text(goodAnswer);
+              $(answers[i]).attr('data-good', 'right')
+            } else if (i === j && i !== goodAnswerNumber) {
+              $(answers[i]).text(badAnswers[j]);
+              $(answers[i]).attr('data-good', 'wrong');
+            } else if (i > j) {
+              $(answers[i]).text(badAnswers[goodAnswerNumber]);
+              $(answers[i]).attr('data-good', 'wrong');
+            }
           }
+        };
+        let teacherHint = $('.teacherHint').find('.hint');
+        let teacherHintNumber = Math.round((Math.random() * 2));
+        teacherHint.text(`Na pewno nie jest to odpowiedź "${badAnswers[teacherHintNumber]}"!`);
 
-
-    }
+        let friendAnswer = $('.friendAnswer').find('.hint');
+        friendAnswer.text(`Jestem pewien, że jest to odpowiedź "${goodAnswer}"!`);
+      } else {
+        getQuestion();
+      }
+    };
 
     let pageQuestion = $('#question');
     let container = $('.container');
     let questionNumber = $('#question').find('.middle').find('h2');
-
-
     categoryButton.on('click', (event)=>{
       choseCategory = $(event.target).data('category');
       categorySelect.css('display', 'none');
@@ -105,7 +94,6 @@ $(()=>{
     let teacherHint = $('.teacherHint');
     let friendAnswer = $('.friendAnswer');
     let answers = $('.answer');
-
     teacher.on('click', ()=>{
       friendAnswer.css('display', 'none');
       teacherHint.css('display', 'flex');
@@ -141,8 +129,8 @@ $(()=>{
           $(questionAnswers[1]).css('visibility', 'hidden');
           $(questionAnswers[3]).css('visibility', 'hidden');
         }
-      };
-    })
+      }
+    });
 
     let summaryPage = $('#summary');
     let counter = 1;
@@ -156,7 +144,7 @@ $(()=>{
       $(event.target).css('backgroundColor', '#8D8276');
       answerArray[index] = event.target.outerHTML;
       next.css('display', 'flex');
-    })
+    });
 
     function summary(){
       let answersSummary = $('#summary').find('.middle').find('.rightAnswers').find('.answers');
@@ -170,7 +158,8 @@ $(()=>{
           }
         }
       }
-    }
+    };
+
     let scoreCounter = 0;
     function addClassAndScore() {
       let rightOrWrong = $('#summary').find('.middle').find('.rightAnswers').find('.answers').find('.answer');
@@ -188,7 +177,7 @@ $(()=>{
         }
       }
       score.text(scoreCounter);
-    }
+    };
 
     let footer = $('footer');
     let playAgain = $('.playAgain');
@@ -200,7 +189,6 @@ $(()=>{
       $(event.target).css('display', 'none');
       friendAnswer.css('display', 'none');
       teacherHint.css('display', 'none');
-
       if (counter < 20) {
         clean();
         getQuestion();
@@ -215,13 +203,13 @@ $(()=>{
         summary();
         addClassAndScore();
       }
-    })
+    });
 
     playAgain.on('click', (event)=>{
       let middle = $('#question').find('.middle').find('.row');
       for(let i = 1; i< middle.length; i++){
         $(middle[i]).html("<div class='answer'></div><div class='answer'></div>")
-      }
+      };
       questionArray = [];
       answerArray = [];
       index = 0;
@@ -239,7 +227,7 @@ $(()=>{
         $(event.target).css('backgroundColor', '#8D8276');
         answerArray[index] = event.target.outerHTML;
         next.css('display', 'flex');
-      })
+      });
       teacher.on('click', ()=>{
         friendAnswer.css('display', 'none');
         teacherHint.css('display', 'flex');
@@ -272,8 +260,8 @@ $(()=>{
             $(questionAnswers[1]).css('visibility', 'hidden');
             $(questionAnswers[3]).css('visibility', 'hidden');
           }
-        };
-      })
+        }
+      });
       redLineHalf.css('display', 'none');
       redLineTeacher.css('display', 'none');
       redLinePhone.css('display', 'none');
@@ -281,7 +269,4 @@ $(()=>{
       rightAnswers.html('');
     })
   });
-
-
-
 });
