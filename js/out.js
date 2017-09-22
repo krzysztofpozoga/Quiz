@@ -14690,6 +14690,15 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 $(function () {
 
+  var gameStartButton = $('.button');
+  var pageStart = $('#start');
+  var categorySelect = $('#category');
+
+  gameStartButton.on('click', function () {
+    pageStart.css('display', 'none');
+    categorySelect.css('display', 'flex');
+  });
+
   var config = {
     apiKey: "AIzaSyCO1wIpXqCaxjyZInO1Djg-k0ngVV-sXxo",
     authDomain: "hisquiz.firebaseapp.com",
@@ -14703,29 +14712,21 @@ $(function () {
   var db = fb.database().ref();
 
   db.on('value', function (snap) {
-    return console.log(snap.val());
-  });
-
-  var questionArray = [];
-
-  function getQuestion() {
-    var url = "http://localhost:3000/questions";
-    var question = $('.quizQuestion').find('.text');
-
-    var summaryPage = $('#summary').find('.middle').find('.rightAnswers');
-    $.ajax({
-      method: "GET",
-      url: url,
-      dataType: "json"
-    }).done(function (response) {
+    var categoryButton = $('.categoryButton');
+    var choseCategory = '';
+    var questionArray = [];
+    function getQuestion() {
+      var question = $('.quizQuestion').find('.text');
+      var summaryPage = $('#summary').find('.middle').find('.rightAnswers');
+      var response = snap.val().category;
       var answers = $('.answer');
-      var randomNumberQuestion = Math.round(Math.random() * (response.length - 1));
-      var idQuestion = response[randomNumberQuestion].id;
+      var randomNumberQuestion = Math.round(Math.random() * (response[choseCategory].length - 1));
+      var idQuestion = response[choseCategory][randomNumberQuestion].id;
       if (questionArray.indexOf(idQuestion) === -1) {
         questionArray.push(idQuestion);
-        var randomQuestion = response[randomNumberQuestion].question;
-        var goodAnswer = response[randomNumberQuestion].goodAnswer;
-        var badAnswers = response[randomNumberQuestion].badAnswers;
+        var randomQuestion = response[choseCategory][randomNumberQuestion].question;
+        var goodAnswer = response[choseCategory][randomNumberQuestion].goodAnswer;
+        var badAnswers = response[choseCategory][randomNumberQuestion].badAnswers;
         question.text(randomQuestion);
         var goodAnswerNumber = Math.round(Math.random() * 3);
         var summaryQuestion = $('<div class="question"></div>');
@@ -14759,195 +14760,55 @@ $(function () {
       } else {
         getQuestion();
       }
-    });
-  }
-
-  var gameStartButton = $('.button');
-  var pageStart = $('#start');
-  var categorySelect = $('#category');
-
-  gameStartButton.on('click', function () {
-    pageStart.css('display', 'none');
-    categorySelect.css('display', 'flex');
-  });
-
-  var categoryButton = $('.categoryButton');
-  var pageQuestion = $('#question');
-  var container = $('.container');
-  var questionNumber = $('#question').find('.middle').find('h2');
-
-  categoryButton.on('click', function () {
-    categorySelect.css('display', 'none');
-    pageQuestion.css('display', 'flex');
-    container.css('display', 'flex');
-    questionNumber.text('Pytanie ' + counter);
-    (0, _clean2.default)();
-    getQuestion();
-  });
-
-  var teacher = $('.teacher');
-  var redLineTeacher = teacher.find('.redLine');
-  var tooltipTeacher = teacher.find('.tooltip');
-  var phone = $('.phone');
-  var redLinePhone = phone.find('.redLine');
-  var tooltipPhone = phone.find('.tooltip');
-  var half = $('.half');
-  var redLineHalf = half.find('.redLine');
-  var tooltipHalf = half.find('.tooltip');
-  var teacherHint = $('.teacherHint');
-  var friendAnswer = $('.friendAnswer');
-  var answers = $('.answer');
-
-  teacher.on('click', function () {
-    friendAnswer.css('display', 'none');
-    teacherHint.css('display', 'flex');
-    teacher.off("click");
-    tooltipTeacher.css('textDecoration', 'line-through');
-    redLineTeacher.css('display', 'block');
-  });
-  phone.on('click', function () {
-    teacherHint.css('display', 'none');
-    friendAnswer.css('display', 'flex');
-    phone.off("click");
-    tooltipPhone.css('textDecoration', 'line-through');
-    redLinePhone.css('display', 'block');
-  });
-  half.on('click', function () {
-    var questionAnswers = $('.answer');
-    half.off("click");
-    tooltipHalf.css('textDecoration', 'line-through');
-    redLineHalf.css('display', 'block');
-    for (var i = 0; i < questionAnswers.length; i++) {
-      console.log(questionAnswers[i]);
-      if ($(questionAnswers[3]).data('good') === 'right') {
-        $(questionAnswers[1]).css('visibility', 'hidden');
-        $(questionAnswers[2]).css('visibility', 'hidden');
-      } else if ($(questionAnswers[2]).data('good') === 'right') {
-        $(questionAnswers[0]).css('visibility', 'hidden');
-        $(questionAnswers[3]).css('visibility', 'hidden');
-      } else if ($(questionAnswers[1]).data('good') === 'right') {
-        $(questionAnswers[0]).css('visibility', 'hidden');
-        $(questionAnswers[2]).css('visibility', 'hidden');
-      } else if ($(questionAnswers[0]).data('good') === 'right') {
-        $(questionAnswers[1]).css('visibility', 'hidden');
-        $(questionAnswers[3]).css('visibility', 'hidden');
-      }
-    };
-  });
-
-  var summaryPage = $('#summary');
-  var counter = 1;
-  var next = $('.next');
-  var answerArray = [];
-  var index = 0;
-  answers.on('click', function (event) {
-    for (var i = 0; i < answers.length; i++) {
-      $(answers[i]).css('backgroundColor', '#545E6E');
-    };
-    $(event.target).css('backgroundColor', '#8D8276');
-    answerArray[index] = event.target.outerHTML;
-    next.css('display', 'flex');
-  });
-
-  function summary() {
-    var answersSummary = $('#summary').find('.middle').find('.rightAnswers').find('.answers');
-    for (var i = 0; i < answersSummary.length; i++) {
-      var questionId = $('<span></span>');
-      questionId.text(i + 1 + '. ');
-      $(answersSummary[i]).prev().prepend(questionId);
-      for (var j = 0; j < answerArray.length; j++) {
-        if (i === j) {
-          $(answersSummary[i]).html(answerArray[j]);
-        }
-      }
     }
-  }
-  var scoreCounter = 0;
-  function addClassAndScore() {
-    var rightOrWrong = $('#summary').find('.middle').find('.rightAnswers').find('.answers').find('.answer');
-    var score = $('.score');
-    for (var i = 0; i < rightOrWrong.length; i++) {
-      if ($(rightOrWrong[i]).data('good') === 'right') {
-        scoreCounter++;
-        $(rightOrWrong[i]).removeClass('answer');
-        $(rightOrWrong[i]).css('backgroundColor', 'inherit');
-        $(rightOrWrong[i]).addClass('right');
-      } else {
-        $(rightOrWrong[i]).removeClass('answer');
-        $(rightOrWrong[i]).css('backgroundColor', 'inherit');
-        $(rightOrWrong[i]).addClass('wrong');
-      }
-    }
-    score.text(scoreCounter);
-  }
 
-  var footer = $('footer');
-  var playAgain = $('.playAgain');
-  next.on('click', function (event) {
-    index++;
-    for (var i = 0; i < answers.length; i++) {
-      $(answers[i]).css('backgroundColor', '#545E6E');
-    }
-    $(event.target).css('display', 'none');
-    friendAnswer.css('display', 'none');
-    teacherHint.css('display', 'none');
+    var pageQuestion = $('#question');
+    var container = $('.container');
+    var questionNumber = $('#question').find('.middle').find('h2');
 
-    if (counter < 20) {
+    categoryButton.on('click', function (event) {
+      choseCategory = $(event.target).data('category');
+      categorySelect.css('display', 'none');
+      pageQuestion.css('display', 'flex');
+      container.css('display', 'flex');
+      questionNumber.text('Pytanie ' + counter);
       (0, _clean2.default)();
       getQuestion();
-      counter = counter + 1;
-      questionNumber.text('Pytanie ' + counter);
-    } else {
-      pageQuestion.css('display', 'none');
-      summaryPage.css('display', 'flex');
-      footer.css('justifyContent', 'center');
-      playAgain.css('display', 'flex');
-      container.css('display', 'none');
-      summary();
-      addClassAndScore();
-    }
-  });
-
-  playAgain.on('click', function (event) {
-    var middle = $('#question').find('.middle').find('.row');
-    for (var i = 1; i < middle.length; i++) {
-      $(middle[i]).html("<div class='answer'></div><div class='answer'></div>");
-    }
-    questionArray = [];
-    answerArray = [];
-    index = 0;
-    scoreCounter = 0;
-    counter = 1;
-    $(event.target).css('display', 'none');
-    footer.css('justifyContent', 'flex-end');
-    summaryPage.css('display', 'none');
-    categorySelect.css('display', 'flex');
-    answers = $('.answer');
-    answers.on('click', function (event) {
-      for (var _i = 0; _i < answers.length; _i++) {
-        $(answers[_i]).css('backgroundColor', '#545E6E');
-      };
-      $(event.target).css('backgroundColor', '#8D8276');
-      answerArray[index] = event.target.outerHTML;
-      next.css('display', 'flex');
     });
+
+    var teacher = $('.teacher');
+    var redLineTeacher = teacher.find('.redLine');
+    var tooltipTeacher = teacher.find('.tooltip');
+    var phone = $('.phone');
+    var redLinePhone = phone.find('.redLine');
+    var tooltipPhone = phone.find('.tooltip');
+    var half = $('.half');
+    var redLineHalf = half.find('.redLine');
+    var tooltipHalf = half.find('.tooltip');
+    var teacherHint = $('.teacherHint');
+    var friendAnswer = $('.friendAnswer');
+    var answers = $('.answer');
+
     teacher.on('click', function () {
       friendAnswer.css('display', 'none');
       teacherHint.css('display', 'flex');
       teacher.off("click");
+      tooltipTeacher.css('textDecoration', 'line-through');
       redLineTeacher.css('display', 'block');
     });
     phone.on('click', function () {
       teacherHint.css('display', 'none');
       friendAnswer.css('display', 'flex');
       phone.off("click");
+      tooltipPhone.css('textDecoration', 'line-through');
       redLinePhone.css('display', 'block');
     });
     half.on('click', function () {
       var questionAnswers = $('.answer');
       half.off("click");
+      tooltipHalf.css('textDecoration', 'line-through');
       redLineHalf.css('display', 'block');
-      for (var _i2 = 0; _i2 < questionAnswers.length; _i2++) {
+      for (var i = 0; i < questionAnswers.length; i++) {
         if ($(questionAnswers[3]).data('good') === 'right') {
           $(questionAnswers[1]).css('visibility', 'hidden');
           $(questionAnswers[2]).css('visibility', 'hidden');
@@ -14963,11 +14824,141 @@ $(function () {
         }
       };
     });
-    redLineHalf.css('display', 'none');
-    redLineTeacher.css('display', 'none');
-    redLinePhone.css('display', 'none');
-    var rightAnswers = $('#summary').find('.middle').find('.rightAnswers');
-    rightAnswers.html('');
+
+    var summaryPage = $('#summary');
+    var counter = 1;
+    var next = $('.next');
+    var answerArray = [];
+    var index = 0;
+    answers.on('click', function (event) {
+      for (var i = 0; i < answers.length; i++) {
+        $(answers[i]).css('backgroundColor', '#545E6E');
+      };
+      $(event.target).css('backgroundColor', '#8D8276');
+      answerArray[index] = event.target.outerHTML;
+      next.css('display', 'flex');
+    });
+
+    function summary() {
+      var answersSummary = $('#summary').find('.middle').find('.rightAnswers').find('.answers');
+      for (var i = 0; i < answersSummary.length; i++) {
+        var questionId = $('<span></span>');
+        questionId.text(i + 1 + '. ');
+        $(answersSummary[i]).prev().prepend(questionId);
+        for (var j = 0; j < answerArray.length; j++) {
+          if (i === j) {
+            $(answersSummary[i]).html(answerArray[j]);
+          }
+        }
+      }
+    }
+    var scoreCounter = 0;
+    function addClassAndScore() {
+      var rightOrWrong = $('#summary').find('.middle').find('.rightAnswers').find('.answers').find('.answer');
+      var score = $('.score');
+      for (var i = 0; i < rightOrWrong.length; i++) {
+        if ($(rightOrWrong[i]).data('good') === 'right') {
+          scoreCounter++;
+          $(rightOrWrong[i]).removeClass('answer');
+          $(rightOrWrong[i]).css('backgroundColor', 'inherit');
+          $(rightOrWrong[i]).addClass('right');
+        } else {
+          $(rightOrWrong[i]).removeClass('answer');
+          $(rightOrWrong[i]).css('backgroundColor', 'inherit');
+          $(rightOrWrong[i]).addClass('wrong');
+        }
+      }
+      score.text(scoreCounter);
+    }
+
+    var footer = $('footer');
+    var playAgain = $('.playAgain');
+    next.on('click', function (event) {
+      index++;
+      for (var i = 0; i < answers.length; i++) {
+        $(answers[i]).css('backgroundColor', '#545E6E');
+      }
+      $(event.target).css('display', 'none');
+      friendAnswer.css('display', 'none');
+      teacherHint.css('display', 'none');
+
+      if (counter < 2) {
+        (0, _clean2.default)();
+        getQuestion();
+        counter = counter + 1;
+        questionNumber.text('Pytanie ' + counter);
+      } else {
+        pageQuestion.css('display', 'none');
+        summaryPage.css('display', 'flex');
+        footer.css('justifyContent', 'center');
+        playAgain.css('display', 'flex');
+        container.css('display', 'none');
+        summary();
+        addClassAndScore();
+      }
+    });
+
+    playAgain.on('click', function (event) {
+      var middle = $('#question').find('.middle').find('.row');
+      for (var i = 1; i < middle.length; i++) {
+        $(middle[i]).html("<div class='answer'></div><div class='answer'></div>");
+      }
+      questionArray = [];
+      answerArray = [];
+      index = 0;
+      scoreCounter = 0;
+      counter = 1;
+      $(event.target).css('display', 'none');
+      footer.css('justifyContent', 'flex-end');
+      summaryPage.css('display', 'none');
+      categorySelect.css('display', 'flex');
+      answers = $('.answer');
+      answers.on('click', function (event) {
+        for (var _i = 0; _i < answers.length; _i++) {
+          $(answers[_i]).css('backgroundColor', '#545E6E');
+        };
+        $(event.target).css('backgroundColor', '#8D8276');
+        answerArray[index] = event.target.outerHTML;
+        next.css('display', 'flex');
+      });
+      teacher.on('click', function () {
+        friendAnswer.css('display', 'none');
+        teacherHint.css('display', 'flex');
+        teacher.off("click");
+        redLineTeacher.css('display', 'block');
+      });
+      phone.on('click', function () {
+        teacherHint.css('display', 'none');
+        friendAnswer.css('display', 'flex');
+        phone.off("click");
+        redLinePhone.css('display', 'block');
+      });
+      half.on('click', function () {
+        var questionAnswers = $('.answer');
+        half.off("click");
+        redLineHalf.css('display', 'block');
+        for (var _i2 = 0; _i2 < questionAnswers.length; _i2++) {
+          if ($(questionAnswers[3]).data('good') === 'right') {
+            $(questionAnswers[1]).css('visibility', 'hidden');
+            $(questionAnswers[2]).css('visibility', 'hidden');
+          } else if ($(questionAnswers[2]).data('good') === 'right') {
+            $(questionAnswers[0]).css('visibility', 'hidden');
+            $(questionAnswers[3]).css('visibility', 'hidden');
+          } else if ($(questionAnswers[1]).data('good') === 'right') {
+            $(questionAnswers[0]).css('visibility', 'hidden');
+            $(questionAnswers[2]).css('visibility', 'hidden');
+          } else if ($(questionAnswers[0]).data('good') === 'right') {
+            $(questionAnswers[1]).css('visibility', 'hidden');
+            $(questionAnswers[3]).css('visibility', 'hidden');
+          }
+        };
+      });
+      redLineHalf.css('display', 'none');
+      redLineTeacher.css('display', 'none');
+      redLinePhone.css('display', 'none');
+      var rightAnswers = $('#summary').find('.middle').find('.rightAnswers');
+      rightAnswers.html('');
+    });
   });
 });
 
