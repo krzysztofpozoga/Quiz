@@ -14882,7 +14882,7 @@ $(function () {
       friendAnswer.css('display', 'none');
       teacherHint.css('display', 'none');
 
-      if (counter < 2) {
+      if (counter < 20) {
         (0, _clean2.default)();
         getQuestion();
         counter = counter + 1;
