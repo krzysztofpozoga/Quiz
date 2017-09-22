@@ -117,17 +117,21 @@ $(()=>{
         if ($(questionAnswers[3]).data('good') === 'right') {
           $(questionAnswers[1]).css('visibility', 'hidden');
           $(questionAnswers[2]).css('visibility', 'hidden');
+          teacherHint.find('.hint').text(`Na pewno nie jest to odpowiedź "${$(questionAnswers[0]).text()}"!`);
         } else if ($(questionAnswers[2]).data('good') === 'right'){
           $(questionAnswers[0]).css('visibility', 'hidden');
           $(questionAnswers[3]).css('visibility', 'hidden');
+          teacherHint.find('.hint').text(`Na pewno nie jest to odpowiedź "${$(questionAnswers[1]).text()}"!`);
         }
         else if ($(questionAnswers[1]).data('good') === 'right'){
           $(questionAnswers[0]).css('visibility', 'hidden');
           $(questionAnswers[2]).css('visibility', 'hidden');
+          teacherHint.find('.hint').text(`Na pewno nie jest to odpowiedź "${$(questionAnswers[3]).text()}"!`);
         }
         else if ($(questionAnswers[0]).data('good') === 'right'){
           $(questionAnswers[1]).css('visibility', 'hidden');
           $(questionAnswers[3]).css('visibility', 'hidden');
+          teacherHint.find('.hint').text(`Na pewno nie jest to odpowiedź "${$(questionAnswers[2]).text()}"!`);
         }
       }
     });
@@ -248,17 +252,21 @@ $(()=>{
           if ($(questionAnswers[3]).data('good') === 'right') {
             $(questionAnswers[1]).css('visibility', 'hidden');
             $(questionAnswers[2]).css('visibility', 'hidden');
+            teacherHint.find('.hint').text(`Na pewno nie jest to odpowiedź "${$(questionAnswers[0]).text()}"!`);
           } else if ($(questionAnswers[2]).data('good') === 'right'){
             $(questionAnswers[0]).css('visibility', 'hidden');
             $(questionAnswers[3]).css('visibility', 'hidden');
+            teacherHint.find('.hint').text(`Na pewno nie jest to odpowiedź "${$(questionAnswers[1]).text()}"!`);
           }
           else if ($(questionAnswers[1]).data('good') === 'right'){
             $(questionAnswers[0]).css('visibility', 'hidden');
             $(questionAnswers[2]).css('visibility', 'hidden');
+            teacherHint.find('.hint').text(`Na pewno nie jest to odpowiedź "${$(questionAnswers[3]).text()}"!`);
           }
           else if ($(questionAnswers[0]).data('good') === 'right'){
             $(questionAnswers[1]).css('visibility', 'hidden');
             $(questionAnswers[3]).css('visibility', 'hidden');
+            teacherHint.find('.hint').text(`Na pewno nie jest to odpowiedź "${$(questionAnswers[2]).text()}"!`);
           }
         }
       });
