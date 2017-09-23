@@ -1,20 +1,11 @@
 #summary {
   display: none;
-  justify-content: space-between;
+  justify-content: center;
   background: #C0C0C0;
   font-family: 'Alegreya', Arial, sans-serif;
   font-size: 1.5em;
-  .left {
-    height: 100%;
-    width: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-  }
   .middle {
     height: 100%;
-    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
