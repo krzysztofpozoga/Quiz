@@ -185,6 +185,8 @@ $(()=>{
 
     let footer = $('footer');
     let playAgain = $('.playAgain');
+    let progressBar = $('.progressBar').find('span');
+    let progress = (100/20)*counter;
     next.on('click', (event)=>{
       index++;
       for(let i = 0; i < answers.length; i++) {
@@ -197,6 +199,19 @@ $(()=>{
         clean();
         getQuestion();
         counter = counter + 1;
+        progress = (100/20)*counter;
+        if (counter <= 5) {
+          $(progressBar).css('height', `${progress}%`);
+        } else if (counter <= 10) {
+          $(progressBar).css('backgroundColor', 'orange');
+          $(progressBar).css('height', `${progress}%`);
+        } else if (counter <= 15) {
+          $(progressBar).css('backgroundColor', 'yellow');
+          $(progressBar).css('height', `${progress}%`);
+        } else {
+          $(progressBar).css('backgroundColor', 'green');
+          $(progressBar).css('height', `${progress}%`);
+        }
         questionNumber.text('Pytanie ' + counter);
       } else {
         pageQuestion.css('display', 'none');
@@ -219,6 +234,8 @@ $(()=>{
       index = 0;
       scoreCounter = 0;
       counter = 1;
+      $(progressBar).css('backgroundColor', 'red');
+      $(progressBar).css('height', '5%');
       $(event.target).css('display', 'none');
       footer.css('justifyContent', 'flex-end');
       summaryPage.css('display', 'none');
