@@ -14748,10 +14748,10 @@ $(function () {
         };
         var _teacherHint = $('.teacherHint').find('.hint');
         var teacherHintNumber = Math.round(Math.random() * 2);
-        _teacherHint.text('Na pewno nie jest to odpowied\u017A "' + badAnswers[teacherHintNumber] + '"!');
+        _teacherHint.text('Na pewno nie jest to odpowied\u017A: "' + badAnswers[teacherHintNumber] + '"!');
 
         var _friendAnswer = $('.friendAnswer').find('.hint');
-        _friendAnswer.text('Jestem pewien, \u017Ce jest to odpowied\u017A "' + goodAnswer + '"!');
+        _friendAnswer.text('Jestem pewien, \u017Ce jest to odpowied\u017A: "' + goodAnswer + '"!');
       } else {
         getQuestion();
       }
@@ -14923,6 +14923,9 @@ $(function () {
       $(progressBar).css('backgroundColor', 'red');
       $(progressBar).css('height', '5%');
       $(event.target).css('display', 'none');
+      tooltipTeacher.css('textDecoration', 'none');
+      tooltipPhone.css('textDecoration', 'none');
+      tooltipHalf.css('textDecoration', 'none');
       footer.css('justifyContent', 'flex-end');
       summaryPage.css('display', 'none');
       categorySelect.css('display', 'flex');
@@ -14939,17 +14942,20 @@ $(function () {
         friendAnswer.css('display', 'none');
         teacherHint.css('display', 'flex');
         teacher.off("click");
+        tooltipTeacher.css('textDecoration', 'line-through');
         redLineTeacher.css('display', 'block');
       });
       phone.on('click', function () {
         teacherHint.css('display', 'none');
         friendAnswer.css('display', 'flex');
         phone.off("click");
+        tooltipPhone.css('textDecoration', 'line-through');
         redLinePhone.css('display', 'block');
       });
       half.on('click', function () {
         var questionAnswers = $('.answer');
         half.off("click");
+        tooltipHalf.css('textDecoration', 'line-through');
         redLineHalf.css('display', 'block');
         for (var _i2 = 0; _i2 < questionAnswers.length; _i2++) {
           if ($(questionAnswers[3]).data('good') === 'right') {

@@ -60,10 +60,10 @@ $(()=>{
         };
         let teacherHint = $('.teacherHint').find('.hint');
         let teacherHintNumber = Math.round((Math.random() * 2));
-        teacherHint.text(`Na pewno nie jest to odpowiedź "${badAnswers[teacherHintNumber]}"!`);
+        teacherHint.text(`Na pewno nie jest to odpowiedź: "${badAnswers[teacherHintNumber]}"!`);
 
         let friendAnswer = $('.friendAnswer').find('.hint');
-        friendAnswer.text(`Jestem pewien, że jest to odpowiedź "${goodAnswer}"!`);
+        friendAnswer.text(`Jestem pewien, że jest to odpowiedź: "${goodAnswer}"!`);
       } else {
         getQuestion();
       }
@@ -237,6 +237,9 @@ $(()=>{
       $(progressBar).css('backgroundColor', 'red');
       $(progressBar).css('height', '5%');
       $(event.target).css('display', 'none');
+      tooltipTeacher.css('textDecoration', 'none');
+      tooltipPhone.css('textDecoration', 'none');
+      tooltipHalf.css('textDecoration', 'none');
       footer.css('justifyContent', 'flex-end');
       summaryPage.css('display', 'none');
       categorySelect.css('display', 'flex');
@@ -253,17 +256,20 @@ $(()=>{
         friendAnswer.css('display', 'none');
         teacherHint.css('display', 'flex');
         teacher.off("click");
+        tooltipTeacher.css('textDecoration', 'line-through');
         redLineTeacher.css('display', 'block');
       });
       phone.on('click', ()=>{
         teacherHint.css('display', 'none');
         friendAnswer.css('display', 'flex');
         phone.off("click");
+        tooltipPhone.css('textDecoration', 'line-through');
         redLinePhone.css('display', 'block');
       });
       half.on('click', ()=>{
         let questionAnswers = $('.answer');
         half.off("click");
+        tooltipHalf.css('textDecoration', 'line-through');
         redLineHalf.css('display', 'block');
         for(let i = 0; i < questionAnswers.length; i++) {
           if ($(questionAnswers[3]).data('good') === 'right') {
