@@ -14798,6 +14798,8 @@ $(function () {
     });
     half.on('click', function () {
       var questionAnswers = $('.answer');
+      teacherHint.css('display', 'none');
+      friendAnswer.css('display', 'none');
       half.off("click");
       tooltipHalf.css('textDecoration', 'line-through');
       redLineHalf.css('display', 'block');
