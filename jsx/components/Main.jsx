@@ -1,14 +1,14 @@
 import React from 'react';
 
+import Header from './Header.jsx';
+
 class Main extends React.Component {
   constructor(props){
     super(props);
   }
   render(){
     return (
-      <h1>
-        Działa!!!
-      </h1>
+      <Header />
     )
   }
 }
