@@ -28025,7 +28025,76 @@ var Questions = function (_React$Component) {
       return _react2.default.createElement(
         'section',
         { id: 'question' },
-        'AAAAA!'
+        _react2.default.createElement(
+          'div',
+          { className: 'left' },
+          _react2.default.createElement(
+            'div',
+            { className: 'progressBar' },
+            _react2.default.createElement('span', null)
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'middle' },
+          _react2.default.createElement(
+            'div',
+            { className: 'row' },
+            _react2.default.createElement(
+              'div',
+              { className: 'quizQuestion' },
+              _react2.default.createElement(
+                'div',
+                { className: 'text' },
+                'U\u0142\xF3\u017C w odpowiedniej kolejno\u015Bci epoki historyczne.'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'row' },
+            _react2.default.createElement(
+              'div',
+              { className: 'answer' },
+              'Staro\u017Cytno\u015B\u0107'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'answer' },
+              'Nowo\u017Cytno\u015B\u0107'
+            )
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'row' },
+            _react2.default.createElement(
+              'div',
+              { className: 'answer' },
+              '\u015Aredniowiecze'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'answer' },
+              'Wsp\xF3\u0142czenso\u015B\u0107'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'right' },
+          _react2.default.createElement(
+            'div',
+            { className: 'teacherHint' },
+            _react2.default.createElement('div', { className: 'hint' }),
+            _react2.default.createElement('div', { className: 'img' })
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'friendAnswer' },
+            _react2.default.createElement('div', { className: 'hint' }),
+            _react2.default.createElement('div', { className: 'img' })
+          )
+        )
       );
     }
   }]);
