@@ -10290,7 +10290,53 @@ var StartPage = function (_React$Component) {
   _createClass(StartPage, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement('section', { id: 'start' });
+      return _react2.default.createElement(
+        'section',
+        { id: 'start' },
+        _react2.default.createElement(
+          'div',
+          { className: 'start_question' },
+          _react2.default.createElement(
+            'div',
+            { className: 'front_page_question' },
+            _react2.default.createElement(
+              'div',
+              { className: 'flip-container' },
+              _react2.default.createElement(
+                'div',
+                { className: 'flipper' },
+                _react2.default.createElement(
+                  'div',
+                  { className: 'question' },
+                  'Hmmm...Pierwszym kr\xF3lem Polski by\u0142...?'
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'question_back' },
+                  'Boles\u0142aw I Chrobry'
+                )
+              )
+            ),
+            _react2.default.createElement('div', { className: 'arrow' }),
+            _react2.default.createElement('div', { className: 'questionMark' })
+          ),
+          _react2.default.createElement('div', { className: 'archeologist' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'middle' },
+          _react2.default.createElement(
+            'h1',
+            { className: 'title' },
+            'QUIZ HISTORYCZNY \u201EHISQUIZ\u201D'
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'button' },
+            'GRAJ'
+          )
+        )
+      );
     }
   }]);
 
