@@ -1,9 +1,11 @@
 import React from 'react';
+import {Router, Route, Link, IndexLink, hashHistory, IndexRoute} from "react-router";
 
 class StartPage extends React.Component {
   constructor(props){
     super(props);
   }
+
   render(){
     return (
         <section id='start'>
@@ -22,10 +24,8 @@ class StartPage extends React.Component {
           </div>
           <div className='middle'>
             <h1 className='title'>QUIZ HISTORYCZNY &bdquo;HISQUIZ&rdquo;</h1>
-            <div className='button'>GRAJ</div>
+            <IndexLink to='/category'><div className='button'>GRAJ</div></IndexLink>
           </div>
-
-
         </section>
     )
   }
