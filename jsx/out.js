@@ -22877,8 +22877,69 @@ var Category = function (_React$Component) {
         { id: 'category' },
         _react2.default.createElement(
           'div',
-          null,
-          'AAAA!!!'
+          { className: 'left' },
+          _react2.default.createElement(
+            'div',
+            { className: 'info' },
+            _react2.default.createElement(
+              'p',
+              null,
+              'Kilka informacji na pocz\u0105tek:'
+            ),
+            _react2.default.createElement(
+              'ul',
+              null,
+              _react2.default.createElement(
+                'li',
+                null,
+                'Test sk\u0142ada si\u0119 z 20 losowo wybranych pyta\u0144.'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'W ramach pomocy masz do wykorzystania trzy ko\u0142a ratunkowe.'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'Ka\u017Cde ko\u0142o ratunkowe jest do wykorzystania tylko raz.'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'Nie \u015Bpiesz si\u0119!'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'Powodzenia i mi\u0142ej zabawy ;)'
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'middle' },
+          _react2.default.createElement(
+            'div',
+            { className: 'categoryButton', 'data-category': 'poczatki' },
+            'Pocz\u0105tki pa\u0144stwa polskiego'
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'categoryButton', 'data-category': 'introduction' },
+            'Zapoznanie si\u0119 z histori\u0105 - nauk\u0105 o przesz\u0142o\u015Bci'
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'right' },
+          _react2.default.createElement(
+            'div',
+            { className: 'mieszkoSays' },
+            'Wybierz kategori\u0119!'
+          ),
+          _react2.default.createElement('div', { className: 'arrow' })
         )
       );
     }
