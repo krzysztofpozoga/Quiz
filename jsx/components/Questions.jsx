@@ -1,8 +1,15 @@
 import React from 'react';
 
+import db from './firebase.js';
+import * as Firebase from 'firebase';
+
 class Questions extends React.Component {
   constructor(props){
     super(props);
+  }
+
+  getData = () => {
+    db.on('value', snap => {console.log(snap.val())})
   }
 
   render(){
