@@ -4,6 +4,7 @@ import Header from './Header.jsx';
 import Footer from './Footer.jsx';
 import StartPage from './StartPage.jsx';
 import Category from './Category.jsx';
+import Questions from './Questions.jsx';
 
 class Template extends React.Component {
   constructor(props){

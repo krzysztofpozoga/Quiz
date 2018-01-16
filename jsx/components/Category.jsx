@@ -1,4 +1,5 @@
 import React from 'react';
+import {Router, Route, Link, IndexLink, hashHistory, IndexRoute} from "react-router";
 
 class Category extends React.Component {
   constructor(props){
@@ -21,8 +22,10 @@ class Category extends React.Component {
             </div>
           </div>
           <div className='middle'>
-            <div className='categoryButton' data-category='poczatki'>Początki państwa polskiego</div>
-            <div className='categoryButton' data-category='introduction'>Zapoznanie się z historią - nauką o przeszłości</div>
+            <IndexLink to='/questions'><div className='button'><div className='categoryButton' data-category='poczatki'>Początki państwa polskiego</div></div></IndexLink>
+            <IndexLink to='/questions'><div className='button'><div className='categoryButton' data-category='introduction'>Zapoznanie się z historią - nauką o przeszłości</div></div></IndexLink>
+
+
           </div>
           <div className='right'>
             <div className='mieszkoSays'>Wybierz kategorię!</div>
