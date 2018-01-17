@@ -6,10 +6,24 @@ import * as Firebase from 'firebase';
 class Questions extends React.Component {
   constructor(props){
     super(props);
+    this.state = {
+      allQuestions: [],
+      number: 1,
+      questionArray: [],
+      question: ''
+    }
   }
 
   getData = () => {
-    db.on('value', snap => {console.log(snap.val())})
+    db.on('value', snap => {
+      this.setState({
+        allQuestions: snap.val().category[this.props.category]
+      });
+    })
+  }
+
+  componentDidMount(){
+    this.getData();
   }
 
   render(){
@@ -21,6 +35,7 @@ class Questions extends React.Component {
             </div>
           </div>
           <div className='middle'>
+            <h2>Pytanie {this.state.number}</h2>
             <div className='row'>
               <div className='quizQuestion'>
                 <div className='text'>Ułóż w odpowiedniej kolejności epoki historyczne.</div>
