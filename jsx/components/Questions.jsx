@@ -19,6 +19,33 @@ class Questions extends React.Component {
       this.setState({
         allQuestions: snap.val().category[this.props.category]
       });
+      let randomNumberQuestion = Math.round(Math.random() * (this.state.allQuestions.length-1));
+      let idQuestion = this.state.allQuestions[randomNumberQuestion].id;
+       if (this.state.questionArray.indexOf(idQuestion) === -1) {
+         this.state.questionArray.push(idQuestion);
+       }
+       let randomQuestion = this.state.allQuestions[randomNumberQuestion].question;
+       let goodAnswer = this.state.allQuestions[randomNumberQuestion].goodAnswer;
+       let badAnswers = this.state.allQuestions[randomNumberQuestion].badAnswers;
+       let goodAnswerNumber = Math.round((Math.random() * 3));
+       let answers = document.querySelectorAll('.answer');
+       for( let i = 0; i<answers.length; i++) {
+         for( let j = 0; j<badAnswers.length; j++) {
+           if (i === goodAnswerNumber) {
+             answers[i].innerHTML = goodAnswer;
+
+           } else if (i === j && i !== goodAnswerNumber) {
+             answers[i].innerHTML = badAnswers[j];
+
+           } else if (i > j) {
+             answers[i].innerHTML = badAnswers[goodAnswerNumber];
+             
+           }
+         }
+       }
+       this.setState({
+         question: randomQuestion
+       })
     })
   }
 
@@ -38,16 +65,16 @@ class Questions extends React.Component {
             <h2>Pytanie {this.state.number}</h2>
             <div className='row'>
               <div className='quizQuestion'>
-                <div className='text'>Ułóż w odpowiedniej kolejności epoki historyczne.</div>
+                <div className='text'>{this.state.question}</div>
               </div>
             </div>
             <div className='row'>
-              <div className='answer'>Starożytność</div>
-              <div className='answer'>Nowożytność</div>
+              <div className='answer'></div>
+              <div className='answer'></div>
             </div>
             <div className='row'>
-              <div className='answer'>Średniowiecze</div>
-              <div className='answer'>Współczensość</div>
+              <div className='answer'></div>
+              <div className='answer'></div>
             </div>
           </div>
           <div className='right'>

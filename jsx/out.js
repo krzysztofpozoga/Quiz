@@ -22329,6 +22329,30 @@ var Questions = function (_React$Component) {
         _this.setState({
           allQuestions: snap.val().category[_this.props.category]
         });
+        var randomNumberQuestion = Math.round(Math.random() * (_this.state.allQuestions.length - 1));
+        var idQuestion = _this.state.allQuestions[randomNumberQuestion].id;
+        if (_this.state.questionArray.indexOf(idQuestion) === -1) {
+          _this.state.questionArray.push(idQuestion);
+        }
+        var randomQuestion = _this.state.allQuestions[randomNumberQuestion].question;
+        var goodAnswer = _this.state.allQuestions[randomNumberQuestion].goodAnswer;
+        var badAnswers = _this.state.allQuestions[randomNumberQuestion].badAnswers;
+        var goodAnswerNumber = Math.round(Math.random() * 3);
+        var answers = document.querySelectorAll('.answer');
+        for (var i = 0; i < answers.length; i++) {
+          for (var j = 0; j < badAnswers.length; j++) {
+            if (i === goodAnswerNumber) {
+              answers[i].innerHTML = goodAnswer;
+            } else if (i === j && i !== goodAnswerNumber) {
+              answers[i].innerHTML = badAnswers[j];
+            } else if (i > j) {
+              answers[i].innerHTML = badAnswers[goodAnswerNumber];
+            }
+          }
+        }
+        _this.setState({
+          question: randomQuestion
+        });
       });
     };
 
@@ -22379,37 +22403,21 @@ var Questions = function (_React$Component) {
               _react2.default.createElement(
                 'div',
                 { className: 'text' },
-                'U\u0142\xF3\u017C w odpowiedniej kolejno\u015Bci epoki historyczne.'
+                this.state.question
               )
             )
           ),
           _react2.default.createElement(
             'div',
             { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'answer' },
-              'Staro\u017Cytno\u015B\u0107'
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'answer' },
-              'Nowo\u017Cytno\u015B\u0107'
-            )
+            _react2.default.createElement('div', { className: 'answer' }),
+            _react2.default.createElement('div', { className: 'answer' })
           ),
           _react2.default.createElement(
             'div',
             { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'answer' },
-              '\u015Aredniowiecze'
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'answer' },
-              'Wsp\xF3\u0142czenso\u015B\u0107'
-            )
+            _react2.default.createElement('div', { className: 'answer' }),
+            _react2.default.createElement('div', { className: 'answer' })
           )
         ),
         _react2.default.createElement(
