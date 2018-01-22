@@ -68,13 +68,13 @@ class Questions extends React.Component {
                 <div className='text'>{this.state.question}</div>
               </div>
             </div>
-            <div className='row'>
+            <div className='row' >
               <div className='answer' onClick={this.props.colorChange}></div>
-              <div className='answer'></div>
+              <div className='answer' onClick={this.props.colorChange}></div>
             </div>
             <div className='row'>
-              <div className='answer'></div>
-              <div className='answer'></div>
+              <div className='answer' onClick={this.props.colorChange}></div>
+              <div className='answer' onClick={this.props.colorChange}></div>
             </div>
           </div>
           <div className='right'>

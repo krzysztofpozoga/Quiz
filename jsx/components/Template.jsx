@@ -24,12 +24,17 @@ class Template extends React.Component {
   colorChange = (event) => {
     this.setState({
       display: true
-    })
-    if (event.target.style.backgroundColor === '' || event.target.style.backgroundColor === 'rgb(84, 94, 110)') {
+    });
+      let answers = document.querySelectorAll('.answer');
+      for(let i = 0; i < answers.length; i++) {
+        answers[i].style.backgroundColor = 'rgb(84, 94, 110)';
+      }
       event.target.style.backgroundColor = 'rgb(141, 130, 118)';
-    } else {
-      event.target.style.backgroundColor = 'rgb(84, 94, 110)';
-    }
+    // if (event.target.style.backgroundColor === '' || event.target.style.backgroundColor === 'rgb(84, 94, 110)') {
+    //   event.target.style.backgroundColor = 'rgb(141, 130, 118)';
+    // } else {
+    //   event.target.style.backgroundColor = 'rgb(84, 94, 110)';
+    // }
   }
 
   render(){

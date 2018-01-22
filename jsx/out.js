@@ -22415,13 +22415,13 @@ var Questions = function (_React$Component) {
             'div',
             { className: 'row' },
             _react2.default.createElement('div', { className: 'answer', onClick: this.props.colorChange }),
-            _react2.default.createElement('div', { className: 'answer' })
+            _react2.default.createElement('div', { className: 'answer', onClick: this.props.colorChange })
           ),
           _react2.default.createElement(
             'div',
             { className: 'row' },
-            _react2.default.createElement('div', { className: 'answer' }),
-            _react2.default.createElement('div', { className: 'answer' })
+            _react2.default.createElement('div', { className: 'answer', onClick: this.props.colorChange }),
+            _react2.default.createElement('div', { className: 'answer', onClick: this.props.colorChange })
           )
         ),
         _react2.default.createElement(
@@ -40206,11 +40206,16 @@ var Template = function (_React$Component) {
       _this.setState({
         display: true
       });
-      if (event.target.style.backgroundColor === '' || event.target.style.backgroundColor === 'rgb(84, 94, 110)') {
-        event.target.style.backgroundColor = 'rgb(141, 130, 118)';
-      } else {
-        event.target.style.backgroundColor = 'rgb(84, 94, 110)';
+      var answers = document.querySelectorAll('.answer');
+      for (var i = 0; i < answers.length; i++) {
+        answers[i].style.backgroundColor = 'rgb(84, 94, 110)';
       }
+      event.target.style.backgroundColor = 'rgb(141, 130, 118)';
+      // if (event.target.style.backgroundColor === '' || event.target.style.backgroundColor === 'rgb(84, 94, 110)') {
+      //   event.target.style.backgroundColor = 'rgb(141, 130, 118)';
+      // } else {
+      //   event.target.style.backgroundColor = 'rgb(84, 94, 110)';
+      // }
     };
 
     _this.state = {
