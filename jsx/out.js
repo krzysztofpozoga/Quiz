@@ -22218,7 +22218,7 @@ var Footer = function (_React$Component) {
       return _react2.default.createElement(
         'footer',
         null,
-        _react2.default.createElement('div', { className: 'next' }),
+        this.props.display ? _react2.default.createElement('div', { className: 'next' }) : null,
         _react2.default.createElement('div', { className: 'playAgain' })
       );
     }
@@ -22410,7 +22410,7 @@ var Questions = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'row' },
-            _react2.default.createElement('div', { className: 'answer' }),
+            _react2.default.createElement('div', { className: 'answer', onClick: this.props.colorChange }),
             _react2.default.createElement('div', { className: 'answer' })
           ),
           _react2.default.createElement(
@@ -40198,8 +40198,20 @@ var Template = function (_React$Component) {
       });
     };
 
+    _this.colorChange = function (event) {
+      _this.setState({
+        display: true
+      });
+      if (event.target.style.backgroundColor === '' || event.target.style.backgroundColor === 'rgb(84, 94, 110)') {
+        event.target.style.backgroundColor = 'rgb(141, 130, 118)';
+      } else {
+        event.target.style.backgroundColor = 'rgb(84, 94, 110)';
+      }
+    };
+
     _this.state = {
-      category: ''
+      category: '',
+      display: false
     };
     return _this;
   }
@@ -40210,7 +40222,7 @@ var Template = function (_React$Component) {
       var _this2 = this;
 
       var childrenWithProps = _react2.default.Children.map(this.props.children, function (child) {
-        return _react2.default.cloneElement(child, { getCategory: _this2.getCategory, category: _this2.state.category });
+        return _react2.default.cloneElement(child, { getCategory: _this2.getCategory, category: _this2.state.category, colorChange: _this2.colorChange });
       });
       return _react2.default.createElement(
         'div',
@@ -40221,7 +40233,7 @@ var Template = function (_React$Component) {
           null,
           childrenWithProps
         ),
-        _react2.default.createElement(_Footer2.default, null)
+        _react2.default.createElement(_Footer2.default, { display: this.state.display })
       );
     }
   }]);

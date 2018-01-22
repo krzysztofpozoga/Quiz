@@ -39,7 +39,7 @@ class Questions extends React.Component {
 
            } else if (i > j) {
              answers[i].innerHTML = badAnswers[goodAnswerNumber];
-             
+
            }
          }
        }
@@ -69,7 +69,7 @@ class Questions extends React.Component {
               </div>
             </div>
             <div className='row'>
-              <div className='answer'></div>
+              <div className='answer' onClick={this.props.colorChange}></div>
               <div className='answer'></div>
             </div>
             <div className='row'>
