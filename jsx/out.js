@@ -54281,7 +54281,22 @@ var Summary = function (_React$Component) {
       return _react2.default.createElement(
         'section',
         { id: 'summary' },
-        questions
+        _react2.default.createElement(
+          'div',
+          { className: 'middle' },
+          _react2.default.createElement(
+            'h2',
+            null,
+            'Tw\xF3j wynik: ',
+            _react2.default.createElement('span', { className: 'score' }),
+            '/20'
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'rightAnswers' },
+            questions
+          )
+        )
       );
     }
   }]);
