@@ -18,8 +18,9 @@ class Template extends React.Component {
       allQuestions: [],
       number: 1,
       questionArray: [],
-      question: '',
-      summary: false
+      summary: false,
+      summaryAnswers: [],
+      summaryQuestions: []
     }
   }
 
@@ -48,6 +49,7 @@ class Template extends React.Component {
        let answers = document.querySelectorAll('.answer');
        let question = document.querySelector('.text');
        question.innerHTML = randomQuestion;
+       this.state.summaryQuestions.push(randomQuestion);
        for( let i = 0; i<answers.length; i++) {
          for( let j = 0; j<badAnswers.length; j++) {
            if (i === goodAnswerNumber) {
@@ -75,7 +77,7 @@ class Template extends React.Component {
       this.setState({
         display: true,
         number: this.state.number + 1
-      });    
+      });
     } else {
       this.setState({
         summary: true
@@ -99,7 +101,7 @@ class Template extends React.Component {
 
   render(){
     let childrenWithProps = React.Children.map(this.props.children, child =>
-      React.cloneElement(child, { getCategory: this.getCategory, category: this.state.category, colorChange: this.colorChange, getData: this.getData }));
+      React.cloneElement(child, { getCategory: this.getCategory, category: this.state.category, colorChange: this.colorChange, getData: this.getData, summary: this.state.summaryQuestions }));
     return (
       <div id='app'>
         <Header />

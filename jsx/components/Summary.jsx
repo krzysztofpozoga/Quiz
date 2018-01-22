@@ -6,9 +6,15 @@ class Summary extends React.Component {
   }
 
   render(){
+    let questions = this.props.summary.map( (elem, i) => {
+      return (
+        <div key={i}>{elem}</div>
+      )
+    });
+
     return (
         <section id='summary'>
-          AAAAAAAAA
+          {questions}
         </section>
     )
   }

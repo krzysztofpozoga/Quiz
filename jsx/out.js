@@ -40195,6 +40195,7 @@ var Template = function (_React$Component) {
         var answers = document.querySelectorAll('.answer');
         var question = document.querySelector('.text');
         question.innerHTML = randomQuestion;
+        _this.state.summaryQuestions.push(randomQuestion);
         for (var i = 0; i < answers.length; i++) {
           for (var j = 0; j < badAnswers.length; j++) {
             if (i === goodAnswerNumber) {
@@ -40246,8 +40247,9 @@ var Template = function (_React$Component) {
       allQuestions: [],
       number: 1,
       questionArray: [],
-      question: '',
-      summary: false
+      summary: false,
+      summaryAnswers: [],
+      summaryQuestions: []
     };
     return _this;
   }
@@ -40258,7 +40260,7 @@ var Template = function (_React$Component) {
       var _this2 = this;
 
       var childrenWithProps = _react2.default.Children.map(this.props.children, function (child) {
-        return _react2.default.cloneElement(child, { getCategory: _this2.getCategory, category: _this2.state.category, colorChange: _this2.colorChange, getData: _this2.getData });
+        return _react2.default.cloneElement(child, { getCategory: _this2.getCategory, category: _this2.state.category, colorChange: _this2.colorChange, getData: _this2.getData, summary: _this2.state.summaryQuestions });
       });
       return _react2.default.createElement(
         'div',
@@ -54268,10 +54270,18 @@ var Summary = function (_React$Component) {
   _createClass(Summary, [{
     key: 'render',
     value: function render() {
+      var questions = this.props.summary.map(function (elem, i) {
+        return _react2.default.createElement(
+          'div',
+          { key: i },
+          elem
+        );
+      });
+
       return _react2.default.createElement(
         'section',
         { id: 'summary' },
-        'AAAAAAAAA'
+        questions
       );
     }
   }]);
