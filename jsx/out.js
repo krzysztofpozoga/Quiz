@@ -22195,6 +22195,8 @@ var _react = __webpack_require__(10);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _reactRouter = __webpack_require__(109);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22220,10 +22222,18 @@ var Footer = function (_React$Component) {
         null,
         this.props.display ? _react2.default.createElement(
           'div',
-          { className: 'next' },
+          { className: 'next', onClick: this.props.next },
           'Nast\u0119pne pytanie!'
         ) : null,
-        _react2.default.createElement('div', { className: 'playAgain' })
+        this.props.summary ? _react2.default.createElement(
+          _reactRouter.IndexLink,
+          { to: '/summary' },
+          _react2.default.createElement(
+            'div',
+            { className: 'playAgain' },
+            'KONIEC!'
+          )
+        ) : null
       );
     }
   }]);
@@ -22302,16 +22312,6 @@ var _react = __webpack_require__(10);
 
 var _react2 = _interopRequireDefault(_react);
 
-var _firebase = __webpack_require__(202);
-
-var _firebase2 = _interopRequireDefault(_firebase);
-
-var _firebase3 = __webpack_require__(159);
-
-var Firebase = _interopRequireWildcard(_firebase3);
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
-
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -22326,53 +22326,13 @@ var Questions = function (_React$Component) {
   function Questions(props) {
     _classCallCheck(this, Questions);
 
-    var _this = _possibleConstructorReturn(this, (Questions.__proto__ || Object.getPrototypeOf(Questions)).call(this, props));
-
-    _this.getData = function () {
-      _firebase2.default.on('value', function (snap) {
-        _this.setState({
-          allQuestions: snap.val().category[_this.props.category]
-        });
-        var randomNumberQuestion = Math.round(Math.random() * (_this.state.allQuestions.length - 1));
-        var idQuestion = _this.state.allQuestions[randomNumberQuestion].id;
-        if (_this.state.questionArray.indexOf(idQuestion) === -1) {
-          _this.state.questionArray.push(idQuestion);
-        }
-        var randomQuestion = _this.state.allQuestions[randomNumberQuestion].question;
-        var goodAnswer = _this.state.allQuestions[randomNumberQuestion].goodAnswer;
-        var badAnswers = _this.state.allQuestions[randomNumberQuestion].badAnswers;
-        var goodAnswerNumber = Math.round(Math.random() * 3);
-        var answers = document.querySelectorAll('.answer');
-        for (var i = 0; i < answers.length; i++) {
-          for (var j = 0; j < badAnswers.length; j++) {
-            if (i === goodAnswerNumber) {
-              answers[i].innerHTML = goodAnswer;
-            } else if (i === j && i !== goodAnswerNumber) {
-              answers[i].innerHTML = badAnswers[j];
-            } else if (i > j) {
-              answers[i].innerHTML = badAnswers[goodAnswerNumber];
-            }
-          }
-        }
-        _this.setState({
-          question: randomQuestion
-        });
-      });
-    };
-
-    _this.state = {
-      allQuestions: [],
-      number: 1,
-      questionArray: [],
-      question: ''
-    };
-    return _this;
+    return _possibleConstructorReturn(this, (Questions.__proto__ || Object.getPrototypeOf(Questions)).call(this, props));
   }
 
   _createClass(Questions, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
-      this.getData();
+      this.props.getData();
     }
   }, {
     key: 'render',
@@ -22395,8 +22355,7 @@ var Questions = function (_React$Component) {
           _react2.default.createElement(
             'h2',
             null,
-            'Pytanie ',
-            this.state.number
+            'Pytanie'
           ),
           _react2.default.createElement(
             'div',
@@ -22404,11 +22363,7 @@ var Questions = function (_React$Component) {
             _react2.default.createElement(
               'div',
               { className: 'quizQuestion' },
-              _react2.default.createElement(
-                'div',
-                { className: 'text' },
-                this.state.question
-              )
+              _react2.default.createElement('div', { className: 'text' })
             )
           ),
           _react2.default.createElement(
@@ -40104,6 +40059,10 @@ var _Questions = __webpack_require__(153);
 
 var _Questions2 = _interopRequireDefault(_Questions);
 
+var _Summary = __webpack_require__(412);
+
+var _Summary2 = _interopRequireDefault(_Summary);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -40132,7 +40091,8 @@ var Main = function (_React$Component) {
           { path: '/', component: _Template2.default },
           _react2.default.createElement(_reactRouter.IndexRoute, { component: _StartPage2.default }),
           _react2.default.createElement(_reactRouter.Route, { path: '/category', component: _Category2.default }),
-          _react2.default.createElement(_reactRouter.Route, { path: '/questions', component: _Questions2.default })
+          _react2.default.createElement(_reactRouter.Route, { path: '/questions', component: _Questions2.default }),
+          _react2.default.createElement(_reactRouter.Route, { path: '/summary', component: _Summary2.default })
         )
       );
     }
@@ -40180,6 +40140,20 @@ var _Questions = __webpack_require__(153);
 
 var _Questions2 = _interopRequireDefault(_Questions);
 
+var _Summary = __webpack_require__(412);
+
+var _Summary2 = _interopRequireDefault(_Summary);
+
+var _firebase = __webpack_require__(202);
+
+var _firebase2 = _interopRequireDefault(_firebase);
+
+var _firebase3 = __webpack_require__(159);
+
+var Firebase = _interopRequireWildcard(_firebase3);
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -40202,25 +40176,78 @@ var Template = function (_React$Component) {
       });
     };
 
-    _this.colorChange = function (event) {
-      _this.setState({
-        display: true
+    _this.getData = function () {
+      _firebase2.default.on('value', function (snap) {
+        _this.setState({
+          allQuestions: snap.val().category[_this.state.category]
+        });
+        var questionNumber = document.querySelector('h2');
+        questionNumber.innerHTML = 'Pytanie ' + _this.state.number;
+        var randomNumberQuestion = Math.round(Math.random() * (_this.state.allQuestions.length - 1));
+        var idQuestion = _this.state.allQuestions[randomNumberQuestion].id;
+        if (_this.state.questionArray.indexOf(idQuestion) === -1) {
+          _this.state.questionArray.push(idQuestion);
+        }
+        var randomQuestion = _this.state.allQuestions[randomNumberQuestion].question;
+        var goodAnswer = _this.state.allQuestions[randomNumberQuestion].goodAnswer;
+        var badAnswers = _this.state.allQuestions[randomNumberQuestion].badAnswers;
+        var goodAnswerNumber = Math.round(Math.random() * 3);
+        var answers = document.querySelectorAll('.answer');
+        var question = document.querySelector('.text');
+        question.innerHTML = randomQuestion;
+        for (var i = 0; i < answers.length; i++) {
+          for (var j = 0; j < badAnswers.length; j++) {
+            if (i === goodAnswerNumber) {
+              answers[i].innerHTML = goodAnswer;
+            } else if (i === j && i !== goodAnswerNumber) {
+              answers[i].innerHTML = badAnswers[j];
+            } else if (i > j) {
+              answers[i].innerHTML = badAnswers[goodAnswerNumber];
+            }
+          }
+        }
       });
+    };
+
+    _this.colorChange = function (event) {
       var answers = document.querySelectorAll('.answer');
       for (var i = 0; i < answers.length; i++) {
-        answers[i].style.backgroundColor = 'rgb(84, 94, 110)';
+        answers[i].style.backgroundColor = '#545E6E';
       }
-      event.target.style.backgroundColor = 'rgb(141, 130, 118)';
-      // if (event.target.style.backgroundColor === '' || event.target.style.backgroundColor === 'rgb(84, 94, 110)') {
-      //   event.target.style.backgroundColor = 'rgb(141, 130, 118)';
-      // } else {
-      //   event.target.style.backgroundColor = 'rgb(84, 94, 110)';
-      // }
+      event.target.style.backgroundColor = '#8D8276';
+      if (_this.state.questionArray.length < 5) {
+        _this.setState({
+          display: true,
+          number: _this.state.number + 1
+        });
+      } else {
+        _this.setState({
+          summary: true
+        });
+      }
+    };
+
+    _this.nextQuestion = function () {
+      if (_this.state.questionArray.length < 5) {
+        _this.setState({
+          display: false
+        });
+        var answers = document.querySelectorAll('.answer');
+        for (var i = 0; i < answers.length; i++) {
+          answers[i].style.backgroundColor = '#545E6E';
+        }
+        _this.getData();
+      }
     };
 
     _this.state = {
       category: '',
-      display: false
+      display: false,
+      allQuestions: [],
+      number: 1,
+      questionArray: [],
+      question: '',
+      summary: false
     };
     return _this;
   }
@@ -40231,7 +40258,7 @@ var Template = function (_React$Component) {
       var _this2 = this;
 
       var childrenWithProps = _react2.default.Children.map(this.props.children, function (child) {
-        return _react2.default.cloneElement(child, { getCategory: _this2.getCategory, category: _this2.state.category, colorChange: _this2.colorChange });
+        return _react2.default.cloneElement(child, { getCategory: _this2.getCategory, category: _this2.state.category, colorChange: _this2.colorChange, getData: _this2.getData });
       });
       return _react2.default.createElement(
         'div',
@@ -40242,7 +40269,7 @@ var Template = function (_React$Component) {
           null,
           childrenWithProps
         ),
-        _react2.default.createElement(_Footer2.default, { display: this.state.display })
+        _react2.default.createElement(_Footer2.default, { display: this.state.display, summary: this.state.summary, next: this.nextQuestion })
       );
     }
   }]);
@@ -54203,6 +54230,56 @@ exports.clearImmediate = clearImmediate;
 __webpack_require__(201);
 module.exports = __webpack_require__(200);
 
+
+/***/ }),
+/* 412 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(10);
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Summary = function (_React$Component) {
+  _inherits(Summary, _React$Component);
+
+  function Summary(props) {
+    _classCallCheck(this, Summary);
+
+    return _possibleConstructorReturn(this, (Summary.__proto__ || Object.getPrototypeOf(Summary)).call(this, props));
+  }
+
+  _createClass(Summary, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'section',
+        { id: 'summary' },
+        'AAAAAAAAA'
+      );
+    }
+  }]);
+
+  return Summary;
+}(_react2.default.Component);
+
+exports.default = Summary;
 
 /***/ })
 /******/ ]);

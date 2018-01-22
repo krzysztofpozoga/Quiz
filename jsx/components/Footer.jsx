@@ -1,4 +1,5 @@
 import React from 'react';
+import {Router, Route, Link, IndexLink, hashHistory, IndexRoute} from "react-router";
 
 class Footer extends React.Component {
   constructor(props){
@@ -7,8 +8,8 @@ class Footer extends React.Component {
   render(){
     return (
       <footer>
-        {this.props.display ? <div className='next'>Następne pytanie!</div> : null}
-        <div className='playAgain'></div>
+        {this.props.display ? <div className='next' onClick={this.props.next} >Następne pytanie!</div> : null}
+        {this.props.summary ? <IndexLink to='/summary'><div className='playAgain'>KONIEC!</div></IndexLink> : null}      
       </footer>
     )
   }
