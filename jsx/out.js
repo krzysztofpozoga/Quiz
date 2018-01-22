@@ -22218,7 +22218,11 @@ var Footer = function (_React$Component) {
       return _react2.default.createElement(
         'footer',
         null,
-        this.props.display ? _react2.default.createElement('div', { className: 'next' }) : null,
+        this.props.display ? _react2.default.createElement(
+          'div',
+          { className: 'next' },
+          'Nast\u0119pne pytanie!'
+        ) : null,
         _react2.default.createElement('div', { className: 'playAgain' })
       );
     }

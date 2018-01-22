@@ -7,7 +7,7 @@ class Footer extends React.Component {
   render(){
     return (
       <footer>
-        {this.props.display ? <div className='next'></div> : null}
+        {this.props.display ? <div className='next'>Następne pytanie!</div> : null}
         <div className='playAgain'></div>
       </footer>
     )
