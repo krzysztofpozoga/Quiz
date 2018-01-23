@@ -54,13 +54,13 @@ class Template extends React.Component {
          for( let j = 0; j<badAnswers.length; j++) {
            if (i === goodAnswerNumber) {
              answers[i].innerHTML = goodAnswer;
-
+             answers[i].classList.add('right');
            } else if (i === j && i !== goodAnswerNumber) {
              answers[i].innerHTML = badAnswers[j];
-
+             answers[i].classList.add('wrong');
            } else if (i > j) {
              answers[i].innerHTML = badAnswers[goodAnswerNumber];
-
+             answers[i].classList.add('wrong');
            }
          }
        }
@@ -86,12 +86,13 @@ class Template extends React.Component {
   }
 
   nextQuestion = () => {
+    let answers = document.querySelectorAll('.answer');
     if (this.state.questionArray.length < 5) {
       this.setState({
         display: false
       });
-      let answers = document.querySelectorAll('.answer');
       for(let i = 0; i < answers.length; i++) {
+        answers[i].classList.remove('right', 'wrong');
         answers[i].style.backgroundColor = '#545E6E';
       }
       this.getData();
