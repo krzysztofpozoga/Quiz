@@ -41,29 +41,31 @@ class Template extends React.Component {
       let idQuestion = this.state.allQuestions[randomNumberQuestion].id;
        if (this.state.questionArray.indexOf(idQuestion) === -1) {
          this.state.questionArray.push(idQuestion);
-       }
-       let randomQuestion = this.state.allQuestions[randomNumberQuestion].question;
-       let goodAnswer = this.state.allQuestions[randomNumberQuestion].goodAnswer;
-       let badAnswers = this.state.allQuestions[randomNumberQuestion].badAnswers;
-       let goodAnswerNumber = Math.round((Math.random() * 3));
-       let answers = document.querySelectorAll('.answer');
-       let question = document.querySelector('.text');
-       question.innerHTML = randomQuestion;
-       this.state.summaryQuestions.push(randomQuestion);
-       for( let i = 0; i<answers.length; i++) {
-         for( let j = 0; j<badAnswers.length; j++) {
-           if (i === goodAnswerNumber) {
-             answers[i].innerHTML = goodAnswer;
-             answers[i].classList.add('right');
-           } else if (i === j && i !== goodAnswerNumber) {
-             answers[i].innerHTML = badAnswers[j];
-             answers[i].classList.add('wrong');
-           } else if (i > j) {
-             answers[i].innerHTML = badAnswers[goodAnswerNumber];
-             answers[i].classList.add('wrong');
+         let randomQuestion = this.state.allQuestions[randomNumberQuestion].question;
+         let goodAnswer = this.state.allQuestions[randomNumberQuestion].goodAnswer;
+         let badAnswers = this.state.allQuestions[randomNumberQuestion].badAnswers;
+         let goodAnswerNumber = Math.round((Math.random() * 3));
+         let answers = document.querySelectorAll('.answer');
+         let question = document.querySelector('.text');
+         question.innerHTML = randomQuestion;
+         this.state.summaryQuestions.push(randomQuestion);
+         for( let i = 0; i<answers.length; i++) {
+           for( let j = 0; j<badAnswers.length; j++) {
+             if (i === goodAnswerNumber) {
+               answers[i].innerHTML = goodAnswer;
+               answers[i].classList.add('right');
+             } else if (i === j && i !== goodAnswerNumber) {
+               answers[i].innerHTML = badAnswers[j];
+               answers[i].classList.add('wrong');
+             } else if (i > j) {
+               answers[i].innerHTML = badAnswers[goodAnswerNumber];
+               answers[i].classList.add('wrong');
+             }
            }
          }
-       }
+       } else {
+         this.getData();
+       }     
     })
   }
 
