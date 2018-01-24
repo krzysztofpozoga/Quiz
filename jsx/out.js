@@ -22230,8 +22230,17 @@ var Footer = function (_React$Component) {
           { to: '/summary' },
           _react2.default.createElement(
             'div',
+            { className: 'next', onClick: this.props.next },
+            'Koniec!'
+          )
+        ) : null,
+        this.props.again ? _react2.default.createElement(
+          _reactRouter.IndexLink,
+          { to: '/category' },
+          _react2.default.createElement(
+            'div',
             { className: 'playAgain' },
-            'KONIEC!'
+            'Zagraj ponownie!'
           )
         ) : null
       );
@@ -22533,10 +22542,7 @@ var Summary = function (_React$Component) {
   function Summary(props) {
     _classCallCheck(this, Summary);
 
-    var _this = _possibleConstructorReturn(this, (Summary.__proto__ || Object.getPrototypeOf(Summary)).call(this, props));
-
-    console.log(_this.props.class);
-    return _this;
+    return _possibleConstructorReturn(this, (Summary.__proto__ || Object.getPrototypeOf(Summary)).call(this, props));
   }
 
   _createClass(Summary, [{
@@ -40336,6 +40342,12 @@ var Template = function (_React$Component) {
         }
         _this.getData();
       }
+      if (_this.state.summary === true) {
+        _this.setState({
+          summary: false,
+          again: true
+        });
+      }
     };
 
     _this.state = {
@@ -40347,7 +40359,8 @@ var Template = function (_React$Component) {
       summary: false,
       summaryAnswers: [],
       summaryClassNames: [],
-      summaryQuestions: []
+      summaryQuestions: [],
+      again: false
     };
     return _this;
   }
@@ -40369,7 +40382,7 @@ var Template = function (_React$Component) {
           null,
           childrenWithProps
         ),
-        _react2.default.createElement(_Footer2.default, { display: this.state.display, summary: this.state.summary, next: this.nextQuestion })
+        _react2.default.createElement(_Footer2.default, { display: this.state.display, summary: this.state.summary, again: this.state.again, next: this.nextQuestion })
       );
     }
   }]);

@@ -21,7 +21,8 @@ class Template extends React.Component {
       summary: false,
       summaryAnswers: [],
       summaryClassNames: [],
-      summaryQuestions: []
+      summaryQuestions: [],
+      again: false
     }
   }
 
@@ -103,7 +104,12 @@ class Template extends React.Component {
       }
       this.getData();
     }
-
+    if (this.state.summary === true) {
+      this.setState({
+        summary: false,
+        again: true
+      });
+    }
   }
 
   render(){
@@ -113,7 +119,7 @@ class Template extends React.Component {
       <div id='app'>
         <Header />
         <div>{childrenWithProps}</div>
-        <Footer display={this.state.display} summary={this.state.summary}next={this.nextQuestion}/>
+        <Footer display={this.state.display} summary={this.state.summary} again={this.state.again} next={this.nextQuestion}/>
       </div>
     )
   }
