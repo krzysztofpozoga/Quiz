@@ -22533,17 +22533,33 @@ var Summary = function (_React$Component) {
   function Summary(props) {
     _classCallCheck(this, Summary);
 
-    return _possibleConstructorReturn(this, (Summary.__proto__ || Object.getPrototypeOf(Summary)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Summary.__proto__ || Object.getPrototypeOf(Summary)).call(this, props));
+
+    console.log(_this.props.class);
+    return _this;
   }
 
   _createClass(Summary, [{
     key: 'render',
     value: function render() {
+      var _this2 = this;
+
       var questions = this.props.summary.map(function (elem, i) {
         return _react2.default.createElement(
           'div',
           { key: i },
-          elem
+          _react2.default.createElement(
+            'div',
+            null,
+            i + 1,
+            '. ',
+            elem
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: _this2.props.class[i] },
+            _this2.props.answers[i]
+          )
         );
       });
 
@@ -40294,7 +40310,9 @@ var Template = function (_React$Component) {
         answers[i].style.backgroundColor = '#545E6E';
       }
       event.target.style.backgroundColor = '#8D8276';
-      if (_this.state.questionArray.length < 5) {
+      _this.state.summaryClassNames[_this.state.number - 1] = event.target.className;
+      _this.state.summaryAnswers[_this.state.number - 1] = event.target.innerHTML;
+      if (_this.state.questionArray.length < 2) {
         _this.setState({
           display: true,
           number: _this.state.number + 1
@@ -40308,7 +40326,7 @@ var Template = function (_React$Component) {
 
     _this.nextQuestion = function () {
       var answers = document.querySelectorAll('.answer');
-      if (_this.state.questionArray.length < 5) {
+      if (_this.state.questionArray.length < 2) {
         _this.setState({
           display: false
         });
@@ -40328,6 +40346,7 @@ var Template = function (_React$Component) {
       questionArray: [],
       summary: false,
       summaryAnswers: [],
+      summaryClassNames: [],
       summaryQuestions: []
     };
     return _this;
@@ -40339,7 +40358,7 @@ var Template = function (_React$Component) {
       var _this2 = this;
 
       var childrenWithProps = _react2.default.Children.map(this.props.children, function (child) {
-        return _react2.default.cloneElement(child, { getCategory: _this2.getCategory, category: _this2.state.category, colorChange: _this2.colorChange, getData: _this2.getData, summary: _this2.state.summaryQuestions });
+        return _react2.default.cloneElement(child, { getCategory: _this2.getCategory, category: _this2.state.category, colorChange: _this2.colorChange, getData: _this2.getData, summary: _this2.state.summaryQuestions, answers: _this2.state.summaryAnswers, class: _this2.state.summaryClassNames });
       });
       return _react2.default.createElement(
         'div',

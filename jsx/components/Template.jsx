@@ -20,6 +20,7 @@ class Template extends React.Component {
       questionArray: [],
       summary: false,
       summaryAnswers: [],
+      summaryClassNames: [],
       summaryQuestions: []
     }
   }
@@ -65,7 +66,8 @@ class Template extends React.Component {
          }
        } else {
          this.getData();
-       }     
+       }
+
     })
   }
 
@@ -75,7 +77,9 @@ class Template extends React.Component {
       answers[i].style.backgroundColor = '#545E6E';
     }
     event.target.style.backgroundColor = '#8D8276';
-    if (this.state.questionArray.length < 5) {
+    this.state.summaryClassNames[this.state.number - 1] = event.target.className
+    this.state.summaryAnswers[this.state.number - 1] = event.target.innerHTML;
+    if (this.state.questionArray.length < 2) {
       this.setState({
         display: true,
         number: this.state.number + 1
@@ -89,7 +93,7 @@ class Template extends React.Component {
 
   nextQuestion = () => {
     let answers = document.querySelectorAll('.answer');
-    if (this.state.questionArray.length < 5) {
+    if (this.state.questionArray.length < 2) {
       this.setState({
         display: false
       });
@@ -104,7 +108,7 @@ class Template extends React.Component {
 
   render(){
     let childrenWithProps = React.Children.map(this.props.children, child =>
-      React.cloneElement(child, { getCategory: this.getCategory, category: this.state.category, colorChange: this.colorChange, getData: this.getData, summary: this.state.summaryQuestions }));
+      React.cloneElement(child, { getCategory: this.getCategory, category: this.state.category, colorChange: this.colorChange, getData: this.getData, summary: this.state.summaryQuestions, answers: this.state.summaryAnswers, class: this.state.summaryClassNames }));
     return (
       <div id='app'>
         <Header />

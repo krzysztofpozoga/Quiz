@@ -3,12 +3,17 @@ import React from 'react';
 class Summary extends React.Component {
   constructor(props){
     super(props);
+    console.log(this.props.class);
   }
 
   render(){
     let questions = this.props.summary.map( (elem, i) => {
       return (
-        <div key={i}>{elem}</div>
+        <div key={i}>
+          <div>{i+1}. {elem}</div>
+          <div className={this.props.class[i]}>{this.props.answers[i]}</div>
+        </div>
+
       )
     });
 
