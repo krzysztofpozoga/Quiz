@@ -112,6 +112,10 @@ class Template extends React.Component {
     }
   }
 
+  playAgain = () => {
+    console.log('Jeszcze raz!');
+  }
+
   render(){
     let childrenWithProps = React.Children.map(this.props.children, child =>
       React.cloneElement(child, { getCategory: this.getCategory, category: this.state.category, colorChange: this.colorChange, getData: this.getData, summary: this.state.summaryQuestions, answers: this.state.summaryAnswers, class: this.state.summaryClassNames }));
@@ -119,7 +123,7 @@ class Template extends React.Component {
       <div id='app'>
         <Header />
         <div>{childrenWithProps}</div>
-        <Footer display={this.state.display} summary={this.state.summary} again={this.state.again} next={this.nextQuestion}/>
+        <Footer display={this.state.display} summary={this.state.summary} again={this.state.again} next={this.nextQuestion} playAgain={this.playAgain}/>
       </div>
     )
   }

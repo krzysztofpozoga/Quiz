@@ -22239,7 +22239,7 @@ var Footer = function (_React$Component) {
           { to: '/category' },
           _react2.default.createElement(
             'div',
-            { className: 'playAgain' },
+            { className: 'playAgain', onClick: this.props.playAgain },
             'Zagraj ponownie!'
           )
         ) : null
@@ -22341,6 +22341,11 @@ var Questions = function (_React$Component) {
   _createClass(Questions, [{
     key: 'componentDidMount',
     value: function componentDidMount() {
+      this.props.getData();
+    }
+  }, {
+    key: 'componentWillUnmount',
+    value: function componentWillUnmount() {
       this.props.getData();
     }
   }, {
@@ -40350,6 +40355,10 @@ var Template = function (_React$Component) {
       }
     };
 
+    _this.playAgain = function () {
+      console.log('Jeszcze raz!');
+    };
+
     _this.state = {
       category: '',
       display: false,
@@ -40382,7 +40391,7 @@ var Template = function (_React$Component) {
           null,
           childrenWithProps
         ),
-        _react2.default.createElement(_Footer2.default, { display: this.state.display, summary: this.state.summary, again: this.state.again, next: this.nextQuestion })
+        _react2.default.createElement(_Footer2.default, { display: this.state.display, summary: this.state.summary, again: this.state.again, next: this.nextQuestion, playAgain: this.playAgain })
       );
     }
   }]);
