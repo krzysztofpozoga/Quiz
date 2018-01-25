@@ -23,6 +23,24 @@
       background-repeat: no-repeat;
       cursor: pointer;
     }
+    .teacher {
+      background-image: url(../images/teacher.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 65%;
+    }
+    .phone {
+      background-image: url(../images/phone.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 65%;
+    }
+    .half {
+      background-image: url(../images/50-50.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
   #start {
     width: 100%;

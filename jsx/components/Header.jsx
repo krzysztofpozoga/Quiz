@@ -7,11 +7,11 @@ class Header extends React.Component {
   render(){
     return (
       <header>
-          <div className='icon'>
+          <div className='icon teacher'>
           </div>
-          <div className='icon'>
+          <div className='icon phone'>
           </div>
-          <div className='icon'>
+          <div className='icon half'>
           </div>
       </header>
     )

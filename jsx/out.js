@@ -8501,9 +8501,9 @@ var Header = function (_React$Component) {
       return _react2.default.createElement(
         'header',
         null,
-        _react2.default.createElement('div', { className: 'icon' }),
-        _react2.default.createElement('div', { className: 'icon' }),
-        _react2.default.createElement('div', { className: 'icon' })
+        _react2.default.createElement('div', { className: 'icon teacher' }),
+        _react2.default.createElement('div', { className: 'icon phone' }),
+        _react2.default.createElement('div', { className: 'icon half' })
       );
     }
   }]);
