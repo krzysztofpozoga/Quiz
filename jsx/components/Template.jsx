@@ -6,8 +6,6 @@ import StartPage from './StartPage.jsx';
 import Category from './Category.jsx';
 import Questions from './Questions.jsx';
 import Summary from './Summary.jsx';
-import db from './firebase.js';
-import * as Firebase from 'firebase';
 
 class Template extends React.Component {
   constructor(props){
@@ -33,9 +31,12 @@ class Template extends React.Component {
   }
 
   getData = () => {
-    db.on('value', snap => {
+    let link = `https://hisquiz.firebaseio.com/category/${this.state.category}.json`
+    fetch(link)
+    .then(resp => resp.json())
+    .then(data => {
       this.setState({
-        allQuestions: snap.val().category[this.state.category]
+        allQuestions: data
       });
       let questionNumber = document.querySelector('h2');
       questionNumber.innerHTML = 'Pytanie ' + this.state.number;
