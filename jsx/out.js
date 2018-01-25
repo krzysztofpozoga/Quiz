@@ -8790,7 +8790,7 @@ var Summary = function (_React$Component) {
           'div',
           { className: 'middle' },
           _react2.default.createElement(
-            'h2',
+            'h3',
             null,
             'Tw\xF3j wynik: ',
             _react2.default.createElement('span', { className: 'score' }),
@@ -15092,7 +15092,18 @@ var Template = function (_React$Component) {
     };
 
     _this.playAgain = function () {
-      console.log('Jeszcze raz!');
+      _this.setState({
+        category: '',
+        display: false,
+        allQuestions: [],
+        number: 1,
+        questionArray: [],
+        summary: false,
+        summaryAnswers: [],
+        summaryClassNames: [],
+        summaryQuestions: [],
+        again: false
+      });
     };
 
     _this.state = {

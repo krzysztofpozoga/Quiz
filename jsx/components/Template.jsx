@@ -114,7 +114,18 @@ class Template extends React.Component {
   }
 
   playAgain = () => {
-    console.log('Jeszcze raz!');
+    this.setState({
+      category: '',
+      display: false,
+      allQuestions: [],
+      number: 1,
+      questionArray: [],
+      summary: false,
+      summaryAnswers: [],
+      summaryClassNames: [],
+      summaryQuestions: [],
+      again: false
+    });
   }
 
   render(){

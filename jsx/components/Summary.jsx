@@ -19,7 +19,7 @@ class Summary extends React.Component {
     return (
         <section id='summary'>
           <div className='middle'>
-            <h2>Twój wynik: <span className='score'></span>/20</h2>
+            <h3>Twój wynik: <span className='score'></span>/20</h3>
             <div className='rightAnswers'>
               {questions}
             </div>
