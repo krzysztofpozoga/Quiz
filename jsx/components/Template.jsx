@@ -108,11 +108,14 @@ class Template extends React.Component {
     let answers = document.querySelectorAll('.wrong');
     let firstRandomWrong = this.randomNumber();
     let secondRandomWrong = Math.round((Math.random() * 2));
+    console.log(firstRandomWrong, secondRandomWrong);
     if (firstRandomWrong === secondRandomWrong) {
-      console.log("Takie same: " + firstRandomWrong, secondRandomWrong);
+
       secondRandomWrong = this.randomNumber();
+      console.log("Nowe: " + firstRandomWrong, secondRandomWrong);
     } else {
       secondRandomWrong = secondRandomWrong;
+      console.log("Początkowe: " + firstRandomWrong, secondRandomWrong);
     }
     for(let i = 0; i < answers.length; i++) {
       if (answers[i].className === 'answer wrong') {
@@ -120,8 +123,7 @@ class Template extends React.Component {
         answers[secondRandomWrong].style.backgroundColor = 'red';
       }
     }
-    console.log("Nowe: " + firstRandomWrong, secondRandomWrong);
-    // event.target.style.visibility = 'hidden';
+    event.target.style.visibility = 'hidden';
   }
 
   colorChange = (event) => {
@@ -132,7 +134,7 @@ class Template extends React.Component {
     event.target.style.backgroundColor = '#8D8276';
     this.state.summaryClassNames[this.state.number - 1] = event.target.className
     this.state.summaryAnswers[this.state.number - 1] = event.target.innerHTML;
-    if (this.state.questionArray.length < 2) {
+    if (this.state.questionArray.length < 20) {
       this.setState({
         display: true,
         number: this.state.number + 1
@@ -146,7 +148,23 @@ class Template extends React.Component {
 
   nextQuestion = () => {
     let answers = document.querySelectorAll('.answer');
-    if (this.state.questionArray.length < 2) {
+    let progressBar = document.querySelector('.progress');
+    let progress = (100/20)*this.state.number;
+
+      if (this.state.number <= 5) {
+        progressBar.style.height =`${progress}%`;
+      } else if (this.state.number <= 10) {
+        progressBar.style.backgroundColor = 'orange';
+        progressBar.style.height =`${progress}%`;
+      } else if (this.state.number <= 15) {
+        progressBar.style.backgroundColor = 'yellow';
+        progressBar.style.height =`${progress}%`;
+      } else {
+        progressBar.style.backgroundColor = 'green';
+        progressBar.style.height =`${progress}%`;
+      }
+
+    if (this.state.questionArray.length < 20) {
       this.setState({
         display: false
       });

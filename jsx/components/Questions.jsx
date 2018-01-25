@@ -15,7 +15,7 @@ class Questions extends React.Component {
         <section id='question'>
           <div className='left'>
             <div className="progressBar">
-                  <span></span>
+                  <span className='progress'></span>
             </div>
           </div>
           <div className='middle'>

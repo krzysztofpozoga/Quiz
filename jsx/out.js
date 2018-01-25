@@ -8564,7 +8564,7 @@ var Questions = function (_React$Component) {
           _react2.default.createElement(
             'div',
             { className: 'progressBar' },
-            _react2.default.createElement('span', null)
+            _react2.default.createElement('span', { className: 'progress' })
           )
         ),
         _react2.default.createElement(
@@ -15077,11 +15077,14 @@ var Template = function (_React$Component) {
       var answers = document.querySelectorAll('.wrong');
       var firstRandomWrong = _this.randomNumber();
       var secondRandomWrong = Math.round(Math.random() * 2);
+      console.log(firstRandomWrong, secondRandomWrong);
       if (firstRandomWrong === secondRandomWrong) {
-        console.log("Takie same: " + firstRandomWrong, secondRandomWrong);
+
         secondRandomWrong = _this.randomNumber();
+        console.log("Nowe: " + firstRandomWrong, secondRandomWrong);
       } else {
         secondRandomWrong = secondRandomWrong;
+        console.log("Początkowe: " + firstRandomWrong, secondRandomWrong);
       }
       for (var i = 0; i < answers.length; i++) {
         if (answers[i].className === 'answer wrong') {
@@ -15089,8 +15092,7 @@ var Template = function (_React$Component) {
           answers[secondRandomWrong].style.backgroundColor = 'red';
         }
       }
-      console.log("Nowe: " + firstRandomWrong, secondRandomWrong);
-      // event.target.style.visibility = 'hidden';
+      event.target.style.visibility = 'hidden';
     };
 
     _this.colorChange = function (event) {
@@ -15101,7 +15103,7 @@ var Template = function (_React$Component) {
       event.target.style.backgroundColor = '#8D8276';
       _this.state.summaryClassNames[_this.state.number - 1] = event.target.className;
       _this.state.summaryAnswers[_this.state.number - 1] = event.target.innerHTML;
-      if (_this.state.questionArray.length < 2) {
+      if (_this.state.questionArray.length < 20) {
         _this.setState({
           display: true,
           number: _this.state.number + 1
@@ -15115,7 +15117,23 @@ var Template = function (_React$Component) {
 
     _this.nextQuestion = function () {
       var answers = document.querySelectorAll('.answer');
-      if (_this.state.questionArray.length < 2) {
+      var progressBar = document.querySelector('.progress');
+      var progress = 100 / 20 * _this.state.number;
+
+      if (_this.state.number <= 5) {
+        progressBar.style.height = progress + '%';
+      } else if (_this.state.number <= 10) {
+        progressBar.style.backgroundColor = 'orange';
+        progressBar.style.height = progress + '%';
+      } else if (_this.state.number <= 15) {
+        progressBar.style.backgroundColor = 'yellow';
+        progressBar.style.height = progress + '%';
+      } else {
+        progressBar.style.backgroundColor = 'green';
+        progressBar.style.height = progress + '%';
+      }
+
+      if (_this.state.questionArray.length < 20) {
         _this.setState({
           display: false
         });
