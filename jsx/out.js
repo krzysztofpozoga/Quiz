@@ -8502,7 +8502,7 @@ var Header = function (_React$Component) {
         'header',
         null,
         this.props.teacher ? _react2.default.createElement('div', { className: 'icon teacher', onClick: this.props.teacherAnswer }) : null,
-        this.props.phone ? _react2.default.createElement('div', { className: 'icon phone' }) : null,
+        this.props.phone ? _react2.default.createElement('div', { className: 'icon phone', onClick: this.props.phoneAnswer }) : null,
         this.props.half ? _react2.default.createElement('div', { className: 'icon half' }) : null
       );
     }
@@ -15050,6 +15050,17 @@ var Template = function (_React$Component) {
     };
 
     _this.teacherAnswer = function (event) {
+      var answers = document.querySelectorAll('.wrong');
+      var randomWrong = Math.round(Math.random() * 2);
+      for (var i = 0; i < answers.length; i++) {
+        if (answers[i].className === 'answer wrong') {
+          answers[randomWrong].style.backgroundColor = 'red';
+        }
+      }
+      event.target.style.visibility = 'hidden';
+    };
+
+    _this.phoneAnswer = function (event) {
       var answers = document.querySelectorAll('.answer');
       for (var i = 0; i < answers.length; i++) {
         if (answers[i].className === 'answer right') {
@@ -15146,7 +15157,7 @@ var Template = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { id: 'app' },
-        _react2.default.createElement(_Header2.default, { teacher: this.state.teacher, phone: this.state.phone, half: this.state.half, teacherAnswer: this.teacherAnswer }),
+        _react2.default.createElement(_Header2.default, { teacher: this.state.teacher, phone: this.state.phone, half: this.state.half, teacherAnswer: this.teacherAnswer, phoneAnswer: this.phoneAnswer }),
         _react2.default.createElement(
           'div',
           null,

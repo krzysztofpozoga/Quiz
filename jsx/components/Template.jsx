@@ -80,6 +80,17 @@ class Template extends React.Component {
   }
 
   teacherAnswer = (event) => {
+    let answers = document.querySelectorAll('.wrong');
+    let randomWrong = Math.round((Math.random() * 2));
+    for(let i = 0; i < answers.length; i++) {
+      if (answers[i].className === 'answer wrong') {
+        answers[randomWrong].style.backgroundColor = 'red';
+      }
+    }
+    event.target.style.visibility = 'hidden';
+  }
+
+  phoneAnswer = (event) => {
     let answers = document.querySelectorAll('.answer');
     for(let i = 0; i < answers.length; i++) {
       if (answers[i].className === 'answer right') {
@@ -153,7 +164,7 @@ class Template extends React.Component {
       React.cloneElement(child, { getCategory: this.getCategory, category: this.state.category, colorChange: this.colorChange, getData: this.getData, summary: this.state.summaryQuestions, answers: this.state.summaryAnswers, class: this.state.summaryClassNames }));
     return (
       <div id='app'>
-        <Header teacher={this.state.teacher} phone={this.state.phone} half={this.state.half} teacherAnswer={this.teacherAnswer}/>
+        <Header teacher={this.state.teacher} phone={this.state.phone} half={this.state.half} teacherAnswer={this.teacherAnswer} phoneAnswer={this.phoneAnswer}/>
         <div>{childrenWithProps}</div>
         <Footer display={this.state.display} summary={this.state.summary} again={this.state.again} next={this.nextQuestion} playAgain={this.playAgain}/>
       </div>
