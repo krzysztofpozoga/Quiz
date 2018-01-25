@@ -15036,7 +15036,7 @@ var Template = function (_React$Component) {
           allQuestions: data
         });
         var questionNumber = document.querySelector('h2');
-        questionNumber.innerHTML = 'Pytanie ' + _this.state.number;
+        questionNumber.innerHTML = 'Pytanie ' + _this.state.questionNumber;
         var randomNumberQuestion = Math.round(Math.random() * (_this.state.allQuestions.length - 1));
         var idQuestion = _this.state.allQuestions[randomNumberQuestion].id;
         if (_this.state.questionArray.indexOf(idQuestion) === -1) {
@@ -15155,7 +15155,9 @@ var Template = function (_React$Component) {
 
       if (_this.state.questionArray.length < 20) {
         _this.setState({
-          display: false
+          display: false,
+          questionNumber: _this.state.questionNumber + 1
+
         });
         for (var i = 0; i < answers.length; i++) {
           answers[i].classList.remove('right', 'wrong');
@@ -15185,7 +15187,8 @@ var Template = function (_React$Component) {
         again: false,
         teacher: false,
         phone: false,
-        half: false
+        half: false,
+        questionNumber: 1
       });
     };
 
@@ -15202,7 +15205,8 @@ var Template = function (_React$Component) {
       again: false,
       teacher: false,
       phone: false,
-      half: false
+      half: false,
+      questionNumber: 1
     };
     return _this;
   }

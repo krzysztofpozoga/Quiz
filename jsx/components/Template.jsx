@@ -23,7 +23,8 @@ class Template extends React.Component {
       again: false,
       teacher: false,
       phone: false,
-      half: false
+      half: false,
+      questionNumber: 1
     }
   }
 
@@ -45,7 +46,7 @@ class Template extends React.Component {
         allQuestions: data
       });
       let questionNumber = document.querySelector('h2');
-      questionNumber.innerHTML = 'Pytanie ' + this.state.number;
+      questionNumber.innerHTML = 'Pytanie ' + this.state.questionNumber;
       let randomNumberQuestion = Math.round(Math.random() * (this.state.allQuestions.length-1));
       let idQuestion = this.state.allQuestions[randomNumberQuestion].id;
        if (this.state.questionArray.indexOf(idQuestion) === -1) {
@@ -75,7 +76,6 @@ class Template extends React.Component {
        } else {
          this.getData();
        }
-
     })
   }
 
@@ -166,7 +166,9 @@ class Template extends React.Component {
 
     if (this.state.questionArray.length < 20) {
       this.setState({
-        display: false
+        display: false,
+        questionNumber: this.state.questionNumber + 1
+
       });
       for(let i = 0; i < answers.length; i++) {
         answers[i].classList.remove('right', 'wrong');
@@ -196,7 +198,8 @@ class Template extends React.Component {
       again: false,
       teacher: false,
       phone: false,
-      half: false
+      half: false,
+      questionNumber: 1
     });
   }
 
