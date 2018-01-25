@@ -8751,10 +8751,27 @@ var Summary = function (_React$Component) {
   function Summary(props) {
     _classCallCheck(this, Summary);
 
-    return _possibleConstructorReturn(this, (Summary.__proto__ || Object.getPrototypeOf(Summary)).call(this, props));
+    var _this = _possibleConstructorReturn(this, (Summary.__proto__ || Object.getPrototypeOf(Summary)).call(this, props));
+
+    _this.countScore = function () {
+      var goodAnswers = document.querySelectorAll('.right');
+      _this.setState({
+        score: goodAnswers.length
+      });
+    };
+
+    _this.state = {
+      score: 0
+    };
+    return _this;
   }
 
   _createClass(Summary, [{
+    key: 'componentDidMount',
+    value: function componentDidMount() {
+      this.countScore();
+    }
+  }, {
     key: 'render',
     value: function render() {
       var _this2 = this;
@@ -8777,7 +8794,6 @@ var Summary = function (_React$Component) {
           )
         );
       });
-
       return _react2.default.createElement(
         'section',
         { id: 'summary' },
@@ -8788,7 +8804,11 @@ var Summary = function (_React$Component) {
             'h3',
             null,
             'Tw\xF3j wynik: ',
-            _react2.default.createElement('span', { className: 'score' }),
+            _react2.default.createElement(
+              'span',
+              { className: 'score' },
+              this.state.score
+            ),
             '/20'
           ),
           _react2.default.createElement(

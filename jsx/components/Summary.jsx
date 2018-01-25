@@ -3,6 +3,19 @@ import React from 'react';
 class Summary extends React.Component {
   constructor(props){
     super(props);
+    this.state = {
+      score: 0
+    }
+  }
+
+  countScore = () => {
+     let goodAnswers = document.querySelectorAll('.right');
+     this.setState({
+       score: goodAnswers.length
+     })
+  }
+  componentDidMount(){
+    this.countScore();
   }
 
   render(){
@@ -15,11 +28,10 @@ class Summary extends React.Component {
 
       )
     });
-
     return (
         <section id='summary'>
           <div className='middle'>
-            <h3>Twój wynik: <span className='score'></span>/20</h3>
+            <h3>Twój wynik: <span className='score'>{this.state.score}</span>/20</h3>
             <div className='rightAnswers'>
               {questions}
             </div>
