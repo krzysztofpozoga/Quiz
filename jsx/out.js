@@ -8501,7 +8501,7 @@ var Header = function (_React$Component) {
       return _react2.default.createElement(
         'header',
         null,
-        this.props.teacher ? _react2.default.createElement('div', { className: 'icon teacher' }) : null,
+        this.props.teacher ? _react2.default.createElement('div', { className: 'icon teacher', onClick: this.props.teacherAnswer }) : null,
         this.props.phone ? _react2.default.createElement('div', { className: 'icon phone' }) : null,
         this.props.half ? _react2.default.createElement('div', { className: 'icon half' }) : null
       );
@@ -15049,6 +15049,16 @@ var Template = function (_React$Component) {
       });
     };
 
+    _this.teacherAnswer = function (event) {
+      var answers = document.querySelectorAll('.answer');
+      for (var i = 0; i < answers.length; i++) {
+        if (answers[i].className === 'answer right') {
+          answers[i].style.backgroundColor = 'green';
+        }
+      }
+      event.target.style.visibility = 'hidden';
+    };
+
     _this.colorChange = function (event) {
       var answers = document.querySelectorAll('.answer');
       for (var i = 0; i < answers.length; i++) {
@@ -15136,7 +15146,7 @@ var Template = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { id: 'app' },
-        _react2.default.createElement(_Header2.default, { teacher: this.state.teacher, phone: this.state.phone, half: this.state.half }),
+        _react2.default.createElement(_Header2.default, { teacher: this.state.teacher, phone: this.state.phone, half: this.state.half, teacherAnswer: this.teacherAnswer }),
         _react2.default.createElement(
           'div',
           null,
