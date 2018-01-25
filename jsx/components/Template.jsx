@@ -20,13 +20,19 @@ class Template extends React.Component {
       summaryAnswers: [],
       summaryClassNames: [],
       summaryQuestions: [],
-      again: false
+      again: false,
+      teacher: false,
+      phone: false,
+      half: false
     }
   }
 
   getCategory = (event) => {
     this.setState({
-      category: event.target.dataset.category
+      category: event.target.dataset.category,
+      teacher: true,
+      phone: true,
+      half: true
     })
   }
 
@@ -124,7 +130,10 @@ class Template extends React.Component {
       summaryAnswers: [],
       summaryClassNames: [],
       summaryQuestions: [],
-      again: false
+      again: false,
+      teacher: false,
+      phone: false,
+      half: false
     });
   }
 
@@ -133,7 +142,7 @@ class Template extends React.Component {
       React.cloneElement(child, { getCategory: this.getCategory, category: this.state.category, colorChange: this.colorChange, getData: this.getData, summary: this.state.summaryQuestions, answers: this.state.summaryAnswers, class: this.state.summaryClassNames }));
     return (
       <div id='app'>
-        <Header />
+        <Header teacher={this.state.teacher} phone={this.state.phone} half={this.state.half}/>
         <div>{childrenWithProps}</div>
         <Footer display={this.state.display} summary={this.state.summary} again={this.state.again} next={this.nextQuestion} playAgain={this.playAgain}/>
       </div>

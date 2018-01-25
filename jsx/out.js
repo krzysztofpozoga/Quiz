@@ -8501,9 +8501,9 @@ var Header = function (_React$Component) {
       return _react2.default.createElement(
         'header',
         null,
-        _react2.default.createElement('div', { className: 'icon teacher' }),
-        _react2.default.createElement('div', { className: 'icon phone' }),
-        _react2.default.createElement('div', { className: 'icon half' })
+        this.props.teacher ? _react2.default.createElement('div', { className: 'icon teacher' }) : null,
+        this.props.phone ? _react2.default.createElement('div', { className: 'icon phone' }) : null,
+        this.props.half ? _react2.default.createElement('div', { className: 'icon half' }) : null
       );
     }
   }]);
@@ -15000,7 +15000,10 @@ var Template = function (_React$Component) {
 
     _this.getCategory = function (event) {
       _this.setState({
-        category: event.target.dataset.category
+        category: event.target.dataset.category,
+        teacher: true,
+        phone: true,
+        half: true
       });
     };
 
@@ -15097,7 +15100,10 @@ var Template = function (_React$Component) {
         summaryAnswers: [],
         summaryClassNames: [],
         summaryQuestions: [],
-        again: false
+        again: false,
+        teacher: false,
+        phone: false,
+        half: false
       });
     };
 
@@ -15111,7 +15117,10 @@ var Template = function (_React$Component) {
       summaryAnswers: [],
       summaryClassNames: [],
       summaryQuestions: [],
-      again: false
+      again: false,
+      teacher: false,
+      phone: false,
+      half: false
     };
     return _this;
   }
@@ -15127,7 +15136,7 @@ var Template = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { id: 'app' },
-        _react2.default.createElement(_Header2.default, null),
+        _react2.default.createElement(_Header2.default, { teacher: this.state.teacher, phone: this.state.phone, half: this.state.half }),
         _react2.default.createElement(
           'div',
           null,

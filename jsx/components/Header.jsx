@@ -7,12 +7,9 @@ class Header extends React.Component {
   render(){
     return (
       <header>
-          <div className='icon teacher'>
-          </div>
-          <div className='icon phone'>
-          </div>
-          <div className='icon half'>
-          </div>
+        {this.props.teacher ? <div className='icon teacher'></div> : null}
+        {this.props.phone ? <div className='icon phone'></div> : null}
+        {this.props.half ? <div className='icon half'></div> : null}
       </header>
     )
   }
