@@ -8501,9 +8501,9 @@ var Header = function (_React$Component) {
       return _react2.default.createElement(
         'header',
         null,
-        this.props.teacher ? _react2.default.createElement('div', { className: 'icon teacher', onClick: this.props.teacherAnswer }) : null,
-        this.props.phone ? _react2.default.createElement('div', { className: 'icon phone', onClick: this.props.phoneAnswer }) : null,
-        this.props.half ? _react2.default.createElement('div', { className: 'icon half' }) : null
+        this.props.teacher ? _react2.default.createElement('div', { className: 'icon teacher darkred', onClick: this.props.teacherAnswer }) : null,
+        this.props.phone ? _react2.default.createElement('div', { className: 'icon phone green', onClick: this.props.phoneAnswer }) : null,
+        this.props.half ? _react2.default.createElement('div', { className: 'icon half red', onClick: this.props.halfAnswer }) : null
       );
     }
   }]);
@@ -15054,7 +15054,7 @@ var Template = function (_React$Component) {
       var randomWrong = Math.round(Math.random() * 2);
       for (var i = 0; i < answers.length; i++) {
         if (answers[i].className === 'answer wrong') {
-          answers[randomWrong].style.backgroundColor = 'red';
+          answers[randomWrong].style.backgroundColor = 'darkred';
         }
       }
       event.target.style.visibility = 'hidden';
@@ -15068,6 +15068,29 @@ var Template = function (_React$Component) {
         }
       }
       event.target.style.visibility = 'hidden';
+    };
+
+    _this.halfAnswer = function (event) {
+      _this.randomNumber = function () {
+        return Math.round(Math.random() * 2);
+      };
+      var answers = document.querySelectorAll('.wrong');
+      var firstRandomWrong = _this.randomNumber();
+      var secondRandomWrong = Math.round(Math.random() * 2);
+      if (firstRandomWrong === secondRandomWrong) {
+        console.log("Takie same: " + firstRandomWrong, secondRandomWrong);
+        secondRandomWrong = _this.randomNumber();
+      } else {
+        secondRandomWrong = secondRandomWrong;
+      }
+      for (var i = 0; i < answers.length; i++) {
+        if (answers[i].className === 'answer wrong') {
+          answers[firstRandomWrong].style.backgroundColor = 'red';
+          answers[secondRandomWrong].style.backgroundColor = 'red';
+        }
+      }
+      console.log("Nowe: " + firstRandomWrong, secondRandomWrong);
+      // event.target.style.visibility = 'hidden';
     };
 
     _this.colorChange = function (event) {
@@ -15157,7 +15180,7 @@ var Template = function (_React$Component) {
       return _react2.default.createElement(
         'div',
         { id: 'app' },
-        _react2.default.createElement(_Header2.default, { teacher: this.state.teacher, phone: this.state.phone, half: this.state.half, teacherAnswer: this.teacherAnswer, phoneAnswer: this.phoneAnswer }),
+        _react2.default.createElement(_Header2.default, { teacher: this.state.teacher, phone: this.state.phone, half: this.state.half, teacherAnswer: this.teacherAnswer, phoneAnswer: this.phoneAnswer, halfAnswer: this.halfAnswer }),
         _react2.default.createElement(
           'div',
           null,

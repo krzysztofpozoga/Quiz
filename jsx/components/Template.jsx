@@ -84,7 +84,7 @@ class Template extends React.Component {
     let randomWrong = Math.round((Math.random() * 2));
     for(let i = 0; i < answers.length; i++) {
       if (answers[i].className === 'answer wrong') {
-        answers[randomWrong].style.backgroundColor = 'red';
+        answers[randomWrong].style.backgroundColor = 'darkred';
       }
     }
     event.target.style.visibility = 'hidden';
@@ -99,6 +99,29 @@ class Template extends React.Component {
       }
     }
     event.target.style.visibility = 'hidden';
+  }
+
+  halfAnswer = (event) => {
+    this.randomNumber = () => {
+      return Math.round((Math.random() * 2));
+    }
+    let answers = document.querySelectorAll('.wrong');
+    let firstRandomWrong = this.randomNumber();
+    let secondRandomWrong = Math.round((Math.random() * 2));
+    if (firstRandomWrong === secondRandomWrong) {
+      console.log("Takie same: " + firstRandomWrong, secondRandomWrong);
+      secondRandomWrong = this.randomNumber();
+    } else {
+      secondRandomWrong = secondRandomWrong;
+    }
+    for(let i = 0; i < answers.length; i++) {
+      if (answers[i].className === 'answer wrong') {
+        answers[firstRandomWrong].style.backgroundColor = 'red';
+        answers[secondRandomWrong].style.backgroundColor = 'red';
+      }
+    }
+    console.log("Nowe: " + firstRandomWrong, secondRandomWrong);
+    // event.target.style.visibility = 'hidden';
   }
 
   colorChange = (event) => {
@@ -164,7 +187,7 @@ class Template extends React.Component {
       React.cloneElement(child, { getCategory: this.getCategory, category: this.state.category, colorChange: this.colorChange, getData: this.getData, summary: this.state.summaryQuestions, answers: this.state.summaryAnswers, class: this.state.summaryClassNames }));
     return (
       <div id='app'>
-        <Header teacher={this.state.teacher} phone={this.state.phone} half={this.state.half} teacherAnswer={this.teacherAnswer} phoneAnswer={this.phoneAnswer}/>
+        <Header teacher={this.state.teacher} phone={this.state.phone} half={this.state.half} teacherAnswer={this.teacherAnswer} phoneAnswer={this.phoneAnswer} halfAnswer={this.halfAnswer}/>
         <div>{childrenWithProps}</div>
         <Footer display={this.state.display} summary={this.state.summary} again={this.state.again} next={this.nextQuestion} playAgain={this.playAgain}/>
       </div>
