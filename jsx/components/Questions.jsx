@@ -10,10 +10,6 @@ class Questions extends React.Component {
     this.props.getData();
   }
 
-  componentWillUnmount(){
-    this.props.getData();
-  }
-
   render(){
     return (
         <section id='question'>

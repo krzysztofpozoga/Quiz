@@ -8553,11 +8553,6 @@ var Questions = function (_React$Component) {
       this.props.getData();
     }
   }, {
-    key: 'componentWillUnmount',
-    value: function componentWillUnmount() {
-      this.props.getData();
-    }
-  }, {
     key: 'render',
     value: function render() {
       return _react2.default.createElement(

@@ -10,7 +10,7 @@ class Footer extends React.Component {
       <footer>
         {this.props.display ? <div className='next' onClick={this.props.next} >Następne pytanie!</div> : null}
         {this.props.summary ? <IndexLink to='/summary'><div className='next' onClick={this.props.next} >Koniec!</div></IndexLink> : null}
-        {this.props.again ? <IndexLink to='/category'><div className='playAgain' onClick={this.props.playAgain}>Zagraj ponownie!</div></IndexLink> : null}      
+        {this.props.again ? <IndexLink to='/category'><div className='playAgain' onClick={this.props.playAgain}>Zagraj ponownie!</div></IndexLink> : null}
       </footer>
     )
   }
