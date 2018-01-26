@@ -8687,6 +8687,19 @@ var Summary = function (_React$Component) {
       });
     };
 
+    _this.exportNameAndScore = function () {
+      var goodAnswers = document.querySelectorAll('.right');
+      var player = {
+        name: _this.state.name,
+        score: goodAnswers.length
+      };
+      var link = 'https://hisquiz.firebaseio.com/players/' + _this.props.category + '.json';
+      fetch(link, {
+        method: 'POST',
+        body: JSON.stringify(player)
+      });
+    };
+
     _this.state = {
       score: 0,
       name: _this.props.playersName
@@ -8698,6 +8711,7 @@ var Summary = function (_React$Component) {
     key: 'componentDidMount',
     value: function componentDidMount() {
       this.countScore();
+      this.exportNameAndScore();
     }
   }, {
     key: 'render',

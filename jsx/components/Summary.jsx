@@ -10,13 +10,28 @@ class Summary extends React.Component {
   }
 
   countScore = () => {
-     let goodAnswers = document.querySelectorAll('.right');
-     this.setState({
-       score: goodAnswers.length
-     })
+   let goodAnswers = document.querySelectorAll('.right');
+   this.setState({
+     score: goodAnswers.length
+   })
   }
+
+  exportNameAndScore = () => {
+    let goodAnswers = document.querySelectorAll('.right');
+    const player = {
+      name: this.state.name,
+      score: goodAnswers.length
+    }
+    let link = `https://hisquiz.firebaseio.com/players/${this.props.category}.json`
+    fetch(link,	{
+      method:	'POST',
+      body:	JSON.stringify(	player	)
+    })
+  }
+
   componentDidMount(){
     this.countScore();
+    this.exportNameAndScore();
   }
 
   render(){
