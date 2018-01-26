@@ -182,6 +182,31 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    .typeName {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: rgba(0,0,0,.5);
+      input {
+        height: 10%;
+        width: 65%;
+        font-size: 3em;
+        box-shadow: -10px 10px 5px #888888;
+        border-radius: 15px;
+        text-align: center;
+      }
+      button {
+        height: 10%;
+        width: 25%;
+        font-size: 3em;
+        background-color: #8D8276;
+        border-radius: 15px;
+        cursor: pointer;
+      }
+    }
     .right {
       display: flex;
       justify-content: center;

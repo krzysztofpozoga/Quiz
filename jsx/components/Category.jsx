@@ -1,6 +1,8 @@
 import React from 'react';
 import {Router, Route, Link, IndexLink, hashHistory, IndexRoute} from "react-router";
 
+import TypeName from './TypeName.jsx';
+
 class Category extends React.Component {
   constructor(props){
     super(props);
@@ -9,6 +11,7 @@ class Category extends React.Component {
   render(){
     return (
         <section id='category'>
+          {!this.props.name ? <TypeName /> : null}
           <div className='left'>
             <div className='info'>
               <p>Kilka informacji na początek:</p>
