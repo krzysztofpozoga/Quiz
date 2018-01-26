@@ -4,11 +4,13 @@ class Summary extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      score: 0
+      score: 0,
+      name: this.props.playersName
     }
   }
 
   countScore = () => {
+    console.log(this.state.name);
      let goodAnswers = document.querySelectorAll('.right');
      this.setState({
        score: goodAnswers.length

@@ -8222,7 +8222,7 @@ var Category = function (_React$Component) {
       return _react2.default.createElement(
         'section',
         { id: 'category' },
-        !this.props.name ? _react2.default.createElement(_TypeName2.default, null) : null,
+        this.props.name ? _react2.default.createElement(_TypeName2.default, { type: this.props.type, getName: this.props.getName }) : null,
         _react2.default.createElement(
           'div',
           { className: 'left' },
@@ -8681,6 +8681,7 @@ var Summary = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Summary.__proto__ || Object.getPrototypeOf(Summary)).call(this, props));
 
     _this.countScore = function () {
+      console.log(_this.state.name);
       var goodAnswers = document.querySelectorAll('.right');
       _this.setState({
         score: goodAnswers.length
@@ -8688,7 +8689,8 @@ var Summary = function (_React$Component) {
     };
 
     _this.state = {
-      score: 0
+      score: 0,
+      name: _this.props.playersName
     };
     return _this;
   }
@@ -14870,6 +14872,21 @@ var Template = function (_React$Component) {
 
     var _this = _possibleConstructorReturn(this, (Template.__proto__ || Object.getPrototypeOf(Template)).call(this, props));
 
+    _this.getName = function (event) {
+      _this.setState({
+        getName: event.target.value
+      });
+    };
+
+    _this.typeYourName = function (event) {
+      event.preventDefault();
+      var name = _this.state.getName;
+      _this.setState({
+        name: false,
+        playersName: name
+      });
+    };
+
     _this.getCategory = function (event) {
       _this.setState({
         category: event.target.dataset.category,
@@ -15040,7 +15057,10 @@ var Template = function (_React$Component) {
         teacher: false,
         phone: false,
         half: false,
-        questionNumber: 1
+        questionNumber: 1,
+        name: true,
+        getName: '',
+        playersName: ''
       });
     };
 
@@ -15058,7 +15078,10 @@ var Template = function (_React$Component) {
       teacher: false,
       phone: false,
       half: false,
-      questionNumber: 1
+      questionNumber: 1,
+      name: true,
+      getName: '',
+      playersName: ''
     };
     return _this;
   }
@@ -15069,7 +15092,7 @@ var Template = function (_React$Component) {
       var _this2 = this;
 
       var childrenWithProps = _react2.default.Children.map(this.props.children, function (child) {
-        return _react2.default.cloneElement(child, { getCategory: _this2.getCategory, category: _this2.state.category, colorChange: _this2.colorChange, getData: _this2.getData, summary: _this2.state.summaryQuestions, answers: _this2.state.summaryAnswers, class: _this2.state.summaryClassNames });
+        return _react2.default.cloneElement(child, { getCategory: _this2.getCategory, category: _this2.state.category, colorChange: _this2.colorChange, getData: _this2.getData, summary: _this2.state.summaryQuestions, answers: _this2.state.summaryAnswers, class: _this2.state.summaryClassNames, name: _this2.state.name, getName: _this2.getName, type: _this2.typeYourName, playersName: _this2.state.playersName });
       });
       return _react2.default.createElement(
         'div',
@@ -28474,10 +28497,10 @@ var TypeName = function (_React$Component) {
       return _react2.default.createElement(
         "form",
         { className: "typeName" },
-        _react2.default.createElement("input", { type: "text", placeholder: "Podaj swoje imi\u0119 i nazwisko" }),
+        _react2.default.createElement("input", { type: "text", placeholder: "Podaj swoje imi\u0119 :)", onChange: this.props.getName }),
         _react2.default.createElement(
           "button",
-          null,
+          { onClick: this.props.type },
           "OK"
         )
       );

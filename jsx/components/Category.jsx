@@ -11,7 +11,7 @@ class Category extends React.Component {
   render(){
     return (
         <section id='category'>
-          {!this.props.name ? <TypeName /> : null}
+          {this.props.name ? <TypeName type={this.props.type} getName={this.props.getName}/> : null}
           <div className='left'>
             <div className='info'>
               <p>Kilka informacji na początek:</p>

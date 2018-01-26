@@ -7,8 +7,8 @@ class TypeName extends React.Component {
   render(){
     return (
       <form className="typeName">
-        <input type="text" placeholder="Podaj swoje imię i nazwisko"/>
-        <button>OK</button>
+        <input type="text" placeholder="Podaj swoje imię :)" onChange={this.props.getName}/>
+        <button onClick={this.props.type}>OK</button>
       </form>
     )
   }
