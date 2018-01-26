@@ -150,12 +150,11 @@ class Template extends React.Component {
       answers[i].style.backgroundColor = '#545E6E';
     }
     event.target.style.backgroundColor = '#8D8276';
-    this.state.summaryClassNames[this.state.number - 1] = event.target.className
-    this.state.summaryAnswers[this.state.number - 1] = event.target.innerHTML;
+    this.state.summaryClassNames[this.state.questionNumber - 1] = event.target.className
+    this.state.summaryAnswers[this.state.questionNumber - 1] = event.target.innerHTML;
     if (this.state.questionArray.length < 20) {
       this.setState({
-        display: true,
-        number: this.state.number + 1
+        display: true
       });
     } else {
       this.setState({

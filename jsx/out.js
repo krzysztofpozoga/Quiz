@@ -15003,12 +15003,11 @@ var Template = function (_React$Component) {
         answers[i].style.backgroundColor = '#545E6E';
       }
       event.target.style.backgroundColor = '#8D8276';
-      _this.state.summaryClassNames[_this.state.number - 1] = event.target.className;
-      _this.state.summaryAnswers[_this.state.number - 1] = event.target.innerHTML;
+      _this.state.summaryClassNames[_this.state.questionNumber - 1] = event.target.className;
+      _this.state.summaryAnswers[_this.state.questionNumber - 1] = event.target.innerHTML;
       if (_this.state.questionArray.length < 20) {
         _this.setState({
-          display: true,
-          number: _this.state.number + 1
+          display: true
         });
       } else {
         _this.setState({
