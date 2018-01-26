@@ -8681,7 +8681,6 @@ var Summary = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (Summary.__proto__ || Object.getPrototypeOf(Summary)).call(this, props));
 
     _this.countScore = function () {
-      console.log(_this.state.name);
       var goodAnswers = document.querySelectorAll('.right');
       _this.setState({
         score: goodAnswers.length
@@ -15007,14 +15006,14 @@ var Template = function (_React$Component) {
     _this.nextQuestion = function () {
       var answers = document.querySelectorAll('.answer');
       var progressBar = document.querySelector('.progress');
-      var progress = 100 / 20 * _this.state.number;
+      var progress = 100 / 20 * (_this.state.questionNumber + 1);
 
-      if (_this.state.number <= 5) {
+      if (_this.state.questionNumber <= 5) {
         progressBar.style.height = progress + '%';
-      } else if (_this.state.number <= 10) {
+      } else if (_this.state.questionNumber <= 10) {
         progressBar.style.backgroundColor = 'orange';
         progressBar.style.height = progress + '%';
-      } else if (_this.state.number <= 15) {
+      } else if (_this.state.questionNumber <= 15) {
         progressBar.style.backgroundColor = 'yellow';
         progressBar.style.height = progress + '%';
       } else {

@@ -167,14 +167,14 @@ class Template extends React.Component {
   nextQuestion = () => {
     let answers = document.querySelectorAll('.answer');
     let progressBar = document.querySelector('.progress');
-    let progress = (100/20)*this.state.number;
+    let progress = (100/20)*(this.state.questionNumber+1);
 
-      if (this.state.number <= 5) {
+      if (this.state.questionNumber <= 5) {
         progressBar.style.height =`${progress}%`;
-      } else if (this.state.number <= 10) {
+      } else if (this.state.questionNumber <= 10) {
         progressBar.style.backgroundColor = 'orange';
         progressBar.style.height =`${progress}%`;
-      } else if (this.state.number <= 15) {
+      } else if (this.state.questionNumber <= 15) {
         progressBar.style.backgroundColor = 'yellow';
         progressBar.style.height =`${progress}%`;
       } else {

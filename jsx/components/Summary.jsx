@@ -10,7 +10,6 @@ class Summary extends React.Component {
   }
 
   countScore = () => {
-    console.log(this.state.name);
      let goodAnswers = document.querySelectorAll('.right');
      this.setState({
        score: goodAnswers.length
