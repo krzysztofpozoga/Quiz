@@ -28,7 +28,8 @@ class Template extends React.Component {
       name: true,
       getName: '',
       playersName: '',
-      picture: false
+      picture: false,
+      spinner: false
     }
   }
 
@@ -57,12 +58,16 @@ class Template extends React.Component {
   }
 
   getData = () => {
+    this.setState({
+      spinner: true
+    });
     let link = `https://hisquiz.firebaseio.com/category/${this.state.category}.json`
     fetch(link)
     .then(resp => resp.json())
     .then(data => {
       this.setState({
-        allQuestions: data
+        allQuestions: data,
+        spinner: false
       });
       let questionNumber = document.querySelector('h2');
       questionNumber.innerHTML = 'Pytanie ' + this.state.questionNumber;
@@ -101,10 +106,11 @@ class Template extends React.Component {
              }
            }
          }
+         
        } else {
          this.getData();
        }
-    })
+    })  
   }
 
   teacherAnswer = (event) => {
@@ -241,7 +247,7 @@ class Template extends React.Component {
 
   render(){
     let childrenWithProps = React.Children.map(this.props.children, child =>
-      React.cloneElement(child, { getCategory: this.getCategory, category: this.state.category, colorChange: this.colorChange, getData: this.getData, summary: this.state.summaryQuestions, answers: this.state.summaryAnswers, class: this.state.summaryClassNames, name: this.state.name, getName: this.getName, type: this.typeYourName, playersName: this.state.playersName, picture: this.state.picture }));
+      React.cloneElement(child, { getCategory: this.getCategory, category: this.state.category, colorChange: this.colorChange, getData: this.getData, summary: this.state.summaryQuestions, answers: this.state.summaryAnswers, class: this.state.summaryClassNames, name: this.state.name, getName: this.getName, type: this.typeYourName, playersName: this.state.playersName, picture: this.state.picture, spinner: this.state.spinner }));
     return (
       <div id='app'>
         <Header teacher={this.state.teacher} phone={this.state.phone} half={this.state.half} teacherAnswer={this.teacherAnswer} phoneAnswer={this.phoneAnswer} halfAnswer={this.halfAnswer}/>

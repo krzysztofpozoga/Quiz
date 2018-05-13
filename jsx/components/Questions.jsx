@@ -1,4 +1,5 @@
 import React from 'react';
+import Spinner from './Spinner.jsx'
 
 
 class Questions extends React.Component {
@@ -19,7 +20,7 @@ class Questions extends React.Component {
                   <span className='progress'></span>
             </div>
           </div>
-          <div className='middle'>
+          {this.props.spinner ? <Spinner /> : <div className='middle'>
             <h2>Pytanie</h2>
             <div className='row'>
               <div className='quizQuestion'>
@@ -34,7 +35,8 @@ class Questions extends React.Component {
               <div className='answer' onClick={this.props.colorChange}></div>
               <div className='answer' onClick={this.props.colorChange}></div>
             </div>
-          </div>
+          </div>}
+          
         </section>
     )
   }

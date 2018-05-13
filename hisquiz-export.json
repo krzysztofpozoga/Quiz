@@ -619,7 +619,7 @@
       "id" : 25,
       "question" : "Narodowe Święto Trzeciego Maja upamiętnia..."
     }, {
-      "badAnswers" : [ "zesłania na Syberię", "konfiskowania majątków powstańców", "śmierć wielu powstańców" ],
+      "badAnswers" : [ "zesłań na Syberię", "konfiskaty majątków powstańców", "śmierci wielu powstańców" ],
       "goodAnswer" : "III rozbioru Polski",
       "id" : 26,
       "question" : "Czego nie zaliczamy do skutków powstania styczniowego?"
@@ -637,7 +637,7 @@
       "badAnswers" : [ "W czasie powstania styczniowego na ziemiach polskich działało podziemne państwo polskie.", "Jan III Sobieski ruszył z odsieczą Wiedniowi oblężonemu przez Turków.", "Polska utraciła niepodległość po III rozbiorze na 123 lata." ],
       "goodAnswer" : "Kosynierzy wsławili się zwycięstwami odniesionymi w czasie potopu szwedzkiego.",
       "id" : 29,
-      "question" : "Które ze zdań zawiera nieprawdziwe treści"
+      "question" : "Które ze zdań zawiera nieprawdziwe treści?"
     }, {
       "badAnswers" : [ "z Rosjanami", "z Turkami", "z Francuzami" ],
       "goodAnswer" : "z Krzyżakami",

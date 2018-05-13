@@ -8497,6 +8497,10 @@ var _react = __webpack_require__(6);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _Spinner = __webpack_require__(253);
+
+var _Spinner2 = _interopRequireDefault(_Spinner);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -8535,7 +8539,7 @@ var Questions = function (_React$Component) {
             _react2.default.createElement('span', { className: 'progress' })
           )
         ),
-        _react2.default.createElement(
+        this.props.spinner ? _react2.default.createElement(_Spinner2.default, null) : _react2.default.createElement(
           'div',
           { className: 'middle' },
           _react2.default.createElement(
@@ -14935,12 +14939,16 @@ var Template = function (_React$Component) {
     };
 
     _this.getData = function () {
+      _this.setState({
+        spinner: true
+      });
       var link = 'https://hisquiz.firebaseio.com/category/' + _this.state.category + '.json';
       fetch(link).then(function (resp) {
         return resp.json();
       }).then(function (data) {
         _this.setState({
-          allQuestions: data
+          allQuestions: data,
+          spinner: false
         });
         var questionNumber = document.querySelector('h2');
         questionNumber.innerHTML = 'Pytanie ' + _this.state.questionNumber;
@@ -15134,7 +15142,8 @@ var Template = function (_React$Component) {
       name: true,
       getName: '',
       playersName: '',
-      picture: false
+      picture: false,
+      spinner: false
     };
     return _this;
   }
@@ -15145,7 +15154,7 @@ var Template = function (_React$Component) {
       var _this2 = this;
 
       var childrenWithProps = _react2.default.Children.map(this.props.children, function (child) {
-        return _react2.default.cloneElement(child, { getCategory: _this2.getCategory, category: _this2.state.category, colorChange: _this2.colorChange, getData: _this2.getData, summary: _this2.state.summaryQuestions, answers: _this2.state.summaryAnswers, class: _this2.state.summaryClassNames, name: _this2.state.name, getName: _this2.getName, type: _this2.typeYourName, playersName: _this2.state.playersName, picture: _this2.state.picture });
+        return _react2.default.cloneElement(child, { getCategory: _this2.getCategory, category: _this2.state.category, colorChange: _this2.colorChange, getData: _this2.getData, summary: _this2.state.summaryQuestions, answers: _this2.state.summaryAnswers, class: _this2.state.summaryClassNames, name: _this2.state.name, getName: _this2.getName, type: _this2.typeYourName, playersName: _this2.state.playersName, picture: _this2.state.picture, spinner: _this2.state.spinner });
       });
       return _react2.default.createElement(
         'div',
@@ -28564,6 +28573,60 @@ module.exports = function (str) {
 __webpack_require__(123);
 module.exports = __webpack_require__(122);
 
+
+/***/ }),
+/* 253 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(151);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Spinner = function (_React$Component) {
+  _inherits(Spinner, _React$Component);
+
+  function Spinner() {
+    _classCallCheck(this, Spinner);
+
+    return _possibleConstructorReturn(this, (Spinner.__proto__ || Object.getPrototypeOf(Spinner)).apply(this, arguments));
+  }
+
+  _createClass(Spinner, [{
+    key: 'render',
+    value: function render() {
+      return _react2.default.createElement(
+        'div',
+        { className: 'loader' },
+        'Loading...'
+      );
+    }
+  }]);
+
+  return Spinner;
+}(_react2.default.Component);
+
+exports.default = Spinner;
 
 /***/ })
 /******/ ]);
