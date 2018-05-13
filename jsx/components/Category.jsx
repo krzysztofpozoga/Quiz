@@ -26,6 +26,7 @@ class Category extends React.Component {
           </div>
           <div className='middle'>
             <IndexLink to='/questions'><div className='button'><div className='categoryButton' data-category='poczatki' onClick={this.props.getCategory}>Początki państwa polskiego</div></div></IndexLink>
+            <IndexLink to='/questions'><div className='button'><div className='categoryButton' data-category='semestr' onClick={this.props.getCategory}>WIELKI TEST SEMESTRALNY</div></div></IndexLink>
             <IndexLink to='/questions'><div className='button'><div className='categoryButton' data-category='introduction' onClick={this.props.getCategory}>Zapoznanie się z historią - nauką o przeszłości</div></div></IndexLink>
 
 

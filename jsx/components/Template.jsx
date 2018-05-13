@@ -27,7 +27,8 @@ class Template extends React.Component {
       questionNumber: 1,
       name: true,
       getName: '',
-      playersName: ''
+      playersName: '',
+      picture: false
     }
   }
 
@@ -69,6 +70,15 @@ class Template extends React.Component {
       let idQuestion = this.state.allQuestions[randomNumberQuestion].id;
        if (this.state.questionArray.indexOf(idQuestion) === -1) {
          this.state.questionArray.push(idQuestion);
+         let questionPicture = document.querySelector('.questionPicture');
+         const img = document.createElement("img");
+         if (this.state.allQuestions[randomNumberQuestion].picture) {
+          img.setAttribute('src', `./images/${this.state.allQuestions[randomNumberQuestion].picture}.jpg`)
+          questionPicture.appendChild(img);
+          this.setState({
+            picture: true
+          })
+         }
          let randomQuestion = this.state.allQuestions[randomNumberQuestion].question;
          let goodAnswer = this.state.allQuestions[randomNumberQuestion].goodAnswer;
          let badAnswers = this.state.allQuestions[randomNumberQuestion].badAnswers;
@@ -126,10 +136,8 @@ class Template extends React.Component {
     let answers = document.querySelectorAll('.wrong');
     let firstRandomWrong = this.randomNumber();
     let secondRandomWrong = Math.round((Math.random() * 2));
-    console.log( firstRandomWrong, secondRandomWrong);
     while (firstRandomWrong === secondRandomWrong) {
       secondRandomWrong = this.randomNumber();
-      console.log("Nowe: " + firstRandomWrong, secondRandomWrong);
     }
     
     for(let i = 0; i < answers.length; i++) {
@@ -164,7 +172,14 @@ class Template extends React.Component {
     let answers = document.querySelectorAll('.answer');
     let progressBar = document.querySelector('.progress');
     let progress = (100/20)*(this.state.questionNumber+1);
-
+    if (this.state.picture) {
+      let questionPicture = document.querySelector('.questionPicture');
+      let img = questionPicture.querySelector('img');
+      questionPicture.removeChild(img);
+      this.setState({
+        picture: false
+      })
+    }
       if (this.state.questionNumber <= 5) {
         progressBar.style.height =`${progress}%`;
       } else if (this.state.questionNumber <= 10) {
@@ -219,13 +234,14 @@ class Template extends React.Component {
       questionNumber: 1,
       name: true,
       getName: '',
-      playersName: ''
+      playersName: '',
+      picture: false
     });
   }
 
   render(){
     let childrenWithProps = React.Children.map(this.props.children, child =>
-      React.cloneElement(child, { getCategory: this.getCategory, category: this.state.category, colorChange: this.colorChange, getData: this.getData, summary: this.state.summaryQuestions, answers: this.state.summaryAnswers, class: this.state.summaryClassNames, name: this.state.name, getName: this.getName, type: this.typeYourName, playersName: this.state.playersName }));
+      React.cloneElement(child, { getCategory: this.getCategory, category: this.state.category, colorChange: this.colorChange, getData: this.getData, summary: this.state.summaryQuestions, answers: this.state.summaryAnswers, class: this.state.summaryClassNames, name: this.state.name, getName: this.getName, type: this.typeYourName, playersName: this.state.playersName, picture: this.state.picture }));
     return (
       <div id='app'>
         <Header teacher={this.state.teacher} phone={this.state.phone} half={this.state.half} teacherAnswer={this.teacherAnswer} phoneAnswer={this.phoneAnswer} halfAnswer={this.halfAnswer}/>

@@ -13,6 +13,7 @@ class Questions extends React.Component {
   render(){
     return (
         <section id='question'>
+        <div className='questionPicture'></div>
           <div className='left'>
             <div className="progressBar">
                   <span className='progress'></span>
@@ -32,16 +33,6 @@ class Questions extends React.Component {
             <div className='row'>
               <div className='answer' onClick={this.props.colorChange}></div>
               <div className='answer' onClick={this.props.colorChange}></div>
-            </div>
-          </div>
-          <div className='right'>
-            <div className='teacherHint'>
-              <div className='hint'></div>
-              <div className='img'></div>
-            </div>
-            <div className='friendAnswer'>
-              <div className='hint'></div>
-              <div className='img'></div>
             </div>
           </div>
         </section>

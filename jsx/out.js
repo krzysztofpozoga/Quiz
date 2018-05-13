@@ -8289,6 +8289,19 @@ var Category = function (_React$Component) {
               { className: 'button' },
               _react2.default.createElement(
                 'div',
+                { className: 'categoryButton', 'data-category': 'semestr', onClick: this.props.getCategory },
+                'WIELKI TEST SEMESTRALNY'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            _reactRouter.IndexLink,
+            { to: '/questions' },
+            _react2.default.createElement(
+              'div',
+              { className: 'button' },
+              _react2.default.createElement(
+                'div',
                 { className: 'categoryButton', 'data-category': 'introduction', onClick: this.props.getCategory },
                 'Zapoznanie si\u0119 z histori\u0105 - nauk\u0105 o przesz\u0142o\u015Bci'
               )
@@ -8512,6 +8525,7 @@ var Questions = function (_React$Component) {
       return _react2.default.createElement(
         'section',
         { id: 'question' },
+        _react2.default.createElement('div', { className: 'questionPicture' }),
         _react2.default.createElement(
           'div',
           { className: 'left' },
@@ -8549,22 +8563,6 @@ var Questions = function (_React$Component) {
             { className: 'row' },
             _react2.default.createElement('div', { className: 'answer', onClick: this.props.colorChange }),
             _react2.default.createElement('div', { className: 'answer', onClick: this.props.colorChange })
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'right' },
-          _react2.default.createElement(
-            'div',
-            { className: 'teacherHint' },
-            _react2.default.createElement('div', { className: 'hint' }),
-            _react2.default.createElement('div', { className: 'img' })
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'friendAnswer' },
-            _react2.default.createElement('div', { className: 'hint' }),
-            _react2.default.createElement('div', { className: 'img' })
           )
         )
       );
@@ -14950,6 +14948,15 @@ var Template = function (_React$Component) {
         var idQuestion = _this.state.allQuestions[randomNumberQuestion].id;
         if (_this.state.questionArray.indexOf(idQuestion) === -1) {
           _this.state.questionArray.push(idQuestion);
+          var questionPicture = document.querySelector('.questionPicture');
+          var img = document.createElement("img");
+          if (_this.state.allQuestions[randomNumberQuestion].picture) {
+            img.setAttribute('src', './images/' + _this.state.allQuestions[randomNumberQuestion].picture + '.jpg');
+            questionPicture.appendChild(img);
+            _this.setState({
+              picture: true
+            });
+          }
           var randomQuestion = _this.state.allQuestions[randomNumberQuestion].question;
           var goodAnswer = _this.state.allQuestions[randomNumberQuestion].goodAnswer;
           var badAnswers = _this.state.allQuestions[randomNumberQuestion].badAnswers;
@@ -15006,10 +15013,8 @@ var Template = function (_React$Component) {
       var answers = document.querySelectorAll('.wrong');
       var firstRandomWrong = _this.randomNumber();
       var secondRandomWrong = Math.round(Math.random() * 2);
-      console.log(firstRandomWrong, secondRandomWrong);
       while (firstRandomWrong === secondRandomWrong) {
         secondRandomWrong = _this.randomNumber();
-        console.log("Nowe: " + firstRandomWrong, secondRandomWrong);
       }
 
       for (var i = 0; i < answers.length; i++) {
@@ -15044,7 +15049,14 @@ var Template = function (_React$Component) {
       var answers = document.querySelectorAll('.answer');
       var progressBar = document.querySelector('.progress');
       var progress = 100 / 20 * (_this.state.questionNumber + 1);
-
+      if (_this.state.picture) {
+        var questionPicture = document.querySelector('.questionPicture');
+        var img = questionPicture.querySelector('img');
+        questionPicture.removeChild(img);
+        _this.setState({
+          picture: false
+        });
+      }
       if (_this.state.questionNumber <= 5) {
         progressBar.style.height = progress + '%';
       } else if (_this.state.questionNumber <= 10) {
@@ -15099,7 +15111,8 @@ var Template = function (_React$Component) {
         questionNumber: 1,
         name: true,
         getName: '',
-        playersName: ''
+        playersName: '',
+        picture: false
       });
     };
 
@@ -15120,7 +15133,8 @@ var Template = function (_React$Component) {
       questionNumber: 1,
       name: true,
       getName: '',
-      playersName: ''
+      playersName: '',
+      picture: false
     };
     return _this;
   }
@@ -15131,7 +15145,7 @@ var Template = function (_React$Component) {
       var _this2 = this;
 
       var childrenWithProps = _react2.default.Children.map(this.props.children, function (child) {
-        return _react2.default.cloneElement(child, { getCategory: _this2.getCategory, category: _this2.state.category, colorChange: _this2.colorChange, getData: _this2.getData, summary: _this2.state.summaryQuestions, answers: _this2.state.summaryAnswers, class: _this2.state.summaryClassNames, name: _this2.state.name, getName: _this2.getName, type: _this2.typeYourName, playersName: _this2.state.playersName });
+        return _react2.default.cloneElement(child, { getCategory: _this2.getCategory, category: _this2.state.category, colorChange: _this2.colorChange, getData: _this2.getData, summary: _this2.state.summaryQuestions, answers: _this2.state.summaryAnswers, class: _this2.state.summaryClassNames, name: _this2.state.name, getName: _this2.getName, type: _this2.typeYourName, playersName: _this2.state.playersName, picture: _this2.state.picture });
       });
       return _react2.default.createElement(
         'div',

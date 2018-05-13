@@ -404,6 +404,21 @@ body {
     background: #C0C0C0;
     display: flex;
     justify-content: space-between;
+    .questionPicture {
+      width: 15em;
+      height: 20em;
+      position: absolute;
+      z-index: 100;
+      bottom: 25%;
+      left: 0;
+      img {
+      box-sizing: border-box;
+      width: 100%;
+      border: 3px solid #545E6E;
+      height: 100%;
+      border-radius: 25px;
+      }
+    }
     .left {
       height: 100%;
       width: 10%;
@@ -430,10 +445,12 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin-right: 1em;
       h2 {
         font-size: 3em;
         @media(min-width: 1024px) {
           font-size: 2em;
+          margin-top: 0;
         }
       }
       .row {
@@ -456,6 +473,9 @@ body {
           justify-content: center;
           align-items: center;
           box-shadow: -5px 5px 5px #888888;
+          @media(min-width: 1024px) {
+            height: 90%;
+          }
           .text {
             text-align: center;
             color: white;
@@ -484,6 +504,7 @@ body {
           text-align: center;
           @media(min-width: 1024px) {
             font-size: 1.5em;
+            height: 75%;
           }
         }
       }
