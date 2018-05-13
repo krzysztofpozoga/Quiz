@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 #app {
   padding: 0;
   margin: 0;
@@ -22,6 +28,52 @@
       background-position: center;
       background-repeat: no-repeat;
       cursor: pointer;
+      position: relative;
+        .arrow {
+          display: none;
+          top: 100px;
+          right: 40px;
+          position: absolute;
+          border-left: 10px solid transparent;
+          border-right: 10px solid transparent;
+          @media(min-width: 1200px) {
+            top: 90px;
+            right: 35px;
+          }
+        }
+        .tooltip {
+          padding: 5px;
+          top: 115px;
+          right: -35px;
+          position: absolute;
+          border-radius: 15px;
+          height: 5vh;
+          width: 15vw;
+          color: #545E6E;
+          background-color: white;
+          display: none;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          @media(min-width: 1200px) {
+            top: 110px;
+            right: -60px;
+          }
+        }
+      @media(min-width: 1024px) {
+        width: 100px;
+        height: 100px;
+        &:hover > .arrow {
+          display: flex;
+        }
+        &:hover > .tooltip {
+          display: flex;
+        }
+      }
+      @media(min-width: 1200px) {
+        width: 90px;
+        height: 90px;
+      }
     }
     .darkred {
       background-color: darkred;
@@ -31,6 +83,12 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: 65%;
+      .arrow {
+        border-bottom: 20px solid darkred;
+      }
+      .tooltip {
+        border: 3px solid darkred;
+      }
     }
     .green {
       background-color: green;
@@ -40,6 +98,12 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: 65%;
+      .arrow {
+        border-bottom: 20px solid green;
+      }
+      .tooltip {
+        border: 3px solid green;
+      }
     }
     .red {
       background-color: red;
@@ -49,6 +113,12 @@
       background-position: center;
       background-repeat: no-repeat;
       background-size: contain;
+      .arrow {
+        border-bottom: 20px solid red;
+      }
+      .tooltip {
+        border: 3px solid red;
+      }
     }
   }
   #start {
@@ -58,11 +128,17 @@
     .start_question {
       display: flex;
       height: 40%;
+      @media(min-width: 1024px) {
+        justify-content: center
+      }
       .front_page_question {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding: 30px;
+        @media(min-width: 1024px) {
+          padding: 0;
+        }
         .flip-container:hover .flipper, .flip-container.hover .flipper {
         	transform: rotateY(180deg);
         }
@@ -133,6 +209,9 @@
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+        @media(min-width: 1024px) {
+          height: 30vh;
+        }
       }
     }
     .middle {
@@ -152,6 +231,12 @@
         letter-spacing: 0.5em;
         font-size: 4em;
         text-align: center;
+        @media(min-width: 1024px) {
+          font-size: 3em;
+        }
+        @media(min-width: 1200px) {
+          width: 75%;
+        }
       }
       .button {
         display: flex;
@@ -184,33 +269,58 @@
     background-position: center;
     .typeName {
       width: 100%;
-      height: 100%;
+      height: 70%;
       position: fixed;
       display: flex;
       justify-content: space-around;
       align-items: center;
       background-color: rgba(0,0,0,.7);
+      @media(min-width: 1024px) {
+        background-color: rgba(0,0,0,.9);
+        justify-content: center;
+      }
       input {
+        padding: 0;
+        margin: 0;
         height: 10%;
         width: 65%;
         font-size: 3em;
         box-shadow: -10px 10px 5px #888888;
         border-radius: 50px;
         text-align: center;
+        @media(min-width: 1024px) {
+          width: 40%;
+          font-size: 2em;
+          box-shadow: 0 0 0 #888888;
+          border-radius: 0;
+          border: 0;
+        }
       }
       button {
+        padding: 0;
+        margin: 0;
         height: 10%;
         width: 25%;
         font-size: 3em;
         background-color: #8D8276;
         border-radius: 50px;
         cursor: pointer;
+        @media(min-width: 1024px) {
+          width: 15%;
+          font-size: 2em;
+          border-radius: 0;
+          border: 0;
+        }
       }
     }
     .right {
       display: flex;
       justify-content: center;
       margin-top: 50px;
+      @media(min-width: 1024px) {
+        margin-top: 0;
+        align-items: center;
+      }
       .mieszkoSays {
         background-color: white;
         color: #545E6E;
@@ -219,6 +329,11 @@
         border: 3px solid #545E6E;
         width: 50%;
         border-radius: 25px;
+        @media(min-width: 1024px) {
+          font-size: 2.5em;
+          width: initial;
+          padding: 10px;
+        }
       }
     }
 
@@ -241,8 +356,12 @@
         width: 30vw;
         box-shadow: -10px 10px 5px #888888;
         cursor: pointer;
+        @media(min-width: 1024px) {
+          font-size: 1.5em;
+          height: 10vh;
+        }
         &:hover {
-          border: 5px solid white;
+          border: 5px solid #545E6E;
         }
       }
     }
@@ -254,6 +373,9 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      @media(min-width: 1024px) {
+        margin-bottom: 0;
+      }
       .info {
         background-color: rgba(white, .7);
         color: #545E6E;
@@ -265,6 +387,9 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
+        @media(min-width: 1024px) {
+          font-size: 1.5em;
+        }
         ul {
           li {
             text-align: justify;
@@ -307,6 +432,9 @@
       align-items: center;
       h2 {
         font-size: 3em;
+        @media(min-width: 1024px) {
+          font-size: 2em;
+        }
       }
       .row {
         width: 100%;
@@ -315,6 +443,9 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+        @media(min-width: 1024px) {
+          margin-top: 0;
+        }
         .quizQuestion {
           width: 100%;
           height: 100%;
@@ -331,6 +462,9 @@
             text-shadow: 3px 3px 0 rgba(black, .5);
             font-size: 3em;
             font-weight: bold;
+            @media(min-width: 1024px) {
+              font-size: 2em;
+            }
           }
         }
         .answer {
@@ -348,18 +482,23 @@
           align-items: center;
           justify-content: center;
           text-align: center;
-
+          @media(min-width: 1024px) {
+            font-size: 1.5em;
+          }
         }
       }
     }
   }
 
   #summary {
-    min-height: 70vh;
+    height: 70vh;
     display: flex;
     justify-content: center;
     background: #C0C0C0;
     font-size: 2em;
+    @media(min-width: 1024px) {
+      font-size: 1.5em;
+    }
     .middle {
       height: 100%;
       width: 90%;
@@ -367,6 +506,14 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
+      @media(min-width: 1024px) {
+        width: inherit;
+      }
+      h3 {
+        @media(min-width: 1024px) {
+          font-size: 1em;
+        }    
+      }
       .rightAnswers{
         display: flex;
         flex-direction: column;
@@ -375,6 +522,9 @@
         border: 5px solid #8D8276;
         border-radius: 15px;
         padding: 10px;
+        @media(min-width: 1024px) {
+          overflow-y: scroll;
+        } 
         .wrong {
           font-weight: bolder;
           color: red;

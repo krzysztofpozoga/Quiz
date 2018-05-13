@@ -126,15 +126,12 @@ class Template extends React.Component {
     let answers = document.querySelectorAll('.wrong');
     let firstRandomWrong = this.randomNumber();
     let secondRandomWrong = Math.round((Math.random() * 2));
-    console.log(firstRandomWrong, secondRandomWrong);
-    if (firstRandomWrong === secondRandomWrong) {
-
+    console.log( firstRandomWrong, secondRandomWrong);
+    while (firstRandomWrong === secondRandomWrong) {
       secondRandomWrong = this.randomNumber();
       console.log("Nowe: " + firstRandomWrong, secondRandomWrong);
-    } else {
-      secondRandomWrong = secondRandomWrong;
-      console.log("Początkowe: " + firstRandomWrong, secondRandomWrong);
     }
+    
     for(let i = 0; i < answers.length; i++) {
       if (answers[i].className === 'answer wrong') {
         answers[firstRandomWrong].style.backgroundColor = 'red';
@@ -196,7 +193,10 @@ class Template extends React.Component {
     if (this.state.summary === true) {
       this.setState({
         summary: false,
-        again: true
+        again: true,
+        teacher: false,
+        phone: false,
+        half: false
       });
     }
   }
