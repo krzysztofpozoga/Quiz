@@ -678,7 +678,7 @@
       "badAnswers" : [ "imię", "amfiteatr", " publiczna łaźnia" ],
       "goodAnswer" : "wodociąg",
       "id" : 5,
-      "question" : "Akwedukt to?"
+      "question" : "Akwedukt to..."
     },{
       "badAnswers" : [ "legionista", "hoplita", "chrześcijanin" ],
       "goodAnswer" : "gladiator",
@@ -693,7 +693,7 @@
       "badAnswers" : [ "753r.", "1573r.", "1r." ],
       "goodAnswer" : "753r. p.n.e.",
       "id" : 8,
-      "question" : "Legendarna data założenia Rzymu to?"
+      "question" : "Legendarna data założenia Rzymu to..."
     },{
       "badAnswers" : [ "liktor", "legionista", "trybun" ],
       "goodAnswer" : "konsul",
@@ -703,12 +703,12 @@
       "badAnswers" : [ "cesarstwo, królestwo, republika", "republika, cesarstwo, królestwo", "królestwo, cesarstwo, republika" ],
       "goodAnswer" : "królestwo, republika, cesarstwo",
       "id" : 10,
-      "question" : "Rzym w swojej historii prezentował różne sposoby sprawowania władzy w państwie. Ułóż je w porządku chronologicznym.?"
+      "question" : "Rzym w swojej historii prezentował różne sposoby sprawowania władzy w państwie. Ułóż je w porządku chronologicznym."
     },{
       "badAnswers" : [ "Brutus", "Oktawian August", "Romulus Augustulus" ],
       "goodAnswer" : "Juliusz Cezar",
-      "id" :11,
-      "question" : "Wybitny przywódca wojskowy, który podbił m.in. Galię i ogłosił się dożywotnim dyktatorem to?"
+      "id" : 11,
+      "question" : "Wybitny przywódca wojskowy, który podbił m.in. Galię i ogłosił się dożywotnim dyktatorem to..."
     },{
       "badAnswers" : [ "od Junony", "od Jowisza", "od imienia Juliusz" ],
       "goodAnswer" : "od Cezara",
@@ -730,7 +730,7 @@
       "id" : 15,
       "question" : "Co było m.in. przyczyną upadku Cesarstwa Rzymskiego na zachodzie?"
     },{
-      "badAnswers" : [ "w 476r.", "1453r.", "1000r." ],
+      "badAnswers" : [ "w 476r.", "w 1453r.", "w 1000r." ],
       "goodAnswer" : "w 395r.",
       "id" : 16,
       "question" : "Kiedy dokonano podziału Imperium Rzymskiego?"
@@ -740,8 +740,8 @@
       "id" : 17,
       "question" : "Kto dokonał podziału Imperium Rzymskiego?"
     },{
-      "badAnswers" : [ "W 1453r.", "w 27r.p.n.e.", "W 395r." ],
-      "goodAnswer" : "W 476r.",
+      "badAnswers" : [ "w 1453r.", "w 27r.p.n.e.", "w 395r." ],
+      "goodAnswer" : "w 476r.",
       "id" : 18,
       "question" : "W którym roku upadł Rzym?"
     },{
@@ -765,7 +765,7 @@
       "id" : 22,
       "question" : "Na ilu wzgórzach wzniesiono Rzym?"
     },{
-      "badAnswers" : [ "Wisła", "Sekwana", "Loara" ],
+      "badAnswers" : [ "Tag", "Sekwana", "Loara" ],
       "goodAnswer" : "Tyber",
       "id" : 23,
       "question" : "Która rzeka przepływa przez Rzym?"
@@ -773,7 +773,7 @@
       "badAnswers" : [ "Bałkański", "Skandynawski", "Peloponez" ],
       "goodAnswer" : " Apeniński",
       "id" : 24,
-      "question" : "Półwysep, na którym leży Rzym to?"
+      "question" : "Półwysep, na którym leży Rzym to Półwysep..."
     },{
       "badAnswers" : [ "Rzym", "Pompeje", "Asyż" ],
       "goodAnswer" : "Konstantynopol",
@@ -785,8 +785,8 @@
       "id" : 26,
       "question" : "Kto wydał edykt mediolański zezwalający chrześcijanom na wyznawanie swojej wiary?"
     },{
-      "badAnswers" : [ "Od III-VI w.", "Od II-V w.", "Od I-XV w." ],
-      "goodAnswer" : "Od I-IV w.",
+      "badAnswers" : [ "od III-VI w.", "od II-V w.", "od I-XV w." ],
+      "goodAnswer" : "od I-IV w.",
       "id" : 27,
       "question" : "W którym okresie trwały prześladowania chrześcijan w Imperium Rzymskim?"
     },{
@@ -795,15 +795,15 @@
       "id" : 28,
       "question" : "Co było pierwszym symbolem chrześcijan?"
     },{
-      "badAnswers" : [ "ZGalią", "Z Persją", "Z Grecją" ],
-      "goodAnswer" : "Z Kartaginą",
+      "badAnswers" : [ "z Galią", "z Persją", "z Grecją" ],
+      "goodAnswer" : "z Kartaginą",
       "id" : 29,
       "question" : "Z kim Rzymianie walczyli w tzw. wojnach punickich?"
     },{
       "badAnswers" : [ "Konstantyn Wielki", "Oktawian August", "Neron" ],
       "goodAnswer" : "Juliusz Cezar",
       "id" : 30,
-      "question" : "Kto wypowiedział słynne słowa “I Ty Brutusie przeciwko mnie”??"
+      "question" : "Kto wypowiedział słynne słowa “I Ty Brutusie przeciwko mnie”?"
     },{
       "badAnswers" : [ "pałaców", "domów", "świątyń" ],
       "goodAnswer" : "dróg",
@@ -833,7 +833,7 @@
       "badAnswers" : [ "patrycjusze", "niewolnicy", "szlachta" ],
       "goodAnswer" : "plebejusze",
       "id" : 36,
-      "question" : "Jak nazywali się przedstawiciele społeczeństwa rzymskiego, którzy zajmowali się handkem i rzemiosłem?"
+      "question" : "Jak nazywali się przedstawiciele społeczeństwa rzymskiego, którzy zajmowali się handlem i rzemiosłem?"
     },{
       "badAnswers" : [ "tygrys", "lew", "ślimak" ],
       "goodAnswer" : "żółw",
@@ -845,7 +845,7 @@
       "id" : 38,
       "question" : "Co było zapisane na XII Tablicach?"
     },{
-      "badAnswers" : [ "szkolniaki", "wierni", "słuchający" ],
+      "badAnswers" : [ "podążający", "wierni", "słuchający" ],
       "goodAnswer" : "apostołowie",
       "id" : 39,
       "question" : "Jak nazywali się uczniowie Jezusa?"
@@ -853,39 +853,32 @@
       "badAnswers" : [ "Św. Piotr", "Św. Łukasz", "Św. Jan" ],
       "goodAnswer" : "Św. Paweł z Tarsu",
       "id" : 40,
-      "question" : "Który apostoł był nazywany “apostołem narodów?”"
-    },{
- "question" : "Gdzie narodziło się chrześcijaństwo?"
-    },{
-      "badAnswers" : [ "świątynie", "wodociągi", "modlitwy" ],
-      "goodAnswer" : "podziemny cmentarz",
-      "id" : 45,
-      "question" : "Katakumby to..."
-    },{
-      "badAnswers" : [ "Św. Paweł", "Św. Franciszek", "Św. Jan" ],
-      "goodAnswer" : "Św. Piotr",
-      "id" : 41,
-      "question" : "Który apostoł został pierwszym biskupem Rzymu, czyli papieżem?"
-    },{
-      "badAnswers" : [ "modlitwę", "dobre słowo", "przepowiednię" ],
-      "goodAnswer" : "Dekalog",
-      "id" : 42,
-      "question" : "Co Mojżesz otrzymał od Boga na Górze Synaj"
-    },{
-      "badAnswers" : [ "modlitwa", "księga", "świątynia" ],
-      "goodAnswer" : "10 przykazań",
-      "id" : 43,
-      "question" : "Dekalog to..."
+      "question" : "Który apostoł był nazywany “apostołem narodów”?"
     },{
       "badAnswers" : [ "w Grecji", "w Rzymie", "w Galii" ],
       "goodAnswer" : "w Palestynie",
-      "id" : 44,
+      "id" : 41,
       "question" : "Gdzie narodziło się chrześcijaństwo?"
     },{
       "badAnswers" : [ "świątynie", "wodociągi", "modlitwy" ],
       "goodAnswer" : "podziemny cmentarz",
-      "id" : 45,
+      "id" : 42,
       "question" : "Katakumby to..."
-    } ]
+    },{
+      "badAnswers" : [ "Św. Paweł", "Św. Franciszek", "Św. Jan" ],
+      "goodAnswer" : "Św. Piotr",
+      "id" : 43,
+      "question" : "Który apostoł został pierwszym biskupem Rzymu, czyli papieżem?"
+    },{
+      "badAnswers" : [ "modlitwę", "dobre słowo", "przepowiednię" ],
+      "goodAnswer" : "Dekalog",
+      "id" : 44,
+      "question" : "Co Mojżesz otrzymał od Boga na Górze Synaj?"
+    },{
+      "badAnswers" : [ "modlitwa", "księga", "świątynia" ],
+      "goodAnswer" : "10 przykazań",
+      "id" : 45,
+      "question" : "Dekalog to..."
+    }]
   }
 }
