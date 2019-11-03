@@ -25,10 +25,27 @@ class Category extends React.Component {
             </div>
           </div>
           <div className='middle'>
-            <IndexLink to='/questions'><div className='button'><div className='categoryButton' data-category='poczatki' onClick={this.props.getCategory}>Początki państwa polskiego</div></div></IndexLink>
-            <IndexLink to='/questions'><div className='button'><div className='categoryButton' data-category='rzym' onClick={this.props.getCategory}>Starożytny Rzym</div></div></IndexLink>
-            <IndexLink to='/questions'><div className='button'><div className='categoryButton' data-category='introduction' onClick={this.props.getCategory}>Zapoznanie się z historią - nauką o przeszłości</div></div></IndexLink>
-
+            <IndexLink to='/questions'>
+              <div className='button'>
+                <div className='categoryButton' data-category='introduction' onClick={this.props.getCategory}>
+                  Zapoznanie się z historią - nauką o przeszłości
+                </div>
+              </div>
+            </IndexLink>
+            <IndexLink to='/questions'>
+              <div className='button'>
+                <div className='categoryButton' data-category='independence-easy' onClick={this.props.getCategory}>
+                  Niepodległość (klasa 0-2)
+                </div>
+              </div>
+            </IndexLink>
+            <IndexLink to='/questions'>
+              <div className='button'>
+                <div className='categoryButton' data-category='independence-medium' onClick={this.props.getCategory}>
+                  Niepodległość (klasa 3-6)
+                </div>
+              </div>
+            </IndexLink>
           </div>
           <div className='right'>
             <div className='mieszkoSays'>Wybierz kategorię!</div>

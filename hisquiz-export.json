@@ -879,6 +879,340 @@
       "goodAnswer" : "10 przykazań",
       "id" : 45,
       "question" : "Dekalog to..."
-    }]
+    }],
+    "independence-medium": [
+      {
+        "badAnswers" : [ "1793", "1772", "1789" ],
+        "goodAnswer" : "1795",
+        "id" : 1,
+        "question" : "Państwo polskie przestało istnieć w wyniku 3. rozbioru, który miał miejsce w roku:"
+      },
+      {
+        "badAnswers" : [ "decyzja państw zaborczych", "powstanie wielkopolskie", "II wojna światowa" ],
+        "goodAnswer" : "I wojna światowa",
+        "id" : 2,
+        "question" : "W wyniku jakiego wydarzenia Polska odzyskała niepodłegłość?"
+      },
+      {
+        "badAnswers" : [ "03.05.1918 r.", "15.08.1918 r.", "03.03.1918 r." ],
+        "goodAnswer" : "11.11.1918 r.",
+        "id" : 3,
+        "question" : "Jaka jest symboliczna data odzyskania przez Polskę niepodległości?"
+      },
+      {
+        "badAnswers" : [ "Józef Piłsudski", "Ignacy Jan Paderewski", "Roman Dmowski" ],
+        "goodAnswer" : "Wincenty Witos",
+        "id" : 4,
+        "picture" : 3,
+        "question" : "Polska odzyskała niepodległość między innymi dzięki trzem osobom ze zdjęcia. Kto nie należy do tego grona?"
+      },
+      {
+        "badAnswers" : [ "Józef Haller", "Tadeusz Rozwadowski", "Roman Dmowski" ],
+        "goodAnswer" : "Józef Piłsudski",
+        "id" : 5,
+        "question" : "Kto jest twórcą Kompani Kadrowej, Legionów Polskich oraz pogromcą bolszewików w bitwie warszawskiej?"
+      },
+      {
+        "badAnswers" : [ "Józef Haller", "Wojciech Korfanty", "Roman Dmowski" ],
+        "goodAnswer" : "Ignacy Jak Paderewski",
+        "id" : 6,
+        "question" : "Dzięki niemu sprawa polska była poruszona przez USA w Wersalu pod Paryżem. Polityk, pianista, kompozytor."
+      },
+      {
+        "badAnswers" : [ "Józef Piłsudski", "Wincenty Witos", "Ignacy Jan Paderewski" ],
+        "goodAnswer" : "Roman Dmowski",
+        "id" : 7,
+        "question" : "Polityk reprezentujący sprawę Polską w Wersalu pod Paryżem to:"
+      },
+      {
+        "badAnswers" : [ "Kaziemierz Sosnkowski", "Jędrzej Moraczewski", "Władysław Sikorski" ],
+        "goodAnswer" : "Józef Haller",
+        "id" : 8,
+        "question" : "Kto był dowódcą tzw. Błękitnej Armii?"
+      },
+      {
+        "badAnswers" : [ "My, pierwsza brygada", "Wojenko, wojenko", "Pierwsza kadrowa" ],
+        "goodAnswer" : "Bogurodzica",
+        "id" : 9,
+        "question" : "Pieśnią patriotyczną z okresu I wojny światowej nie jest:"
+      },
+      {
+        "badAnswers" : [ "Rosja", "Prusy", "Austria" ],
+        "goodAnswer" : "Włochy",
+        "id" : 10,
+        "question" : "Który kraj nie dokonał rozbioru Polski w XIII wieku?"
+      },
+      {
+        "badAnswers" : [ "Napoleon Bonaparte", "Tadeusz Kościuszko", "Jan Henryk Dąbrowski" ],
+        "goodAnswer" : "Stefan Czarniecki",
+        "id" : 11,
+        "question" : "Kto jest bohaterem trzeciej zwrotki „Mazurka Dąbrowskiego?"
+      },
+      {
+        "badAnswers" : [ "przyjazdu Piłsudskiego do Warszawy.", "urodzin Józefa Piłsudskiego.", "nadania stopnia marszałka Polski Piłsudskiemu." ],
+        "goodAnswer" : "przejęcia przez Piłsudskiego władzy wojskowej.",
+        "id" : 12,
+        "question" : "Narodowe  Święto Niepodległości obchodzimy na pamiątkę…."
+      },
+      {
+        "badAnswers" : [ "we Lwowie", "w Warszawie", "w Kielcach" ],
+        "goodAnswer" : "w Krakowie",
+        "id" : 13,
+        "question" : "Gdzie Józef Piłsudski utworzył Pierwszą Kompanię Kadrową?"
+      },
+      {
+        "badAnswers" : [ "generała", "hetmana", "ministra Polski" ],
+        "goodAnswer" : "Marszałka Polski",
+        "id" : 14,
+        "question" : "Józef Piłsudski jako pierwsza osoba w historii Polski otrzymał stopień…"
+      },
+      {
+        "badAnswers" : [ "1939-1945", "1908-1918", "1912-1916" ],
+        "goodAnswer" : "1914-1918",
+        "id" : 15,
+        "question" : "W których latach trwała I wojna światowa?"
+      },
+      {
+        "badAnswers" : [ "lwiątkami lwowskimi", "orzełkami lwowskimi", "lwami lwowskimi" ],
+        "goodAnswer" : "orlętami lwowskimi",
+        "id" : 16,
+        "question" : "Jak nazywamy młodych obrońców Lwowa z lat 1918-1919?"
+      },
+      {
+        "badAnswers" : [ "bitwy warszawskiej z Niemcami", "zawarcia pokoju z Rosją", "zawarcia pokoju z Niemcami" ],
+        "goodAnswer" : "bitwy warszwaskiej z Armią Czerwoną",
+        "id" : 17,
+        "question" : "Cud nad Wisłą odnosi się do:"
+      },
+      {
+        "badAnswers" : [ "23", "100", "111" ],
+        "goodAnswer" : "123",
+        "id" : 18,
+        "question" : "Przez ile lat Polska była pod zaborami?"
+      },
+      {
+        "badAnswers" : [ "Austriakom", "Rosjanom", "Włochom" ],
+        "goodAnswer" : "Niemcom",
+        "id" : 19,
+        "question" : "Przeciwko komu Polacy walczyli w powstaniach śląskich?"
+      },
+      {
+        "badAnswers" : [ "I Rzeczpospolita", "Księstwo Polskie", "Królestwo Polskie" ],
+        "goodAnswer" : "II Rzeczpospolita",
+        "id" : 20,
+        "question" : "Jaka była oficjalna nazwa państwa polskiego po odzyskaniu niepodległości?"
+      },
+      {
+        "badAnswers" : [ "Józef Piłsudski", "Jan Henryk Dąbrowski", "Józef Haller" ],
+        "goodAnswer" : "Józef Wybicki",
+        "id" : 21,
+        "question" : "Kto napisał słowa polskiego hymnu narodowego?"
+      },
+      {
+        "badAnswers" : [ "3", "5", "2" ],
+        "goodAnswer" : "4",
+        "id" : 22,
+        "question" : "Ile zwrotek liczy polski humn narodowy?"
+      },
+      {
+        "badAnswers" : [ "Wujek", "Stryjek", "Ojciec" ],
+        "goodAnswer" : "Dziadek",
+        "id" : 23,
+        "question" : "Jak żołnierze wołali na Józefa Piłsudskiego?"
+      },
+      {
+        "badAnswers" : [ "rogatywka", "michałówka", "pawłówka" ],
+        "goodAnswer" : "maciejówka",
+        "id" : 24,
+        "question" : "Jak się nazywa nakrycie głowy noszone przez legionistów Józefa Piłsudskiego?"
+      },
+      {
+        "badAnswers" : [ "Hymn „Mazurek Dąbrowskiego”", "Flaga Polski", "Godło Polski" ],
+        "goodAnswer" : "Warszawska Syrenka",
+        "id" : 25,
+        "question" : "Polskim symbolem narodowym nie jest:"
+      },
+      {
+        "badAnswers" : [ "Józef Haller", "Ignacy Jan Paderewski", "Roman Dmowski" ],
+        "goodAnswer" : "Józef Piłsudski",
+        "id" : 26,
+        "picture" : 4,
+        "question" : "Osoba przedstawiona na fotografii to:"
+      },
+      {
+        "badAnswers" : [ "Józef Haller", "Ignacy Jan Paderewski", "Józef Piłsudski" ],
+        "goodAnswer" : "Roman Dmowski",
+        "id" : 27,
+        "picture" : 5,
+        "question" : "Osoba przedstawiona na fotografii to:"
+      },
+      {
+        "badAnswers" : [ "Józef Haller", "Roman Dmowski", "Józef Piłsudski" ],
+        "goodAnswer" : "Ignacy Jan Paderewski",
+        "id" : 28,
+        "picture" : 6,
+        "question" : "Osoba przedstawiona na fotografii to:"
+      },
+      {
+        "badAnswers" : [ "Tadeusz Rozwadowski", "Wincenty Witos", "Wojciech Korfanty" ],
+        "goodAnswer" : "Józef Haller",
+        "id" : 29,
+        "question" : "Kto dokonał symbolicznych zaślubin Polski z morzem?"
+      }
+    ],
+    "independence-easy": [
+      {
+        "badAnswers" : [ "Jan Henryk Dąbrowski", "Stefan Czarniecki", "Tadeusz Kościuszko" ],
+        "goodAnswer" : "Napoleon Bonaparte",
+        "id" : 1,
+        "question" : "Kto jest bohaterem drugiej zwrotki Mazurka Dąbrowskiego?"
+      },
+      {
+        "badAnswers" : [ "1 listopada", "21 listopada", "12 listopada" ],
+        "goodAnswer" : "11 listopada",
+        "id" : 2,
+        "question" : "Narodowe  Święto Niepodległości obchodzimy…"
+      },
+      {
+        "badAnswers" : [ "23", "100", "111" ],
+        "goodAnswer" : "123",
+        "id" : 3,
+        "question" : "Przez ile lat Polska była pod zaborami?"
+      },
+      {
+        "badAnswers" : [ "Józef Piłsudski", "Jan Henryk Dąbrowski", "Józef Haller" ],
+        "goodAnswer" : "Józef Wybicki",
+        "id" : 4,
+        "question" : "Kto napisał słowa polskiego hymnu narodowego?"
+      },
+      {
+        "badAnswers" : [ "Rosja, Prusy, Włochy", "Prusy, Rosja i Francja", "Rosja, Szwecja, Prusy" ],
+        "goodAnswer" : "Rosja, Prusy i Austria",
+        "id" : 5,
+        "question" : "Które kraje dokonały rozbiorów Polski?"
+      },
+      {
+        "badAnswers" : [ "6", "8", "10" ],
+        "goodAnswer" : "4",
+        "id" : 6,
+        "question" : "Ile lat trwała I wojna światowa?"
+      },
+      {
+        "badAnswers" : [ "we Francji", "w Austrii", "w Hiszpanii" ],
+        "goodAnswer" : "we Włoszech",
+        "id" : 7,
+        "question" : "Gdzie Jan Henryk Dąbrowski utworzył Legiony Polskie?"
+      },
+      {
+        "badAnswers" : [ "żołnierze mieli niebieskie oczy", "żołnierze lubili kolor niebieski", "żołnierze nosili niebieskie buty" ],
+        "goodAnswer" : "mundur żołnierzy był w kolorze niebieskim",
+        "id" : 8,
+        "question" : "Dlaczego Armię gen. Józefa Hallera nazywano Błękitną Armią?"
+      },
+      {
+        "badAnswers" : [ "generała", "hetmana", "ministra Polski" ],
+        "goodAnswer" : "Marszałka Polski",
+        "id" : 9,
+        "question" : "Józef Piłsudski jako pierwsza osoba w historii Polski otrzymał stopień…"
+      },
+      {
+        "badAnswers" : [ "3", "5", "2" ],
+        "goodAnswer" : "4",
+        "id" : 10,
+        "question" : "Ile zwrotek liczy polski humn narodowy?"
+      },
+      {
+        "badAnswers" : [ "Roman Dmowski", "Wojciech Korfanty", "Tadeusz Rozwadowski" ],
+        "goodAnswer" : "Ignacy Jan Paderewski",
+        "id" : 11,
+        "question" : "Jak nazywał się polityk i kompozytor, który swoją pracą przyczynił się do odzyskania niepodległości w 1918 r.? "
+      },
+      {
+        "badAnswers" : [ "Józef Piłsudski", "Ignacy Jan Paderewski", "Roman Dmowski" ],
+        "goodAnswer" : "Wincenty Witos",
+        "id" : 12,
+        "picture" : 3,
+        "question" : "Polska odzyskała niepodległość między innymi dzięki trzem osobom ze zdjęcia. Kto nie należy do tego grona?"
+      },
+      {
+        "badAnswers" : [ "decyzja państw zaborczych", "powstanie wielkopolskie", "II wojna światowa" ],
+        "goodAnswer" : "I wojna światowa",
+        "id" : 13,
+        "question" : "W wyniku jakiego wydarzenia Polska odzyskała niepodłegłość?"
+      },
+      {
+        "badAnswers" : [ "My, pierwsza brygada", "Wojenko, wojenko", "Pierwsza kadrowa" ],
+        "goodAnswer" : "Bogurodzica",
+        "id" : 14,
+        "question" : "Pieśnią patriotyczną z okresu I wojny światowej nie jest:"
+      },
+      {
+        "badAnswers" : [ "Kajtek", "Ciapek", "Kasztanka" ],
+        "goodAnswer" : "Pies",
+        "id" : 15,
+        "question" : "Jak się wabił pies Józefa Piłsudskiego?"
+      },
+      {
+        "badAnswers" : [ "Orzech", "Brzózka", "Błyskawica" ],
+        "goodAnswer" : "Kasztanka",
+        "id" : 16,
+        "question" : "Jak miał na imię koń Józefa Piłsudskiego?"
+      },
+      {
+        "badAnswers" : [ "Wujek", "Stryjek", "Ojciec" ],
+        "goodAnswer" : "Dziadek",
+        "id" : 17,
+        "question" : "Jak żołnierze wołali na Józefa Piłsudskiego?"
+      },
+      {
+        "badAnswers" : [ "rogatywka", "michałówka", "pawłówka" ],
+        "goodAnswer" : "maciejówka",
+        "id" : 18,
+        "question" : "Jak się nazywa nakrycie głowy noszone przez legionistów Józefa Piłsudskiego?"
+      },
+      {
+        "badAnswers" : [ "Hymn „Mazurek Dąbrowskiego”", "Flaga Polski", "Godło Polski" ],
+        "goodAnswer" : "Warszawska Syrenka",
+        "id" : 19,
+        "question" : "Polskim symbolem narodowym nie jest:"
+      },
+      {
+        "badAnswers" : [ "Józef Haller", "Ignacy Jan Paderewski", "Roman Dmowski" ],
+        "goodAnswer" : "Józef Piłsudski",
+        "id" : 20,
+        "picture" : 4,
+        "question" : "Osoba przedstawiona na fotografii to:"
+      },
+      {
+        "badAnswers" : [ "2", "4", "1" ],
+        "goodAnswer" : "3",
+        "id" : 21,
+        "question" : "Ile było rozbiorów Polski?"
+      },
+      {
+        "badAnswers" : [ "Jan Henryk Dąbrowski", "Napoleon Bonaparte", "Stefan Czarniecki" ],
+        "goodAnswer" : "Tadeusz Kościuszko",
+        "id" : 22,
+        "question" : "Postać, która nie występuje we współczesnym tekście hymnu narodowego to:"
+      },
+      {
+        "badAnswers" : [ "Wanda i Halina", "Halina i Jadwiga", "Zofia i Halina" ],
+        "goodAnswer" : "Wanda i Jadwiga",
+        "id" : 23,
+        "question" : "Jak miały na imię córki Józefa Piłsudskiego?"
+      },
+      {
+        "badAnswers" : [ "Asia", "Kasia", "Zosia" ],
+        "goodAnswer" : "Basia",
+        "id" : 24,
+        "question" : "Jak ma na imię bohaterka czwartej zwrotki hymnu Polski?"
+      },
+      {
+        "badAnswers" : [ "XXI w.", "XIX w.", "XVIII w." ],
+        "goodAnswer" : "XX w.",
+        "id" : 25,
+        "question" : "W którym wieku Mazurek Dąbrowskiego został hymnem Polski?"
+      }
+    ]
   }
 }

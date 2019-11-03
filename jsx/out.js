@@ -8274,34 +8274,34 @@ var Category = function (_React$Component) {
               { className: 'button' },
               _react2.default.createElement(
                 'div',
-                { className: 'categoryButton', 'data-category': 'poczatki', onClick: this.props.getCategory },
-                'Pocz\u0105tki pa\u0144stwa polskiego'
-              )
-            )
-          ),
-          _react2.default.createElement(
-            _reactRouter.IndexLink,
-            { to: '/questions' },
-            _react2.default.createElement(
-              'div',
-              { className: 'button' },
-              _react2.default.createElement(
-                'div',
-                { className: 'categoryButton', 'data-category': 'rzym', onClick: this.props.getCategory },
-                'Staro\u017Cytny Rzym'
-              )
-            )
-          ),
-          _react2.default.createElement(
-            _reactRouter.IndexLink,
-            { to: '/questions' },
-            _react2.default.createElement(
-              'div',
-              { className: 'button' },
-              _react2.default.createElement(
-                'div',
                 { className: 'categoryButton', 'data-category': 'introduction', onClick: this.props.getCategory },
                 'Zapoznanie si\u0119 z histori\u0105 - nauk\u0105 o przesz\u0142o\u015Bci'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            _reactRouter.IndexLink,
+            { to: '/questions' },
+            _react2.default.createElement(
+              'div',
+              { className: 'button' },
+              _react2.default.createElement(
+                'div',
+                { className: 'categoryButton', 'data-category': 'independence-easy', onClick: this.props.getCategory },
+                'Niepodleg\u0142o\u015B\u0107 (klasa 0-2)'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            _reactRouter.IndexLink,
+            { to: '/questions' },
+            _react2.default.createElement(
+              'div',
+              { className: 'button' },
+              _react2.default.createElement(
+                'div',
+                { className: 'categoryButton', 'data-category': 'independence-medium', onClick: this.props.getCategory },
+                'Niepodleg\u0142o\u015B\u0107 (klasa 3-6)'
               )
             )
           )

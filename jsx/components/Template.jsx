@@ -106,11 +106,11 @@ class Template extends React.Component {
              }
            }
          }
-         
+
        } else {
          this.getData();
        }
-    })  
+    })
   }
 
   teacherAnswer = (event) => {
@@ -145,7 +145,7 @@ class Template extends React.Component {
     while (firstRandomWrong === secondRandomWrong) {
       secondRandomWrong = this.randomNumber();
     }
-    
+
     for(let i = 0; i < answers.length; i++) {
       if (answers[i].className === 'answer wrong') {
         answers[firstRandomWrong].style.backgroundColor = 'red';
