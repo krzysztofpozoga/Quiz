@@ -885,7 +885,7 @@
         "badAnswers" : [ "1793", "1772", "1789" ],
         "goodAnswer" : "1795",
         "id" : 1,
-        "question" : "Państwo polskie przestało istnieć w wyniku 3. rozbioru, który miał miejsce w roku:"
+        "question" : "Państwo polskie przestało istnieć w wyniku III rozbioru, który miał miejsce w roku:"
       },
       {
         "badAnswers" : [ "decyzja państw zaborczych", "powstanie wielkopolskie", "II wojna światowa" ],
@@ -940,7 +940,7 @@
         "badAnswers" : [ "Rosja", "Prusy", "Austria" ],
         "goodAnswer" : "Włochy",
         "id" : 10,
-        "question" : "Który kraj nie dokonał rozbioru Polski w XIII wieku?"
+        "question" : "Który kraj nie dokonał rozbioru Polski w XVIII wieku?"
       },
       {
         "badAnswers" : [ "Napoleon Bonaparte", "Tadeusz Kościuszko", "Jan Henryk Dąbrowski" ],
@@ -980,7 +980,7 @@
       },
       {
         "badAnswers" : [ "bitwy warszawskiej z Niemcami", "zawarcia pokoju z Rosją", "zawarcia pokoju z Niemcami" ],
-        "goodAnswer" : "bitwy warszwaskiej z Armią Czerwoną",
+        "goodAnswer" : "bitwy warszawskiej z bolszewikami",
         "id" : 17,
         "question" : "Cud nad Wisłą odnosi się do:"
       },
