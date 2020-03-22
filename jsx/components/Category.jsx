@@ -41,8 +41,8 @@ class Category extends React.Component {
             </IndexLink>
             <IndexLink to='/questions'>
               <div className='button'>
-                <div className='categoryButton' data-category='independence-medium' onClick={this.props.getCategory}>
-                  Niepodległość (klasa 3-6)
+                <div className='categoryButton' data-category='zamoyski' onClick={this.props.getCategory}>
+                  Zamoyski i Kopernik na tapecie
                 </div>
               </div>
             </IndexLink>

@@ -1213,6 +1213,175 @@
         "id" : 25,
         "question" : "W którym wieku Mazurek Dąbrowskiego został hymnem Polski?"
       }
+    ],
+    "zamoyski": [
+      {
+        "badAnswers" : [ "I połowie XV wieku.", "II połowie XVI wieku.", "II połowie XV wieku." ],
+        "goodAnswer" : "I połowie XVI wieku.",
+        "id" : 1,
+        "question" : "Jan Zamoyski urodził się w roku 1542, to znaczy, że było to w"
+      },
+      {
+        "badAnswers" : [ "Posiadała wiele ziem.", "Miała liczne przywileje.", "Wywodziła się z rycerstwa." ],
+        "goodAnswer" : "Mieszkała w drogich kamienicach w miastach.",
+        "id" : 2,
+        "question" : "Które zdanie nie dotyczy szlachty?"
+      },
+      {
+        "badAnswers" : [ "Wazów.", "Piastów.", "Andegawenów." ],
+        "goodAnswer" : "Jagiellonów.",
+        "id" : 3,
+        "question" : "Zygmunt II August był królem dynastii"
+      },
+      {
+        "badAnswers" : [ "sekretarz.", "hetman.", "książę." ],
+        "goodAnswer" : "kanclerz.",
+        "id" : 4,
+        "question" : "Najwyższy urząd w dawnej Polsce to"
+      },
+      {
+        "badAnswers" : [ "sekretarz.", "kanclerz.", "podskarbi." ],
+        "goodAnswer" : "hetman.",
+        "id" : 5,
+        "question" : "Najwyższy dowódca wojskowy w dawnej Polsce to"
+      },
+      {
+        "badAnswers" : [ "z Krzyżakami", "z Austrią", "ze Szwecją" ],
+        "goodAnswer" : "z Cesarstwem Rosyjskim",
+        "id" : 6,
+        "question" : "Z którym państwem Polska toczyła wojnę w latach 1579-1582?"
+      },
+      {
+        "badAnswers" : [ "Założył Zamość.", "Studiował za granicą.", "Jako młody człowiek został sekretarzem na dworze królewskim." ],
+        "goodAnswer" : "Był mieszczaninem.",
+        "id" : 7,
+        "question" : "Które ze zdań nie dotyczy Zamoyskiego?"
+      },
+      {
+        "badAnswers" : [ "dwa", "trzy", "cztery" ],
+        "goodAnswer" : "jeden",
+        "id" : 8,
+        "question" : "Ile w Polsce było uniwersytetów (szkół wyższych) przed założeniem Akademii Zamojskiej?"
+      },
+      {
+        "badAnswers" : [ "Jana Zamoyskiego", "Zygmunta II Augusta", "Władysława II Jagiełły" ],
+        "goodAnswer" : "Stefana Batorego",
+        "id" : 9,
+        "question" : "Za panowania którego władcy doszło do wojny z Rosją?"
+      },
+      {
+        "badAnswers" : [ "Zwycięstwem Rosji.", "Czasowym zawieszeniem działań wojennych.", "Żadna z odpowiedzi." ],
+        "goodAnswer" : "Zwycięstwem Polski.",
+        "id" : 10,
+        "question" : "Jak zakończyła się wojna z Rosją?"
+      },
+      {
+        "badAnswers" : [ "Wybór Batorego na króla.", "Wojna z Rosją.", "Założenie Zamościa." ],
+        "goodAnswer" : "Śmierć Zygmunta II Augusta.",
+        "id" : 11,
+        "question" : "Które wydarzenie było najwcześniejsze?"
+      },
+      {
+        "badAnswers" : [ "Stefana Batorego", "Zygmunta II Augusta", "Mikołaja Kopernika" ],
+        "goodAnswer" : "Jana Zamoyskiego",
+        "id" : 12,
+        "picture" : 7,
+        "question" : "Kogo przedstawia fotografia?"
+      },
+      {
+        "badAnswers" : [ "Stefana Batorego", "Zygmunta II Augusta", "Jana Zamoyskiego" ],
+        "goodAnswer" : "Mikołaja Kopernika",
+        "id" : 13,
+        "picture" : 8,
+        "question" : "Kogo przedstawia fotografia?"
+      },
+      {
+        "badAnswers" : [ "I połowie XV wieku.", "II połowie XVI wieku.", "I połowie XVI wieku." ],
+        "goodAnswer" : "II połowie XV wieku.",
+        "id" : 14,
+        "question" : "Mikołaj Kopernik urodził się w roku 1473, to znaczy, że było to w"
+      },
+      {
+        "badAnswers" : [ "we Fromborku", "w Krakowie", "w Gdańsku" ],
+        "goodAnswer" : "w Toruniu",
+        "id" : 15,
+        "question" : "Gdzie urodził się Mikołaj Kopernik?"
+      },
+      {
+        "badAnswers" : [ "najwyższy urząd w dawnej Polsce.", "to najwyższy dowódca wojskowy.", "to wybitny uczony w zakresie matematyki." ],
+        "goodAnswer" : "osoba posiadająca rozległą wiedzę z różnych dziedzin.",
+        "id" : 16,
+        "question" : "Polihistor to"
+      },
+      {
+        "badAnswers" : [ "Że Słońce wraz z innymi ciałami niebieskimi krążą wokół Ziemi.", "Że Ziemia jest w centrum wszechświata.", "Że Słońce nie znajduje się w centrum wszechświata." ],
+        "goodAnswer" : "Że Ziemia wraz z innymi planetami krąży wokół Słońca.",
+        "id" : 17,
+        "question" : "Co udowodnił Mikołaj Kopernik?"
+      },
+      {
+        "badAnswers" : [ "Że zastał Polskę drewnianą a zostawił murowaną.", "Polegać na kimś jak na Koperniku.", "żadna z odpowiedzi" ],
+        "goodAnswer" : "Że wstrzymał Słońce i ruszył Ziemię.",
+        "id" : 18,
+        "question" : "Które z powiedzeń dotyczą Mikołaja Kopernika?"
+      },
+      {
+        "badAnswers" : [ "w Toruniu", "w Krakowie", "w Gdańsku" ],
+        "goodAnswer" : "we Fromborku",
+        "id" : 19,
+        "question" : "W którym mieście Kopernik prowadził obserwacje nieba?"
+      },
+      {
+        "badAnswers" : [ "w Toruniu", "w Krakowie", "w Gdańsku" ],
+        "goodAnswer" : "we Fromborku",
+        "id" : 20,
+        "question" : "W którym mieście znajduje się grób Kopernika?"
+      },
+      {
+        "badAnswers" : [ "Książę", "Utopia", "O naprawie Rzeczypospolitej." ],
+        "goodAnswer" : "O obrotach sfer niebieskich.",
+        "id" : 21,
+        "question" : "Jak nazywa się dzieło Kopernika, w którym opisał swoje obserwacje?"
+      },
+      {
+        "badAnswers" : [ "w I połowie XVII wieku", "w II połowie XVI wieku", "w I połowie XV wieku" ],
+        "goodAnswer" : "w I połowie XVI wieku",
+        "id" : 22,
+        "question" : "Kopernik zmarł w 1543 roku. Oznacza to, że było to w"
+      },
+      {
+        "badAnswers" : [ "Wojciech Kossak", "Juliusz Kossak", "Aleksander Sochaczewski" ],
+        "goodAnswer" : "Jan Matejko",
+        "id" : 23,
+        "picture": 9,
+        "question" : "Autorem poniższego obrazu jest"
+      },
+      {
+        "badAnswers" : [ "Wojciech Kossak", "Juliusz Kossak", "Aleksander Sochaczewski" ],
+        "goodAnswer" : "Jan Matejko",
+        "id" : 24,
+        "picture": 10,
+        "question" : "Autorem poniższego obrazu jest"
+      },
+      {
+        "badAnswers" : [ "Warszawa", "Kraków", "Gdańsk" ],
+        "goodAnswer" : "Zamość",
+        "id" : 25,
+        "picture": 11,
+        "question" : "Które polskie miasto zostało przedstawione na fotografii?"
+      },
+      {
+        "badAnswers" : [ "Stefan Batory", "Zygmunt II August", "Stefan Czarniecki" ],
+        "goodAnswer" : "Jan Zamoyski",
+        "id" : 26,
+        "question" : "Kto założył Zamość?"
+      },
+      {
+        "badAnswers" : [ "średniowieczu.", "współczesności.", "starożytności." ],
+        "goodAnswer" : "nowożytności.",
+        "id" : 27,
+        "question" : "Kopernik zmarł w 1543 roku. Miało to miejsce w"
+      }
     ]
   }
 }
