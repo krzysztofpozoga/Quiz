@@ -1219,7 +1219,7 @@
         "badAnswers" : [ "I połowie XV wieku.", "II połowie XVI wieku.", "II połowie XV wieku." ],
         "goodAnswer" : "I połowie XVI wieku.",
         "id" : 1,
-        "question" : "Jan Zamoyski urodził się w roku 1542, to znaczy, że było to w"
+        "question" : "Jan Zamoyski urodził się w roku 1542, to znaczy, że było to w..."
       },
       {
         "badAnswers" : [ "Posiadała wiele ziem.", "Miała liczne przywileje.", "Wywodziła się z rycerstwa." ],
@@ -1231,19 +1231,19 @@
         "badAnswers" : [ "Wazów.", "Piastów.", "Andegawenów." ],
         "goodAnswer" : "Jagiellonów.",
         "id" : 3,
-        "question" : "Zygmunt II August był królem dynastii"
+        "question" : "Zygmunt II August był królem z dynastii..."
       },
       {
         "badAnswers" : [ "sekretarz.", "hetman.", "książę." ],
         "goodAnswer" : "kanclerz.",
         "id" : 4,
-        "question" : "Najwyższy urząd w dawnej Polsce to"
+        "question" : "Najwyższy urząd w dawnej Polsce to..."
       },
       {
         "badAnswers" : [ "sekretarz.", "kanclerz.", "podskarbi." ],
         "goodAnswer" : "hetman.",
         "id" : 5,
-        "question" : "Najwyższy dowódca wojskowy w dawnej Polsce to"
+        "question" : "Najwyższy dowódca wojskowy w dawnej Polsce to..."
       },
       {
         "badAnswers" : [ "z Krzyżakami", "z Austrią", "ze Szwecją" ],
@@ -1299,7 +1299,7 @@
         "badAnswers" : [ "I połowie XV wieku.", "II połowie XVI wieku.", "I połowie XVI wieku." ],
         "goodAnswer" : "II połowie XV wieku.",
         "id" : 14,
-        "question" : "Mikołaj Kopernik urodził się w roku 1473, to znaczy, że było to w"
+        "question" : "Mikołaj Kopernik urodził się w roku 1473, to znaczy, że było to w..."
       },
       {
         "badAnswers" : [ "we Fromborku", "w Krakowie", "w Gdańsku" ],
@@ -1311,7 +1311,7 @@
         "badAnswers" : [ "najwyższy urząd w dawnej Polsce.", "to najwyższy dowódca wojskowy.", "to wybitny uczony w zakresie matematyki." ],
         "goodAnswer" : "osoba posiadająca rozległą wiedzę z różnych dziedzin.",
         "id" : 16,
-        "question" : "Polihistor to"
+        "question" : "Polihistor to..."
       },
       {
         "badAnswers" : [ "Że Słońce wraz z innymi ciałami niebieskimi krążą wokół Ziemi.", "Że Ziemia jest w centrum wszechświata.", "Że Słońce nie znajduje się w centrum wszechświata." ],
@@ -1344,24 +1344,24 @@
         "question" : "Jak nazywa się dzieło Kopernika, w którym opisał swoje obserwacje?"
       },
       {
-        "badAnswers" : [ "w I połowie XVII wieku", "w II połowie XVI wieku", "w I połowie XV wieku" ],
-        "goodAnswer" : "w I połowie XVI wieku",
+        "badAnswers" : [ "w I połowie XVII wieku.", "w II połowie XVI wieku.", "w I połowie XV wieku." ],
+        "goodAnswer" : "w I połowie XVI wieku.",
         "id" : 22,
-        "question" : "Kopernik zmarł w 1543 roku. Oznacza to, że było to w"
+        "question" : "Kopernik zmarł w 1543 roku. Oznacza to, że było to w..."
       },
       {
-        "badAnswers" : [ "Wojciech Kossak", "Juliusz Kossak", "Aleksander Sochaczewski" ],
-        "goodAnswer" : "Jan Matejko",
+        "badAnswers" : [ "Wojciech Kossak.", "Juliusz Kossak.", "Aleksander Sochaczewski." ],
+        "goodAnswer" : "Jan Matejko.",
         "id" : 23,
         "picture": 9,
-        "question" : "Autorem poniższego obrazu jest"
+        "question" : "Autorem poniższego obrazu jest..."
       },
       {
-        "badAnswers" : [ "Wojciech Kossak", "Juliusz Kossak", "Aleksander Sochaczewski" ],
-        "goodAnswer" : "Jan Matejko",
+        "badAnswers" : [ "Wojciech Kossak.", "Juliusz Kossak.", "Aleksander Sochaczewski." ],
+        "goodAnswer" : "Jan Matejko.",
         "id" : 24,
         "picture": 10,
-        "question" : "Autorem poniższego obrazu jest"
+        "question" : "Autorem poniższego obrazu jest..."
       },
       {
         "badAnswers" : [ "Warszawa", "Kraków", "Gdańsk" ],
@@ -1380,7 +1380,254 @@
         "badAnswers" : [ "średniowieczu.", "współczesności.", "starożytności." ],
         "goodAnswer" : "nowożytności.",
         "id" : 27,
-        "question" : "Kopernik zmarł w 1543 roku. Miało to miejsce w"
+        "question" : "Kopernik zmarł w 1543 roku. Miało to miejsce w..."
+      }
+    ],
+    "mid": [
+      {
+        "badAnswers" : [ "Nowymi Atenami.", "Nową Aleksandrią.", "Nowym Babilonem." ],
+        "goodAnswer" : "Nowym Rzymem.",
+        "id" : 1,
+        "question" : "Stolica cesarstwa bizantyjskiego ze względu na swój wspaniały rozwój była nazywana..."
+      },
+      {
+        "badAnswers" : [ "Rzym.", "Ateny.", "Efez." ],
+        "goodAnswer" : "Konstantynopol.",
+        "id" : 2,
+        "question" : "Stolica cesarstwa bizantyjskiego to..."
+      },
+      {
+        "badAnswers" : [ "w 476 roku", "w 510 roku", "w 451 roku" ],
+        "goodAnswer" : "w 395 roku",
+        "id" : 3,
+        "question" : "W którym roku powstało cesarstwo wschodniorzymskie, czyli bizantyjskie?"
+      },
+      {
+        "badAnswers" : [ "Konstantyn Wielki.", "Oktawian August.", "Teodozjusz I Wielki." ],
+        "goodAnswer" : "Justynian I Wielki.",
+        "id" : 4,
+        "question" : "Wybitny cesarz bizantyjski panujący w VI wieku to..."
+      },
+      {
+        "badAnswers" : [ "Łaski Bożej.", "Dobroci Bożej.", "Miłości Bożej." ],
+        "goodAnswer" : "Mądrości Bożej.",
+        "id" : 5,
+        "question" : "Świątynia Hagia Sofia wzniesiona w okresie bizantyjskim była zwana inaczej kościołem..."
+      },
+      {
+        "badAnswers" : [ "Panteon", "Partenon", "Ściana Płaczu" ],
+        "goodAnswer" : "Hagia Sophia",
+        "id" : 6,
+        "picture": 12,
+        "question" : "Budowla na zdjęciu to..."
+      },
+      {
+        "badAnswers" : [ "fresk.", "arabeskę.", "ikonę." ],
+        "goodAnswer" : "mozaikę.",
+        "id" : 7,
+        "picture": 13,
+        "question" : "Fotografia przedstawia..."
+      },
+      {
+        "badAnswers" : [ "w 1355 roku", "w 1455 roku", "w 1499 roku" ],
+        "goodAnswer" : "w 1453 roku",
+        "id" : 8,
+        "question" : "W którym roku Turcy podbili Konstantynopol?"
+      },
+      {
+        "badAnswers" : [ "Biblia.", "Talmud.", "Tora." ],
+        "goodAnswer" : "Koran.",
+        "id" : 9,
+        "question" : "Święta księga dla wyznawców islamu to..."
+      },
+      {
+        "badAnswers" : [ "kalifowie", "Mojżesz", "Abraham" ],
+        "goodAnswer" : "Mahomet",
+        "id" : 10,
+        "question" : "Kto stworzył islam?"
+      },
+      {
+        "badAnswers" : [ "Wisznu", "Brahma", "Jahwe" ],
+        "goodAnswer" : "Allach",
+        "id" : 11,
+        "question" : "Jak nazywa się Bóg w islamie?"
+      },
+      {
+        "badAnswers" : [ "cerkiew.", "kościół.", "bazylika." ],
+        "goodAnswer" : "meczet.",
+        "id" : 12,
+        "picture": 14,
+        "question" : "Budowla na fotografii to..."
+      },
+      {
+        "badAnswers" : [ "potrzeba modlitwy", "pielgrzymka do Mekki", "kazalnica" ],
+        "goodAnswer" : "walka zbrojna",
+        "id" : 13,
+        "question" : "Co to jest dżihad dla muzułmanów?"
+      },
+      {
+        "badAnswers" : [ "VIII wiek", "X wiek", "XII wiek" ],
+        "goodAnswer" : "XI wiek",
+        "id" : 14,
+        "question" : "Na który wiek przypadł kres potęgi arabskiej?"
+      },
+      {
+        "badAnswers" : [ "mozaikę.", "fresk.", "ikonę." ],
+        "goodAnswer" : "arabeskę.",
+        "id" : 15,
+        "picture": 15,
+        "question" : "Fotografia przedstawia..."
+      },
+      {
+        "badAnswers" : [ "Karol Młot", "Karol Wielki", "Karol Łysy" ],
+        "goodAnswer" : "Pepin Mały",
+        "id" : 16,
+        "question" : "Kto zapoczątkował dynastię Karolingów?"
+      },
+      {
+        "badAnswers" : [ "Turcy", "Słowianie", "Brytowie" ],
+        "goodAnswer" : "Arabowie",
+        "id" : 17,
+        "question" : "Kto stanowił zagrożenie dla państwa Franków w VIII wieku?"
+      },
+      {
+        "badAnswers" : [ "w 745 roku", "w 814 roku", "w 799 roku" ],
+        "goodAnswer" : "w 800 roku",
+        "id" : 18,
+        "question" : "W którym roku papież koronował Karola Wielkiego na cesarza?"
+      },
+      {
+        "badAnswers" : [ "w 814 roku", "w 800 roku", "w 901 roku" ],
+        "goodAnswer" : "w 843 roku",
+        "id" : 19,
+        "question" : "W którym roku zawarto traktat w Verdun?"
+      },
+      {
+        "badAnswers" : [ "Zostało podbite przez Arabów.", "Upadło na skutek wojny domowej.", "Zostało wcielone do cesarstwa bizantyjskiego." ],
+        "goodAnswer" : "Zostało podzielone pomiędzy wnuków Karola Wielkiego.",
+        "id" : 20,
+        "question" : "Co się stało z państwem Karola Wielkiego?"
+      },
+      {
+        "badAnswers" : [ "Węgry, Niemcy i Francja", "Włochy i Niemcy", "Francja i Włochy" ],
+        "goodAnswer" : "Niemcy, Włochy i Francja",
+        "id" : 21,
+        "question" : "Jakie państwa z czasem wyłoniły się na podzielonych terenach byłego państwa Karola Wielkiego?"
+      },
+      {
+        "badAnswers" : [ "Mieszko I", "Otton III", "Ludwik Pobożny" ],
+        "goodAnswer" : "Otton I",
+        "id" : 22,
+        "question" : "Kto koronował się w Rzymie w 962 roku na cesarza?"
+      },
+      {
+        "badAnswers" : [ "Królestwa Francji.", "Cesarstwa Bizantyjskiego.", "Królestwa Węgierskiego." ],
+        "goodAnswer" : "Rzeszy Niemieckiej.",
+        "id" : 23,
+        "question" : "Od II połowy X wieku korona cesarska należała do władców..."
+      },
+      {
+        "badAnswers" : [ "ekskomunika.", "dogmat.", "inwestytura." ],
+        "goodAnswer" : "schizma.",
+        "id" : 24,
+        "question" : "Rozłam dotyczący religii w kościele to..."
+      },
+      {
+        "badAnswers" : [ "I poł. X wieku.", "I poł. XI wieku.", "I poł. XII wieku." ],
+        "goodAnswer" : "II poł. XI wieku.",
+        "id" : 25,
+        "question" : "Schizma wschodnia miała miejsce w..."
+      },
+      {
+        "badAnswers" : [ "katolikami.", "muzułmanami.", "podzielonymi chrześcijanami." ],
+        "goodAnswer" : "prawosławnymi.",
+        "id" : 26,
+        "question" : "Wschodni chrześcijanie nazywani są..."
+      },
+      {
+        "badAnswers" : [ "papież", "książę", "cesarz" ],
+        "goodAnswer" : "patriarcha",
+        "id" : 27,
+        "question" : "Jak nazywa się najwyższy dostojnik kościelny w kościołach wschodnich?"
+      },
+      {
+        "badAnswers" : [ "O wpływy w Europie.", "O ziemie.", "O pieniądze." ],
+        "goodAnswer" : "O prawo do inwestytury, czyli decydowania o wyborze dostojników kościelnych.",
+        "id" : 28,
+        "question" : "W XI wieku miał miejsce wielki konflikt papieża z cesarzem. O co toczył się spór?"
+      },
+      {
+        "badAnswers" : [ "papież Leon III z cesarzem Henrykiem IV", "papież Grzegorz VII z cesarzem Ottonem III", "papież Grzegorz V z cesarzem Henrykiem III" ],
+        "goodAnswer" : "papież Grzegorz VII z cesarzem Henrykiem IV",
+        "id" : 29,
+        "question" : "Kto spotkał się w Canossie?"
+      },
+      {
+        "badAnswers" : [ "traktat", "rozejm", "pokój" ],
+        "goodAnswer" : "konkordat",
+        "id" : 30,
+        "question" : "W 1122 roku zakończył się spór pomiędzy cesarzem a papieżem. Co wtedy obie strony zawarły?"
+      },
+      {
+        "badAnswers" : [ "Pogodzić się z kimś.", "Prosić o przysługę.", "Prosić o wsparcie finansowe." ],
+        "goodAnswer" : "Ukorzyć się przed przeciwnikiem.",
+        "id" : 31,
+        "question" : "Co oznacza powiedzenie „pójść do Canossy”?"
+      },
+      {
+        "badAnswers" : [ "Słowianie", "Arabowie", "Frankowie" ],
+        "goodAnswer" : "Turcy",
+        "id" : 32,
+        "question" : "Kto w XI wieku podbił Ziemię Świętą?"
+      },
+      {
+        "badAnswers" : [ "cesarz Henryk IV", "papież Grzegorz VII", "cesarz Lotar III" ],
+        "goodAnswer" : "papież Urban II",
+        "id" : 33,
+        "question" : "Kto wezwał na synodzie w Clermont do wypraw krzyżowych?"
+      },
+      {
+        "badAnswers" : [ "Zakonu Szpitalników świętego Jana z Jerozolimy.", "Zakonu Ubogich Rycerzy Chrystusa i Świątyni Salomona. ", "Inflanckiego Zakonu Rycerzy Chrystusa." ],
+        "goodAnswer" : "Zakonu Szpitala Najświętszej Marii Panny Domu Niemieckiego.",
+        "id" : 34,
+        "question" : "Krzyżacy to członkowie..."
+      },
+      {
+        "badAnswers" : [ "Krzyżaków.", "Templariuszy.", "Kawalerów mieczowych." ],
+        "goodAnswer" : "Joannitów.",
+        "id" : 35,
+        "picture": 16,
+        "question" : "Rycerz zakonny przedstawiony na fotografii to przedstawiciel..."
+      },
+      {
+        "badAnswers" : [ "Krzyżacy", "Templariuszy", "żadna z odpowiedzi" ],
+        "goodAnswer" : "Templariusze",
+        "id" : 36,
+        "question" : "Który zakon został rozwiązany?"
+      },
+      {
+        "badAnswers" : [ "Krzyżacy", "Templariusze", "Kawalerowie Mieczowi" ],
+        "goodAnswer" : "Joannici",
+        "id" : 37,
+        "question" : "Które zgromadzenie rycerskie zostało założone w 1113 roku?"
+      },
+      {
+        "badAnswers" : [ "X-XIII wiek", "XII-XIV wiek", "XII-XIII wiek" ],
+        "goodAnswer" : "XI-XIII wiek",
+        "id" : 38,
+        "question" : "W których wiekach trwały krucjaty?"
+      },
+      {
+        "badAnswers" : [ "dwie", "cztery", "osiem" ],
+        "goodAnswer" : "siedem",
+        "id" : 39,
+        "question" : "Ile zorganizowano wypraw krzyżowych?"
+      },
+      {
+        "badAnswers" : [ "wielki pan", "wielki duchowny", "wielki rycerz" ],
+        "goodAnswer" : "wielki mistrz",
+        "id" : 40,
+        "question" : "Kto stał na czele zakonu rycerskiego?"
       }
     ]
   }
