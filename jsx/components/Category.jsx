@@ -32,6 +32,13 @@ class Category extends React.Component {
                 </div>
               </div>
             </IndexLink>
+            <IndexLink to='/questions'>
+              <div className='button'>
+                <div className='categoryButton' data-category='roczny5' onClick={this.props.getCategory}>
+                  Wielki Test Roczny - klasa 5
+                </div>
+              </div>
+            </IndexLink>
           </div>
           <div className='right'>
             <div className='mieszkoSays'>Wybierz kategorię!</div>
