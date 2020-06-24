@@ -1629,6 +1629,208 @@
         "id" : 40,
         "question" : "Kto stał na czele zakonu rycerskiego?"
       }
-    ]
+    ],
+    "roczny4" : [{
+      "badAnswers" : [ "Jan Henryk Dąbrowski", "Stefan Czarniecki", "Tadeusz Kościuszko" ],
+      "goodAnswer" : "Napoleon Bonaparte",
+      "id" : 1,
+      "question" : "Kto jest bohaterem drugiej zwrotki Mazurka Dąbrowskiego?"
+    }, {
+      "badAnswers" : [ "we Francji", "w Rosji", "w Prusach" ],
+      "goodAnswer" : "we Włoszech",
+      "id" : 2,
+      "question" : " Gdzie Jan Henryk Dąbrowski utworzył Legiony Polskie?"
+    }, {
+      "badAnswers" : [ "Rosja, Prusy, Włochy", "Prusy, Rosja i Francja", "Rosja, Szwecja, Prusy" ],
+      "goodAnswer" : "Rosja, Prusy i Austria",
+      "id" : 3,
+      "question" : "Które kraje dokonały rozbiorów Polski?"
+    }, {
+      "badAnswers" : [ "1793", "1772", "1789" ],
+      "goodAnswer" : "1795",
+      "id" : 4,
+      "question" : "Państwo polskie przestało istnieć w wyniku III rozbioru, który miał miejsce w roku:"
+    }, {
+      "badAnswers" : [ "Średniowiecze, starożytność, współczesność, nowożytność", "Starożytność, średniowiecze, współczesność, nowożytność", "Starożytność, nowożytność, średniowiecze, współczesność" ],
+      "goodAnswer" : "Starożytność, średniowiecze, nowożytność, współczesność",
+      "id" : 5,
+      "question" : "Ułóż w odpowiedniej kolejności epoki historyczne."
+    }, {
+      "badAnswers" : [ "10 lat", "1000 lat", "500 lat" ],
+      "goodAnswer" : "100 lat",
+      "id" : 6,
+      "question" : "Ile lat liczy wiek?"
+    }, {
+      "badAnswers" : [ "Archeologia", "Genealogia", "Kartografia" ],
+      "goodAnswer" : "Chronologia",
+      "id" : 7,
+      "question" : "Jak nazywa się nauka zajmująca się mierzeniem czasu w historii?"
+    }, {
+      "badAnswers" : [ "V wiek", "III wiek", "IV wiek p.n.e." ],
+      "goodAnswer" : "IV wiek",
+      "id" : 8,
+      "question" : "Lata 301-400 to:"
+    }, {
+      "badAnswers" : [ "Archeolog", "Historyk", "Choreograf" ],
+      "goodAnswer" : "Kartograf",
+      "id" : 9,
+      "question" : "Osoba, która tworzy plany i mapy historyczne to:"
+    }, {
+      "badAnswers" : [ "w Krakowie", "w Poznaniu", "w Radomiu" ],
+      "goodAnswer" : "w Wadowicach",
+      "id" : 10,
+      "question" : "W którym mieście urodził się papież-pielgrzym?"
+    }, {
+      "badAnswers" : [ "I poł. XVII wieku", "II poł. XVI wieku", "I poł. XVI wieku" ],
+      "goodAnswer" : "II poł. XVII wieku",
+      "id" : 11,
+      "question" : "Rok 1683 to:"
+    }, {
+      "badAnswers" : [ "Święto Wojska Polskiego", "Święto Narodowe Trzeciego Maja", "Narodowy Dzień Pamięci „Żołnierzy Wyklętych”" ],
+      "goodAnswer" : "Narodowe Święto Niepodległości",
+      "id" : 12,
+      "question" : "11 listopada obchodzimy w Polsce:"
+    }, {
+      "badAnswers" : [ "Źródło niematerialne", "Źródło materialne pisane", "Żadna z odpowiedzi" ],
+      "goodAnswer" : "Źródło materialne niepisane",
+      "id" : 13,
+      "question" : "Obraz to:"
+    }, {
+      "badAnswers" : [ 36, 28, 16 ],
+      "goodAnswer" : 26,
+      "id" : 14,
+      "question" : "Cyfra arabska odpowiadająca liczbie rzymskiej XXVI to:"
+    }, {
+      "badAnswers" : [ "w starożytności", "w nowożytności", "we współczesności" ],
+      "goodAnswer" : "w średniowieczu",
+      "id" : 15,
+      "question" : "Chrzest Polski w 966 roku miał miejsce:"
+    }, {
+      "badAnswers" : [ "Początek średniowiecza i zakończenie starożytności", "Początek nowożytności i zakończenie współczesności", "Zakończenie starożytności i początek średniowiecza" ],
+      "goodAnswer" : "Zakończenie średniowiecza i początek nowożytności",
+      "id" : 16,
+      "question" : "Odkrycie Ameryki przez Kolumba w 1492 roku uchodzi za:"
+    }, {
+      "badAnswers" : [ "Mit", "Baśń", "Wiersz" ],
+      "goodAnswer" : "Legenda",
+      "id" : 17,
+      "question" : "Opowieść, w której występują zarówno prawdziwe, jak i zmyślone postacie oraz wydarzenia to:"
+    }, {
+      "badAnswers" : [ "Archeolog", "Kartograf", "Detektyw" ],
+      "goodAnswer" : "Historyk",
+      "id" : 18,
+      "question" : "Badaniem i opisywaniem przeszłości zajmuje się:"
+    }, {
+      "badAnswers" : [ "Historia jest królową nauk.", "Historia pokazuje nam życie.", "Historia jest matką wszystkich nauk." ],
+      "goodAnswer" : "Historia jest nauczycielką życia.",
+      "id" : 19,
+      "question" : "„Historia magistra vitae est” oznacza:"
+    }, {
+      "badAnswers" : [ "Hymn „Mazurek Dąbrowskiego”", "Flaga Polski", "Godło Polski" ],
+      "goodAnswer" : "Warszawska Syrenka",
+      "id" : 20,
+      "question" : "Polskim symbolem narodowym nie jest:"
+    }, {
+      "badAnswers" : [ "Mazowsze", "Pomorze", "Śląsk" ],
+      "goodAnswer" : "Małopolska",
+      "id" : 21,
+      "question" : "W którym regionie leży Kraków?"
+    }, {
+      "badAnswers" : [ "chronologią", "prestarożytnością", "kartografią" ],
+      "goodAnswer" : "prehistorią",
+      "id" : 22,
+      "question" : "Okres obejmujący dzieje człowieka przed wynalezieniem pisma nazywamy:"
+    }, {
+      "badAnswers" : [ "Siemowit", "Piast", "Siemomysł" ],
+      "goodAnswer" : "Mieszko",
+      "id" : 23,
+      "question" : "Jak miał na imię pierwszy historyczny władca Polski?"
+    }, {
+      "badAnswers" : [ "Oda", "Rzepicha", "Rycheza" ],
+      "goodAnswer" : "Dobrawa",
+      "id" : 24,
+      "question" : "Jak miała na imię pierwsza chrześcijańska żona Mieszka?"
+    }, {
+      "badAnswers" : [ "Danka", "Irena", "Żelazna" ],
+      "goodAnswer" : "INKA",
+      "id" : 25,
+      "question" : "Jak brzmiał pseudonim Danuty Siedzikówny?"
+    }, {
+      "badAnswers" : [ "Szara Piechota", "Armia Krajowa", "Bataliony Harcerskie" ],
+      "goodAnswer" : "Szare Szeregi",
+      "id" : 26,
+      "question" : "Jak brzmiał kryptonim harcerstwa w czasie II wojny światowej?"
+    }, {
+      "badAnswers" : [ "Wincenty Kadłubek", "Jan Długosz", "Wincenty z Kielczy" ],
+      "goodAnswer" : "Anonim zwany Gallem",
+      "id" : 27,
+      "question" : "Jak nazywał się autor pierwszej kroniki opisującej dzieje Polski?"
+    }, {
+      "badAnswers" : [ "Wrocław", "Gdańsk", "Kraków" ],
+      "goodAnswer" : "Gdynia",
+      "id" : 28,
+      "question" : "Które miasto było nazywane w swojej przeszłości „oknem na świat?"
+    }, {
+      "badAnswers" : [ "Ziemia znajduje się w centrum Wszechświata.", "Słońce krąży wokół wszystkich planet.", "Słońce krąży wokół Ziemi." ],
+      "goodAnswer" : "Ziemia i inne planety krążą wokół Słońca.",
+      "id" : 29,
+      "question" : "Mikołaj Kopernik udowodnił, że …"
+    }, {
+      "badAnswers" : [ "rad i hel", "polon i wodór", "polon i ołów" ],
+      "goodAnswer" : "polon i rad",
+      "id" : 30,
+      "question" : "Jak nazywały się pierwiastki, które odkryła Maria Skłodowska-Curie?"
+    }, {
+      "badAnswers" : [ "Tadeusz Kościuszko", "Jan Henryk Dąbrowski", "Napoleon Bonaparte" ],
+      "goodAnswer" : "Romuald Traugutt",
+      "id" : 31,
+      "question" : "Która z poniższych osób była przywódcą powstania styczniowego z 1863 roku?"
+    }, {
+      "badAnswers" : [ "drugi rozbiór Polski", "pierwszy rozbiór Polski", "wybuch powstania styczniowego" ],
+      "goodAnswer" : "trzeci rozbiór Polski",
+      "id" : 32,
+      "question" : "Skutkiem powstania kościuszkowskiego z 1794 roku był …"
+    }, {
+      "badAnswers" : [ "Stefan Batory", "Zygmunt August", "Stefan Czarniecki" ],
+      "goodAnswer" : "Jan Zamojski",
+      "id" : 33,
+      "question" : "Kto założył miasto Zamość?"
+    }, {
+      "badAnswers" : [ "Zygmunt Stary", "Stefan Batory", "Henryk Walezy" ],
+      "goodAnswer" : "Zygmunt August",
+      "id" : 34,
+      "question" : "Jak się nazywał ostatni władca z dynastii Jagiellonów?"
+    }, {
+      "badAnswers" : [ "XVIII w.", "XVI w.", "XIX w." ],
+      "goodAnswer" : "XVII w.",
+      "id" : 35,
+      "question" : "Który wiek w historii Polski nazywany jest „stuleciem wojen”?"
+    }, {
+      "badAnswers" : [ "Stefan Batory", "Stanisław August Poniatowski", "Władysław Jagiełło" ],
+      "goodAnswer" : "Jan III Sobieski",
+      "id" : 36,
+      "question" : "Który władca ruszył z odsieczą Wiedniowi?"
+    }, {
+      "badAnswers" : [ "zalew szwedzki", "napad szwedzki", "pożoga szwedzka" ],
+      "goodAnswer" : "potop szwedzki",
+      "id" : 37,
+      "question" : "Jak określa się wojnę ze Szwedami z lat 1655-1660?"
+    }, {
+      "badAnswers" : [ "symbol narodowy Polaków", "herb miasta", "symbol władzy królewskiej" ],
+      "goodAnswer" : "herb szlachecki",
+      "id" : 38,
+      "picture" : 2,
+      "question" : "Ilustracja przedstawia …"
+    }, {
+      "badAnswers" : [ "polskim kupcem", "polskim królem", "powstańcem styczniowym" ],
+      "goodAnswer" : "polskim rycerzem",
+      "id" : 39,
+      "question" : "Kim był Zawisza Czarny z Garbowa?"
+    }, {
+      "badAnswers" : [ "Że zastał Polskę drewnianą a zostawił murowaną.", "Polegać na kimś jak na Koperniku.", "żadna z odpowiedzi" ],
+      "goodAnswer" : "Że wstrzymał Słońce i ruszył Ziemię.",
+      "id" : 40,
+      "question" : "Które z powiedzeń dotyczą Mikołaja Kopernika?"
+    } ]
   }
 }

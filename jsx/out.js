@@ -8274,21 +8274,8 @@ var Category = function (_React$Component) {
               { className: 'button' },
               _react2.default.createElement(
                 'div',
-                { className: 'categoryButton', 'data-category': 'mid', onClick: this.props.getCategory },
-                'Pocz\u0105tki \u015Bredniowiecza'
-              )
-            )
-          ),
-          _react2.default.createElement(
-            _reactRouter.IndexLink,
-            { to: '/questions' },
-            _react2.default.createElement(
-              'div',
-              { className: 'button' },
-              _react2.default.createElement(
-                'div',
-                { className: 'categoryButton', 'data-category': 'zamoyski', onClick: this.props.getCategory },
-                'Zamoyski i Kopernik na tapecie'
+                { className: 'categoryButton', 'data-category': 'roczny4', onClick: this.props.getCategory },
+                'Wielki Test Roczny - klasa 4'
               )
             )
           )
