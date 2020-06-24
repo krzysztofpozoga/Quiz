@@ -2048,6 +2048,222 @@
       "goodAnswer" : "wojny",
       "id" : 43,
       "question" : " Ares to grecki bóg…"
+    }],
+    "roczny6" : [{
+      "badAnswers" : [ "z Włoch", "z Portugalii", "z Indii" ],
+      "goodAnswer" : "z Hiszpanii",
+      "id" : 1,
+      "question" : "Z którego państwa wypłynął Krzysztof Kolumb?”
+    }, {
+      "badAnswers" : [ "Odkrytym Światem", "Światem za Oceanem", "Nowymi Ziemiami" ],
+      "goodAnswer" : "Nowym Światem",
+      "id" : 2,
+      "question" : "Jak Vespucci określił ziemie odkryte przez Kolumba?”
+    }, {
+      "badAnswers" : [ "w XIII wieku", "w XIV wieku", "w XV wieku" ],
+      "goodAnswer" : "w XVI wieku",
+      "id" : 3,
+      "question" : "W którym wieku opłynięto Ziemię?”
+    }, {
+      "badAnswers" : [ "barbarzyńcy", "krzyżowcy", "Kozacy" ],
+      "goodAnswer" : "konkwistadorzy",
+      "id" : 4,
+      "question" : "Jak nazywali się uczestnicy wypraw organizowanych w XVI wieku w celu podbicia nowych ziem na kontynencie amerykańskim?”
+    }, {
+      "badAnswers" : [ "w średniowieczu", "w baroku", "w oświeceniu" ],
+      "goodAnswer" : "w renesansie",
+      "id" : 5,
+      "question" : "W której epoce głównym hasłem były słowa: Człowiekiem jestem i nic, co ludzkie, nie jest mi obce?”
+    }, {
+      "badAnswers" : [ "Erazm z Rotterdamu", "Leonardo da Vinci", "Mikołaj Kopernik" ],
+      "goodAnswer" : "Jan Gutenberg",
+      "id" : 6,
+      "question" : "Kto opracował metodę druku za pomocą ruchomych czcionek?”
+    }, {
+      "badAnswers" : [ "Michał Anioł", "Rafael Santi", "Hans Memling" ],
+      "goodAnswer" : "Leonardo da Vinci",
+      "id" : 7,
+      "picture" : 17,
+      "question" : "Kto namalował widoczny obraz?”
+    }, {
+      "badAnswers" : [ "w 13 tezach", "w 45 tezach", "w 92 tezach" ],
+      "goodAnswer" : "w 95 tezach",
+      "id" : 8,
+      "question" : "W ilu tezach sformułował swoje poglądy Marcin Luter?”
+    }, {
+      "badAnswers" : [ "Edward VI", "Jakub I", "Ryszard III" ],
+      "goodAnswer" : "Henryk VIII",
+      "id" : 9,
+      "question" : "Który władca ogłosił się głową Kościoła narodowego, zwanego anglikańskim?”
+    }, {
+      "badAnswers" : [ "krzyżaków", "franciszkanów", "benedyktów" ],
+      "goodAnswer" : "jezuitów",
+      "id" : 10,
+      "question" : "Towarzystwo Jezusowe to zakon…?”
+    }, {
+      "badAnswers" : [ "Krzysztof Kolumb", "Bartłomiej Diaz", "Ferdynand Magellan" ],
+      "goodAnswer" : "Vasco da Gama",
+      "id" : 11,
+      "question" : "Jako pierwszy morską drogę z Europy do Indii przebył?”
+    }, {
+      "badAnswers" : [ "zgromadzenie szlachty z danego regionu", "uchwała sejmowa", "forma rządów" ],
+      "goodAnswer" : "parlament w Polsce XV-XVIII wieku podejmujący najważniejsze decyzje w państwie",
+      "id" : 12,
+      "question" : "Sejm walny to?”
+    }, {
+      "badAnswers" : [ "szlachta gołota", "szlachta zagrodowa", "średnia szlachta" ],
+      "goodAnswer" : "magnateria",
+      "id" : 13,
+      "question" : "Jak nazywała się najbogatsza grupa polskiej szlachty?”
+    }, {
+      "badAnswers" : [ "Piotr I Wielki", "Ludwik XIII", "Karol I Stuart" ],
+      "goodAnswer" : "Ludwik XIV",
+      "id" : 14,
+      "question" : "Którego z władców określa się mianem „Króla Słońce”"?
+    }, {
+      "badAnswers" : [ "barokiem", "renesansem", "klasycyzmem" ],
+      "goodAnswer" : "oświeceniem",
+      "id" : 15,
+      "question" : "Jak jest nazywany wiek XVIII w dziejach kultury europejskiej?"
+    }, {
+      "badAnswers" : [ "rokoko", "barok", "secesja" ],
+      "goodAnswer" : "klasycyzm",
+      "id" : 16,
+      "question" : "Jak się nazywał styl, który wykształcił się w oświeceniu?"
+    }, {
+      "badAnswers" : [ "Wolter", "Newton", "Roussseau" ],
+      "goodAnswer" : "Monteskiusz",
+      "id" : 17,
+      "question" : "Kto jest twórcą trójpodziału władzy?"
+    },  {
+      "badAnswers" : [ "prehistorii", "średniowiecza", "epoki brązu" ],
+      "goodAnswer" : "starożytności",
+      "id" : 18,
+      "question" : "Do dzieł której z epok nawiązywali klasycystyczni artyści?"
+    }, {
+      "badAnswers" : [ "najwyższy lord", "książę", "dyktator" ],
+      "goodAnswer" : "lord protektor",
+      "id" : 19,
+      "question" : "Jaki tytuł przyjął Oliver Cromwell w czasie trwania republiki angielskiej?"
+    }, {
+      "badAnswers" : [ "w Paryżu", "w Saint-Germain", "w Carcassonne" ],
+      "goodAnswer" : "w Wersalu",
+      "id" : 20,
+      "question" : "Gdzie Ludwik XIV wybudował swoją rezydencję, która świadczyła o potędze władcy?”
+    }, {
+      "badAnswers" : [ "monarchia absolutna", "republika", "absolutyzm oświecony" ],
+      "goodAnswer" : "monarchia parlamentarna",
+      "id" : 21,
+      "question" : "Jaki ustrój panował w Anglii po uchwaleniu Deklaracji praw narodu angielskiego?”
+    },  {
+      "badAnswers" : [ "mikroskop, samolot, rakieta", "rakieta, termometr, balon", "samolot, maszyna parowa, balon" ],
+      "goodAnswer" : "balon, termometr, maszyna parowa",
+      "id" : 22,
+      "question" : "Które z poniższych wynalazków pochodzą z epoki oświecenia?”
+    }, {
+      "badAnswers" : [ "cara", "króla", "najwyższego bojara" ],
+      "goodAnswer" : "cesarza",
+      "id" : 23,
+      "question" : "Jaki tytuł przyjął Piotr I Wielki w 1721 roku?”
+    }, {
+      "badAnswers" : [ "12", "9", "17" ],
+      "goodAnswer" : "13",
+      "id" : 24,
+      "question" : "Ile powstało angielskich kolonii w XVII wieku w Ameryce Północnej?”
+    }, {
+      "badAnswers" : [ "z Francją", "z Portugalią", "z Hiszpanią" ],
+      "goodAnswer" : "z Wielką Brytanią",
+      "id" : 25,
+      "question" : "Z którym krajem Amerykanie walczyli o niepodległość w XVIII wieku?”
+    }, {
+      "badAnswers" : [ "monarchię absolutną", "monarchię parlamentarną", "absolutyzm oświecony" ],
+      "goodAnswer" : "republikę",
+      "id" : 26,
+      "question" : "Jaki ustrój wprowadzała konstytucja w USA?”
+    }, {
+      "badAnswers" : [ "John Adams", "Thomas Jefferson", "James Madison" ],
+      "goodAnswer" : "Jerzy Waszyngton",
+      "id" : 27,
+      "question" : "Kto został pierwszym prezydentem USA?”
+    }, {
+      "badAnswers" : [ "we Francji", "w Grecji", "w Wielkiej Brytanii" ],
+      "goodAnswer" : "na Korsyce",
+      "id" : 28,
+      "question" : "Gdzie urodził się Napoleon Bonaparte?”
+    }, {
+      "badAnswers" : [ "cesarz Francji", "cesarz", "cesarz Europy" ],
+      "goodAnswer" : "cesarz Francuzów",
+      "id" : 29,
+      "question" : "Jaki tytuł przyjął Napoleon podczas swojej koronacji?”
+    }, {
+      "badAnswers" : [ "Józef Piłsudski", "Jan Henryk Dąbrowski", "Józef Haller" ],
+      "goodAnswer" : "Józef Wybicki",
+      "id" : 30,
+      "question" : "Kto napisał słowa polskiego hymnu narodowego?"
+    }, {
+      "badAnswers" : [ "Rosja, Prusy, Włochy", "Prusy, Rosja i Francja", "Rosja, Szwecja, Prusy" ],
+      "goodAnswer" : "Rosja, Prusy i Austria",
+      "id" : 31,
+      "question" : "Które kraje dokonały rozbiorów Polski?"
+    }, {
+      "badAnswers" : [ "we Francji", "w Austrii", "w Hiszpanii" ],
+      "goodAnswer" : "we Włoszech",
+      "id" : 32,
+      "question" : "Gdzie Jan Henryk Dąbrowski utworzył Legiony Polskie?"
+    }, {
+      "badAnswers" : [ "XXI w.", "XIX w.", "XVIII w." ],
+      "goodAnswer" : "XX w.",
+      "id" : 33,
+      "question" : "W którym wieku Mazurek Dąbrowskiego został hymnem Polski?" },  {
+      "badAnswers" : [ "1793", "1772", "1789" ],
+      "goodAnswer" : "1795",
+      "id" : 34,
+      "question" : "Państwo polskie przestało istnieć w wyniku III rozbioru, który miał miejsce w roku:"
+    }, {
+      "badAnswers" : [ "II poł. XVIII wieku", "I poł. XVIII wieku", "II poł. XIX wieku" ],
+      "goodAnswer" : "I poł. XIX wieku",
+      "id" : 35,
+      "question" : "Bitwa pod Lipskiem miała miejsce w 1813 roku. Jest to:"
+    }, {
+      "badAnswers" : [ "Stefan Batory", "Stanisław August Poniatowski", "Władysław Jagiełło" ],
+      "goodAnswer" : "Jan III Sobieski",
+      "id" : 36,
+      "question" : "Który władca ruszył z odsieczą Wiedniowi?"
+    }, {
+      "badAnswers" : [ "Stanisław August Poniatowski", "August III Sas", "Jan III Sobieski" ],
+      "goodAnswer" : "August II Mocny",
+      "id" : 37,
+      "question" : "Który władca ustanowił order Orła Białego?"
+    }, {
+      "badAnswers" : [ "Stanisław August Poniatowski", "August III Sas", "Stanisław Leszczyński" ],
+      "goodAnswer" : "August II Mocny",
+      "id" : 38,
+      "question" : "Kto został królem po śmierci Jana III Sobieskiego?"
+    }, {
+      "badAnswers" : [ "Stefan Batory", "Zygmunt III Waza", "Władysław IV Waza" ],
+      "goodAnswer" : "Henryk Walezy",
+      "id" : 39,
+      "question" : "Jak się nazywał pierwszy władca elekcyjny?"
+    }, {
+      "badAnswers" : [ "Sejmem 3 maja", "Sejmem Reformacyjnym", "Sejmem Konstytucyjnym" ],
+      "goodAnswer" : "Sejmem Czteroletnim",
+      "id" : 40,
+      "question" : "Sejm Wielki nazywany jest także?"
+    }, {
+      "badAnswers" : [ "Austria, Prusy i Rosja", "Rosja i Austria", "Prusy i Austria" ],
+      "goodAnswer" : "Rosja i Prusy",
+      "id" : 41,
+      "question" : "Drugiego rozbioru Polski dokonały...”
+    }, {
+      "badAnswers" : [ "egzekucja Ludwika XVI", "uchwalenie konstytucji francuskiej", "zwołanie Stanów Generalnych" ],
+      "goodAnswer" : "zburzenie Bastylii",
+      "id" : 42,
+      "question" : "Wydarzenie, które w 1789 roku zapoczątkowało rewolucję francuską, to”
+    }, {
+      "badAnswers" : [ "Austerlitz", "Borodino", "Raszynem" ],
+      "goodAnswer" : "Lipskiem",
+      "id" : 43,
+      "question" : "”Bitwą narodów” nazwano starcie, do którego doszło w 1813 roku pod”
     }]
   }
 }
