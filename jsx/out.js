@@ -8291,6 +8291,19 @@ var Category = function (_React$Component) {
                 'Wielki Test Roczny - klasa 5'
               )
             )
+          ),
+          _react2.default.createElement(
+            _reactRouter.IndexLink,
+            { to: '/questions' },
+            _react2.default.createElement(
+              'div',
+              { className: 'button' },
+              _react2.default.createElement(
+                'div',
+                { className: 'categoryButton', 'data-category': 'roczny6', onClick: this.props.getCategory },
+                'Wielki Test Roczny - klasa 6'
+              )
+            )
           )
         ),
         _react2.default.createElement(
