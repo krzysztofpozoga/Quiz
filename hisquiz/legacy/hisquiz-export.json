@@ -1,0 +1,2269 @@
+{
+  "category" : {
+    "introduction" : [ {
+      "badAnswers" : [ "Średniowiecze, starożytność, współczesność, nowożytność", "Starożytność, średniowiecze, współczesność, nowożytność", "Starożytność, nowożytność, średniowiecze, współczesność" ],
+      "goodAnswer" : "Starożytność, średniowiecze, nowożytność, współczesność",
+      "id" : 1,
+      "question" : "Ułóż w odpowiedniej kolejności epoki historyczne."
+    }, {
+      "badAnswers" : [ "w nowożytności", "w średniowieczu", "Człowiek nie wylądował na księżycu" ],
+      "goodAnswer" : "we współczesności",
+      "id" : 2,
+      "question" : "W której epoce historycznej człowiek wylądował na księżycu?"
+    }, {
+      "badAnswers" : [ "10 lat", "1000 lat", "500 lat" ],
+      "goodAnswer" : "100 lat",
+      "id" : 3,
+      "question" : "Ile lat liczy wiek?"
+    }, {
+      "badAnswers" : [ "Śmierć Pana Jezusa na krzyżu", "Zmartwychwstanie Pana Jezusa", "Założenie Rzymu" ],
+      "goodAnswer" : "Narodzenie Jezusa z Nazaretu",
+      "id" : 4,
+      "question" : "Od jakiego wydarzenia liczymy czas?"
+    }, {
+      "badAnswers" : [ "Archeologia", "Genealogia", "Kartografia" ],
+      "goodAnswer" : "Chronologia",
+      "id" : 5,
+      "question" : "Jak nazywa się nauka zajmująca się mierzeniem czasu w historii?"
+    }, {
+      "badAnswers" : [ "I wiek", "III wiek", "II wiek p.n.e." ],
+      "goodAnswer" : "II wiek",
+      "id" : 6,
+      "question" : "Lata 101-200 to:"
+    }, {
+      "badAnswers" : [ "I wiek p.n.e.", "I wiek", "II wiek" ],
+      "goodAnswer" : "II wiek p.n.e.",
+      "id" : 7,
+      "question" : "Lata 200 - 101 p.n.e. to:"
+    }, {
+      "badAnswers" : [ "Chronologia", "Archeologia", "Kartografia" ],
+      "goodAnswer" : "Genealogia",
+      "id" : 8,
+      "question" : "Nauka zajmująca się badaniem więzi rodzinnych to:"
+    }, {
+      "badAnswers" : [ "Archeolog", "Historyk", "Choreograf" ],
+      "goodAnswer" : "Kartograf",
+      "id" : 9,
+      "question" : "Osoba, która tworzy plany i mapy historyczne to:"
+    }, {
+      "badAnswers" : [ "10 lat", "100 lat", "500 lat" ],
+      "goodAnswer" : "1000 lat",
+      "id" : 10,
+      "question" : "Tysiąclecie obejmuje:"
+    }, {
+      "badAnswers" : [ "Województwo", "Wyżyny", "Gmina" ],
+      "goodAnswer" : "Region",
+      "id" : 11,
+      "question" : "Obszar kraju, który ma charakterystyczne cechy krajobrazu i kultury to:"
+    }, {
+      "badAnswers" : [ "XII wiek", "X wiek", "XI wiek p.n.e." ],
+      "goodAnswer" : "XI wiek",
+      "id" : 12,
+      "question" : "Rok 1100 to:"
+    }, {
+      "badAnswers" : [ "I poł. XVII wieku", "II poł. XVI wieku", "I poł. XVI wieku" ],
+      "goodAnswer" : "II poł. XVII wieku",
+      "id" : 13,
+      "question" : "Rok 1683 to:"
+    }, {
+      "badAnswers" : [ "II poł. XV wieku", "I poł. XIV wieku", "II poł. XIV wieku" ],
+      "goodAnswer" : "I poł. XV wieku",
+      "id" : 14,
+      "question" : "Rok 1410 to:"
+    }, {
+      "badAnswers" : [ "Święto Wojska Polskiego", "Święto Narodowe Trzeciego Maja", "Narodowy Dzień Pamięci „Żołnierzy Wyklętych”" ],
+      "goodAnswer" : "Narodowe Święto Niepodległości",
+      "id" : 15,
+      "question" : "11 listopada obchodzimy w Polsce:"
+    }, {
+      "badAnswers" : [ "wygranej bitwy pod Cedynią w 962 roku", "odsieczy wiedeńskiej króla Jana III Sobieskiego w 1683 roku", "wygranej bitwy pod Grunwaldem w 1410 roku" ],
+      "goodAnswer" : "wygranej Bitwy Warszawskiej w 1920 roku",
+      "id" : 16,
+      "question" : "15 sierpnia obchodzimy Święto Wojska Polskiego na pamiątkę:"
+    }, {
+      "badAnswers" : [ "Źródło materialne niepisane", "Źródło niematerialne", "Żadna z odpowiedzi" ],
+      "goodAnswer" : "Źródło materialne pisane",
+      "id" : 17,
+      "question" : "Kronika to:"
+    }, {
+      "badAnswers" : [ "Źródło niematerialne", "Źródło materialne pisane", "Żadna z odpowiedzi" ],
+      "goodAnswer" : "Źródło materialne niepisane",
+      "id" : 18,
+      "question" : "Zbroja to:"
+    }, {
+      "badAnswers" : [ "Róża wiatrów", "Skala mapy", "Tytuł mapy" ],
+      "goodAnswer" : "Legenda do mapy",
+      "id" : 19,
+      "question" : "Miejsce na mapie, które wyjaśnia użyte na niej symbole to:"
+    }, {
+      "badAnswers" : [ "Róża wiatrów", "Tytuł mapy", "Legenda do mapy" ],
+      "goodAnswer" : "Skala mapy",
+      "id" : 20,
+      "question" : "Zapis na mapie 1: 100 000 to:"
+    }, {
+      "badAnswers" : [ 36, 28, 16 ],
+      "goodAnswer" : 26,
+      "id" : 21,
+      "question" : "Cyfra arabska odpowiadająca liczbie rzymskiej XXVI to:"
+    }, {
+      "badAnswers" : [ "CCXXIX", "CXXIX", "XCIX" ],
+      "goodAnswer" : "CXXXIX",
+      "id" : 22,
+      "question" : "Cyfra rzymska odpowiadająca liczbie arabskiej 139 to:"
+    }, {
+      "badAnswers" : [ "w starożytności", "w nowożytności", "we współczesności" ],
+      "goodAnswer" : "w średniowieczu",
+      "id" : 23,
+      "question" : "Chrzest Polski w 966 roku miał miejsce:"
+    }, {
+      "badAnswers" : [ "Starożytności", "Współczesności", "Nowożytności" ],
+      "goodAnswer" : "Średniowieczu",
+      "id" : 24,
+      "question" : "Koronacja Bolesława Chrobrego na pierwszego króla Polski w 1025 roku odbyła się w:"
+    }, {
+      "badAnswers" : [ "Początek średniowiecza i zakończenie starożytności", "Początek nowożytności i zakończenie współczesności", "Zakończenie starożytności i początek średniowiecza" ],
+      "goodAnswer" : "Zakończenie średniowiecza i początek nowożytności",
+      "id" : 25,
+      "question" : "Odkrycie Ameryki przez Kolumba w 1492 roku uchodzi za:"
+    }, {
+      "badAnswers" : [ "Mit", "Baśń", "Wiersz" ],
+      "goodAnswer" : "Legenda",
+      "id" : 26,
+      "question" : "Opowieść, w której występują zarówno prawdziwe, jak i zmyślone postacie oraz wydarzenia to:"
+    }, {
+      "badAnswers" : [ "Historyczna", "Baśniowa", "Baśniowa i historyczna" ],
+      "goodAnswer" : "Legendarna",
+      "id" : 27,
+      "question" : "Smok Wawelski to postać:"
+    }, {
+      "badAnswers" : [ "Baśniowa", "Legendarna", "Legendarna i historyczna" ],
+      "goodAnswer" : "Historyczna",
+      "id" : 28,
+      "question" : "Józef Piłsudski to postać:"
+    }, {
+      "badAnswers" : [ "Legendarna", "Historyczna", "Historyczna i legendarna " ],
+      "goodAnswer" : "Baśniowa",
+      "id" : 29,
+      "question" : "Kopciuszek to postać:"
+    }, {
+      "badAnswers" : [ "w średniowieczu", "w nowożytności", "we współczesności" ],
+      "goodAnswer" : "w starożytności",
+      "id" : 30,
+      "question" : "W której epoce historycznej powstały najstarsze mapy świata?"
+    }, {
+      "badAnswers" : [ "Archeolog", "Kartograf", "Detektyw" ],
+      "goodAnswer" : "Historyk",
+      "id" : 31,
+      "question" : "Badaniem i opisywaniem przeszłości zajmuje się:"
+    }, {
+      "badAnswers" : [ "Cyceron", "Sokrates", "Pauzaniasz" ],
+      "goodAnswer" : "Herodot",
+      "id" : 32,
+      "question" : "Za „Ojca historii” uważany jest:"
+    }, {
+      "badAnswers" : [ "Historia jest królową nauk.", "Historia pokazuje nam życie.", "Historia jest matką wszystkich nauk." ],
+      "goodAnswer" : "Historia jest nauczycielką życia.",
+      "id" : 33,
+      "question" : "„Historia magistra vitae est” oznacza:"
+    }, {
+      "badAnswers" : [ "Materialnego pisanego", "Materialnego niepisanego", "Żadna z odpowiedzi" ],
+      "goodAnswer" : "Niematerialnego",
+      "id" : 34,
+      "question" : "Tradycje i obyczaje to przykład źródła:"
+    }, {
+      "badAnswers" : [ "Historyk", "Genealog", "Kartograf" ],
+      "goodAnswer" : "Archeolog",
+      "id" : 35,
+      "question" : "Wykopaliska prowadzi:"
+    }, {
+      "badAnswers" : [ "Kroniki", "Roczniki", "Dokumenty" ],
+      "goodAnswer" : "Biżuterię",
+      "id" : 36,
+      "question" : "Do źródła materialnego niepisanego zaliczamy:"
+    }, {
+      "badAnswers" : [ "List", "Świadectwo szkolne", "Konstytucja" ],
+      "goodAnswer" : "Obraz",
+      "id" : 37,
+      "question" : "Źródłem materialnym pisanym nie jest:"
+    }, {
+      "badAnswers" : [ "Historie rodzinne", "Drzewo genealogiczne", "Fakty historyczne " ],
+      "goodAnswer" : "Pamiątki rodzinne",
+      "id" : 38,
+      "question" : "Najróżniejsze przedmioty pozostawione przez naszych przodków to:"
+    }, {
+      "badAnswers" : [ "Hymn „Mazurek Dąbrowskiego”", "Flaga Polski", "Godło Polski" ],
+      "goodAnswer" : "Warszawska Syrenka",
+      "id" : 39,
+      "question" : "Polskim symbolem narodowym nie jest:"
+    }, {
+      "badAnswers" : [ "Adam Mickiewicz ", "Juliusz Słowacki", "Jan Henryk Dąbrowski" ],
+      "goodAnswer" : "Józef Wybicki",
+      "id" : 40,
+      "question" : "Autorem tekstu polskiego hymnu narodowego jest:"
+    }, {
+      "badAnswers" : [ "Jan Henryk Dąbrowski", "Napoleon Bonaparte", "Stefan Czarniecki" ],
+      "goodAnswer" : "Tadeusz Kościuszko",
+      "id" : 41,
+      "question" : "Postać, która nie występuje we współczesnym tekście hymnu narodowego to:"
+    }, {
+      "badAnswers" : [ 5, 6, 3 ],
+      "goodAnswer" : 4,
+      "id" : 42,
+      "question" : "Ile zwrotek liczy polski hymn narodowy?"
+    }, {
+      "badAnswers" : [ "Mazowsze", "Pomorze", "Śląsk" ],
+      "goodAnswer" : "Małopolska",
+      "id" : 43,
+      "question" : "W którym regionie leży Kraków?"
+    }, {
+      "badAnswers" : [ "Śląsku", "Podlasiu", "Pomorzu" ],
+      "goodAnswer" : "Mazowszu",
+      "id" : 44,
+      "question" : "Warszawa leży na:"
+    }, {
+      "badAnswers" : [ "Epoka", "Wiek", "Tysiąclecie" ],
+      "goodAnswer" : "Era",
+      "id" : 45,
+      "question" : "Okres czasu zapoczątkowany doniosłym wydarzeniem, tak ważnym, że od niego liczy się lata to:"
+    }, {
+      "badAnswers" : [ "Średniowiecze", "Nowożytność", "Współczesność" ],
+      "goodAnswer" : "Starożytność",
+      "id" : 46,
+      "question" : "Epoka historyczna, którą zapoczątkowało wynalezienie pisma przez Sumerów to:"
+    }, {
+      "badAnswers" : [ "w średniowieczu", "w nowożytności", "we współczesności" ],
+      "goodAnswer" : "w starożytności",
+      "id" : 47,
+      "question" : "W której epoce historycznej powstały najstarsze zegary?"
+    }, {
+      "badAnswers" : [ "chronologią", "prestarożytnością", "kartografią" ],
+      "goodAnswer" : "prehistorią",
+      "id" : 48,
+      "question" : "Okres obejmujący dzieje człowieka przed wynalezieniem pisma nazywamy:"
+    }, {
+      "badAnswers" : [ "Po naszej erze", "Po następnej erze", "Żadna z odpowiedzi" ],
+      "goodAnswer" : "Przed naszą erą",
+      "id" : 49,
+      "question" : "Skrót p.n.e. oznacza:"
+    }, {
+      "badAnswers" : [ "W IV wieku p.n.e.", "W V wieku", "W IV wieku" ],
+      "goodAnswer" : "W V wieku p.n.e.",
+      "id" : 50,
+      "question" : "W 490 r. p.n.e. Grecy stoczyli z Persami bitwę pod Maratonem. W którym wieku do niej doszło?"
+    }, {
+      "badAnswers" : [ "IX wiek", "XI wiek", "X wiek p.n.e." ],
+      "goodAnswer" : "X wiek",
+      "id" : 51,
+      "question" : "Spotkanie Bolesława Chrobrego z cesarzem Ottonem III w Gnieźnie odbyło się w roku 1000.  Który to był wiek?"
+    }, {
+      "badAnswers" : [ "XVI wiek", "XIV wiek", "Żadna z odpowiedzi" ],
+      "goodAnswer" : "XV wiek",
+      "id" : 52,
+      "question" : "Bitwa pod Grunwaldem została stoczona w 1410 roku. Który to był wiek?"
+    }, {
+      "badAnswers" : [ "Koronacji władców", "Miejscu stoczonych bitew", "Kierunku przemarszu wojsk" ],
+      "goodAnswer" : "Wysokości szczytów w górach",
+      "id" : 53,
+      "question" : "Na mapie historycznej nie znajdziemy informacji o:"
+    } ],
+    "poczatki" : [ {
+      "badAnswers" : [ "Siemowit", "Piast", "Siemomysł" ],
+      "goodAnswer" : "Mieszko",
+      "id" : 1,
+      "question" : "Jak miał na imię pierwszy historyczny władca Polski?"
+    }, {
+      "badAnswers" : [ "Piast", "Leszek", "Siemowit" ],
+      "goodAnswer" : "Siemomysł",
+      "id" : 2,
+      "question" : "Jak miał na imię ojciec Mieszka?"
+    }, {
+      "badAnswers" : [ "Oda", "Rzepicha", "Rycheza" ],
+      "goodAnswer" : "Dobrawa",
+      "id" : 3,
+      "question" : "Jak miała na imię pierwsza chrześcijańska żona Mieszka?"
+    }, {
+      "badAnswers" : [ "z Niemiec", "z Węgier", "z Rusi" ],
+      "goodAnswer" : "z Czech",
+      "id" : 4,
+      "question" : "Z jakiego kraju przybyła do Polski Dobrawa?"
+    }, {
+      "badAnswers" : [ "w 969 roku", "w 996 roku", "w 999 roku" ],
+      "goodAnswer" : "w 966 roku",
+      "id" : 5,
+      "question" : "W którym roku Mieszko przyjął chrzest?"
+    }, {
+      "badAnswers" : [ "Widukind", "Al", "Thietmar" ],
+      "goodAnswer" : "Ibrahim",
+      "id" : 6,
+      "question" : "Jak miał na imię żydowski podróżnik, który opisał państwo Mieszka?"
+    }, {
+      "badAnswers" : [ "ozdobnym naczyniem", "zamkiem", "grodem" ],
+      "goodAnswer" : "wczesnopiastowskim pałacem",
+      "id" : 7,
+      "question" : "Czym było palatium?"
+    }, {
+      "badAnswers" : [ "Lech", "Popiel", "Krak" ],
+      "goodAnswer" : "Piast",
+      "id" : 8,
+      "question" : "Kto był założycielem dynastii Piastów?"
+    }, {
+      "badAnswers" : [ "Dobromiła", "Dobrawa", "Ludomiła" ],
+      "goodAnswer" : "Rzepicha",
+      "id" : 9,
+      "question" : "Jak miała na imię żona Piasta?"
+    }, {
+      "badAnswers" : [ "ścinanie", "ostrzyżynki", "odcinanie" ],
+      "goodAnswer" : "postrzyżyny",
+      "id" : 10,
+      "question" : "Jak nazywano słowiański obrzęd obcinania chłopcu włosów?"
+    }, {
+      "badAnswers" : [ "6", "8", "5" ],
+      "goodAnswer" : 7,
+      "id" : 11,
+      "question" : "Ile lat miał chłopiec, który był poddawany obrzędowi postrzyżyn?"
+    }, {
+      "badAnswers" : [ "10", "11", "12" ],
+      "goodAnswer" : "nie były poddawane obrzędowi",
+      "id" : 12,
+      "question" : "W jakim wieku dziewczynki były poddawane obrzędowi postrzyżyn?"
+    }, {
+      "badAnswers" : [ "Czech i Niemiec", "Niemiec i Rus", "Rus i Prus" ],
+      "goodAnswer" : "Czech i Rus",
+      "question" : "Jak mieli na imię bracia legendarnego Lecha?"
+    }, {
+      "badAnswers" : [ "Piast", "Polpiel", "Mieszko" ],
+      "goodAnswer" : "Popiel",
+      "id" : 14,
+      "question" : "Jak miał na imię legendarny zły władca, którego zjadły myszy?"
+    }, {
+      "badAnswers" : [ "Słowian południowych", "Słowian wschodnich", "żadna z odpowiedzi" ],
+      "goodAnswer" : "Słowian zachodnich",
+      "id" : 15,
+      "question" : "Do jakiej grupy Słowian zaliczani są Polacy?"
+    }, {
+      "badAnswers" : [ "od polany", "od Piasta", "od polana" ],
+      "goodAnswer" : "od plemienia Polan",
+      "id" : 16,
+      "question" : "Od czego pochodzi nazwa Polska?"
+    }, {
+      "badAnswers" : [ "pole uprawne", "uzbrojenie", "wał obronny" ],
+      "goodAnswer" : "osada obronna",
+      "id" : 17,
+      "question" : "Co to jest gród?"
+    }, {
+      "badAnswers" : [ "garncarzem", "szewcem", "tkaczem" ],
+      "goodAnswer" : "kołodziejem",
+      "id" : 18,
+      "question" : "Kim był Piast?"
+    }, {
+      "badAnswers" : [ "garnki", "buty", "ubrania" ],
+      "goodAnswer" : "koła i części do wozów",
+      "id" : 19,
+      "question" : "Co wytwarzał kołodziej?"
+    }, {
+      "badAnswers" : [ "Wincenty Kadłubek", "Jan Długosz", "Wincenty z Kielczy" ],
+      "goodAnswer" : "Anonim zwany Gallem",
+      "id" : 20,
+      "question" : "Jak nazywał się autor pierwszej kroniki opisującej dzieje Polski?"
+    }, {
+      "badAnswers" : [ "Mieszko", "Siemomysł", "Leszek" ],
+      "goodAnswer" : "Siemowit",
+      "id" : 21,
+      "question" : "Jak miał na imię syn Piasta?"
+    }, {
+      "badAnswers" : [ "Rycheza", "Świętosława", "Adelajda" ],
+      "goodAnswer" : "Oda",
+      "id" : 22,
+      "question" : "Jak miała na imię druga chrześcijańska żona Mieszka?"
+    }, {
+      "badAnswers" : [ "we Wrocławiu", "w Gnieźnie", "w Ostrowie Lednickim" ],
+      "goodAnswer" : "w Poznaniu",
+      "id" : 23,
+      "question" : "Gdzie powstało pierwsze biskupstwo na ziemiach polskich?"
+    }, {
+      "badAnswers" : [ "Stanisław", "Wojciech", "Radzim Gaudenty" ],
+      "goodAnswer" : "Jordan",
+      "id" : 24,
+      "question" : "Jak nazywał się pierwszy biskup w Polsce?"
+    }, {
+      "badAnswers" : [ "flaga", "hymn", "godło i flaga" ],
+      "goodAnswer" : "godło",
+      "id" : 25,
+      "question" : "Co jest najstarszym symbolem narodowym Polski?"
+    }, {
+      "badAnswers" : [ "sęp", "jastrząb", "myszołów" ],
+      "goodAnswer" : "orzeł",
+      "id" : 26,
+      "question" : "Jaki ptak zgodnie z legendą jest godłem Polski?"
+    }, {
+      "badAnswers" : [ "w Gnieźnie", "pod Poznaniem", "w Gniewie" ],
+      "goodAnswer" : "pod Cedynią",
+      "id" : 27,
+      "question" : "Gdzie Mieszko stoczył bitwę z margrabią niemieckim Hodonem?"
+    }, {
+      "badAnswers" : [ "Gniezno", "Ostrów Lednicki", "Kalisz" ],
+      "goodAnswer" : "Biskupin",
+      "id" : 28,
+      "question" : "Jak się nazywa osada, którą założono na wyspie w podobnym czasie co Rzym?"
+    }, {
+      "badAnswers" : [ "na rzece", "na morzu", "w lesie" ],
+      "goodAnswer" : "na jeziorze",
+      "id" : 29,
+      "question" : "Gdzie wzniesiono osadę Biskupin?"
+    }, {
+      "badAnswers" : [ "z Sławnikowiców", "Ludolfingów", "Rurykowiczów" ],
+      "goodAnswer" : "Przemyślidów",
+      "id" : 30,
+      "question" : "Z jakiej dynastii pochodziła czeska księżniczka Dobrawa?"
+    }, {
+      "badAnswers" : [ "Warszawa", "Poznań", "Kalisz" ],
+      "goodAnswer" : "Gniezno",
+      "id" : 31,
+      "question" : "Jakie miasto było pierwszą stolicą Polski?"
+    }, {
+      "badAnswers" : [ "jedwabny", "jakubowy", "berładzki" ],
+      "goodAnswer" : "bursztynowy",
+      "id" : 32,
+      "question" : "Jak się nazywał słynny w starożytności szlak przebiegający przez obecne ziemie polskie?"
+    }, {
+      "badAnswers" : [ "w Wenecji", "w Rzymie", "we Wiedniu" ],
+      "goodAnswer" : "w Akwilei",
+      "id" : 33,
+      "question" : "W jakim mieście zaczynał się bursztynowy szlak?"
+    }, {
+      "badAnswers" : [ "starożytność", "nowożytność", "prehistoria" ],
+      "goodAnswer" : "średniowiecze",
+      "id" : 34,
+      "question" : "Jak się nazywa epoka, w której żył Mieszko I?"
+    }, {
+      "badAnswers" : [ "polskim", "niemieckim", "czeskim" ],
+      "goodAnswer" : "łacińskim",
+      "id" : 35,
+      "question" : "W jakim języku napisano pierwszą kronikę polską?"
+    }, {
+      "badAnswers" : [ "Polanie", "Wiślanie", "Mazowszanie" ],
+      "goodAnswer" : "Jutowie",
+      "id" : 36,
+      "question" : "Które z plemion nie należy do grupy plemion słowiańskich?"
+    }, {
+      "badAnswers" : [ "pod Krakowem", "pod Gnieznem", "w Kołobrzegu" ],
+      "goodAnswer" : "pod Cedynią",
+      "id" : 37,
+      "question" : "Gdzie stoczono jedną z pierwszych polskich bitew (znana z dziennej daty 24 czerwca 972 r.)?"
+    }, {
+      "badAnswers" : [ "miasta", "palatium", "fora" ],
+      "goodAnswer" : "grody",
+      "id" : 38,
+      "question" : "Jak się nazywały osady, w których mieszkały plemiona słowiańskie?"
+    }, {
+      "badAnswers" : [ "Świętowit", "Perun", "Swarożyc" ],
+      "goodAnswer" : "Swaróg",
+      "id" : 39,
+      "question" : "Jak się nazywał słowiański bóg słońca i ognia?"
+    }, {
+      "badAnswers" : [ "idol", "pomnik", "mauzoleum" ],
+      "goodAnswer" : "bałwan",
+      "id" : 40,
+      "question" : "Jak określano posąg słowiańskiego bóstwa obdarzonego czcią?"
+    }, {
+      "badAnswers" : [ "na wyspie Uznam", "w Poznaniu", "w Sobótce" ],
+      "goodAnswer" : "na wyspie Wolin",
+      "id" : 41,
+      "question" : "W 1974 roku w Polsce odkryto drewnianą figurkę Świętowita. Gdzie ją odnaleziono?"
+    }, {
+      "badAnswers" : [ "nad Wisłą", "nad Odrą", "nad Niemnem" ],
+      "goodAnswer" : "nad Wartą",
+      "id" : 42,
+      "question" : "Nad jaką rzeką Polanie zajmowali ziemie?"
+    }, {
+      "badAnswers" : [ "Łysa Góra (Łysiec)", "Babia Góra", "Sowia Góra" ],
+      "goodAnswer" : "Góra Ślęża",
+      "id" : 43,
+      "question" : "Jaka góra nazywana jest „śląskim Olimpem”?"
+    }, {
+      "badAnswers" : [ "palatium", "miasto", "pole" ],
+      "goodAnswer" : "podgrodzie",
+      "id" : 44,
+      "question" : "Jak nazywała się osada położona obok grodu?"
+    }, {
+      "badAnswers" : [ "wzgórze gnieźnieńskie", "Wzgórze Mieszka", "Wzgórze Dobrawy" ],
+      "goodAnswer" : "Wzgórze Lecha",
+      "id" : 45,
+      "question" : "Jak nazywało się wzgórze, na którym wzniesiono Gniezno?"
+    } ],
+    "semestr" : [ {
+      "badAnswers" : [ "XIV w.", "XVI w.", "XVII w." ],
+      "goodAnswer" : "XV w.",
+      "id" : 1,
+      "question" : "Mikołaj Kopernik urodził się w 1473 roku. Który to był wiek?"
+    }, {
+      "badAnswers" : [ "kanclerza", "marszałka", "drużynnika" ],
+      "goodAnswer" : "husarza",
+      "id" : 2,
+      "picture" : 1,
+      "question" : "Ilustracja przedstawia:"
+    }, {
+      "badAnswers" : [ "współczesność", "nowożytność", "starożytność" ],
+      "goodAnswer" : "średniowiecze",
+      "id" : 3,
+      "question" : "W której epoce historycznej rozegrała się bitwa pod Grunwaldem z roku 1410?"
+    }, {
+      "badAnswers" : [ "Ziemia znajduje się w centrum Wszechświata.", "Słońce krąży wokół wszystkich planet.", "Słońce krąży wokół Ziemi." ],
+      "goodAnswer" : "Ziemia i inne planety krążą wokół Słońca.",
+      "id" : 4,
+      "question" : "Mikołaj Kopernik udowodnił, że …"
+    }, {
+      "badAnswers" : [ "rad i hel", "polon i wodór", "polon i ołów" ],
+      "goodAnswer" : "polon i rad",
+      "id" : 5,
+      "question" : "Jak nazywały się pierwiastki, które odkryła Maria Skłodowska-Curie?"
+    }, {
+      "badAnswers" : [ "Tadeusz Kościuszko", "Jan Henryk Dąbrowski", "Napoleon Bonaparte" ],
+      "goodAnswer" : "Romuald Traugutt",
+      "id" : 6,
+      "question" : "Która z poniższych osób była przywódcą powstania styczniowego z 1863 roku?"
+    }, {
+      "badAnswers" : [ "Jan Henryk Dąbrowski", "Stefan Czarniecki", "Tadeusz Kościuszko" ],
+      "goodAnswer" : "Józef Wybicki",
+      "id" : 7,
+      "question" : "Kto jest autorem słów „Mazurka Dąbrowskiego”?"
+    }, {
+      "badAnswers" : [ "Napoleon Bonaparte, Stefan Czarniecki, Tadeusz Kościuszko", "Jan Henryk Dąbrowski, Napoleon Bonaparte, Tadeusz Kościuszko", "Józef Wybicki, Jan Henryk Dąbrowski, Napoleon Bonaparte" ],
+      "goodAnswer" : "Jan Henryk Dąbrowski, Napoleon Bonaparte, Stefan Czarniecki",
+      "id" : 8,
+      "question" : "Które z poniższych osób są bohaterami „Mazurka Dąbrowskiego”?"
+    }, {
+      "badAnswers" : [ "Józef Wybicki", "Tadeusz Kościuszko", "Napoleon Bonaparte" ],
+      "goodAnswer" : "Jan Henryk Dąbrowski",
+      "id" : 9,
+      "question" : "Kto był twórcą Legionów Polskich we Włoszech?"
+    }, {
+      "badAnswers" : [ "6", "5", "3" ],
+      "goodAnswer" : "4",
+      "id" : 10,
+      "question" : "Ile zwrotek liczy polski hymn narodowy?"
+    }, {
+      "badAnswers" : [ "drugi rozbiór Polski", "pierwszy rozbiór Polski", "wybuch powstania styczniowego" ],
+      "goodAnswer" : "trzeci rozbiór Polski",
+      "id" : 11,
+      "question" : "Skutkiem powstania kościuszkowskiego z 1794 roku był …"
+    }, {
+      "badAnswers" : [ "Stefan Batory", "Zygmunt August", "Stefan Czarniecki" ],
+      "goodAnswer" : "Jan Zamojski",
+      "id" : 12,
+      "question" : "Kto założył miasto Zamość?"
+    }, {
+      "badAnswers" : [ "sołtysa i kanclerza", "marszałka i hetmana", "podskarbiego i stolnika" ],
+      "goodAnswer" : "kanclerza i hetmana",
+      "id" : 13,
+      "question" : "Jakie funkcje pełnił Jan Zamojski?"
+    }, {
+      "badAnswers" : [ "Zygmunt Stary", "Stefan Batory", "Henryk Walezy" ],
+      "goodAnswer" : "Zygmunt August",
+      "id" : 14,
+      "question" : "Jak się nazywał ostatni władca z dynastii Jagiellonów?"
+    }, {
+      "badAnswers" : [ "546", "646", "577" ],
+      "goodAnswer" : "446",
+      "id" : 15,
+      "question" : "Zygmunt August ostatni władca z dynastii Jagiellonów zmarł w 1572 roku. Ile lat minęło od jego śmierci?"
+    }, {
+      "badAnswers" : [ "trzy", "jedną", "żadnej" ],
+      "goodAnswer" : "dwie",
+      "id" : 16,
+      "question" : "Ile Nagród Nobla otrzymała Maria Skłodowska-Curie?"
+    }, {
+      "badAnswers" : [ "XVIII w.", "XVI w.", "XIX w." ],
+      "goodAnswer" : "XVII w.",
+      "id" : 17,
+      "question" : "Który wiek w historii Polski nazywany jest „stuleciem wojen”?"
+    }, {
+      "badAnswers" : [ "Stefan Batory", "Stanisław August Poniatowski", "Władysław Jagiełło" ],
+      "goodAnswer" : "Jan III Sobieski",
+      "id" : 18,
+      "question" : "Który władca ruszył z odsieczą Wiedniowi?"
+    }, {
+      "badAnswers" : [ "ciężkozbrojna piechota", "lekka kawaleria", "artyleria" ],
+      "goodAnswer" : "ciężkozbrojna jazda polska",
+      "id" : 19,
+      "question" : "Husaria to... "
+    }, {
+      "badAnswers" : [ "Stefan Czarniecki", "Jan III Sobieski", "Jan Karol Chodkiewicz" ],
+      "goodAnswer" : "Augustyn Kordecki",
+      "id" : 20,
+      "question" : "Jak się nazywał bohaterski obrońca klasztoru na Jasnej Górze przed Szwedami?"
+    }, {
+      "badAnswers" : [ "zalew szwedzki", "napad szwedzki", "pożoga szwedzka" ],
+      "goodAnswer" : "potop szwedzki",
+      "id" : 21,
+      "question" : "Jak określa się wojnę ze Szwedami z lat 1655-1660?"
+    }, {
+      "badAnswers" : [ "Jan Henryk Dąbrowski", "Tadeusz Kościuszko", "Augustyn Kordecki" ],
+      "goodAnswer" : "Stefan Czarniecki",
+      "id" : 22,
+      "question" : "Jak nazywał się bohaterski dowódca wojskowy z czasu potopu szwedzkiego?"
+    }, {
+      "badAnswers" : [ "symbol narodowy Polaków", "herb miasta", "symbol władzy królewskiej" ],
+      "goodAnswer" : "herb szlachecki",
+      "id" : 23,
+      "picture" : 2,
+      "question" : "Ilustracja przedstawia …"
+    }, {
+      "badAnswers" : [ "Narodowe Święto Niepodległości", "Święto Wojska Polskiego", "Święto Pracy" ],
+      "goodAnswer" : "Narodowe Święto Trzeciego Maja",
+      "id" : 24,
+      "question" : "Dnia 3 maja obchodzimy..."
+    }, {
+      "badAnswers" : [ "koronację Stanisława Augusta Poniatowskiego", "odzyskanie przez Polskę niepodległości", "wybuch powstania warszawskiego" ],
+      "goodAnswer" : "uchwalenie Konstytucji 3 maja 1791 r.",
+      "id" : 25,
+      "question" : "Narodowe Święto Trzeciego Maja upamiętnia..."
+    }, {
+      "badAnswers" : [ "zesłań na Syberię", "konfiskaty majątków powstańców", "śmierci wielu powstańców" ],
+      "goodAnswer" : "III rozbioru Polski",
+      "id" : 26,
+      "question" : "Czego nie zaliczamy do skutków powstania styczniowego?"
+    }, {
+      "badAnswers" : [ "branki", "chęci odzyskania niepodległości przez Polskę", "prześladowań polskich patriotów" ],
+      "goodAnswer" : "III rozbioru Polski",
+      "id" : 27,
+      "question" : "Do przyczyn powstania styczniowego nie zaliczymy"
+    }, {
+      "badAnswers" : [ "polskim kupcem", "polskim królem", "powstańcem styczniowym" ],
+      "goodAnswer" : "polskim rycerzem",
+      "id" : 28,
+      "question" : "Kim był Zawisza Czarny z Garbowa?"
+    }, {
+      "badAnswers" : [ "W czasie powstania styczniowego na ziemiach polskich działało podziemne państwo polskie.", "Jan III Sobieski ruszył z odsieczą Wiedniowi oblężonemu przez Turków.", "Polska utraciła niepodległość po III rozbiorze na 123 lata." ],
+      "goodAnswer" : "Kosynierzy wsławili się zwycięstwami odniesionymi w czasie potopu szwedzkiego.",
+      "id" : 29,
+      "question" : "Które ze zdań zawiera nieprawdziwe treści?"
+    }, {
+      "badAnswers" : [ "z Rosjanami", "z Turkami", "z Francuzami" ],
+      "goodAnswer" : "z Krzyżakami",
+      "id" : 30,
+      "question" : "Z kim Polacy i Litwini walczyli pod Grunwaldem?"
+    }, {
+      "badAnswers" : [ "w Warszawie", "w Wilnie", "w Zamościu" ],
+      "goodAnswer" : "w Krakowie",
+      "id" : 31,
+      "question" : "W którym mieście powstała pierwsza wyższa uczelnia ufundowana przez Kazimierza Wielkiego?"
+    }, {
+      "badAnswers" : [ "Bolesław I Chrobry", "Bolesław Krzywousty", "Mieszko I" ],
+      "goodAnswer" : "Kazimierz III Wielki",
+      "id" : 32,
+      "question" : "Ostatnim królem z dynastii Piastów był...?"
+    } ],
+    "rzym" : [{
+      "badAnswers" : [ "Remus", "bracia Romulus i Remus", "Jowisz" ],
+      "goodAnswer" : "Romulus",
+      "id" : 1,
+      "question" : "Kto według legendy założył Rzym?"
+    }, {
+      "badAnswers" : [ "Juliusza", "Remusa", "Junony" ],
+      "goodAnswer" : "Romulusa",
+      "id" : 2,
+      "question" : "Od czyjego imienia pochodzi nazwa Rzym?"
+    },{
+      "badAnswers" : [ "wodociągami miejskimi", "teatrem", "sportem" ],
+      "goodAnswer" : "publicznymi łaźniami",
+      "id" : 3,
+      "question" : "Czym były termy?"
+    },{
+      "badAnswers" : [ "w średniowieczu", "w prehistorii", "w nowożytności" ],
+      "goodAnswer" : "w starożytności",
+      "id" : 4,
+      "question" : "W której epoce założono miasto Rzym?"
+    },{
+      "badAnswers" : [ "imię", "amfiteatr", " publiczna łaźnia" ],
+      "goodAnswer" : "wodociąg",
+      "id" : 5,
+      "question" : "Akwedukt to..."
+    },{
+      "badAnswers" : [ "legionista", "hoplita", "chrześcijanin" ],
+      "goodAnswer" : "gladiator",
+      "id" : 6,
+      "question" : "Jak nazywał się wojownik walczący na arenie amfiteatru?"
+    },{
+      "badAnswers" : [ "Konstantyn", "Juliusz", "Jowisz" ],
+      "goodAnswer" : "Koloseum",
+      "id" : 7,
+      "question" : "Jak nazywa się najsłynniejszy amfiteatr w Rzymie?"
+    },{
+      "badAnswers" : [ "753r.", "1573r.", "1r." ],
+      "goodAnswer" : "753r. p.n.e.",
+      "id" : 8,
+      "question" : "Legendarna data założenia Rzymu to..."
+    },{
+      "badAnswers" : [ "liktor", "legionista", "trybun" ],
+      "goodAnswer" : "konsul",
+      "id" : 9,
+      "question" : "Najważniejszy urzędnik w republice rzymskiej to..."
+    },{
+      "badAnswers" : [ "cesarstwo, królestwo, republika", "republika, cesarstwo, królestwo", "królestwo, cesarstwo, republika" ],
+      "goodAnswer" : "królestwo, republika, cesarstwo",
+      "id" : 10,
+      "question" : "Rzym w swojej historii prezentował różne sposoby sprawowania władzy w państwie. Ułóż je w porządku chronologicznym."
+    },{
+      "badAnswers" : [ "Brutus", "Oktawian August", "Romulus Augustulus" ],
+      "goodAnswer" : "Juliusz Cezar",
+      "id" : 11,
+      "question" : "Wybitny przywódca wojskowy, który podbił m.in. Galię i ogłosił się dożywotnim dyktatorem to..."
+    },{
+      "badAnswers" : [ "od Junony", "od Jowisza", "od imienia Juliusz" ],
+      "goodAnswer" : "od Cezara",
+      "id" : 12,
+      "question" : "Od kogo pochodzi tytuł cesarz?"
+    },{
+      "badAnswers" : [ "Romulus Augustulus", "Konstantyn Wielki", "Dioklecjan" ],
+      "goodAnswer" : "Oktawian August",
+      "id" : 13,
+      "question" : "Kto był pierwszym rzymskim cesarzem?"
+    },{
+      "badAnswers" : [ "Oktawian August", "Konstantyn Wielki", "Neron" ],
+      "goodAnswer" : "Romulus Augustulus",
+      "id" : 14,
+      "question" : "Kto był ostatnim rzymskim cesarzem?"
+    },{
+      "badAnswers" : [ "rozkwit rzymskiej kultury", "handlowanie produktami", "emigracja mieszkańców" ],
+      "goodAnswer" : "najazdy barbarzyńców",
+      "id" : 15,
+      "question" : "Co było m.in. przyczyną upadku Cesarstwa Rzymskiego na zachodzie?"
+    },{
+      "badAnswers" : [ "w 476r.", "w 1453r.", "w 1000r." ],
+      "goodAnswer" : "w 395r.",
+      "id" : 16,
+      "question" : "Kiedy dokonano podziału Imperium Rzymskiego?"
+    },{
+      "badAnswers" : [ "Konstantyn Wielki", "Juliusz Cezar", "Neron" ],
+      "goodAnswer" : "Tedozjusz Wielki",
+      "id" : 17,
+      "question" : "Kto dokonał podziału Imperium Rzymskiego?"
+    },{
+      "badAnswers" : [ "w 1453r.", "w 27r.p.n.e.", "w 395r." ],
+      "goodAnswer" : "w 476r.",
+      "id" : 18,
+      "question" : "W którym roku upadł Rzym?"
+    },{
+      "badAnswers" : [ "średniowiecze", "prehistoria", "nowożytność" ],
+      "goodAnswer" : "starożytność",
+      "id" : 19,
+      "question" : "Która epoka historyczna zakończyła się wraz z upadkiem Rzymu?"
+    },{
+      "badAnswers" : [ "Forum Romanum", "Jowisz", "Koloseum" ],
+      "goodAnswer" : "Panteon",
+      "id" : 20,
+      "question" : "Jak nazywała się rzymska świątynia poświęcona wszystkim bogom?"
+    },{
+      "badAnswers" : [ "kruk", "krowa", "pies" ],
+      "goodAnswer" : "wilczyca",
+      "id" : 21,
+      "question" : "Jakie zwierzę uchodzi za symbol Rzymu?"
+    },{
+      "badAnswers" : [ "3", "2", "9" ],
+      "goodAnswer" : "7",
+      "id" : 22,
+      "question" : "Na ilu wzgórzach wzniesiono Rzym?"
+    },{
+      "badAnswers" : [ "Tag", "Sekwana", "Loara" ],
+      "goodAnswer" : "Tyber",
+      "id" : 23,
+      "question" : "Która rzeka przepływa przez Rzym?"
+    },{
+      "badAnswers" : [ "Bałkański", "Skandynawski", "Peloponez" ],
+      "goodAnswer" : " Apeniński",
+      "id" : 24,
+      "question" : "Półwysep, na którym leży Rzym to Półwysep..."
+    },{
+      "badAnswers" : [ "Rzym", "Pompeje", "Asyż" ],
+      "goodAnswer" : "Konstantynopol",
+      "id" : 25,
+      "question" : "Jak nazywała się stolica Cesarstwa Rzymskiego na wschodzie?"
+    },{
+      "badAnswers" : [ "Justynian", "Dioklecjan", "Neron" ],
+      "goodAnswer" : "Konstantyn Wielki",
+      "id" : 26,
+      "question" : "Kto wydał edykt mediolański zezwalający chrześcijanom na wyznawanie swojej wiary?"
+    },{
+      "badAnswers" : [ "od III-VI w.", "od II-V w.", "od I-XV w." ],
+      "goodAnswer" : "od I-IV w.",
+      "id" : 27,
+      "question" : "W którym okresie trwały prześladowania chrześcijan w Imperium Rzymskim?"
+    },{
+      "badAnswers" : [ "krzyż", "chrystogram", "ogień Westy" ],
+      "goodAnswer" : "ryba",
+      "id" : 28,
+      "question" : "Co było pierwszym symbolem chrześcijan?"
+    },{
+      "badAnswers" : [ "z Galią", "z Persją", "z Grecją" ],
+      "goodAnswer" : "z Kartaginą",
+      "id" : 29,
+      "question" : "Z kim Rzymianie walczyli w tzw. wojnach punickich?"
+    },{
+      "badAnswers" : [ "Konstantyn Wielki", "Oktawian August", "Neron" ],
+      "goodAnswer" : "Juliusz Cezar",
+      "id" : 30,
+      "question" : "Kto wypowiedział słynne słowa “I Ty Brutusie przeciwko mnie”?"
+    },{
+      "badAnswers" : [ "pałaców", "domów", "świątyń" ],
+      "goodAnswer" : "dróg",
+      "id" : 31,
+      "question" : "W czego budowaniu Rzymianie byli mistrzami?"
+    },{
+      "badAnswers" : [ "Posejdona", "Aresa", "Hadesa" ],
+      "goodAnswer" : "Zeusa",
+      "id" : 32,
+      "question" : "Jowisz to odpowiednik którego greckiego boga?"
+    },{
+      "badAnswers" : [ "greckim", "włoskim", "francuskim" ],
+      "goodAnswer" : "łacińskim",
+      "id" : 33,
+      "question" : "Jakim językiem posługiwali się Rzymianie?"
+    },{
+      "badAnswers" : [ "plebejusze", "niewolnicy", "szlachta" ],
+      "goodAnswer" : "patrycjusze",
+      "id" : 34,
+      "question" : "Jak nazywali się najbogatsi przedstawiciele społeczeństwa rzymskiego?"
+    },{
+      "badAnswers" : [ "patrycjusze", "plebejusze", "szlachta" ],
+      "goodAnswer" : "niewolnicy",
+      "id" : 35,
+      "question" : "Jak nazywali się przedstawiciele społeczeństwa rzymskiego, którzy nie mieli żadnych praw?"
+    },{
+      "badAnswers" : [ "patrycjusze", "niewolnicy", "szlachta" ],
+      "goodAnswer" : "plebejusze",
+      "id" : 36,
+      "question" : "Jak nazywali się przedstawiciele społeczeństwa rzymskiego, którzy zajmowali się handlem i rzemiosłem?"
+    },{
+      "badAnswers" : [ "tygrys", "lew", "ślimak" ],
+      "goodAnswer" : "żółw",
+      "id" : 37,
+      "question" : "Rzymski szyk obronny to..."
+    },{
+      "badAnswers" : [ "Dekalog", "modlitwy", "imiona cesarzy" ],
+      "goodAnswer" : "prawo",
+      "id" : 38,
+      "question" : "Co było zapisane na XII Tablicach?"
+    },{
+      "badAnswers" : [ "podążający", "wierni", "słuchający" ],
+      "goodAnswer" : "apostołowie",
+      "id" : 39,
+      "question" : "Jak nazywali się uczniowie Jezusa?"
+    },{
+      "badAnswers" : [ "Św. Piotr", "Św. Łukasz", "Św. Jan" ],
+      "goodAnswer" : "Św. Paweł z Tarsu",
+      "id" : 40,
+      "question" : "Który apostoł był nazywany “apostołem narodów”?"
+    },{
+      "badAnswers" : [ "w Grecji", "w Rzymie", "w Galii" ],
+      "goodAnswer" : "w Palestynie",
+      "id" : 41,
+      "question" : "Gdzie narodziło się chrześcijaństwo?"
+    },{
+      "badAnswers" : [ "świątynie", "wodociągi", "modlitwy" ],
+      "goodAnswer" : "podziemny cmentarz",
+      "id" : 42,
+      "question" : "Katakumby to..."
+    },{
+      "badAnswers" : [ "Św. Paweł", "Św. Franciszek", "Św. Jan" ],
+      "goodAnswer" : "Św. Piotr",
+      "id" : 43,
+      "question" : "Który apostoł został pierwszym biskupem Rzymu, czyli papieżem?"
+    },{
+      "badAnswers" : [ "modlitwę", "dobre słowo", "przepowiednię" ],
+      "goodAnswer" : "Dekalog",
+      "id" : 44,
+      "question" : "Co Mojżesz otrzymał od Boga na Górze Synaj?"
+    },{
+      "badAnswers" : [ "modlitwa", "księga", "świątynia" ],
+      "goodAnswer" : "10 przykazań",
+      "id" : 45,
+      "question" : "Dekalog to..."
+    }],
+    "independence-medium": [
+      {
+        "badAnswers" : [ "1793", "1772", "1789" ],
+        "goodAnswer" : "1795",
+        "id" : 1,
+        "question" : "Państwo polskie przestało istnieć w wyniku III rozbioru, który miał miejsce w roku:"
+      },
+      {
+        "badAnswers" : [ "decyzja państw zaborczych", "powstanie wielkopolskie", "II wojna światowa" ],
+        "goodAnswer" : "I wojna światowa",
+        "id" : 2,
+        "question" : "W wyniku jakiego wydarzenia Polska odzyskała niepodłegłość?"
+      },
+      {
+        "badAnswers" : [ "03.05.1918 r.", "15.08.1918 r.", "03.03.1918 r." ],
+        "goodAnswer" : "11.11.1918 r.",
+        "id" : 3,
+        "question" : "Jaka jest symboliczna data odzyskania przez Polskę niepodległości?"
+      },
+      {
+        "badAnswers" : [ "Józef Piłsudski", "Ignacy Jan Paderewski", "Roman Dmowski" ],
+        "goodAnswer" : "Wincenty Witos",
+        "id" : 4,
+        "picture" : 3,
+        "question" : "Polska odzyskała niepodległość między innymi dzięki trzem osobom ze zdjęcia. Kto nie należy do tego grona?"
+      },
+      {
+        "badAnswers" : [ "Józef Haller", "Tadeusz Rozwadowski", "Roman Dmowski" ],
+        "goodAnswer" : "Józef Piłsudski",
+        "id" : 5,
+        "question" : "Kto jest twórcą Kompani Kadrowej, Legionów Polskich oraz pogromcą bolszewików w bitwie warszawskiej?"
+      },
+      {
+        "badAnswers" : [ "Józef Haller", "Wojciech Korfanty", "Roman Dmowski" ],
+        "goodAnswer" : "Ignacy Jak Paderewski",
+        "id" : 6,
+        "question" : "Dzięki niemu sprawa polska była poruszona przez USA w Wersalu pod Paryżem. Polityk, pianista, kompozytor."
+      },
+      {
+        "badAnswers" : [ "Józef Piłsudski", "Wincenty Witos", "Ignacy Jan Paderewski" ],
+        "goodAnswer" : "Roman Dmowski",
+        "id" : 7,
+        "question" : "Polityk reprezentujący sprawę Polską w Wersalu pod Paryżem to:"
+      },
+      {
+        "badAnswers" : [ "Kaziemierz Sosnkowski", "Jędrzej Moraczewski", "Władysław Sikorski" ],
+        "goodAnswer" : "Józef Haller",
+        "id" : 8,
+        "question" : "Kto był dowódcą tzw. Błękitnej Armii?"
+      },
+      {
+        "badAnswers" : [ "My, pierwsza brygada", "Wojenko, wojenko", "Pierwsza kadrowa" ],
+        "goodAnswer" : "Bogurodzica",
+        "id" : 9,
+        "question" : "Pieśnią patriotyczną z okresu I wojny światowej nie jest:"
+      },
+      {
+        "badAnswers" : [ "Rosja", "Prusy", "Austria" ],
+        "goodAnswer" : "Włochy",
+        "id" : 10,
+        "question" : "Który kraj nie dokonał rozbioru Polski w XVIII wieku?"
+      },
+      {
+        "badAnswers" : [ "Napoleon Bonaparte", "Tadeusz Kościuszko", "Jan Henryk Dąbrowski" ],
+        "goodAnswer" : "Stefan Czarniecki",
+        "id" : 11,
+        "question" : "Kto jest bohaterem trzeciej zwrotki „Mazurka Dąbrowskiego?"
+      },
+      {
+        "badAnswers" : [ "przyjazdu Piłsudskiego do Warszawy.", "urodzin Józefa Piłsudskiego.", "nadania stopnia marszałka Polski Piłsudskiemu." ],
+        "goodAnswer" : "przejęcia przez Piłsudskiego władzy wojskowej.",
+        "id" : 12,
+        "question" : "Narodowe  Święto Niepodległości obchodzimy na pamiątkę…."
+      },
+      {
+        "badAnswers" : [ "we Lwowie", "w Warszawie", "w Kielcach" ],
+        "goodAnswer" : "w Krakowie",
+        "id" : 13,
+        "question" : "Gdzie Józef Piłsudski utworzył Pierwszą Kompanię Kadrową?"
+      },
+      {
+        "badAnswers" : [ "generała", "hetmana", "ministra Polski" ],
+        "goodAnswer" : "Marszałka Polski",
+        "id" : 14,
+        "question" : "Józef Piłsudski jako pierwsza osoba w historii Polski otrzymał stopień…"
+      },
+      {
+        "badAnswers" : [ "1939-1945", "1908-1918", "1912-1916" ],
+        "goodAnswer" : "1914-1918",
+        "id" : 15,
+        "question" : "W których latach trwała I wojna światowa?"
+      },
+      {
+        "badAnswers" : [ "lwiątkami lwowskimi", "orzełkami lwowskimi", "lwami lwowskimi" ],
+        "goodAnswer" : "orlętami lwowskimi",
+        "id" : 16,
+        "question" : "Jak nazywamy młodych obrońców Lwowa z lat 1918-1919?"
+      },
+      {
+        "badAnswers" : [ "bitwy warszawskiej z Niemcami", "zawarcia pokoju z Rosją", "zawarcia pokoju z Niemcami" ],
+        "goodAnswer" : "bitwy warszawskiej z bolszewikami",
+        "id" : 17,
+        "question" : "Cud nad Wisłą odnosi się do:"
+      },
+      {
+        "badAnswers" : [ "23", "100", "111" ],
+        "goodAnswer" : "123",
+        "id" : 18,
+        "question" : "Przez ile lat Polska była pod zaborami?"
+      },
+      {
+        "badAnswers" : [ "Austriakom", "Rosjanom", "Włochom" ],
+        "goodAnswer" : "Niemcom",
+        "id" : 19,
+        "question" : "Przeciwko komu Polacy walczyli w powstaniach śląskich?"
+      },
+      {
+        "badAnswers" : [ "I Rzeczpospolita", "Księstwo Polskie", "Królestwo Polskie" ],
+        "goodAnswer" : "II Rzeczpospolita",
+        "id" : 20,
+        "question" : "Jaka była oficjalna nazwa państwa polskiego po odzyskaniu niepodległości?"
+      },
+      {
+        "badAnswers" : [ "Józef Piłsudski", "Jan Henryk Dąbrowski", "Józef Haller" ],
+        "goodAnswer" : "Józef Wybicki",
+        "id" : 21,
+        "question" : "Kto napisał słowa polskiego hymnu narodowego?"
+      },
+      {
+        "badAnswers" : [ "3", "5", "2" ],
+        "goodAnswer" : "4",
+        "id" : 22,
+        "question" : "Ile zwrotek liczy polski humn narodowy?"
+      },
+      {
+        "badAnswers" : [ "Wujek", "Stryjek", "Ojciec" ],
+        "goodAnswer" : "Dziadek",
+        "id" : 23,
+        "question" : "Jak żołnierze wołali na Józefa Piłsudskiego?"
+      },
+      {
+        "badAnswers" : [ "rogatywka", "michałówka", "pawłówka" ],
+        "goodAnswer" : "maciejówka",
+        "id" : 24,
+        "question" : "Jak się nazywa nakrycie głowy noszone przez legionistów Józefa Piłsudskiego?"
+      },
+      {
+        "badAnswers" : [ "Hymn „Mazurek Dąbrowskiego”", "Flaga Polski", "Godło Polski" ],
+        "goodAnswer" : "Warszawska Syrenka",
+        "id" : 25,
+        "question" : "Polskim symbolem narodowym nie jest:"
+      },
+      {
+        "badAnswers" : [ "Józef Haller", "Ignacy Jan Paderewski", "Roman Dmowski" ],
+        "goodAnswer" : "Józef Piłsudski",
+        "id" : 26,
+        "picture" : 4,
+        "question" : "Osoba przedstawiona na fotografii to:"
+      },
+      {
+        "badAnswers" : [ "Józef Haller", "Ignacy Jan Paderewski", "Józef Piłsudski" ],
+        "goodAnswer" : "Roman Dmowski",
+        "id" : 27,
+        "picture" : 5,
+        "question" : "Osoba przedstawiona na fotografii to:"
+      },
+      {
+        "badAnswers" : [ "Józef Haller", "Roman Dmowski", "Józef Piłsudski" ],
+        "goodAnswer" : "Ignacy Jan Paderewski",
+        "id" : 28,
+        "picture" : 6,
+        "question" : "Osoba przedstawiona na fotografii to:"
+      },
+      {
+        "badAnswers" : [ "Tadeusz Rozwadowski", "Wincenty Witos", "Wojciech Korfanty" ],
+        "goodAnswer" : "Józef Haller",
+        "id" : 29,
+        "question" : "Kto dokonał symbolicznych zaślubin Polski z morzem?"
+      }
+    ],
+    "independence-easy": [
+      {
+        "badAnswers" : [ "Jan Henryk Dąbrowski", "Stefan Czarniecki", "Tadeusz Kościuszko" ],
+        "goodAnswer" : "Napoleon Bonaparte",
+        "id" : 1,
+        "question" : "Kto jest bohaterem drugiej zwrotki Mazurka Dąbrowskiego?"
+      },
+      {
+        "badAnswers" : [ "1 listopada", "21 listopada", "12 listopada" ],
+        "goodAnswer" : "11 listopada",
+        "id" : 2,
+        "question" : "Narodowe  Święto Niepodległości obchodzimy…"
+      },
+      {
+        "badAnswers" : [ "23", "100", "111" ],
+        "goodAnswer" : "123",
+        "id" : 3,
+        "question" : "Przez ile lat Polska była pod zaborami?"
+      },
+      {
+        "badAnswers" : [ "Józef Piłsudski", "Jan Henryk Dąbrowski", "Józef Haller" ],
+        "goodAnswer" : "Józef Wybicki",
+        "id" : 4,
+        "question" : "Kto napisał słowa polskiego hymnu narodowego?"
+      },
+      {
+        "badAnswers" : [ "Rosja, Prusy, Włochy", "Prusy, Rosja i Francja", "Rosja, Szwecja, Prusy" ],
+        "goodAnswer" : "Rosja, Prusy i Austria",
+        "id" : 5,
+        "question" : "Które kraje dokonały rozbiorów Polski?"
+      },
+      {
+        "badAnswers" : [ "6", "8", "10" ],
+        "goodAnswer" : "4",
+        "id" : 6,
+        "question" : "Ile lat trwała I wojna światowa?"
+      },
+      {
+        "badAnswers" : [ "we Francji", "w Austrii", "w Hiszpanii" ],
+        "goodAnswer" : "we Włoszech",
+        "id" : 7,
+        "question" : "Gdzie Jan Henryk Dąbrowski utworzył Legiony Polskie?"
+      },
+      {
+        "badAnswers" : [ "żołnierze mieli niebieskie oczy", "żołnierze lubili kolor niebieski", "żołnierze nosili niebieskie buty" ],
+        "goodAnswer" : "mundur żołnierzy był w kolorze niebieskim",
+        "id" : 8,
+        "question" : "Dlaczego Armię gen. Józefa Hallera nazywano Błękitną Armią?"
+      },
+      {
+        "badAnswers" : [ "generała", "hetmana", "ministra Polski" ],
+        "goodAnswer" : "Marszałka Polski",
+        "id" : 9,
+        "question" : "Józef Piłsudski jako pierwsza osoba w historii Polski otrzymał stopień…"
+      },
+      {
+        "badAnswers" : [ "3", "5", "2" ],
+        "goodAnswer" : "4",
+        "id" : 10,
+        "question" : "Ile zwrotek liczy polski humn narodowy?"
+      },
+      {
+        "badAnswers" : [ "Roman Dmowski", "Wojciech Korfanty", "Tadeusz Rozwadowski" ],
+        "goodAnswer" : "Ignacy Jan Paderewski",
+        "id" : 11,
+        "question" : "Jak nazywał się polityk i kompozytor, który swoją pracą przyczynił się do odzyskania niepodległości w 1918 r.? "
+      },
+      {
+        "badAnswers" : [ "Józef Piłsudski", "Ignacy Jan Paderewski", "Roman Dmowski" ],
+        "goodAnswer" : "Wincenty Witos",
+        "id" : 12,
+        "picture" : 3,
+        "question" : "Polska odzyskała niepodległość między innymi dzięki trzem osobom ze zdjęcia. Kto nie należy do tego grona?"
+      },
+      {
+        "badAnswers" : [ "decyzja państw zaborczych", "powstanie wielkopolskie", "II wojna światowa" ],
+        "goodAnswer" : "I wojna światowa",
+        "id" : 13,
+        "question" : "W wyniku jakiego wydarzenia Polska odzyskała niepodłegłość?"
+      },
+      {
+        "badAnswers" : [ "My, pierwsza brygada", "Wojenko, wojenko", "Pierwsza kadrowa" ],
+        "goodAnswer" : "Bogurodzica",
+        "id" : 14,
+        "question" : "Pieśnią patriotyczną z okresu I wojny światowej nie jest:"
+      },
+      {
+        "badAnswers" : [ "Kajtek", "Ciapek", "Kasztanka" ],
+        "goodAnswer" : "Pies",
+        "id" : 15,
+        "question" : "Jak się wabił pies Józefa Piłsudskiego?"
+      },
+      {
+        "badAnswers" : [ "Orzech", "Brzózka", "Błyskawica" ],
+        "goodAnswer" : "Kasztanka",
+        "id" : 16,
+        "question" : "Jak miał na imię koń Józefa Piłsudskiego?"
+      },
+      {
+        "badAnswers" : [ "Wujek", "Stryjek", "Ojciec" ],
+        "goodAnswer" : "Dziadek",
+        "id" : 17,
+        "question" : "Jak żołnierze wołali na Józefa Piłsudskiego?"
+      },
+      {
+        "badAnswers" : [ "rogatywka", "michałówka", "pawłówka" ],
+        "goodAnswer" : "maciejówka",
+        "id" : 18,
+        "question" : "Jak się nazywa nakrycie głowy noszone przez legionistów Józefa Piłsudskiego?"
+      },
+      {
+        "badAnswers" : [ "Hymn „Mazurek Dąbrowskiego”", "Flaga Polski", "Godło Polski" ],
+        "goodAnswer" : "Warszawska Syrenka",
+        "id" : 19,
+        "question" : "Polskim symbolem narodowym nie jest:"
+      },
+      {
+        "badAnswers" : [ "Józef Haller", "Ignacy Jan Paderewski", "Roman Dmowski" ],
+        "goodAnswer" : "Józef Piłsudski",
+        "id" : 20,
+        "picture" : 4,
+        "question" : "Osoba przedstawiona na fotografii to:"
+      },
+      {
+        "badAnswers" : [ "2", "4", "1" ],
+        "goodAnswer" : "3",
+        "id" : 21,
+        "question" : "Ile było rozbiorów Polski?"
+      },
+      {
+        "badAnswers" : [ "Jan Henryk Dąbrowski", "Napoleon Bonaparte", "Stefan Czarniecki" ],
+        "goodAnswer" : "Tadeusz Kościuszko",
+        "id" : 22,
+        "question" : "Postać, która nie występuje we współczesnym tekście hymnu narodowego to:"
+      },
+      {
+        "badAnswers" : [ "Wanda i Halina", "Halina i Jadwiga", "Zofia i Halina" ],
+        "goodAnswer" : "Wanda i Jadwiga",
+        "id" : 23,
+        "question" : "Jak miały na imię córki Józefa Piłsudskiego?"
+      },
+      {
+        "badAnswers" : [ "Asia", "Kasia", "Zosia" ],
+        "goodAnswer" : "Basia",
+        "id" : 24,
+        "question" : "Jak ma na imię bohaterka czwartej zwrotki hymnu Polski?"
+      },
+      {
+        "badAnswers" : [ "XXI w.", "XIX w.", "XVIII w." ],
+        "goodAnswer" : "XX w.",
+        "id" : 25,
+        "question" : "W którym wieku Mazurek Dąbrowskiego został hymnem Polski?"
+      }
+    ],
+    "zamoyski": [
+      {
+        "badAnswers" : [ "I połowie XV wieku.", "II połowie XVI wieku.", "II połowie XV wieku." ],
+        "goodAnswer" : "I połowie XVI wieku.",
+        "id" : 1,
+        "question" : "Jan Zamoyski urodził się w roku 1542, to znaczy, że było to w..."
+      },
+      {
+        "badAnswers" : [ "Posiadała wiele ziem.", "Miała liczne przywileje.", "Wywodziła się z rycerstwa." ],
+        "goodAnswer" : "Mieszkała w drogich kamienicach w miastach.",
+        "id" : 2,
+        "question" : "Które zdanie nie dotyczy szlachty?"
+      },
+      {
+        "badAnswers" : [ "Wazów.", "Piastów.", "Andegawenów." ],
+        "goodAnswer" : "Jagiellonów.",
+        "id" : 3,
+        "question" : "Zygmunt II August był królem z dynastii..."
+      },
+      {
+        "badAnswers" : [ "sekretarz.", "hetman.", "książę." ],
+        "goodAnswer" : "kanclerz.",
+        "id" : 4,
+        "question" : "Najwyższy urząd w dawnej Polsce to..."
+      },
+      {
+        "badAnswers" : [ "sekretarz.", "kanclerz.", "podskarbi." ],
+        "goodAnswer" : "hetman.",
+        "id" : 5,
+        "question" : "Najwyższy dowódca wojskowy w dawnej Polsce to..."
+      },
+      {
+        "badAnswers" : [ "z Krzyżakami", "z Austrią", "ze Szwecją" ],
+        "goodAnswer" : "z Cesarstwem Rosyjskim",
+        "id" : 6,
+        "question" : "Z którym państwem Polska toczyła wojnę w latach 1579-1582?"
+      },
+      {
+        "badAnswers" : [ "Założył Zamość.", "Studiował za granicą.", "Jako młody człowiek został sekretarzem na dworze królewskim." ],
+        "goodAnswer" : "Był mieszczaninem.",
+        "id" : 7,
+        "question" : "Które ze zdań nie dotyczy Zamoyskiego?"
+      },
+      {
+        "badAnswers" : [ "dwa", "trzy", "cztery" ],
+        "goodAnswer" : "jeden",
+        "id" : 8,
+        "question" : "Ile w Polsce było uniwersytetów (szkół wyższych) przed założeniem Akademii Zamojskiej?"
+      },
+      {
+        "badAnswers" : [ "Jana Zamoyskiego", "Zygmunta II Augusta", "Władysława II Jagiełły" ],
+        "goodAnswer" : "Stefana Batorego",
+        "id" : 9,
+        "question" : "Za panowania którego władcy doszło do wojny z Rosją?"
+      },
+      {
+        "badAnswers" : [ "Zwycięstwem Rosji.", "Czasowym zawieszeniem działań wojennych.", "Żadna z odpowiedzi." ],
+        "goodAnswer" : "Zwycięstwem Polski.",
+        "id" : 10,
+        "question" : "Jak zakończyła się wojna z Rosją?"
+      },
+      {
+        "badAnswers" : [ "Wybór Batorego na króla.", "Wojna z Rosją.", "Założenie Zamościa." ],
+        "goodAnswer" : "Śmierć Zygmunta II Augusta.",
+        "id" : 11,
+        "question" : "Które wydarzenie było najwcześniejsze?"
+      },
+      {
+        "badAnswers" : [ "Stefana Batorego", "Zygmunta II Augusta", "Mikołaja Kopernika" ],
+        "goodAnswer" : "Jana Zamoyskiego",
+        "id" : 12,
+        "picture" : 7,
+        "question" : "Kogo przedstawia fotografia?"
+      },
+      {
+        "badAnswers" : [ "Stefana Batorego", "Zygmunta II Augusta", "Jana Zamoyskiego" ],
+        "goodAnswer" : "Mikołaja Kopernika",
+        "id" : 13,
+        "picture" : 8,
+        "question" : "Kogo przedstawia fotografia?"
+      },
+      {
+        "badAnswers" : [ "I połowie XV wieku.", "II połowie XVI wieku.", "I połowie XVI wieku." ],
+        "goodAnswer" : "II połowie XV wieku.",
+        "id" : 14,
+        "question" : "Mikołaj Kopernik urodził się w roku 1473, to znaczy, że było to w..."
+      },
+      {
+        "badAnswers" : [ "we Fromborku", "w Krakowie", "w Gdańsku" ],
+        "goodAnswer" : "w Toruniu",
+        "id" : 15,
+        "question" : "Gdzie urodził się Mikołaj Kopernik?"
+      },
+      {
+        "badAnswers" : [ "najwyższy urząd w dawnej Polsce.", "to najwyższy dowódca wojskowy.", "to wybitny uczony w zakresie matematyki." ],
+        "goodAnswer" : "osoba posiadająca rozległą wiedzę z różnych dziedzin.",
+        "id" : 16,
+        "question" : "Polihistor to..."
+      },
+      {
+        "badAnswers" : [ "Że Słońce wraz z innymi ciałami niebieskimi krążą wokół Ziemi.", "Że Ziemia jest w centrum wszechświata.", "Że Słońce nie znajduje się w centrum wszechświata." ],
+        "goodAnswer" : "Że Ziemia wraz z innymi planetami krąży wokół Słońca.",
+        "id" : 17,
+        "question" : "Co udowodnił Mikołaj Kopernik?"
+      },
+      {
+        "badAnswers" : [ "Że zastał Polskę drewnianą a zostawił murowaną.", "Polegać na kimś jak na Koperniku.", "żadna z odpowiedzi" ],
+        "goodAnswer" : "Że wstrzymał Słońce i ruszył Ziemię.",
+        "id" : 18,
+        "question" : "Które z powiedzeń dotyczą Mikołaja Kopernika?"
+      },
+      {
+        "badAnswers" : [ "w Toruniu", "w Krakowie", "w Gdańsku" ],
+        "goodAnswer" : "we Fromborku",
+        "id" : 19,
+        "question" : "W którym mieście Kopernik prowadził obserwacje nieba?"
+      },
+      {
+        "badAnswers" : [ "w Toruniu", "w Krakowie", "w Gdańsku" ],
+        "goodAnswer" : "we Fromborku",
+        "id" : 20,
+        "question" : "W którym mieście znajduje się grób Kopernika?"
+      },
+      {
+        "badAnswers" : [ "Książę", "Utopia", "O naprawie Rzeczypospolitej." ],
+        "goodAnswer" : "O obrotach sfer niebieskich.",
+        "id" : 21,
+        "question" : "Jak nazywa się dzieło Kopernika, w którym opisał swoje obserwacje?"
+      },
+      {
+        "badAnswers" : [ "w I połowie XVII wieku.", "w II połowie XVI wieku.", "w I połowie XV wieku." ],
+        "goodAnswer" : "w I połowie XVI wieku.",
+        "id" : 22,
+        "question" : "Kopernik zmarł w 1543 roku. Oznacza to, że było to w..."
+      },
+      {
+        "badAnswers" : [ "Wojciech Kossak.", "Juliusz Kossak.", "Aleksander Sochaczewski." ],
+        "goodAnswer" : "Jan Matejko.",
+        "id" : 23,
+        "picture": 9,
+        "question" : "Autorem poniższego obrazu jest..."
+      },
+      {
+        "badAnswers" : [ "Wojciech Kossak.", "Juliusz Kossak.", "Aleksander Sochaczewski." ],
+        "goodAnswer" : "Jan Matejko.",
+        "id" : 24,
+        "picture": 10,
+        "question" : "Autorem poniższego obrazu jest..."
+      },
+      {
+        "badAnswers" : [ "Warszawa", "Kraków", "Gdańsk" ],
+        "goodAnswer" : "Zamość",
+        "id" : 25,
+        "picture": 11,
+        "question" : "Które polskie miasto zostało przedstawione na fotografii?"
+      },
+      {
+        "badAnswers" : [ "Stefan Batory", "Zygmunt II August", "Stefan Czarniecki" ],
+        "goodAnswer" : "Jan Zamoyski",
+        "id" : 26,
+        "question" : "Kto założył Zamość?"
+      },
+      {
+        "badAnswers" : [ "średniowieczu.", "współczesności.", "starożytności." ],
+        "goodAnswer" : "nowożytności.",
+        "id" : 27,
+        "question" : "Kopernik zmarł w 1543 roku. Miało to miejsce w..."
+      }
+    ],
+    "mid": [
+      {
+        "badAnswers" : [ "Nowymi Atenami.", "Nową Aleksandrią.", "Nowym Babilonem." ],
+        "goodAnswer" : "Nowym Rzymem.",
+        "id" : 1,
+        "question" : "Stolica cesarstwa bizantyjskiego ze względu na swój wspaniały rozwój była nazywana..."
+      },
+      {
+        "badAnswers" : [ "Rzym.", "Ateny.", "Efez." ],
+        "goodAnswer" : "Konstantynopol.",
+        "id" : 2,
+        "question" : "Stolica cesarstwa bizantyjskiego to..."
+      },
+      {
+        "badAnswers" : [ "w 476 roku", "w 510 roku", "w 451 roku" ],
+        "goodAnswer" : "w 395 roku",
+        "id" : 3,
+        "question" : "W którym roku powstało cesarstwo wschodniorzymskie, czyli bizantyjskie?"
+      },
+      {
+        "badAnswers" : [ "Konstantyn Wielki.", "Oktawian August.", "Teodozjusz I Wielki." ],
+        "goodAnswer" : "Justynian I Wielki.",
+        "id" : 4,
+        "question" : "Wybitny cesarz bizantyjski panujący w VI wieku to..."
+      },
+      {
+        "badAnswers" : [ "Łaski Bożej.", "Dobroci Bożej.", "Miłości Bożej." ],
+        "goodAnswer" : "Mądrości Bożej.",
+        "id" : 5,
+        "question" : "Świątynia Hagia Sofia wzniesiona w okresie bizantyjskim była zwana inaczej kościołem..."
+      },
+      {
+        "badAnswers" : [ "Panteon", "Partenon", "Ściana Płaczu" ],
+        "goodAnswer" : "Hagia Sophia",
+        "id" : 6,
+        "picture": 12,
+        "question" : "Budowla na zdjęciu to..."
+      },
+      {
+        "badAnswers" : [ "fresk.", "arabeskę.", "ikonę." ],
+        "goodAnswer" : "mozaikę.",
+        "id" : 7,
+        "picture": 13,
+        "question" : "Fotografia przedstawia..."
+      },
+      {
+        "badAnswers" : [ "w 1355 roku", "w 1455 roku", "w 1499 roku" ],
+        "goodAnswer" : "w 1453 roku",
+        "id" : 8,
+        "question" : "W którym roku Turcy podbili Konstantynopol?"
+      },
+      {
+        "badAnswers" : [ "Biblia.", "Talmud.", "Tora." ],
+        "goodAnswer" : "Koran.",
+        "id" : 9,
+        "question" : "Święta księga dla wyznawców islamu to..."
+      },
+      {
+        "badAnswers" : [ "kalifowie", "Mojżesz", "Abraham" ],
+        "goodAnswer" : "Mahomet",
+        "id" : 10,
+        "question" : "Kto stworzył islam?"
+      },
+      {
+        "badAnswers" : [ "Wisznu", "Brahma", "Jahwe" ],
+        "goodAnswer" : "Allach",
+        "id" : 11,
+        "question" : "Jak nazywa się Bóg w islamie?"
+      },
+      {
+        "badAnswers" : [ "cerkiew.", "kościół.", "bazylika." ],
+        "goodAnswer" : "meczet.",
+        "id" : 12,
+        "picture": 14,
+        "question" : "Budowla na fotografii to..."
+      },
+      {
+        "badAnswers" : [ "potrzeba modlitwy", "pielgrzymka do Mekki", "kazalnica" ],
+        "goodAnswer" : "walka zbrojna",
+        "id" : 13,
+        "question" : "Co to jest dżihad dla muzułmanów?"
+      },
+      {
+        "badAnswers" : [ "VIII wiek", "X wiek", "XII wiek" ],
+        "goodAnswer" : "XI wiek",
+        "id" : 14,
+        "question" : "Na który wiek przypadł kres potęgi arabskiej?"
+      },
+      {
+        "badAnswers" : [ "mozaikę.", "fresk.", "ikonę." ],
+        "goodAnswer" : "arabeskę.",
+        "id" : 15,
+        "picture": 15,
+        "question" : "Fotografia przedstawia..."
+      },
+      {
+        "badAnswers" : [ "Karol Młot", "Karol Wielki", "Karol Łysy" ],
+        "goodAnswer" : "Pepin Mały",
+        "id" : 16,
+        "question" : "Kto zapoczątkował dynastię Karolingów?"
+      },
+      {
+        "badAnswers" : [ "Turcy", "Słowianie", "Brytowie" ],
+        "goodAnswer" : "Arabowie",
+        "id" : 17,
+        "question" : "Kto stanowił zagrożenie dla państwa Franków w VIII wieku?"
+      },
+      {
+        "badAnswers" : [ "w 745 roku", "w 814 roku", "w 799 roku" ],
+        "goodAnswer" : "w 800 roku",
+        "id" : 18,
+        "question" : "W którym roku papież koronował Karola Wielkiego na cesarza?"
+      },
+      {
+        "badAnswers" : [ "w 814 roku", "w 800 roku", "w 901 roku" ],
+        "goodAnswer" : "w 843 roku",
+        "id" : 19,
+        "question" : "W którym roku zawarto traktat w Verdun?"
+      },
+      {
+        "badAnswers" : [ "Zostało podbite przez Arabów.", "Upadło na skutek wojny domowej.", "Zostało wcielone do cesarstwa bizantyjskiego." ],
+        "goodAnswer" : "Zostało podzielone pomiędzy wnuków Karola Wielkiego.",
+        "id" : 20,
+        "question" : "Co się stało z państwem Karola Wielkiego?"
+      },
+      {
+        "badAnswers" : [ "Węgry, Niemcy i Francja", "Włochy i Niemcy", "Francja i Włochy" ],
+        "goodAnswer" : "Niemcy, Włochy i Francja",
+        "id" : 21,
+        "question" : "Jakie państwa z czasem wyłoniły się na podzielonych terenach byłego państwa Karola Wielkiego?"
+      },
+      {
+        "badAnswers" : [ "Mieszko I", "Otton III", "Ludwik Pobożny" ],
+        "goodAnswer" : "Otton I",
+        "id" : 22,
+        "question" : "Kto koronował się w Rzymie w 962 roku na cesarza?"
+      },
+      {
+        "badAnswers" : [ "Królestwa Francji.", "Cesarstwa Bizantyjskiego.", "Królestwa Węgierskiego." ],
+        "goodAnswer" : "Rzeszy Niemieckiej.",
+        "id" : 23,
+        "question" : "Od II połowy X wieku korona cesarska należała do władców..."
+      },
+      {
+        "badAnswers" : [ "ekskomunika.", "dogmat.", "inwestytura." ],
+        "goodAnswer" : "schizma.",
+        "id" : 24,
+        "question" : "Rozłam dotyczący religii w kościele to..."
+      },
+      {
+        "badAnswers" : [ "I poł. X wieku.", "I poł. XI wieku.", "I poł. XII wieku." ],
+        "goodAnswer" : "II poł. XI wieku.",
+        "id" : 25,
+        "question" : "Schizma wschodnia miała miejsce w..."
+      },
+      {
+        "badAnswers" : [ "katolikami.", "muzułmanami.", "podzielonymi chrześcijanami." ],
+        "goodAnswer" : "prawosławnymi.",
+        "id" : 26,
+        "question" : "Wschodni chrześcijanie nazywani są..."
+      },
+      {
+        "badAnswers" : [ "papież", "książę", "cesarz" ],
+        "goodAnswer" : "patriarcha",
+        "id" : 27,
+        "question" : "Jak nazywa się najwyższy dostojnik kościelny w kościołach wschodnich?"
+      },
+      {
+        "badAnswers" : [ "O wpływy w Europie.", "O ziemie.", "O pieniądze." ],
+        "goodAnswer" : "O prawo do inwestytury, czyli decydowania o wyborze dostojników kościelnych.",
+        "id" : 28,
+        "question" : "W XI wieku miał miejsce wielki konflikt papieża z cesarzem. O co toczył się spór?"
+      },
+      {
+        "badAnswers" : [ "papież Leon III z cesarzem Henrykiem IV", "papież Grzegorz VII z cesarzem Ottonem III", "papież Grzegorz V z cesarzem Henrykiem III" ],
+        "goodAnswer" : "papież Grzegorz VII z cesarzem Henrykiem IV",
+        "id" : 29,
+        "question" : "Kto spotkał się w Canossie?"
+      },
+      {
+        "badAnswers" : [ "traktat", "rozejm", "pokój" ],
+        "goodAnswer" : "konkordat",
+        "id" : 30,
+        "question" : "W 1122 roku zakończył się spór pomiędzy cesarzem a papieżem. Co wtedy obie strony zawarły?"
+      },
+      {
+        "badAnswers" : [ "Pogodzić się z kimś.", "Prosić o przysługę.", "Prosić o wsparcie finansowe." ],
+        "goodAnswer" : "Ukorzyć się przed przeciwnikiem.",
+        "id" : 31,
+        "question" : "Co oznacza powiedzenie „pójść do Canossy”?"
+      },
+      {
+        "badAnswers" : [ "Słowianie", "Arabowie", "Frankowie" ],
+        "goodAnswer" : "Turcy",
+        "id" : 32,
+        "question" : "Kto w XI wieku podbił Ziemię Świętą?"
+      },
+      {
+        "badAnswers" : [ "cesarz Henryk IV", "papież Grzegorz VII", "cesarz Lotar III" ],
+        "goodAnswer" : "papież Urban II",
+        "id" : 33,
+        "question" : "Kto wezwał na synodzie w Clermont do wypraw krzyżowych?"
+      },
+      {
+        "badAnswers" : [ "Zakonu Szpitalników świętego Jana z Jerozolimy.", "Zakonu Ubogich Rycerzy Chrystusa i Świątyni Salomona. ", "Inflanckiego Zakonu Rycerzy Chrystusa." ],
+        "goodAnswer" : "Zakonu Szpitala Najświętszej Marii Panny Domu Niemieckiego.",
+        "id" : 34,
+        "question" : "Krzyżacy to członkowie..."
+      },
+      {
+        "badAnswers" : [ "Krzyżaków.", "Templariuszy.", "Kawalerów mieczowych." ],
+        "goodAnswer" : "Joannitów.",
+        "id" : 35,
+        "picture": 16,
+        "question" : "Rycerz zakonny przedstawiony na fotografii to przedstawiciel..."
+      },
+      {
+        "badAnswers" : [ "Krzyżacy", "Templariuszy", "żadna z odpowiedzi" ],
+        "goodAnswer" : "Templariusze",
+        "id" : 36,
+        "question" : "Który zakon został rozwiązany?"
+      },
+      {
+        "badAnswers" : [ "Krzyżacy", "Templariusze", "Kawalerowie Mieczowi" ],
+        "goodAnswer" : "Joannici",
+        "id" : 37,
+        "question" : "Które zgromadzenie rycerskie zostało założone w 1113 roku?"
+      },
+      {
+        "badAnswers" : [ "X-XIII wiek", "XII-XIV wiek", "XII-XIII wiek" ],
+        "goodAnswer" : "XI-XIII wiek",
+        "id" : 38,
+        "question" : "W których wiekach trwały krucjaty?"
+      },
+      {
+        "badAnswers" : [ "dwie", "cztery", "osiem" ],
+        "goodAnswer" : "siedem",
+        "id" : 39,
+        "question" : "Ile zorganizowano wypraw krzyżowych?"
+      },
+      {
+        "badAnswers" : [ "wielki pan", "wielki duchowny", "wielki rycerz" ],
+        "goodAnswer" : "wielki mistrz",
+        "id" : 40,
+        "question" : "Kto stał na czele zakonu rycerskiego?"
+      }
+    ],
+    "roczny4" : [{
+      "badAnswers" : [ "Jan Henryk Dąbrowski", "Stefan Czarniecki", "Tadeusz Kościuszko" ],
+      "goodAnswer" : "Napoleon Bonaparte",
+      "id" : 1,
+      "question" : "Kto jest bohaterem drugiej zwrotki Mazurka Dąbrowskiego?"
+    }, {
+      "badAnswers" : [ "we Francji", "w Rosji", "w Prusach" ],
+      "goodAnswer" : "we Włoszech",
+      "id" : 2,
+      "question" : " Gdzie Jan Henryk Dąbrowski utworzył Legiony Polskie?"
+    }, {
+      "badAnswers" : [ "Rosja, Prusy, Włochy", "Prusy, Rosja i Francja", "Rosja, Szwecja, Prusy" ],
+      "goodAnswer" : "Rosja, Prusy i Austria",
+      "id" : 3,
+      "question" : "Które kraje dokonały rozbiorów Polski?"
+    }, {
+      "badAnswers" : [ "1793", "1772", "1789" ],
+      "goodAnswer" : "1795",
+      "id" : 4,
+      "question" : "Państwo polskie przestało istnieć w wyniku III rozbioru, który miał miejsce w roku:"
+    }, {
+      "badAnswers" : [ "Średniowiecze, starożytność, współczesność, nowożytność", "Starożytność, średniowiecze, współczesność, nowożytność", "Starożytność, nowożytność, średniowiecze, współczesność" ],
+      "goodAnswer" : "Starożytność, średniowiecze, nowożytność, współczesność",
+      "id" : 5,
+      "question" : "Ułóż w odpowiedniej kolejności epoki historyczne."
+    }, {
+      "badAnswers" : [ "10 lat", "1000 lat", "500 lat" ],
+      "goodAnswer" : "100 lat",
+      "id" : 6,
+      "question" : "Ile lat liczy wiek?"
+    }, {
+      "badAnswers" : [ "Archeologia", "Genealogia", "Kartografia" ],
+      "goodAnswer" : "Chronologia",
+      "id" : 7,
+      "question" : "Jak nazywa się nauka zajmująca się mierzeniem czasu w historii?"
+    }, {
+      "badAnswers" : [ "V wiek", "III wiek", "IV wiek p.n.e." ],
+      "goodAnswer" : "IV wiek",
+      "id" : 8,
+      "question" : "Lata 301-400 to:"
+    }, {
+      "badAnswers" : [ "Archeolog", "Historyk", "Choreograf" ],
+      "goodAnswer" : "Kartograf",
+      "id" : 9,
+      "question" : "Osoba, która tworzy plany i mapy historyczne to:"
+    }, {
+      "badAnswers" : [ "w Krakowie", "w Poznaniu", "w Radomiu" ],
+      "goodAnswer" : "w Wadowicach",
+      "id" : 10,
+      "question" : "W którym mieście urodził się papież-pielgrzym?"
+    }, {
+      "badAnswers" : [ "I poł. XVII wieku", "II poł. XVI wieku", "I poł. XVI wieku" ],
+      "goodAnswer" : "II poł. XVII wieku",
+      "id" : 11,
+      "question" : "Rok 1683 to:"
+    }, {
+      "badAnswers" : [ "Święto Wojska Polskiego", "Święto Narodowe Trzeciego Maja", "Narodowy Dzień Pamięci „Żołnierzy Wyklętych”" ],
+      "goodAnswer" : "Narodowe Święto Niepodległości",
+      "id" : 12,
+      "question" : "11 listopada obchodzimy w Polsce:"
+    }, {
+      "badAnswers" : [ "Źródło niematerialne", "Źródło materialne pisane", "Żadna z odpowiedzi" ],
+      "goodAnswer" : "Źródło materialne niepisane",
+      "id" : 13,
+      "question" : "Obraz to:"
+    }, {
+      "badAnswers" : [ 36, 28, 16 ],
+      "goodAnswer" : 26,
+      "id" : 14,
+      "question" : "Cyfra arabska odpowiadająca liczbie rzymskiej XXVI to:"
+    }, {
+      "badAnswers" : [ "w starożytności", "w nowożytności", "we współczesności" ],
+      "goodAnswer" : "w średniowieczu",
+      "id" : 15,
+      "question" : "Chrzest Polski w 966 roku miał miejsce:"
+    }, {
+      "badAnswers" : [ "Początek średniowiecza i zakończenie starożytności", "Początek nowożytności i zakończenie współczesności", "Zakończenie starożytności i początek średniowiecza" ],
+      "goodAnswer" : "Zakończenie średniowiecza i początek nowożytności",
+      "id" : 16,
+      "question" : "Odkrycie Ameryki przez Kolumba w 1492 roku uchodzi za:"
+    }, {
+      "badAnswers" : [ "Mit", "Baśń", "Wiersz" ],
+      "goodAnswer" : "Legenda",
+      "id" : 17,
+      "question" : "Opowieść, w której występują zarówno prawdziwe, jak i zmyślone postacie oraz wydarzenia to:"
+    }, {
+      "badAnswers" : [ "Archeolog", "Kartograf", "Detektyw" ],
+      "goodAnswer" : "Historyk",
+      "id" : 18,
+      "question" : "Badaniem i opisywaniem przeszłości zajmuje się:"
+    }, {
+      "badAnswers" : [ "Historia jest królową nauk.", "Historia pokazuje nam życie.", "Historia jest matką wszystkich nauk." ],
+      "goodAnswer" : "Historia jest nauczycielką życia.",
+      "id" : 19,
+      "question" : "„Historia magistra vitae est” oznacza:"
+    }, {
+      "badAnswers" : [ "Hymn „Mazurek Dąbrowskiego”", "Flaga Polski", "Godło Polski" ],
+      "goodAnswer" : "Warszawska Syrenka",
+      "id" : 20,
+      "question" : "Polskim symbolem narodowym nie jest:"
+    }, {
+      "badAnswers" : [ "Mazowsze", "Pomorze", "Śląsk" ],
+      "goodAnswer" : "Małopolska",
+      "id" : 21,
+      "question" : "W którym regionie leży Kraków?"
+    }, {
+      "badAnswers" : [ "chronologią", "prestarożytnością", "kartografią" ],
+      "goodAnswer" : "prehistorią",
+      "id" : 22,
+      "question" : "Okres obejmujący dzieje człowieka przed wynalezieniem pisma nazywamy:"
+    }, {
+      "badAnswers" : [ "Siemowit", "Piast", "Siemomysł" ],
+      "goodAnswer" : "Mieszko",
+      "id" : 23,
+      "question" : "Jak miał na imię pierwszy historyczny władca Polski?"
+    }, {
+      "badAnswers" : [ "Oda", "Rzepicha", "Rycheza" ],
+      "goodAnswer" : "Dobrawa",
+      "id" : 24,
+      "question" : "Jak miała na imię pierwsza chrześcijańska żona Mieszka?"
+    }, {
+      "badAnswers" : [ "Danka", "Irena", "Żelazna" ],
+      "goodAnswer" : "INKA",
+      "id" : 25,
+      "question" : "Jak brzmiał pseudonim Danuty Siedzikówny?"
+    }, {
+      "badAnswers" : [ "Szara Piechota", "Armia Krajowa", "Bataliony Harcerskie" ],
+      "goodAnswer" : "Szare Szeregi",
+      "id" : 26,
+      "question" : "Jak brzmiał kryptonim harcerstwa w czasie II wojny światowej?"
+    }, {
+      "badAnswers" : [ "Wincenty Kadłubek", "Jan Długosz", "Wincenty z Kielczy" ],
+      "goodAnswer" : "Anonim zwany Gallem",
+      "id" : 27,
+      "question" : "Jak nazywał się autor pierwszej kroniki opisującej dzieje Polski?"
+    }, {
+      "badAnswers" : [ "Wrocław", "Gdańsk", "Kraków" ],
+      "goodAnswer" : "Gdynia",
+      "id" : 28,
+      "question" : "Które miasto było nazywane w swojej przeszłości „oknem na świat?"
+    }, {
+      "badAnswers" : [ "Ziemia znajduje się w centrum Wszechświata.", "Słońce krąży wokół wszystkich planet.", "Słońce krąży wokół Ziemi." ],
+      "goodAnswer" : "Ziemia i inne planety krążą wokół Słońca.",
+      "id" : 29,
+      "question" : "Mikołaj Kopernik udowodnił, że …"
+    }, {
+      "badAnswers" : [ "rad i hel", "polon i wodór", "polon i ołów" ],
+      "goodAnswer" : "polon i rad",
+      "id" : 30,
+      "question" : "Jak nazywały się pierwiastki, które odkryła Maria Skłodowska-Curie?"
+    }, {
+      "badAnswers" : [ "Tadeusz Kościuszko", "Jan Henryk Dąbrowski", "Napoleon Bonaparte" ],
+      "goodAnswer" : "Romuald Traugutt",
+      "id" : 31,
+      "question" : "Która z poniższych osób była przywódcą powstania styczniowego z 1863 roku?"
+    }, {
+      "badAnswers" : [ "drugi rozbiór Polski", "pierwszy rozbiór Polski", "wybuch powstania styczniowego" ],
+      "goodAnswer" : "trzeci rozbiór Polski",
+      "id" : 32,
+      "question" : "Skutkiem powstania kościuszkowskiego z 1794 roku był …"
+    }, {
+      "badAnswers" : [ "Stefan Batory", "Zygmunt August", "Stefan Czarniecki" ],
+      "goodAnswer" : "Jan Zamojski",
+      "id" : 33,
+      "question" : "Kto założył miasto Zamość?"
+    }, {
+      "badAnswers" : [ "Zygmunt Stary", "Stefan Batory", "Henryk Walezy" ],
+      "goodAnswer" : "Zygmunt August",
+      "id" : 34,
+      "question" : "Jak się nazywał ostatni władca z dynastii Jagiellonów?"
+    }, {
+      "badAnswers" : [ "XVIII w.", "XVI w.", "XIX w." ],
+      "goodAnswer" : "XVII w.",
+      "id" : 35,
+      "question" : "Który wiek w historii Polski nazywany jest „stuleciem wojen”?"
+    }, {
+      "badAnswers" : [ "Stefan Batory", "Stanisław August Poniatowski", "Władysław Jagiełło" ],
+      "goodAnswer" : "Jan III Sobieski",
+      "id" : 36,
+      "question" : "Który władca ruszył z odsieczą Wiedniowi?"
+    }, {
+      "badAnswers" : [ "zalew szwedzki", "napad szwedzki", "pożoga szwedzka" ],
+      "goodAnswer" : "potop szwedzki",
+      "id" : 37,
+      "question" : "Jak określa się wojnę ze Szwedami z lat 1655-1660?"
+    }, {
+      "badAnswers" : [ "symbol narodowy Polaków", "herb miasta", "symbol władzy królewskiej" ],
+      "goodAnswer" : "herb szlachecki",
+      "id" : 38,
+      "picture" : 2,
+      "question" : "Ilustracja przedstawia …"
+    }, {
+      "badAnswers" : [ "polskim kupcem", "polskim królem", "powstańcem styczniowym" ],
+      "goodAnswer" : "polskim rycerzem",
+      "id" : 39,
+      "question" : "Kim był Zawisza Czarny z Garbowa?"
+    }, {
+      "badAnswers" : [ "Że zastał Polskę drewnianą a zostawił murowaną.", "Polegać na kimś jak na Koperniku.", "żadna z odpowiedzi" ],
+      "goodAnswer" : "Że wstrzymał Słońce i ruszył Ziemię.",
+      "id" : 40,
+      "question" : "Które z powiedzeń dotyczą Mikołaja Kopernika?"
+    } ],
+    "roczny5" : [{
+      "badAnswers" : [ "Nowymi Atenami.", "Nową Aleksandrią.", "Nowym Babilonem." ],
+      "goodAnswer" : "Nowym Rzymem.",
+      "id" : 1,
+      "question" : "Stolica cesarstwa bizantyjskiego ze względu na swój wspaniały rozwój była nazywana..."
+    }, {
+      "badAnswers" : [ "Rzym.", "Ateny.", "Efez." ],
+      "goodAnswer" : "Konstantynopol.",
+      "id" : 2,
+      "question" : "Stolica cesarstwa bizantyjskiego to..."
+    }, {
+      "badAnswers" : [ "Łaski Bożej.", "Dobroci Bożej.", "Miłości Bożej." ],
+      "goodAnswer" : "Mądrości Bożej.",
+      "id" : 3,
+      "question" : "Świątynia Hagia Sofia wzniesiona w okresie bizantyjskim była zwana inaczej kościołem..."
+    }, {
+      "badAnswers" : [ "Biblia.", "Talmud.", "Tora." ],
+      "goodAnswer" : "Koran.",
+      "id" : 4,
+      "question" : "Święta księga dla wyznawców islamu to..."
+    }, {
+      "badAnswers" : [ "kalifowie", "Mojżesz", "Abraham" ],
+      "goodAnswer" : "Mahomet",
+      "id" : 5,
+      "question" : "Kto jest założycielem islamu?"
+    }, {
+      "badAnswers" : [ "Zostało podbite przez Arabów.", "Upadło na skutek wojny domowej.", "Zostało wcielone do cesarstwa bizantyjskiego." ],
+      "goodAnswer" : "Zostało podzielone pomiędzy wnuków Karola Wielkiego.",
+      "id" : 6,
+      "question" : "Co się stało z państwem Karola Wielkiego?"
+    }, {
+      "badAnswers" : [ "Węgry, Niemcy i Francja", "Włochy i Niemcy", "Francja i Włochy" ],
+      "goodAnswer" : "Niemcy, Włochy i Francja",
+      "id" : 7,
+      "question" : "Jakie państwa z czasem wyłoniły się na podzielonych terenach byłego państwa Karola Wielkiego?"
+    }, {
+      "badAnswers" : [ "ekskomunika.", "dogmat.", "inwestytura." ],
+      "goodAnswer" : "schizma.",
+      "id" : 8,
+      "question" : "Rozłam dotyczący religii w kościele to..."
+    }, {
+      "badAnswers" : [ "katolikami.", "muzułmanami.", "podzielonymi chrześcijanami." ],
+      "goodAnswer" : "prawosławnymi.",
+      "id" : 9,
+      "question" : "Wschodni chrześcijanie nazywani są..."
+    }, {
+      "badAnswers" : [ "Pogodzić się z kimś.", "Prosić o przysługę.", "Prosić o wsparcie finansowe." ],
+      "goodAnswer" : "Ukorzyć się przed przeciwnikiem.",
+      "id" : 10,
+      "question" : "Co oznacza powiedzenie „pójść do Canossy”?"
+    }, {
+      "badAnswers" : [ "Słowianie", "Arabowie", "Frankowie" ],
+      "goodAnswer" : "Turcy",
+      "id" : 11,
+      "question" : "Kto w XI wieku podbił Ziemię Świętą?"
+    }, {
+      "badAnswers" : [ "Zakonu Szpitalników świętego Jana z Jerozolimy.", "Zakonu Ubogich Rycerzy Chrystusa i Świątyni Salomona. ", "Inflanckiego Zakonu Rycerzy Chrystusa." ],
+      "goodAnswer" : "Zakonu Szpitala Najświętszej Marii Panny Domu Niemieckiego.",
+      "id" : 12,
+      "question" : "Krzyżacy to członkowie..."
+    }, {
+      "badAnswers" : [ "Krzyżaków.", "Templariuszy.", "Kawalerów mieczowych." ],
+      "goodAnswer" : "Joannitów.",
+      "id" : 13,
+      "picture" : 16,
+      "question" : "Rycerz zakonny przedstawiony na fotografii to przedstawiciel..."
+    }, {
+      "badAnswers" : [ "dwie", "cztery", "osiem" ],
+      "goodAnswer" : "siedem",
+      "id" : 14,
+      "question" : "Ile zorganizowano wypraw krzyżowych?"
+    }, {
+      "badAnswers" : [ "w 969 roku", "w 996 roku", "w 999 roku" ],
+      "goodAnswer" : "w 966 roku",
+      "id" : 15,
+      "question" : "W którym roku Mieszko przyjął chrzest?"
+    }, {
+      "badAnswers" : [ "chan", "sułtan", "cesarz" ],
+      "goodAnswer" : "faraon",
+      "id" : 16,
+      "question" : "Jaki tytuł nosił władca starożytnego Egiptu?"
+    }, {
+      "badAnswers" : [ "Słowian południowych", "Słowian wschodnich", "żadna z odpowiedzi" ],
+      "goodAnswer" : "Słowian zachodnich",
+      "id" : 17,
+      "question" : "Do jakiej grupy Słowian zaliczani są Polacy?"
+    }, {
+      "badAnswers" : [ "we Wrocławiu", "w Gnieźnie", "w Ostrowie Lednickim" ],
+      "goodAnswer" : "w Poznaniu",
+      "id" : 18,
+      "question" : "Gdzie powstało pierwsze biskupstwo na ziemiach polskich?"
+    }, {
+      "badAnswers" : [ "Gniezno", "Ostrów Lednicki", "Kalisz" ],
+      "goodAnswer" : "Biskupin",
+      "id" : 19,
+      "question" : "Jak się nazywa osada, którą założono na wyspie w podobnym czasie co Rzym?"
+    }, {
+      "badAnswers" : [ "polskim", "niemieckim", "czeskim" ],
+      "goodAnswer" : "łacińskim",
+      "id" : 20,
+      "question" : "W jakim języku napisano pierwszą kronikę polską?"
+    }, {
+      "badAnswers" : [ "Remus", "bracia Romulus i Remus", "Jowisz" ],
+      "goodAnswer" : "Romulus",
+      "id" : 21,
+      "question" : "Kto według legendy założył Rzym?"
+    }, {
+      "badAnswers" : [ "wodociągami miejskimi", "teatrem", "sportem" ],
+      "goodAnswer" : "publicznymi łaźniami",
+      "id" : 22,
+      "question" : "Czym były termy?"
+    }, {
+      "badAnswers" : [ "w średniowieczu", "w prehistorii", "w nowożytności" ],
+      "goodAnswer" : "w starożytności",
+      "id" : 23,
+      "question" : "W której epoce założono miasto Rzym?"
+    }, {
+      "badAnswers" : [ "legionista", "hoplita", "chrześcijanin" ],
+      "goodAnswer" : "gladiator",
+      "id" : 24,
+      "question" : "Jak nazywał się wojownik walczący na arenie amfiteatru?"
+    }, {
+      "badAnswers" : [ "cesarstwo, królestwo, republika", "republika, cesarstwo, królestwo", "królestwo, cesarstwo, republika" ],
+      "goodAnswer" : "królestwo, republika, cesarstwo",
+      "id" : 25,
+      "question" : "Rzym w swojej historii prezentował różne sposoby sprawowania władzy w państwie. Ułóż je w porządku chronologicznym."
+    }, {
+      "badAnswers" : [ "rozkwit rzymskiej kultury", "handlowanie produktami", "emigracja mieszkańców" ],
+      "goodAnswer" : "najazdy barbarzyńców",
+      "id" : 26,
+      "question" : "Co było m.in. przyczyną upadku Cesarstwa Rzymskiego na zachodzie?"
+    }, {
+      "badAnswers" : [ "Forum Romanum", "Jowisz", "Koloseum" ],
+      "goodAnswer" : "Panteon",
+      "id" : 27,
+      "question" : "Jak nazywała się rzymska świątynia poświęcona wszystkim bogom?"
+    }, {
+      "badAnswers" : [ "krzyż", "chrystogram", "ogień Westy" ],
+      "goodAnswer" : "ryba",
+      "id" : 28,
+      "question" : "Co było pierwszym symbolem chrześcijan?"
+    }, {
+      "badAnswers" : [ "Konstantyn Wielki", "Oktawian August", "Neron" ],
+      "goodAnswer" : "Juliusz Cezar",
+      "id" : 29,
+      "question" : "Kto wypowiedział słynne słowa “I Ty Brutusie przeciwko mnie”?"
+    }, {
+      "badAnswers" : [ "plebejusze", "niewolnicy", "szlachta" ],
+      "goodAnswer" : "patrycjusze",
+      "id" : 30,
+      "question" : "Jak nazywali się najbogatsi przedstawiciele społeczeństwa rzymskiego?"
+    }, {
+      "badAnswers" : [ "tygrys", "lew", "ślimak" ],
+      "goodAnswer" : "żółw",
+      "id" : 31,
+      "question" : "Rzymski szyk obronny to..."
+    }, {
+      "badAnswers" : [ "Św. Paweł", "Św. Franciszek", "Św. Jan" ],
+      "goodAnswer" : "Św. Piotr",
+      "id" : 32,
+      "question" : "Który apostoł został pierwszym biskupem Rzymu, czyli papieżem?"
+    }, {
+      "badAnswers" : [ "w Grecji", "w Rzymie", "w Galii" ],
+      "goodAnswer" : "w Palestynie",
+      "id" : 33,
+      "question" : "Gdzie narodziło się chrześcijaństwo?"
+    }, {
+      "badAnswers" : [ "Wstydliwy", "Biały", "Rogatka" ],
+      "goodAnswer" : "Warneńczyk",
+      "id" : 34,
+      "question" : "Pod jakim przydomkiem znany jest najstarszy syn Władysława Jagiełły - Władysław?"
+    }, {
+      "badAnswers" : [ "Bolesław Chrobry", "Kazimierz Wielki", "Zygmunt Stary" ],
+      "goodAnswer" : "Władysław Jagiełło",
+      "id" : 35,
+      "question" : "Który król najdłużej panował w historii Polski?"
+    }, {
+      "badAnswers" : [ "z trzech", "z dwóch", "społeczeństwo nie było podzielone na stany" ],
+      "goodAnswer" : "z czterech",
+      "id" : 36,
+      "question" : "Z ilu stanów składało się społeczeństwo średniowiecznej Polski?"
+    }, {
+      "badAnswers" : [ "Władysław Łokietek", "Kazimierz Wielki", "Mieszko II" ],
+      "goodAnswer" : "Bolesław Krzywousty",
+      "id" : 37,
+      "question" : "Kto władca sporządził słynny testament?"
+    }, {
+      "badAnswers" : [ "Kazimierz Odnowiciel", "Mieszko II", "Władysław Herman" ],
+      "goodAnswer" : "Bolesław Śmiały",
+      "id" : 38,
+      "question" : "Który władca był trzecim królem Polski?"
+    }, {
+      "badAnswers" : [ "Wojciech", "Franciszek", "Jan" ],
+      "goodAnswer" : "Stanisław",
+      "id" : 39,
+      "question" : "Jak miał na imię biskup, który został zamordowany w kościele na Skałce?"
+    }, {
+      "badAnswers" : [ "Afrodyta", "Hera", "Demeter" ],
+      "goodAnswer" : "Atena",
+      "id" : 40,
+      "question" : " Boginią mądrości w starożytnej Grecji była?"
+    }, {
+      "badAnswers" : [ "Mezopotamii", "Rzymu", "Grecji" ],
+      "goodAnswer" : "Egiptu",
+      "id" : 41,
+      "question" : " Hieroglify to pismo mieszkańców?"
+    }, {
+      "badAnswers" : [ "akropol", "forum", "rynek" ],
+      "goodAnswer" : "agora",
+      "id" : 42,
+      "question" : " Najważniejszy plac w greckim mieście to?"
+    }, {
+      "badAnswers" : [ "mądrości", "sztuki", "nieba" ],
+      "goodAnswer" : "wojny",
+      "id" : 43,
+      "question" : " Ares to grecki bóg…"
+    }],
+    "roczny6" : [{
+      "badAnswers" : [ "z Włoch", "z Portugalii", "z Indii" ],
+      "goodAnswer" : "z Hiszpanii",
+      "id" : 1,
+      "question" : "Z którego państwa wypłynął Krzysztof Kolumb?”
+    }, {
+      "badAnswers" : [ "Odkrytym Światem", "Światem za Oceanem", "Nowymi Ziemiami" ],
+      "goodAnswer" : "Nowym Światem",
+      "id" : 2,
+      "question" : "Jak Vespucci określił ziemie odkryte przez Kolumba?”
+    }, {
+      "badAnswers" : [ "w XIII wieku", "w XIV wieku", "w XV wieku" ],
+      "goodAnswer" : "w XVI wieku",
+      "id" : 3,
+      "question" : "W którym wieku opłynięto Ziemię?”
+    }, {
+      "badAnswers" : [ "barbarzyńcy", "krzyżowcy", "Kozacy" ],
+      "goodAnswer" : "konkwistadorzy",
+      "id" : 4,
+      "question" : "Jak nazywali się uczestnicy wypraw organizowanych w XVI wieku w celu podbicia nowych ziem na kontynencie amerykańskim?”
+    }, {
+      "badAnswers" : [ "w średniowieczu", "w baroku", "w oświeceniu" ],
+      "goodAnswer" : "w renesansie",
+      "id" : 5,
+      "question" : "W której epoce głównym hasłem były słowa: Człowiekiem jestem i nic, co ludzkie, nie jest mi obce?”
+    }, {
+      "badAnswers" : [ "Erazm z Rotterdamu", "Leonardo da Vinci", "Mikołaj Kopernik" ],
+      "goodAnswer" : "Jan Gutenberg",
+      "id" : 6,
+      "question" : "Kto opracował metodę druku za pomocą ruchomych czcionek?”
+    }, {
+      "badAnswers" : [ "Michał Anioł", "Rafael Santi", "Hans Memling" ],
+      "goodAnswer" : "Leonardo da Vinci",
+      "id" : 7,
+      "picture" : 17,
+      "question" : "Kto namalował widoczny obraz?”
+    }, {
+      "badAnswers" : [ "w 13 tezach", "w 45 tezach", "w 92 tezach" ],
+      "goodAnswer" : "w 95 tezach",
+      "id" : 8,
+      "question" : "W ilu tezach sformułował swoje poglądy Marcin Luter?”
+    }, {
+      "badAnswers" : [ "Edward VI", "Jakub I", "Ryszard III" ],
+      "goodAnswer" : "Henryk VIII",
+      "id" : 9,
+      "question" : "Który władca ogłosił się głową Kościoła narodowego, zwanego anglikańskim?”
+    }, {
+      "badAnswers" : [ "krzyżaków", "franciszkanów", "benedyktów" ],
+      "goodAnswer" : "jezuitów",
+      "id" : 10,
+      "question" : "Towarzystwo Jezusowe to zakon…?”
+    }, {
+      "badAnswers" : [ "Krzysztof Kolumb", "Bartłomiej Diaz", "Ferdynand Magellan" ],
+      "goodAnswer" : "Vasco da Gama",
+      "id" : 11,
+      "question" : "Jako pierwszy morską drogę z Europy do Indii przebył?”
+    }, {
+      "badAnswers" : [ "zgromadzenie szlachty z danego regionu", "uchwała sejmowa", "forma rządów" ],
+      "goodAnswer" : "parlament w Polsce XV-XVIII wieku podejmujący najważniejsze decyzje w państwie",
+      "id" : 12,
+      "question" : "Sejm walny to?”
+    }, {
+      "badAnswers" : [ "szlachta gołota", "szlachta zagrodowa", "średnia szlachta" ],
+      "goodAnswer" : "magnateria",
+      "id" : 13,
+      "question" : "Jak nazywała się najbogatsza grupa polskiej szlachty?”
+    }, {
+      "badAnswers" : [ "Piotr I Wielki", "Ludwik XIII", "Karol I Stuart" ],
+      "goodAnswer" : "Ludwik XIV",
+      "id" : 14,
+      "question" : "Którego z władców określa się mianem „Króla Słońce”"?
+    }, {
+      "badAnswers" : [ "barokiem", "renesansem", "klasycyzmem" ],
+      "goodAnswer" : "oświeceniem",
+      "id" : 15,
+      "question" : "Jak jest nazywany wiek XVIII w dziejach kultury europejskiej?"
+    }, {
+      "badAnswers" : [ "rokoko", "barok", "secesja" ],
+      "goodAnswer" : "klasycyzm",
+      "id" : 16,
+      "question" : "Jak się nazywał styl, który wykształcił się w oświeceniu?"
+    }, {
+      "badAnswers" : [ "Wolter", "Newton", "Roussseau" ],
+      "goodAnswer" : "Monteskiusz",
+      "id" : 17,
+      "question" : "Kto jest twórcą trójpodziału władzy?"
+    },  {
+      "badAnswers" : [ "prehistorii", "średniowiecza", "epoki brązu" ],
+      "goodAnswer" : "starożytności",
+      "id" : 18,
+      "question" : "Do dzieł której z epok nawiązywali klasycystyczni artyści?"
+    }, {
+      "badAnswers" : [ "najwyższy lord", "książę", "dyktator" ],
+      "goodAnswer" : "lord protektor",
+      "id" : 19,
+      "question" : "Jaki tytuł przyjął Oliver Cromwell w czasie trwania republiki angielskiej?"
+    }, {
+      "badAnswers" : [ "w Paryżu", "w Saint-Germain", "w Carcassonne" ],
+      "goodAnswer" : "w Wersalu",
+      "id" : 20,
+      "question" : "Gdzie Ludwik XIV wybudował swoją rezydencję, która świadczyła o potędze władcy?”
+    }, {
+      "badAnswers" : [ "monarchia absolutna", "republika", "absolutyzm oświecony" ],
+      "goodAnswer" : "monarchia parlamentarna",
+      "id" : 21,
+      "question" : "Jaki ustrój panował w Anglii po uchwaleniu Deklaracji praw narodu angielskiego?”
+    },  {
+      "badAnswers" : [ "mikroskop, samolot, rakieta", "rakieta, termometr, balon", "samolot, maszyna parowa, balon" ],
+      "goodAnswer" : "balon, termometr, maszyna parowa",
+      "id" : 22,
+      "question" : "Które z poniższych wynalazków pochodzą z epoki oświecenia?”
+    }, {
+      "badAnswers" : [ "cara", "króla", "najwyższego bojara" ],
+      "goodAnswer" : "cesarza",
+      "id" : 23,
+      "question" : "Jaki tytuł przyjął Piotr I Wielki w 1721 roku?”
+    }, {
+      "badAnswers" : [ "12", "9", "17" ],
+      "goodAnswer" : "13",
+      "id" : 24,
+      "question" : "Ile powstało angielskich kolonii w XVII wieku w Ameryce Północnej?”
+    }, {
+      "badAnswers" : [ "z Francją", "z Portugalią", "z Hiszpanią" ],
+      "goodAnswer" : "z Wielką Brytanią",
+      "id" : 25,
+      "question" : "Z którym krajem Amerykanie walczyli o niepodległość w XVIII wieku?”
+    }, {
+      "badAnswers" : [ "monarchię absolutną", "monarchię parlamentarną", "absolutyzm oświecony" ],
+      "goodAnswer" : "republikę",
+      "id" : 26,
+      "question" : "Jaki ustrój wprowadzała konstytucja w USA?”
+    }, {
+      "badAnswers" : [ "John Adams", "Thomas Jefferson", "James Madison" ],
+      "goodAnswer" : "Jerzy Waszyngton",
+      "id" : 27,
+      "question" : "Kto został pierwszym prezydentem USA?”
+    }, {
+      "badAnswers" : [ "we Francji", "w Grecji", "w Wielkiej Brytanii" ],
+      "goodAnswer" : "na Korsyce",
+      "id" : 28,
+      "question" : "Gdzie urodził się Napoleon Bonaparte?”
+    }, {
+      "badAnswers" : [ "cesarz Francji", "cesarz", "cesarz Europy" ],
+      "goodAnswer" : "cesarz Francuzów",
+      "id" : 29,
+      "question" : "Jaki tytuł przyjął Napoleon podczas swojej koronacji?”
+    }, {
+      "badAnswers" : [ "Józef Piłsudski", "Jan Henryk Dąbrowski", "Józef Haller" ],
+      "goodAnswer" : "Józef Wybicki",
+      "id" : 30,
+      "question" : "Kto napisał słowa polskiego hymnu narodowego?"
+    }, {
+      "badAnswers" : [ "Rosja, Prusy, Włochy", "Prusy, Rosja i Francja", "Rosja, Szwecja, Prusy" ],
+      "goodAnswer" : "Rosja, Prusy i Austria",
+      "id" : 31,
+      "question" : "Które kraje dokonały rozbiorów Polski?"
+    }, {
+      "badAnswers" : [ "we Francji", "w Austrii", "w Hiszpanii" ],
+      "goodAnswer" : "we Włoszech",
+      "id" : 32,
+      "question" : "Gdzie Jan Henryk Dąbrowski utworzył Legiony Polskie?"
+    }, {
+      "badAnswers" : [ "XXI w.", "XIX w.", "XVIII w." ],
+      "goodAnswer" : "XX w.",
+      "id" : 33,
+      "question" : "W którym wieku Mazurek Dąbrowskiego został hymnem Polski?" },  {
+      "badAnswers" : [ "1793", "1772", "1789" ],
+      "goodAnswer" : "1795",
+      "id" : 34,
+      "question" : "Państwo polskie przestało istnieć w wyniku III rozbioru, który miał miejsce w roku:"
+    }, {
+      "badAnswers" : [ "II poł. XVIII wieku", "I poł. XVIII wieku", "II poł. XIX wieku" ],
+      "goodAnswer" : "I poł. XIX wieku",
+      "id" : 35,
+      "question" : "Bitwa pod Lipskiem miała miejsce w 1813 roku. Jest to:"
+    }, {
+      "badAnswers" : [ "Stefan Batory", "Stanisław August Poniatowski", "Władysław Jagiełło" ],
+      "goodAnswer" : "Jan III Sobieski",
+      "id" : 36,
+      "question" : "Który władca ruszył z odsieczą Wiedniowi?"
+    }, {
+      "badAnswers" : [ "Stanisław August Poniatowski", "August III Sas", "Jan III Sobieski" ],
+      "goodAnswer" : "August II Mocny",
+      "id" : 37,
+      "question" : "Który władca ustanowił order Orła Białego?"
+    }, {
+      "badAnswers" : [ "Stanisław August Poniatowski", "August III Sas", "Stanisław Leszczyński" ],
+      "goodAnswer" : "August II Mocny",
+      "id" : 38,
+      "question" : "Kto został królem po śmierci Jana III Sobieskiego?"
+    }, {
+      "badAnswers" : [ "Stefan Batory", "Zygmunt III Waza", "Władysław IV Waza" ],
+      "goodAnswer" : "Henryk Walezy",
+      "id" : 39,
+      "question" : "Jak się nazywał pierwszy władca elekcyjny?"
+    }, {
+      "badAnswers" : [ "Sejmem 3 maja", "Sejmem Reformacyjnym", "Sejmem Konstytucyjnym" ],
+      "goodAnswer" : "Sejmem Czteroletnim",
+      "id" : 40,
+      "question" : "Sejm Wielki nazywany jest także?"
+    }, {
+      "badAnswers" : [ "Austria, Prusy i Rosja", "Rosja i Austria", "Prusy i Austria" ],
+      "goodAnswer" : "Rosja i Prusy",
+      "id" : 41,
+      "question" : "Drugiego rozbioru Polski dokonały...”
+    }, {
+      "badAnswers" : [ "egzekucja Ludwika XVI", "uchwalenie konstytucji francuskiej", "zwołanie Stanów Generalnych" ],
+      "goodAnswer" : "zburzenie Bastylii",
+      "id" : 42,
+      "question" : "Wydarzenie, które w 1789 roku zapoczątkowało rewolucję francuską, to”
+    }, {
+      "badAnswers" : [ "Austerlitz", "Borodino", "Raszynem" ],
+      "goodAnswer" : "Lipskiem",
+      "id" : 43,
+      "question" : "”Bitwą narodów” nazwano starcie, do którego doszło w 1813 roku pod”
+    }]
+  }
+}

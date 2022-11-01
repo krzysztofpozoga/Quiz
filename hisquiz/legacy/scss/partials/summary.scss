@@ -1,0 +1,36 @@
+#summary {
+  display: none;
+  justify-content: center;
+  background: #C0C0C0;
+  font-family: 'Alegreya', Arial, sans-serif;
+  font-size: 1.5em;
+  .middle {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .rightAnswers{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      background-color: white;
+      border: 5px solid #8D8276;
+      border-radius: 15px;
+      padding: 10px;
+      .answers {
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        .wrong {
+          font-weight: bolder;
+          color: red;
+        }
+        .right {
+          font-weight: bolder;
+          color: green;
+        }
+      }
+    }
+  }
+}

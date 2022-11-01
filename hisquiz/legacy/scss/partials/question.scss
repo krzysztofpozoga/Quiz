@@ -1,0 +1,148 @@
+#question {
+  height: 70vh;
+  display: none;
+  justify-content: space-between;
+  background: #C0C0C0;
+  font-family: 'Alegreya', Arial, sans-serif;
+  .left {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    .progressBar {
+      background-color: white;
+      height: 100%;
+      width: 20%;
+      border-radius: 5px;
+      transform: rotate(180deg);
+      span {
+        display: inline-block;
+        height: 5%;
+        width: 100%;
+        border-radius: 5px;
+        background-color: red;
+      }
+    }
+  }
+  .middle {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .row {
+      width: 100%;
+      height: 33%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .quizQuestion {
+        width: 100%;
+        height: 100%;
+        border: 5px solid #545E6E;
+        border-radius: 15px;
+        background-color: #8D8276;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: -5px 5px 5px #888888;
+        .text {
+          text-align: center;
+          color: white;
+          text-shadow: 3px 3px 0 rgba(black, .5);
+          font-size: 2em;
+          font-weight: bold;
+        }
+      }
+      .answer {
+        width: 40%;
+        height: 60%;
+        color: white;
+        text-shadow: 3px 3px 0 rgba(black, .5);
+        font-size: 1.5em;
+        font-weight: bold;
+        border: 5px solid white;
+        border-radius: 15px;
+        background-color: #545E6E;
+        box-shadow: -5px 5px 5px #888888;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+      }
+    }
+
+  }
+  .right {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .teacherHint {
+      width: 80%;
+      height: 90%;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      .hint {
+        // width: 80%;
+        // height: 25%;
+        padding: 10px;
+        background-color: white;
+        border-radius: 15px;
+        border: 5px solid #545E6E;
+        border-radius: 15px;
+        box-shadow: -5px 5px 5px #888888;
+        color: #8D8276;
+        font-size: 1.3em;
+        font-weight: bold;
+        text-align: center;
+        display: flex;
+        align-items: center;
+      }
+      .img {
+        width: 80%;
+        height: 60%;
+        background-image: url(../images/teacherHint.png);
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+
+    .friendAnswer {
+      width: 80%;
+      height: 90%;
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      .hint {
+        // width: 80%;
+        // height: 25%;
+        padding: 10px;
+        background-color: white;
+        border-radius: 15px;
+        border: 5px solid #545E6E;
+        border-radius: 15px;
+        box-shadow: -5px 5px 5px #888888;
+        color: #8D8276;
+        font-size: 1.3em;
+        font-weight: bold;
+        text-align: center;
+        display: flex;
+        align-items: center;
+      }
+      .img {
+        width: 80%;
+        height: 60%;
+        background-image: url(../images/friend.png);
+        background-size: 70%;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
