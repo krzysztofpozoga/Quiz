@@ -1,0 +1,17 @@
+{
+  "categories": ["introduction"],
+  "questions": {
+    "introduction": [
+      {
+        "id": 1,
+        "question": "Ułóż w odpowiedniej kolejności epoki historyczne.",
+        "good": "Starożytność, średniowiecze, nowożytność, współczesność",
+        "bad": [
+          "Średniowiecze, starożytność, współczesność, nowożytność",
+          "Starożytność, średniowiecze, współczesność, nowożytność",
+          "Starożytność, nowożytność, średniowiecze, współczesność"
+        ]
+      }
+    ]
+  }
+}

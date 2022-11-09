@@ -1,0 +1,40 @@
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 60%;
+}
+
+.title {
+  margin: 0;
+  width: 90%;
+  color: black;
+  text-shadow: 3px 3px 0 rgba(black, 0.5);
+  background-color: rgba(white, 0.7);
+  border: 3px solid #545e6e;
+  border-radius: 15px;
+  letter-spacing: 0.5em;
+  font-size: 4em;
+  text-align: center;
+  @media (min-width: 1024px) {
+    font-size: 3em;
+  }
+  @media (min-width: 1200px) {
+    width: 75%;
+  }
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4em;
+  color: white;
+  background-color: #545e6e;
+  border-radius: 15px;
+  height: 10vh;
+  width: 35vw;
+  box-shadow: -10px 10px 5px #888888;
+  cursor: pointer;
+}
